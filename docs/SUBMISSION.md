@@ -13,7 +13,7 @@ Harmonization of MODIS and VIIRS Hot Spots
 
 ## High-level summary
 
-When NASA's VIIRS sensor joined MODIS in 2012, the satellite fire record for Punjab jumped. Over the same fields and the same days (15 Oct–30 Nov 2012), S-NPP VIIRS counted +613% against Aqua MODIS in Pakistan and +371% in India. The jump coincides exactly with the sensor switch. Blind Spot puts NASA FIRMS MODIS and VIIRS detections on one VIIRS-equivalent scale; the jump falls to +12.7% (Pakistan) and -6.1% (India), within normal year-to-year spread. The app shows a burning calendar for any district in Pakistani and Indian Punjab and the area around them, 2003–2025. From 2022 the record is less comparable: in Indian Punjab some burning moved past the afternoon satellites; those years are flagged.
+When NASA's VIIRS sensor joined MODIS in 2012, the satellite fire record for Punjab jumped. Over the same fields and the same days (15 Oct–30 Nov 2012), S-NPP VIIRS counted +613% against Aqua MODIS in Pakistan and +371% in India. The jump coincides exactly with the sensor switch. Blind Spot puts NASA FIRMS MODIS and VIIRS detections on one VIIRS-equivalent scale; the jump falls to +12.7% (Pakistan) and -6.1% (India), within normal year-to-year spread. The app shows a burning calendar for any district in Pakistani and Indian Punjab and the area around them, 2003–2026. From 2022 the record is less comparable: in Indian Punjab some burning moved past the afternoon satellites; those years are flagged.
 
 We wrote the tests and thresholds before running them. We changed one T2 rule after seeing data and disclose it below, with both verdicts.
 
@@ -57,7 +57,7 @@ Source code and data: https://github.com/Aiza166/BlindSpot-FIRMS
 |---|---|
 | Select an area of interest | District list (347 districts), region presets, or draw a box or radius on the map |
 | Choose a date range | Start and end month controls; the calendar and CSV follow them |
-| Calendar view, 2000s to present | Year-by-month calendar (one cell per month), 2003–2025 |
+| Calendar view, 2000s to present | Year-by-month calendar (one cell per month), 2003–2026 |
 | Current month against the median | Month card: latest available month (labelled "not live"; the live current month appears when the near-real-time service is switched on at launch) against that place's median for the same month, with all years and excluding the years we flag, plus NOAA-20 against its own median |
 | Critical periods | Panel per district and region: onset, peak and end month of the months in the top quarter of the year, and this year against typical; month level, not daily |
 | Accessible colour ramps | Cividis (colour-vision-deficiency safe); flags shown by a triangle, stripes and text, not colour alone; axe-core found 0 violations across 24 runs (pages × light/dark × desktop/phone) |

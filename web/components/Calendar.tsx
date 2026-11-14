@@ -112,7 +112,14 @@ export const Calendar = forwardRef<HTMLDivElement, Props>(function Calendar({ se
       case "ArrowDown": r = Math.min(last, r + 1); break;
       case "ArrowUp": r = Math.max(0, r - 1); break;
       case "Home": c = 0; if (e.ctrlKey) r = 0; break;
-      case "End": c = 11; if (e.ctrlKey) r = last; break;
+      case "End":
+        c = 11;
+        if (e.ctrlKey) {
+          // Last month of the record, not a trailing "outside the archive" cell when the last year is partial.
+          r = last;
+          while (c > 0 && !cellAt(r, c)) c--;
+        }
+        break;
       case "Escape": setHover(null); return;
       default: return;
     }

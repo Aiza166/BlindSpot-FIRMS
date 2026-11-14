@@ -83,7 +83,8 @@ try {
   const lFlags = Object.keys(lahore.reliability.caution_years).sort();
   check("flag markers: one per caution year", (await page.locator("[data-testid=calendar] [data-flag-year]").count()) === lFlags.length, lFlags.join(","));
   check("flagged year row header is striped (pattern, not colour only)", (await page.locator(".cal .yr.flag").count()) === lFlags.length);
-  const lastFlag = lFlags[lFlags.length - 1];
+  // Last year flagged for the Aqua drift reason (2026 is flagged "not tested" and has no November yet).
+  const lastFlag = lFlags.filter((y) => lahore.reliability.caution_years[y].includes("aqua_overpass_drift")).pop();
   const flagAria = await page.locator(`[data-ym="${lastFlag}-11"]`).getAttribute("aria-label");
   check("caution reason in the cell's accessible name (plain words)", flagAria.includes("Caution year:") && flagAria.includes("afternoon pass drifted later"), flagAria);
   check("banner shown when the range includes caution years", (await page.textContent("[data-testid=flag-banner]")).includes(lFlags.join(", ")));
