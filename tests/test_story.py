@@ -29,6 +29,7 @@ FIXED = {
     "30.0",
     "6.5",  # Vadrevu & Lasko (2018) Aqua->VIIRS multiple, quoted in docs/REFERENCES.md
     "55",  # video voice-over word limit
+    "18",  # Space Apps rule: no person under 18 in the demo
 }
 STRIP = [
     re.compile(r"## Number sources.*", re.S),
@@ -285,4 +286,6 @@ def test_lead_sentence_first_in_submission_and_video(built):
     assert lead.startswith("**A district officer in Punjab") and "jump" in lead
     assert "flags the years" in lead
     srt = (root / story.SRT_OUT).read_text()
-    assert "Pakistani Punjab's October–November fire record jumps" in srt.split("\n\n")[0]
+    cues = srt.split("\n\n")
+    assert "team Hehehehehe" in cues[0]  # 2026 guide: names and team name first
+    assert "Pakistani Punjab's October–November fire record jumps" in cues[1]

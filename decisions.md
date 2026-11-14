@@ -127,3 +127,9 @@ Status: **Proposed** = Claude's recommendation, waiting for the team. **Agreed**
 - **Old repository:** the team will make `Aiza166/nasa-hackathon` private before the final submission.
 - **Changed:** deadline lines in `README.md`, `docs/WEEKEND_PLAN.md` and `YOUR_TASKS/10_submit_form.md`.
 
+## W-16 · Video script: names and team name first, a "future" line last
+- **Status:** Done 15 Nov (W9 preparation). Asked for by the second team member; not yet read aloud.
+- **Decision:** The voice-over opens "Aiza and Kissa, team Hehehehehe." and ends "Next: any farming region, same tests.", following the 2026 guide's order (names and team name at 0:00, the future at 0:20–0:30). The first shot is the app's new first screen (the 2012 story strip and the Harmonize button), with the calendar now to 2026. 54 words, under the 55-word cap; subtitles regenerated (5 cues, 0 to 30 s). The caveat line is unchanged.
+- **Tests:** the subtitle test now expects the team-name cue first and the 2012 jump second; "18" (the under-18 rule) joins the allowed fixed numbers.
+- **Not done:** recording, the 30.0 s check with `ffprobe`, upload. The end card shows the public link if the site is deployed in time, otherwise the GitHub link.
+
