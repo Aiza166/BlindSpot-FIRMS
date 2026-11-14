@@ -38,6 +38,8 @@ STRIP = [
     re.compile(r"^\s*\d+\. ", re.M),  # list numbers
     re.compile(r"\d+ words, \d+ s\."),  # computed by add_voice_over
     re.compile(r"https?://\S+"),
+    re.compile(r"\]\([^)]*\)"),  # image and link targets (file names such as usecase-sangrur-2.png)
+    re.compile(r"\bBSD-\d-Clause\b|\bApache-\d\.\d\b"),  # licence identifiers
     re.compile(r"doi:\S+"),
     re.compile(r"`[^`]*`"),
     re.compile(r"\d+:\d\d(?:–\d+:\d\d)?"),  # shot times
@@ -62,6 +64,13 @@ def test_render_fills_and_logs():
     out, log = story.render("x {{t1:a.b.1|pct}} y {{index:ds|len}} {{pitch}}", data, "P")
     assert out == "x +613% y 3 P"
     assert ("t1:a.b.1|pct", "+613%") in log
+
+
+def test_month_format_names_the_month():
+    out, _ = story.render(
+        "to {{index:period.last|month}}", {"index": {"period": {"last": "2026-10"}}}, ""
+    )
+    assert out == "to October 2026"
 
 
 @pytest.mark.parametrize("tmpl", ["{{t9:a}}", "{{t1:nope}}", "{{t1:a|bogus}}"])
@@ -272,6 +281,8 @@ def test_lead_sentence_first_in_submission_and_video(built):
     lines = [x for x in sub.splitlines() if x.strip()]
     assert lines[0].startswith("# ")
     lead = lines[1]  # first content line under the title
-    assert lead.startswith("**Pakistani Punjab's fire record jumps") and "flags the years" in lead
+    # W5 (decisions.md W-06): the page opens on a person and a problem, then the 2012 jump.
+    assert lead.startswith("**A district officer in Punjab") and "jump" in lead
+    assert "flags the years" in lead
     srt = (root / story.SRT_OUT).read_text()
     assert "Pakistani Punjab's October–November fire record jumps" in srt.split("\n\n")[0]

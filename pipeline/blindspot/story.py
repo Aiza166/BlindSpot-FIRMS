@@ -10,6 +10,7 @@ from blindspot.pitch. Every filled value is logged and, for Markdown outputs, li
 from __future__ import annotations
 
 import argparse
+import datetime as dt
 import json
 import re
 from collections.abc import Callable
@@ -72,6 +73,7 @@ FORMATS: dict[str, Callable[[Any], str]] = {
     "len": lambda x: str(len(x)),
     "nviol": lambda x: str(sum(len(r["violations"]) for r in x)),  # axe runs -> total violations
     "year": lambda x: str(x)[:4],
+    "month": lambda x: dt.datetime.strptime(str(x)[:7], "%Y-%m").strftime("%B %Y"),  # 2026-10
     "min": lambda x: f"{round(float(x) * 60)} minutes",
     "x2": lambda x: f"{float(x):.2f}×",
     "years": lambda x: _years(x),  # list, or dict keyed by year -> "2022–2025" or "2022, 2024"

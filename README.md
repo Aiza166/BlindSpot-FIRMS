@@ -32,7 +32,7 @@ Tests and thresholds were written before the data were run (`docs/DECISIONS.md`,
 | Accessible colour ramps | Cividis; flags use icon, stripes and text; axe-core 0 violations |
 | Download data and images | CSV (calendar or filtered hotspots, up to 200,000 rows), PNG |
 
-Full table and method: `docs/SUBMISSION.md`.
+Project page text: `docs/SUBMISSION.md`. Method: the app's Methods page. Test detail: `docs/RESULTS_T1.md` to `docs/RESULTS_T3.md`.
 
 ## Repo map
 

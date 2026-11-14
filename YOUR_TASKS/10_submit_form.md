@@ -17,7 +17,7 @@ Field names below are from the 2026 Project Submission Guide (read 14 Nov, `docs
 | High-Level Project Summary | "High-level summary" and the bold one-sentence lead at the top |
 | Link to Project Demo | "Link to Project Demo": YouTube URL from task 09 (≤30 s) or a ≤7-slide deck |
 | Link to Final Project | "Link to Final Project": production URL from task 08; the repository URL is listed there too |
-| Detailed Project Description | "Detailed description" (What it does, How it meets the brief, How it works, Tools and languages, Results, Benefits, What is new, Limits) |
+| Detailed Project Description | "Detailed description" (What it does, How it works, What we found and the limits, What is new, Other regions, Tools and languages, What was built when) |
 | NASA Data | "NASA data used" table |
 | Space Agency Partner Data and Other References | "Space agency partner data and other references" plus "References" |
 | Use of Super Intelligence (SI) | "Use of Super Intelligence (SI)" section (names Claude Code by Anthropic). Judges do not see this field |
