@@ -208,7 +208,7 @@ export const Calendar = forwardRef<HTMLDivElement, Props>(function Calendar({ se
             {[0, 0.5, 1].map((t) => <span key={t}>{fmtCount(Math.round(max * t * t))}</span>)}
           </div>
         </div>
-        <span className="key"><i style={{ background: "repeating-linear-gradient(-45deg, var(--nodata) 0 2px, transparent 2px 5px)" }} />No data (platform not flying or no factor)</span>
+        <span className="key"><i style={{ background: "repeating-linear-gradient(-45deg, var(--nodata) 0 2px, transparent 2px 5px)" }} />No data (platform not flying, no factor, or month not yet in the archive)</span>
         <span className="key"><i style={{ position: "relative" }}><b style={{ position: "absolute", top: 2, right: 2, width: 4, height: 4, borderRadius: "50%", background: "currentColor" }} /></i>Dot: partial month, left out of medians</span>
         <span className="key"><i style={{ background: "repeating-linear-gradient(45deg, var(--hatch) 0 4px, transparent 4px 8px)" }} />Hatched band: MODIS era{harmonized ? ", scaled to S-NPP" : ""}</span>
         {series.provisional?.some(Boolean) && <span className="key" data-testid="legend-provisional"><i className="prov-key" />Dashed outline: provisional month (near-real-time data, will change)</span>}

@@ -483,10 +483,17 @@ export function Explorer() {
                 if (!inRange.length || !flags) return null;
                 const codes = [...new Set(inRange.flatMap((fy) => fy.reasons.map((r) => r.code)))];
                 const ys = inRange.map((fy) => fy.year);
+                // With more than one reason, name the years each reason applies to, so they do not run together.
+                const reasons = codes.map((c) => {
+                  const txt = plainReason(c, flags.codeText);
+                  if (codes.length === 1) return txt;
+                  const yc = inRange.filter((fy) => fy.reasons.some((r) => r.code === c)).map((fy) => fy.year);
+                  return `${yc.join(", ")}: ${txt}`;
+                });
                 return (
                   <div className="banner" role="note" data-testid="flag-banner">
                     <FlagIcon size={16} />
-                    <p style={{ margin: 0 }}><strong>Caution:</strong> {ys.length === 1 ? `${ys[0]} is` : `${ys.length} years (${ys.join(", ")}) are`} flagged in this period. {codes.map((c) => plainReason(c, flags.codeText)).join(". ")}. Details below the calendar.</p>
+                    <p style={{ margin: 0 }}><strong>Caution:</strong> {ys.length === 1 ? `${ys[0]} is` : `${ys.length} years (${ys.join(", ")}) are`} flagged in this period. {reasons.join(". ")}. Details below the calendar.</p>
                   </div>
                 );
               })()}
