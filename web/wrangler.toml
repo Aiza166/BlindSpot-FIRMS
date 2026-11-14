@@ -1,6 +1,6 @@
 # Cloudflare Pages config (D-041, docs/DEPLOY.md). Used by `wrangler pages deploy` / `pages dev`.
 # No secrets here: FIRMS_MAP_KEY is a Pages encrypted secret (dashboard or `wrangler pages secret put`).
-name = "blindspot"
+name = "blindspot-firms"
 pages_build_output_dir = "out"
 compatibility_date = "2024-11-01"
 
