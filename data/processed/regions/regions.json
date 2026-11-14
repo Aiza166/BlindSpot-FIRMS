@@ -1,0 +1,16 @@
+{
+  "pk_punjab_shape_id": "70912109B12169979015230",
+  "pk_punjab_shape_name": "Punjab",
+  "in_punjab_shape_id": "1811400B91946361694107",
+  "in_punjab_shape_name": "Punjab",
+  "n_points": 4774182,
+  "n_points_pk_punjab": 887694,
+  "n_points_in_punjab": 1730087,
+  "n_points_in_both_punjabs": 9539,
+  "n_points_rest_of_box": 2165940,
+  "n_points_no_adm1": 12592,
+  "n_shapes": {
+    "ADM1": 43,
+    "ADM2": 861
+  }
+}

@@ -1,0 +1,5729 @@
+{
+  "test": "T1 harmonization (PLAN.md \u00a74; definitions docs/DECISIONS.md D-028)",
+  "generated": "2026-11-01T06:13:13+00:00",
+  "primary_unit": "hotspots",
+  "regions": [
+    "PK_Punjab",
+    "IN_Punjab"
+  ],
+  "window": {
+    "start": "10-15",
+    "end": "11-30",
+    "time_basis": "local solar date"
+  },
+  "parameters": {
+    "calib_years": [
+      2012,
+      2013,
+      2014,
+      2015,
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021
+    ],
+    "heldout_years": [
+      2022,
+      2023,
+      2024,
+      2025
+    ],
+    "step_year": 2012,
+    "step_fit_years": [
+      2013,
+      2014,
+      2015,
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021
+    ],
+    "step_threshold": 0.1,
+    "pi_level": 0.95,
+    "bootstrap_b": 2000,
+    "seed": 20261114,
+    "noaa20_fit_years_planned": [
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025
+    ],
+    "snpp_last_month": [
+      2026,
+      10
+    ],
+    "grids_deg": [
+      0.05,
+      0.1,
+      0.25
+    ]
+  },
+  "common_days": {
+    "aqua_snpp_2012_2021": 3249,
+    "first": "2012-01-20"
+  },
+  "results": {
+    "hotspots": {
+      "PK_Punjab": {
+        "window_common_days_by_year": {
+          "2012": 47,
+          "2013": 47,
+          "2014": 47,
+          "2015": 47,
+          "2016": 47,
+          "2017": 46,
+          "2018": 46,
+          "2019": 47,
+          "2020": 47,
+          "2021": 47,
+          "2022": 47,
+          "2023": 46,
+          "2024": 44,
+          "2025": 46
+        },
+        "step_2012": {
+          "year": 2012,
+          "fit_years": [
+            2013,
+            2014,
+            2015,
+            2016,
+            2017,
+            2018,
+            2019,
+            2020,
+            2021
+          ],
+          "aqua_window_total": 770.0,
+          "snpp_window_total": 5491.0,
+          "aqua_predicted_total": 4873.590019282828,
+          "factors_used": {
+            "10": 6.986179867986799,
+            "11": 6.08623595505618
+          },
+          "raw_step": 6.131168831168831,
+          "harmonized_step": 0.12668484182590878,
+          "ratio": 0.020662429189991477,
+          "ratio_ci95": [
+            0.002906321792331655,
+            0.035720703592655036
+          ],
+          "threshold": 0.1,
+          "pass": true,
+          "n_boot": 2000,
+          "seed": 20261114
+        },
+        "heldout": {
+          "calib_years": [
+            2012,
+            2013,
+            2014,
+            2015,
+            2016,
+            2017,
+            2018,
+            2019,
+            2020,
+            2021
+          ],
+          "heldout_years": [
+            2022,
+            2023,
+            2024,
+            2025
+          ],
+          "factors_used": {
+            "10": 7.009329779131759,
+            "11": 6.154598825831703
+          },
+          "loyo_log_residuals": {
+            "2012": 0.11927955249484555,
+            "2013": 0.08740634309481628,
+            "2014": 0.17710829668396727,
+            "2015": 0.09514128951682932,
+            "2016": 0.13101269453686631,
+            "2017": -0.05810884720171221,
+            "2018": 0.023862105946858496,
+            "2019": 0.029032152496508673,
+            "2020": -0.2359773319780055,
+            "2021": -0.22621033865271029
+          },
+          "residual_mean": 0.014254591693826386,
+          "residual_sd": 0.14493845785588413,
+          "t_quantile": 2.262157162798205,
+          "pi_level": 0.95,
+          "pi_log": [
+            -0.329622110236385,
+            0.3581312936240377
+          ],
+          "years": [
+            {
+              "year": 2022,
+              "observed": 9425.0,
+              "aqua_window_total": 1803.0,
+              "aqua_predicted": 11754.029786062303,
+              "predicted_bias_corrected": 11922.778546381995,
+              "observed_pi95": [
+                8453.444843436808,
+                16815.943192251736
+              ],
+              "log_residual": -0.2208304089745196,
+              "inside": true
+            },
+            {
+              "year": 2023,
+              "observed": 8836.0,
+              "aqua_window_total": 2090.0,
+              "aqua_predicted": 13260.561439272786,
+              "predicted_bias_corrected": 13450.938981677333,
+              "observed_pi95": [
+                9536.93556679773,
+                18971.26789014869
+              ],
+              "log_residual": -0.4059600391234673,
+              "inside": false
+            },
+            {
+              "year": 2024,
+              "observed": 8566.0,
+              "aqua_window_total": 1734.0,
+              "aqua_predicted": 11189.186590738707,
+              "predicted_bias_corrected": 11349.82608209101,
+              "observed_pi95": [
+                8047.212182488426,
+                16007.848329640912
+              ],
+              "log_residual": -0.26714694975921754,
+              "inside": true
+            },
+            {
+              "year": 2025,
+              "observed": 11189.0,
+              "aqua_window_total": 1967.0,
+              "aqua_predicted": 12895.867291260212,
+              "predicted_bias_corrected": 13081.00903909106,
+              "observed_pi95": [
+                9274.649191736462,
+                18449.516951351678
+              ],
+              "log_residual": -0.1419757421956189,
+              "inside": true
+            }
+          ],
+          "n": 4,
+          "n_inside": 3,
+          "pass": false
+        },
+        "verdict": {
+          "pass": false,
+          "step_pass": true,
+          "heldout_pass": false,
+          "status": "provisional pending T2",
+          "note": "PLAN.md \u00a74: the held-out part is judged only if T2 finds no drift. Re-evaluated verdict after T2: data/processed/results/t2.json key t1_reevaluated (docs/RESULTS_T2.md)."
+        }
+      },
+      "IN_Punjab": {
+        "window_common_days_by_year": {
+          "2012": 47,
+          "2013": 47,
+          "2014": 47,
+          "2015": 47,
+          "2016": 47,
+          "2017": 46,
+          "2018": 46,
+          "2019": 47,
+          "2020": 47,
+          "2021": 47,
+          "2022": 47,
+          "2023": 46,
+          "2024": 44,
+          "2025": 46
+        },
+        "step_2012": {
+          "year": 2012,
+          "fit_years": [
+            2013,
+            2014,
+            2015,
+            2016,
+            2017,
+            2018,
+            2019,
+            2020,
+            2021
+          ],
+          "aqua_window_total": 13178.0,
+          "snpp_window_total": 62057.0,
+          "aqua_predicted_total": 66079.19924867111,
+          "factors_used": {
+            "10": 4.384425719860209,
+            "11": 5.465879225898937
+          },
+          "raw_step": 3.709136439520413,
+          "harmonized_step": -0.060869370307207515,
+          "ratio": 0.016410658194897208,
+          "ratio_ci95": [
+            0.003782335208904929,
+            0.03114747773605235
+          ],
+          "threshold": 0.1,
+          "pass": true,
+          "n_boot": 2000,
+          "seed": 20261114
+        },
+        "heldout": {
+          "calib_years": [
+            2012,
+            2013,
+            2014,
+            2015,
+            2016,
+            2017,
+            2018,
+            2019,
+            2020,
+            2021
+          ],
+          "heldout_years": [
+            2022,
+            2023,
+            2024,
+            2025
+          ],
+          "factors_used": {
+            "10": 4.362213199886696,
+            "11": 5.439017201650501
+          },
+          "loyo_log_residuals": {
+            "2012": -0.06280069369580066,
+            "2013": 0.0012774360597970732,
+            "2014": 0.005764430262996555,
+            "2015": 0.1492900213317027,
+            "2016": 0.07151574393811076,
+            "2017": 0.11504753080288052,
+            "2018": -0.06739773465025531,
+            "2019": -0.04236643736051315,
+            "2020": -0.0997843179353121,
+            "2021": -0.11629709045392463
+          },
+          "residual_mean": -0.004575111170031826,
+          "residual_sd": 0.0908152646580407,
+          "t_quantile": 2.262157162798205,
+          "pi_level": 0.95,
+          "pi_log": [
+            -0.2200407243517198,
+            0.21089050201165618
+          ],
+          "years": [
+            {
+              "year": 2022,
+              "observed": 44312.0,
+              "aqua_window_total": 9889.0,
+              "aqua_predicted": 50356.820361504084,
+              "predicted_bias_corrected": 50126.958532839475,
+              "observed_pi95": [
+                40410.649214724435,
+                62179.450728484
+              ],
+              "log_residual": -0.12787854827698725,
+              "inside": true
+            },
+            {
+              "year": 2023,
+              "observed": 29125.0,
+              "aqua_window_total": 7936.0,
+              "aqua_predicted": 41935.40714628588,
+              "predicted_bias_corrected": 41743.98621654407,
+              "observed_pi95": [
+                33652.58202761137,
+                51780.88218661143
+              ],
+              "log_residual": -0.36453359748837594,
+              "inside": false
+            },
+            {
+              "year": 2024,
+              "observed": 8123.0,
+              "aqua_window_total": 3350.0,
+              "aqua_predicted": 17698.457684673733,
+              "predicted_bias_corrected": 17617.670219962154,
+              "observed_pi95": [
+                14202.76657665508,
+                21853.650998497233
+              ],
+              "log_residual": -0.7787779552552537,
+              "inside": false
+            },
+            {
+              "year": 2025,
+              "observed": 3756.0,
+              "aqua_window_total": 2814.0,
+              "aqua_predicted": 14493.484188114602,
+              "predicted_bias_corrected": 14427.326341862889,
+              "observed_pi95": [
+                11630.819841691065,
+                17896.222984083906
+              ],
+              "log_residual": -1.3503446207482788,
+              "inside": false
+            }
+          ],
+          "n": 4,
+          "n_inside": 1,
+          "pass": false
+        },
+        "verdict": {
+          "pass": false,
+          "step_pass": true,
+          "heldout_pass": false,
+          "status": "provisional pending T2",
+          "note": "PLAN.md \u00a74: the held-out part is judged only if T2 finds no drift. Re-evaluated verdict after T2: data/processed/results/t2.json key t1_reevaluated (docs/RESULTS_T2.md)."
+        }
+      }
+    },
+    "celldays_0.05": {
+      "PK_Punjab": {
+        "window_common_days_by_year": {
+          "2012": 47,
+          "2013": 47,
+          "2014": 47,
+          "2015": 47,
+          "2016": 47,
+          "2017": 46,
+          "2018": 46,
+          "2019": 47,
+          "2020": 47,
+          "2021": 47,
+          "2022": 47,
+          "2023": 46,
+          "2024": 44,
+          "2025": 46
+        },
+        "step_2012": {
+          "year": 2012,
+          "fit_years": [
+            2013,
+            2014,
+            2015,
+            2016,
+            2017,
+            2018,
+            2019,
+            2020,
+            2021
+          ],
+          "aqua_window_total": 653.0,
+          "snpp_window_total": 4066.0,
+          "aqua_predicted_total": 3511.468215848513,
+          "factors_used": {
+            "10": 6.1554003492142675,
+            "11": 5.094840407276055
+          },
+          "raw_step": 5.226646248085758,
+          "harmonized_step": 0.1579202060405065,
+          "ratio": 0.030214443171535526,
+          "ratio_ci95": [
+            0.006930794684630878,
+            0.05175527603546257
+          ],
+          "threshold": 0.1,
+          "pass": true,
+          "n_boot": 2000,
+          "seed": 20261114
+        },
+        "heldout": {
+          "calib_years": [
+            2012,
+            2013,
+            2014,
+            2015,
+            2016,
+            2017,
+            2018,
+            2019,
+            2020,
+            2021
+          ],
+          "heldout_years": [
+            2022,
+            2023,
+            2024,
+            2025
+          ],
+          "factors_used": {
+            "10": 6.166590178981184,
+            "11": 5.164425162689804
+          },
+          "loyo_log_residuals": {
+            "2012": 0.14662547007585613,
+            "2013": 0.1308723188788202,
+            "2014": 0.19526380669673168,
+            "2015": 0.09643930892242351,
+            "2016": 0.14805637912180689,
+            "2017": -0.10477186904005432,
+            "2018": 0.023483171449206246,
+            "2019": -0.02485021379632381,
+            "2020": -0.1901350751444167,
+            "2021": -0.283695740938663
+          },
+          "residual_mean": 0.013728755622538686,
+          "residual_sd": 0.1615452286719787,
+          "t_quantile": 2.262157162798205,
+          "pi_level": 0.95,
+          "pi_log": [
+            -0.36954867998753393,
+            0.39700619123261127
+          ],
+          "years": [
+            {
+              "year": 2022,
+              "observed": 6126.0,
+              "aqua_window_total": 1412.0,
+              "aqua_predicted": 7884.447854346209,
+              "predicted_bias_corrected": 7993.437949493766,
+              "observed_pi95": [
+                5448.51728118412,
+                11727.052876029578
+              ],
+              "log_residual": -0.2523501847391498,
+              "inside": true
+            },
+            {
+              "year": 2023,
+              "observed": 5972.0,
+              "aqua_window_total": 1610.0,
+              "aqua_predicted": 8682.519072909521,
+              "predicted_bias_corrected": 8802.541247874537,
+              "observed_pi95": [
+                6000.021318789102,
+                12914.076184677662
+              ],
+              "log_residual": -0.3742298226638497,
+              "inside": false
+            },
+            {
+              "year": 2024,
+              "observed": 5577.0,
+              "aqua_window_total": 1355.0,
+              "aqua_predicted": 7491.863448476335,
+              "predicted_bias_corrected": 7595.426681459331,
+              "observed_pi95": [
+                5177.2233416184845,
+                11143.136516762537
+              ],
+              "log_residual": -0.2951665606971037,
+              "inside": true
+            },
+            {
+              "year": 2025,
+              "observed": 7448.0,
+              "aqua_window_total": 1558.0,
+              "aqua_predicted": 8778.757030379715,
+              "predicted_bias_corrected": 8900.109543795215,
+              "observed_pi95": [
+                6066.526188130481,
+                13057.217167633358
+              ],
+              "log_residual": -0.16438928935664046,
+              "inside": true
+            }
+          ],
+          "n": 4,
+          "n_inside": 3,
+          "pass": false
+        },
+        "verdict": {
+          "pass": false,
+          "step_pass": true,
+          "heldout_pass": false,
+          "status": "provisional pending T2",
+          "note": "PLAN.md \u00a74: the held-out part is judged only if T2 finds no drift. Re-evaluated verdict after T2: data/processed/results/t2.json key t1_reevaluated (docs/RESULTS_T2.md)."
+        }
+      },
+      "IN_Punjab": {
+        "window_common_days_by_year": {
+          "2012": 47,
+          "2013": 47,
+          "2014": 47,
+          "2015": 47,
+          "2016": 47,
+          "2017": 46,
+          "2018": 46,
+          "2019": 47,
+          "2020": 47,
+          "2021": 47,
+          "2022": 47,
+          "2023": 46,
+          "2024": 44,
+          "2025": 46
+        },
+        "step_2012": {
+          "year": 2012,
+          "fit_years": [
+            2013,
+            2014,
+            2015,
+            2016,
+            2017,
+            2018,
+            2019,
+            2020,
+            2021
+          ],
+          "aqua_window_total": 8467.0,
+          "snpp_window_total": 23341.0,
+          "aqua_predicted_total": 24614.431929728595,
+          "factors_used": {
+            "10": 3.0462300148213552,
+            "11": 2.8056750616329094
+          },
+          "raw_step": 1.7567024920278729,
+          "harmonized_step": -0.05173517444416742,
+          "ratio": 0.0294501628357379,
+          "ratio_ci95": [
+            0.006737320721570511,
+            0.05642778633201762
+          ],
+          "threshold": 0.1,
+          "pass": true,
+          "n_boot": 2000,
+          "seed": 20261114
+        },
+        "heldout": {
+          "calib_years": [
+            2012,
+            2013,
+            2014,
+            2015,
+            2016,
+            2017,
+            2018,
+            2019,
+            2020,
+            2021
+          ],
+          "heldout_years": [
+            2022,
+            2023,
+            2024,
+            2025
+          ],
+          "factors_used": {
+            "10": 3.038722977490528,
+            "11": 2.79963692161397
+          },
+          "loyo_log_residuals": {
+            "2012": -0.05312146388643471,
+            "2013": -0.001165601555777549,
+            "2014": -0.0005385193907040025,
+            "2015": 0.1231945410716653,
+            "2016": -0.032579514364803254,
+            "2017": 0.060960997946684,
+            "2018": 0.007350944780526065,
+            "2019": -0.08256350993709832,
+            "2020": -0.114771660449024,
+            "2021": -0.11992265294038491
+          },
+          "residual_mean": -0.02131564387253514,
+          "residual_sd": 0.0764920337813737,
+          "t_quantile": 2.262157162798205,
+          "pi_level": 0.95,
+          "pi_log": [
+            -0.20279838275214737,
+            0.16016709500707707
+          ],
+          "years": [
+            {
+              "year": 2022,
+              "observed": 18333.0,
+              "aqua_window_total": 6629.0,
+              "aqua_predicted": 19115.86366357139,
+              "predicted_bias_corrected": 18712.70873935968,
+              "observed_pi95": [
+                15607.00989982761,
+                22436.422518574553
+              ],
+              "log_residual": -0.04181583405117803,
+              "inside": true
+            },
+            {
+              "year": 2023,
+              "observed": 13735.0,
+              "aqua_window_total": 5381.0,
+              "aqua_predicted": 15269.025766923352,
+              "predicted_bias_corrected": 14947.00092754445,
+              "observed_pi95": [
+                12466.286666357908,
+                17921.36204688175
+              ],
+              "log_residual": -0.1058789971845331,
+              "inside": true
+            },
+            {
+              "year": 2024,
+              "observed": 5380.0,
+              "aqua_window_total": 2485.0,
+              "aqua_predicted": 7052.732172561338,
+              "predicted_bias_corrected": 6903.989549441833,
+              "observed_pi95": [
+                5758.152640927179,
+                8277.840945030419
+              ],
+              "log_residual": -0.270726709782681,
+              "inside": false
+            },
+            {
+              "year": 2025,
+              "observed": 2783.0,
+              "aqua_window_total": 2082.0,
+              "aqua_predicted": 5967.51398320869,
+              "predicted_bias_corrected": 5841.65868888487,
+              "observed_pi95": [
+                4872.134027131759,
+                7004.112786592116
+              ],
+              "log_residual": -0.7628009399116117,
+              "inside": false
+            }
+          ],
+          "n": 4,
+          "n_inside": 2,
+          "pass": false
+        },
+        "verdict": {
+          "pass": false,
+          "step_pass": true,
+          "heldout_pass": false,
+          "status": "provisional pending T2",
+          "note": "PLAN.md \u00a74: the held-out part is judged only if T2 finds no drift. Re-evaluated verdict after T2: data/processed/results/t2.json key t1_reevaluated (docs/RESULTS_T2.md)."
+        }
+      }
+    },
+    "celldays_0.1": {
+      "PK_Punjab": {
+        "window_common_days_by_year": {
+          "2012": 47,
+          "2013": 47,
+          "2014": 47,
+          "2015": 47,
+          "2016": 47,
+          "2017": 46,
+          "2018": 46,
+          "2019": 47,
+          "2020": 47,
+          "2021": 47,
+          "2022": 47,
+          "2023": 46,
+          "2024": 44,
+          "2025": 46
+        },
+        "step_2012": {
+          "year": 2012,
+          "fit_years": [
+            2013,
+            2014,
+            2015,
+            2016,
+            2017,
+            2018,
+            2019,
+            2020,
+            2021
+          ],
+          "aqua_window_total": 577.0,
+          "snpp_window_total": 3261.0,
+          "aqua_predicted_total": 2780.4681321227,
+          "factors_used": {
+            "10": 5.576127020130422,
+            "11": 4.535752833243389
+          },
+          "raw_step": 4.651646447140381,
+          "harmonized_step": 0.1728240875432896,
+          "ratio": 0.03715331539213044,
+          "ratio_ci95": [
+            0.011213348695533878,
+            0.06289231527002656
+          ],
+          "threshold": 0.1,
+          "pass": true,
+          "n_boot": 2000,
+          "seed": 20261114
+        },
+        "heldout": {
+          "calib_years": [
+            2012,
+            2013,
+            2014,
+            2015,
+            2016,
+            2017,
+            2018,
+            2019,
+            2020,
+            2021
+          ],
+          "heldout_years": [
+            2022,
+            2023,
+            2024,
+            2025
+          ],
+          "factors_used": {
+            "10": 5.574180114523686,
+            "11": 4.605975485188968
+          },
+          "loyo_log_residuals": {
+            "2012": 0.1594145904312289,
+            "2013": 0.14411760012420763,
+            "2014": 0.17098811337028724,
+            "2015": 0.11902638309194753,
+            "2016": 0.15287658838259607,
+            "2017": -0.11525456125497734,
+            "2018": 0.0005857517485868953,
+            "2019": -0.04998503434120532,
+            "2020": -0.1563120681173322,
+            "2021": -0.2970756579667278
+          },
+          "residual_mean": 0.012838170546861167,
+          "residual_sd": 0.16322446847760125,
+          "t_quantile": 2.262157162798205,
+          "pi_level": 0.95,
+          "pi_log": [
+            -0.3744233798016308,
+            0.4000997208953531
+          ],
+          "years": [
+            {
+              "year": 2022,
+              "observed": 4638.0,
+              "aqua_window_total": 1158.0,
+              "aqua_predicted": 5807.171675593502,
+              "predicted_bias_corrected": 5882.205755535588,
+              "observed_pi95": [
+                3993.5089068570774,
+                8664.146082420219
+              ],
+              "log_residual": -0.22481041067967972,
+              "inside": true
+            },
+            {
+              "year": 2023,
+              "observed": 4545.0,
+              "aqua_window_total": 1315.0,
+              "aqua_predicted": 6367.651449039938,
+              "predicted_bias_corrected": 6449.927450949554,
+              "observed_pi95": [
+                4378.942831047518,
+                9500.367035520492
+              ],
+              "log_residual": -0.33720298465332177,
+              "inside": true
+            },
+            {
+              "year": 2024,
+              "observed": 4311.0,
+              "aqua_window_total": 1112.0,
+              "aqua_predicted": 5533.331706997387,
+              "predicted_bias_corrected": 5604.827518873224,
+              "observed_pi95": [
+                3805.193076925929,
+                8255.584113933275
+              ],
+              "log_residual": -0.2496202170132123,
+              "inside": true
+            },
+            {
+              "year": 2025,
+              "observed": 5655.0,
+              "aqua_window_total": 1290.0,
+              "aqua_predicted": 6519.726539606595,
+              "predicted_bias_corrected": 6603.967493671963,
+              "observed_pi95": [
+                4483.522695844949,
+                9727.259036269228
+              ],
+              "log_residual": -0.14229232371276723,
+              "inside": true
+            }
+          ],
+          "n": 4,
+          "n_inside": 4,
+          "pass": true
+        },
+        "verdict": {
+          "pass": true,
+          "step_pass": true,
+          "heldout_pass": true,
+          "status": "provisional pending T2",
+          "note": "PLAN.md \u00a74: the held-out part is judged only if T2 finds no drift. Re-evaluated verdict after T2: data/processed/results/t2.json key t1_reevaluated (docs/RESULTS_T2.md)."
+        }
+      },
+      "IN_Punjab": {
+        "window_common_days_by_year": {
+          "2012": 47,
+          "2013": 47,
+          "2014": 47,
+          "2015": 47,
+          "2016": 47,
+          "2017": 46,
+          "2018": 46,
+          "2019": 47,
+          "2020": 47,
+          "2021": 47,
+          "2022": 47,
+          "2023": 46,
+          "2024": 44,
+          "2025": 46
+        },
+        "step_2012": {
+          "year": 2012,
+          "fit_years": [
+            2013,
+            2014,
+            2015,
+            2016,
+            2017,
+            2018,
+            2019,
+            2020,
+            2021
+          ],
+          "aqua_window_total": 4973.0,
+          "snpp_window_total": 10570.0,
+          "aqua_predicted_total": 11468.489680278855,
+          "factors_used": {
+            "10": 2.5009759271307743,
+            "11": 2.154458185591974
+          },
+          "raw_step": 1.1254775789262017,
+          "harmonized_step": -0.07834420270908837,
+          "ratio": 0.06960974094555948,
+          "ratio_ci95": [
+            0.03802335041167706,
+            0.10475390289420333
+          ],
+          "threshold": 0.1,
+          "pass": true,
+          "n_boot": 2000,
+          "seed": 20261114
+        },
+        "heldout": {
+          "calib_years": [
+            2012,
+            2013,
+            2014,
+            2015,
+            2016,
+            2017,
+            2018,
+            2019,
+            2020,
+            2021
+          ],
+          "heldout_years": [
+            2022,
+            2023,
+            2024,
+            2025
+          ],
+          "factors_used": {
+            "10": 2.486873508353222,
+            "11": 2.148638222359386
+          },
+          "loyo_log_residuals": {
+            "2012": -0.08158344693776937,
+            "2013": -0.007750048074085182,
+            "2014": -0.020692967737983237,
+            "2015": 0.07885411422045399,
+            "2016": -0.06530469805404183,
+            "2017": 0.029233191856174078,
+            "2018": 0.03318967212499712,
+            "2019": -0.0744335412687758,
+            "2020": -0.12120968775100949,
+            "2021": -0.13521032261588886
+          },
+          "residual_mean": -0.03649077342379285,
+          "residual_sd": 0.07053851280149888,
+          "t_quantile": 2.262157162798205,
+          "pi_level": 0.95,
+          "pi_log": [
+            -0.20384836436325426,
+            0.1308668175156686
+          ],
+          "years": [
+            {
+              "year": 2022,
+              "observed": 8745.0,
+              "aqua_window_total": 3940.0,
+              "aqua_predicted": 9005.458112542143,
+              "predicted_bias_corrected": 8682.765440279263,
+              "observed_pi95": [
+                7344.725863828823,
+                10264.564952953433
+              ],
+              "log_residual": -0.02934874199408122,
+              "inside": true
+            },
+            {
+              "year": 2023,
+              "observed": 7240.0,
+              "aqua_window_total": 3328.0,
+              "aqua_predicted": 7368.829763478061,
+              "predicted_bias_corrected": 7104.782411515449,
+              "observed_pi95": [
+                6009.91463994394,
+                8399.109827531618
+              ],
+              "log_residual": -0.017637703407545738,
+              "inside": true
+            },
+            {
+              "year": 2024,
+              "observed": 3821.0,
+              "aqua_window_total": 1763.0,
+              "aqua_predicted": 3902.0344773995203,
+              "predicted_bias_corrected": 3762.2128362305634,
+              "observed_pi95": [
+                3182.444822856193,
+                4447.601203779809
+              ],
+              "log_residual": -0.020985909524778582,
+              "inside": true
+            },
+            {
+              "year": 2025,
+              "observed": 2344.0,
+              "aqua_window_total": 1574.0,
+              "aqua_predicted": 3539.9124405527955,
+              "predicted_bias_corrected": 3413.066722018202,
+              "observed_pi95": [
+                2887.103147102208,
+                4034.8487239329256
+              ],
+              "log_residual": -0.41224312081789893,
+              "inside": false
+            }
+          ],
+          "n": 4,
+          "n_inside": 3,
+          "pass": false
+        },
+        "verdict": {
+          "pass": false,
+          "step_pass": true,
+          "heldout_pass": false,
+          "status": "provisional pending T2",
+          "note": "PLAN.md \u00a74: the held-out part is judged only if T2 finds no drift. Re-evaluated verdict after T2: data/processed/results/t2.json key t1_reevaluated (docs/RESULTS_T2.md)."
+        }
+      }
+    },
+    "celldays_0.25": {
+      "PK_Punjab": {
+        "window_common_days_by_year": {
+          "2012": 47,
+          "2013": 47,
+          "2014": 47,
+          "2015": 47,
+          "2016": 47,
+          "2017": 46,
+          "2018": 46,
+          "2019": 47,
+          "2020": 47,
+          "2021": 47,
+          "2022": 47,
+          "2023": 46,
+          "2024": 44,
+          "2025": 46
+        },
+        "step_2012": {
+          "year": 2012,
+          "fit_years": [
+            2013,
+            2014,
+            2015,
+            2016,
+            2017,
+            2018,
+            2019,
+            2020,
+            2021
+          ],
+          "aqua_window_total": 431.0,
+          "snpp_window_total": 1937.0,
+          "aqua_predicted_total": 1685.568170520449,
+          "factors_used": {
+            "10": 4.4977867203219315,
+            "11": 3.686960098724805
+          },
+          "raw_step": 3.494199535962877,
+          "harmonized_step": 0.14916740472259682,
+          "ratio": 0.04269000759325314,
+          "ratio_ci95": [
+            0.01368391067805327,
+            0.07115271851788398
+          ],
+          "threshold": 0.1,
+          "pass": true,
+          "n_boot": 2000,
+          "seed": 20261114
+        },
+        "heldout": {
+          "calib_years": [
+            2012,
+            2013,
+            2014,
+            2015,
+            2016,
+            2017,
+            2018,
+            2019,
+            2020,
+            2021
+          ],
+          "heldout_years": [
+            2022,
+            2023,
+            2024,
+            2025
+          ],
+          "factors_used": {
+            "10": 4.461510128913444,
+            "11": 3.749323540780827
+          },
+          "loyo_log_residuals": {
+            "2012": 0.13903768427017008,
+            "2013": 0.13588263023612318,
+            "2014": 0.1277849811014691,
+            "2015": 0.07796467502492774,
+            "2016": 0.12341893759229412,
+            "2017": -0.07122647017348151,
+            "2018": -0.04982661372365241,
+            "2019": -0.10127085555317962,
+            "2020": -0.06099140190221959,
+            "2021": -0.26449616249662333
+          },
+          "residual_mean": 0.005627740437582779,
+          "residual_sd": 0.13605898928221358,
+          "t_quantile": 2.262157162798205,
+          "pi_level": 0.95,
+          "pi_log": [
+            -0.3171817967581803,
+            0.3284372776333459
+          ],
+          "years": [
+            {
+              "year": 2022,
+              "observed": 2507.0,
+              "aqua_window_total": 751.0,
+              "aqua_predicted": 3037.9441946237775,
+              "predicted_bias_corrected": 3055.089154456385,
+              "observed_pi95": [
+                2212.2259772297375,
+                4219.085137660757
+              ],
+              "log_residual": -0.1920942157121132,
+              "inside": true
+            },
+            {
+              "year": 2023,
+              "observed": 2508.0,
+              "aqua_window_total": 861.0,
+              "aqua_predicted": 3384.848618001468,
+              "predicted_bias_corrected": 3403.9513696905187,
+              "observed_pi95": [
+                2464.841209059916,
+                4700.864657986292
+              ],
+              "log_residual": -0.2998235611759446,
+              "inside": true
+            },
+            {
+              "year": 2024,
+              "observed": 2406.0,
+              "aqua_window_total": 708.0,
+              "aqua_predicted": 2861.767364019417,
+              "predicted_bias_corrected": 2877.9180512483695,
+              "observed_pi95": [
+                2083.9342982914955,
+                3974.411437295077
+              ],
+              "log_residual": -0.17347377586830787,
+              "inside": true
+            },
+            {
+              "year": 2025,
+              "observed": 3122.0,
+              "aqua_window_total": 859.0,
+              "aqua_predicted": 3504.1191836075122,
+              "predicted_bias_corrected": 3523.8950513663535,
+              "observed_pi95": [
+                2551.6938392101056,
+                4866.5071578055395
+              ],
+              "log_residual": -0.11546536398907455,
+              "inside": true
+            }
+          ],
+          "n": 4,
+          "n_inside": 4,
+          "pass": true
+        },
+        "verdict": {
+          "pass": true,
+          "step_pass": true,
+          "heldout_pass": true,
+          "status": "provisional pending T2",
+          "note": "PLAN.md \u00a74: the held-out part is judged only if T2 finds no drift. Re-evaluated verdict after T2: data/processed/results/t2.json key t1_reevaluated (docs/RESULTS_T2.md)."
+        }
+      },
+      "IN_Punjab": {
+        "window_common_days_by_year": {
+          "2012": 47,
+          "2013": 47,
+          "2014": 47,
+          "2015": 47,
+          "2016": 47,
+          "2017": 46,
+          "2018": 46,
+          "2019": 47,
+          "2020": 47,
+          "2021": 47,
+          "2022": 47,
+          "2023": 46,
+          "2024": 44,
+          "2025": 46
+        },
+        "step_2012": {
+          "year": 2012,
+          "fit_years": [
+            2013,
+            2014,
+            2015,
+            2016,
+            2017,
+            2018,
+            2019,
+            2020,
+            2021
+          ],
+          "aqua_window_total": 1653.0,
+          "snpp_window_total": 2854.0,
+          "aqua_predicted_total": 3066.9741357852963,
+          "factors_used": {
+            "10": 1.9763612217795485,
+            "11": 1.7566348879154856
+          },
+          "raw_step": 0.7265577737447066,
+          "harmonized_step": -0.06944112547292947,
+          "ratio": 0.09557550408555571,
+          "ratio_ci95": [
+            0.06573885777657269,
+            0.12933364403729894
+          ],
+          "threshold": 0.1,
+          "pass": true,
+          "n_boot": 2000,
+          "seed": 20261114
+        },
+        "heldout": {
+          "calib_years": [
+            2012,
+            2013,
+            2014,
+            2015,
+            2016,
+            2017,
+            2018,
+            2019,
+            2020,
+            2021
+          ],
+          "heldout_years": [
+            2022,
+            2023,
+            2024,
+            2025
+          ],
+          "factors_used": {
+            "10": 1.961683121767748,
+            "11": 1.7622232472324724
+          },
+          "loyo_log_residuals": {
+            "2012": -0.07196993297549335,
+            "2013": -0.02805091544117851,
+            "2014": -0.06146803126158005,
+            "2015": 0.015395080753652028,
+            "2016": -0.09158922003392776,
+            "2017": -0.0613949913597057,
+            "2018": -0.011205653195526112,
+            "2019": -0.04957912277799775,
+            "2020": -0.1158837860923265,
+            "2021": -0.12077286520984483
+          },
+          "residual_mean": -0.05965194375939285,
+          "residual_sd": 0.04365907270478676,
+          "t_quantile": 2.262157162798205,
+          "pi_level": 0.95,
+          "pi_log": [
+            -0.16323616945869973,
+            0.04393228193991404
+          ],
+          "years": [
+            {
+              "year": 2022,
+              "observed": 2540.0,
+              "aqua_window_total": 1368.0,
+              "aqua_predicted": 2530.1978670606522,
+              "predicted_bias_corrected": 2383.6801245246825,
+              "observed_pi95": [
+                2149.126194890432,
+                2643.833084145012
+              ],
+              "log_residual": 0.003866573024759322,
+              "inside": true
+            },
+            {
+              "year": 2023,
+              "observed": 2190.0,
+              "aqua_window_total": 1220.0,
+              "aqua_predicted": 2214.736820847581,
+              "predicted_bias_corrected": 2086.486677439291,
+              "observed_pi95": [
+                1881.1765587334585,
+                2314.2041797834686
+              ],
+              "log_residual": -0.01123203583631637,
+              "inside": true
+            },
+            {
+              "year": 2024,
+              "observed": 1729.0,
+              "aqua_window_total": 827.0,
+              "aqua_predicted": 1502.436557106227,
+              "predicted_bias_corrected": 1415.4340283646904,
+              "observed_pi95": [
+                1276.1554355387439,
+                1569.913376427311
+              ],
+              "log_residual": 0.14045504505312617,
+              "inside": false
+            },
+            {
+              "year": 2025,
+              "observed": 1331.0,
+              "aqua_window_total": 735.0,
+              "aqua_predicted": 1345.4979750987566,
+              "predicted_bias_corrected": 1267.5833864949782,
+              "observed_pi95": [
+                1142.8532847575339,
+                1405.9264326820103
+              ],
+              "log_residual": -0.01083364682739171,
+              "inside": true
+            }
+          ],
+          "n": 4,
+          "n_inside": 3,
+          "pass": false
+        },
+        "verdict": {
+          "pass": false,
+          "step_pass": true,
+          "heldout_pass": false,
+          "status": "provisional pending T2",
+          "note": "PLAN.md \u00a74: the held-out part is judged only if T2 finds no drift. Re-evaluated verdict after T2: data/processed/results/t2.json key t1_reevaluated (docs/RESULTS_T2.md)."
+        }
+      }
+    }
+  },
+  "verdict_primary": {
+    "PK_Punjab": {
+      "pass": false,
+      "step_pass": true,
+      "heldout_pass": false,
+      "status": "provisional pending T2",
+      "note": "PLAN.md \u00a74: the held-out part is judged only if T2 finds no drift. Re-evaluated verdict after T2: data/processed/results/t2.json key t1_reevaluated (docs/RESULTS_T2.md)."
+    },
+    "IN_Punjab": {
+      "pass": false,
+      "step_pass": true,
+      "heldout_pass": false,
+      "status": "provisional pending T2",
+      "note": "PLAN.md \u00a74: the held-out part is judged only if T2 finds no drift. Re-evaluated verdict after T2: data/processed/results/t2.json key t1_reevaluated (docs/RESULTS_T2.md)."
+    }
+  },
+  "calibration_factors": [
+    {
+      "pair": "Aqua->SNPP",
+      "unit": "celldays_0.05",
+      "region": "IN_Punjab",
+      "month": 1,
+      "factor": 5.894160583941606,
+      "lo": 4.6270467385721625,
+      "hi": 7.743559248866824,
+      "n_years": 10,
+      "sum_a": 274.0,
+      "sum_s": 1615.0
+    },
+    {
+      "pair": "Aqua->SNPP",
+      "unit": "celldays_0.05",
+      "region": "IN_Punjab",
+      "month": 2,
+      "factor": 7.498721227621483,
+      "lo": 6.415050314465409,
+      "hi": 9.023874263567231,
+      "n_years": 10,
+      "sum_a": 391.0,
+      "sum_s": 2932.0
+    },
+    {
+      "pair": "Aqua->SNPP",
+      "unit": "celldays_0.05",
+      "region": "IN_Punjab",
+      "month": 3,
+      "factor": 9.149425287356323,
+      "lo": 7.548611111111111,
+      "hi": 11.76099734042553,
+      "n_years": 10,
+      "sum_a": 261.0,
+      "sum_s": 2388.0
+    },
+    {
+      "pair": "Aqua->SNPP",
+      "unit": "celldays_0.05",
+      "region": "IN_Punjab",
+      "month": 4,
+      "factor": 4.313237221494102,
+      "lo": 3.6150115236875804,
+      "hi": 5.729535455486542,
+      "n_years": 10,
+      "sum_a": 763.0,
+      "sum_s": 3291.0
+    },
+    {
+      "pair": "Aqua->SNPP",
+      "unit": "celldays_0.05",
+      "region": "IN_Punjab",
+      "month": 5,
+      "factor": 6.290208594551465,
+      "lo": 5.703402376203156,
+      "hi": 7.12050043759771,
+      "n_years": 10,
+      "sum_a": 8773.0,
+      "sum_s": 55184.0
+    },
+    {
+      "pair": "Aqua->SNPP",
+      "unit": "celldays_0.05",
+      "region": "IN_Punjab",
+      "month": 6,
+      "factor": 11.578680203045685,
+      "lo": 9.935883084577116,
+      "hi": 14.083643617021275,
+      "n_years": 10,
+      "sum_a": 197.0,
+      "sum_s": 2281.0
+    },
+    {
+      "pair": "Aqua->SNPP",
+      "unit": "celldays_0.05",
+      "region": "IN_Punjab",
+      "month": 7,
+      "factor": 5.076923076923077,
+      "lo": 2.7496044303797467,
+      "hi": 8.448378489326766,
+      "n_years": 10,
+      "sum_a": 91.0,
+      "sum_s": 462.0
+    },
+    {
+      "pair": "Aqua->SNPP",
+      "unit": "celldays_0.05",
+      "region": "IN_Punjab",
+      "month": 8,
+      "factor": 0.5555555555555556,
+      "lo": 0.24993556701030928,
+      "hi": 1.682272727272725,
+      "n_years": 10,
+      "sum_a": 45.0,
+      "sum_s": 25.0
+    },
+    {
+      "pair": "Aqua->SNPP",
+      "unit": "celldays_0.05",
+      "region": "IN_Punjab",
+      "month": 9,
+      "factor": 6.074626865671642,
+      "lo": 5.33484496124031,
+      "hi": 7.08775636273783,
+      "n_years": 10,
+      "sum_a": 335.0,
+      "sum_s": 2035.0
+    },
+    {
+      "pair": "Aqua->SNPP",
+      "unit": "celldays_0.05",
+      "region": "IN_Punjab",
+      "month": 10,
+      "factor": 3.038722977490528,
+      "lo": 2.9276480439628827,
+      "hi": 3.1419714909882366,
+      "n_years": 10,
+      "sum_a": 35896.0,
+      "sum_s": 109078.0
+    },
+    {
+      "pair": "Aqua->SNPP",
+      "unit": "celldays_0.05",
+      "region": "IN_Punjab",
+      "month": 11,
+      "factor": 2.79963692161397,
+      "lo": 2.6322962547710405,
+      "hi": 3.01964721726691,
+      "n_years": 10,
+      "sum_a": 46271.0,
+      "sum_s": 129542.0
+    },
+    {
+      "pair": "Aqua->SNPP",
+      "unit": "celldays_0.05",
+      "region": "IN_Punjab",
+      "month": 12,
+      "factor": 6.227743271221532,
+      "lo": 5.786791759156492,
+      "hi": 6.795207938388624,
+      "n_years": 10,
+      "sum_a": 483.0,
+      "sum_s": 3008.0
+    },
+    {
+      "pair": "Aqua->SNPP",
+      "unit": "celldays_0.05",
+      "region": "PK_Punjab",
+      "month": 1,
+      "factor": 4.8573244359707655,
+      "lo": 4.520576125854749,
+      "hi": 5.207542369368801,
+      "n_years": 10,
+      "sum_a": 3147.0,
+      "sum_s": 15286.0
+    },
+    {
+      "pair": "Aqua->SNPP",
+      "unit": "celldays_0.05",
+      "region": "PK_Punjab",
+      "month": 2,
+      "factor": 5.760207388204796,
+      "lo": 5.404707738163899,
+      "hi": 6.163877249975139,
+      "n_years": 10,
+      "sum_a": 4629.0,
+      "sum_s": 26664.0
+    },
+    {
+      "pair": "Aqua->SNPP",
+      "unit": "celldays_0.05",
+      "region": "PK_Punjab",
+      "month": 3,
+      "factor": 7.050561797752809,
+      "lo": 6.694177522317929,
+      "hi": 7.525905361260002,
+      "n_years": 10,
+      "sum_a": 1958.0,
+      "sum_s": 13805.0
+    },
+    {
+      "pair": "Aqua->SNPP",
+      "unit": "celldays_0.05",
+      "region": "PK_Punjab",
+      "month": 4,
+      "factor": 7.772451046590142,
+      "lo": 7.030244984862216,
+      "hi": 9.093323622783544,
+      "n_years": 10,
+      "sum_a": 1481.0,
+      "sum_s": 11511.0
+    },
+    {
+      "pair": "Aqua->SNPP",
+      "unit": "celldays_0.05",
+      "region": "PK_Punjab",
+      "month": 5,
+      "factor": 7.6749605747327845,
+      "lo": 6.823397224995369,
+      "hi": 8.6697677663304,
+      "n_years": 10,
+      "sum_a": 5707.0,
+      "sum_s": 43801.0
+    },
+    {
+      "pair": "Aqua->SNPP",
+      "unit": "celldays_0.05",
+      "region": "PK_Punjab",
+      "month": 6,
+      "factor": 14.780821917808218,
+      "lo": 12.99822767200952,
+      "hi": 17.196490628166156,
+      "n_years": 10,
+      "sum_a": 511.0,
+      "sum_s": 7553.0
+    },
+    {
+      "pair": "Aqua->SNPP",
+      "unit": "celldays_0.05",
+      "region": "PK_Punjab",
+      "month": 7,
+      "factor": 10.577142857142857,
+      "lo": 8.58222884331116,
+      "hi": 12.586187961468877,
+      "n_years": 10,
+      "sum_a": 350.0,
+      "sum_s": 3702.0
+    },
+    {
+      "pair": "Aqua->SNPP",
+      "unit": "celldays_0.05",
+      "region": "PK_Punjab",
+      "month": 8,
+      "factor": 3.160220994475138,
+      "lo": 2.077365804735534,
+      "hi": 4.4189207299290345,
+      "n_years": 10,
+      "sum_a": 362.0,
+      "sum_s": 1144.0
+    },
+    {
+      "pair": "Aqua->SNPP",
+      "unit": "celldays_0.05",
+      "region": "PK_Punjab",
+      "month": 9,
+      "factor": 6.551594746716698,
+      "lo": 5.311362024957459,
+      "hi": 7.720500358709634,
+      "n_years": 10,
+      "sum_a": 533.0,
+      "sum_s": 3492.0
+    },
+    {
+      "pair": "Aqua->SNPP",
+      "unit": "celldays_0.05",
+      "region": "PK_Punjab",
+      "month": 10,
+      "factor": 6.166590178981184,
+      "lo": 5.594329520570884,
+      "hi": 6.937003524739769,
+      "n_years": 10,
+      "sum_a": 4358.0,
+      "sum_s": 26874.0
+    },
+    {
+      "pair": "Aqua->SNPP",
+      "unit": "celldays_0.05",
+      "region": "PK_Punjab",
+      "month": 11,
+      "factor": 5.164425162689804,
+      "lo": 4.686193758248914,
+      "hi": 5.728808597758894,
+      "n_years": 10,
+      "sum_a": 9220.0,
+      "sum_s": 47616.0
+    },
+    {
+      "pair": "Aqua->SNPP",
+      "unit": "celldays_0.05",
+      "region": "PK_Punjab",
+      "month": 12,
+      "factor": 6.445081184336199,
+      "lo": 6.208962289570117,
+      "hi": 6.703949832640041,
+      "n_years": 10,
+      "sum_a": 3141.0,
+      "sum_s": 20244.0
+    },
+    {
+      "pair": "Aqua->SNPP",
+      "unit": "celldays_0.05",
+      "region": "rest_of_box",
+      "month": 1,
+      "factor": 6.814005463123913,
+      "lo": 6.455333778120363,
+      "hi": 7.12818992784177,
+      "n_years": 10,
+      "sum_a": 4027.0,
+      "sum_s": 27440.0
+    },
+    {
+      "pair": "Aqua->SNPP",
+      "unit": "celldays_0.05",
+      "region": "rest_of_box",
+      "month": 2,
+      "factor": 6.529820188712836,
+      "lo": 6.181636168152812,
+      "hi": 6.87731989152718,
+      "n_years": 10,
+      "sum_a": 5617.0,
+      "sum_s": 36678.0
+    },
+    {
+      "pair": "Aqua->SNPP",
+      "unit": "celldays_0.05",
+      "region": "rest_of_box",
+      "month": 3,
+      "factor": 7.218607542478243,
+      "lo": 6.704914922796382,
+      "hi": 8.06700909838352,
+      "n_years": 10,
+      "sum_a": 4826.0,
+      "sum_s": 34837.0
+    },
+    {
+      "pair": "Aqua->SNPP",
+      "unit": "celldays_0.05",
+      "region": "rest_of_box",
+      "month": 4,
+      "factor": 7.616132993293662,
+      "lo": 7.067337936242048,
+      "hi": 8.496598999795957,
+      "n_years": 10,
+      "sum_a": 10587.0,
+      "sum_s": 80632.0
+    },
+    {
+      "pair": "Aqua->SNPP",
+      "unit": "celldays_0.05",
+      "region": "rest_of_box",
+      "month": 5,
+      "factor": 9.881363959270661,
+      "lo": 9.105568678190703,
+      "hi": 11.203365972792627,
+      "n_years": 10,
+      "sum_a": 8446.0,
+      "sum_s": 83458.0
+    },
+    {
+      "pair": "Aqua->SNPP",
+      "unit": "celldays_0.05",
+      "region": "rest_of_box",
+      "month": 6,
+      "factor": 12.127602776294715,
+      "lo": 10.693246521987266,
+      "hi": 14.691359630145229,
+      "n_years": 10,
+      "sum_a": 1873.0,
+      "sum_s": 22715.0
+    },
+    {
+      "pair": "Aqua->SNPP",
+      "unit": "celldays_0.05",
+      "region": "rest_of_box",
+      "month": 7,
+      "factor": 6.2317073170731705,
+      "lo": 4.591425465838509,
+      "hi": 7.835994897959182,
+      "n_years": 10,
+      "sum_a": 328.0,
+      "sum_s": 2044.0
+    },
+    {
+      "pair": "Aqua->SNPP",
+      "unit": "celldays_0.05",
+      "region": "rest_of_box",
+      "month": 8,
+      "factor": 2.3213296398891967,
+      "lo": 1.7421377142550105,
+      "hi": 3.442477042256979,
+      "n_years": 10,
+      "sum_a": 361.0,
+      "sum_s": 838.0
+    },
+    {
+      "pair": "Aqua->SNPP",
+      "unit": "celldays_0.05",
+      "region": "rest_of_box",
+      "month": 9,
+      "factor": 8.17142857142857,
+      "lo": 6.216585281783191,
+      "hi": 10.115486725663716,
+      "n_years": 10,
+      "sum_a": 280.0,
+      "sum_s": 2288.0
+    },
+    {
+      "pair": "Aqua->SNPP",
+      "unit": "celldays_0.05",
+      "region": "rest_of_box",
+      "month": 10,
+      "factor": 5.554327401348513,
+      "lo": 5.134783164336761,
+      "hi": 6.038601165938423,
+      "n_years": 10,
+      "sum_a": 9047.0,
+      "sum_s": 50250.0
+    },
+    {
+      "pair": "Aqua->SNPP",
+      "unit": "celldays_0.05",
+      "region": "rest_of_box",
+      "month": 11,
+      "factor": 4.975938601949803,
+      "lo": 4.8162941985089445,
+      "hi": 5.143410369489577,
+      "n_years": 10,
+      "sum_a": 14463.0,
+      "sum_s": 71967.0
+    },
+    {
+      "pair": "Aqua->SNPP",
+      "unit": "celldays_0.05",
+      "region": "rest_of_box",
+      "month": 12,
+      "factor": 7.479604709840202,
+      "lo": 7.14518856986139,
+      "hi": 7.942912951828046,
+      "n_years": 10,
+      "sum_a": 4756.0,
+      "sum_s": 35573.0
+    },
+    {
+      "pair": "Aqua->SNPP",
+      "unit": "celldays_0.1",
+      "region": "IN_Punjab",
+      "month": 1,
+      "factor": 5.743396226415094,
+      "lo": 4.506458165457964,
+      "hi": 7.4774087830456635,
+      "n_years": 10,
+      "sum_a": 265.0,
+      "sum_s": 1522.0
+    },
+    {
+      "pair": "Aqua->SNPP",
+      "unit": "celldays_0.1",
+      "region": "IN_Punjab",
+      "month": 2,
+      "factor": 7.197333333333333,
+      "lo": 6.152584956362512,
+      "hi": 8.611871112929624,
+      "n_years": 10,
+      "sum_a": 375.0,
+      "sum_s": 2699.0
+    },
+    {
+      "pair": "Aqua->SNPP",
+      "unit": "celldays_0.1",
+      "region": "IN_Punjab",
+      "month": 3,
+      "factor": 9.03225806451613,
+      "lo": 7.498118149490221,
+      "hi": 11.470153243050605,
+      "n_years": 10,
+      "sum_a": 248.0,
+      "sum_s": 2240.0
+    },
+    {
+      "pair": "Aqua->SNPP",
+      "unit": "celldays_0.1",
+      "region": "IN_Punjab",
+      "month": 4,
+      "factor": 4.148905109489051,
+      "lo": 3.503626949919268,
+      "hi": 5.509933774834437,
+      "n_years": 10,
+      "sum_a": 685.0,
+      "sum_s": 2842.0
+    },
+    {
+      "pair": "Aqua->SNPP",
+      "unit": "celldays_0.1",
+      "region": "IN_Punjab",
+      "month": 5,
+      "factor": 4.917364447494853,
+      "lo": 4.496099851014213,
+      "hi": 5.483523961742971,
+      "n_years": 10,
+      "sum_a": 7285.0,
+      "sum_s": 35823.0
+    },
+    {
+      "pair": "Aqua->SNPP",
+      "unit": "celldays_0.1",
+      "region": "IN_Punjab",
+      "month": 6,
+      "factor": 10.797872340425531,
+      "lo": 9.44240317775571,
+      "hi": 12.775447287418238,
+      "n_years": 10,
+      "sum_a": 188.0,
+      "sum_s": 2030.0
+    },
+    {
+      "pair": "Aqua->SNPP",
+      "unit": "celldays_0.1",
+      "region": "IN_Punjab",
+      "month": 7,
+      "factor": 4.370786516853933,
+      "lo": 2.426555555555556,
+      "hi": 7.083854166666663,
+      "n_years": 10,
+      "sum_a": 89.0,
+      "sum_s": 389.0
+    },
+    {
+      "pair": "Aqua->SNPP",
+      "unit": "celldays_0.1",
+      "region": "IN_Punjab",
+      "month": 8,
+      "factor": 0.5555555555555556,
+      "lo": 0.24993556701030928,
+      "hi": 1.682272727272725,
+      "n_years": 10,
+      "sum_a": 45.0,
+      "sum_s": 25.0
+    },
+    {
+      "pair": "Aqua->SNPP",
+      "unit": "celldays_0.1",
+      "region": "IN_Punjab",
+      "month": 9,
+      "factor": 5.5055762081784385,
+      "lo": 4.7831418581418585,
+      "hi": 6.36467972708906,
+      "n_years": 10,
+      "sum_a": 269.0,
+      "sum_s": 1481.0
+    },
+    {
+      "pair": "Aqua->SNPP",
+      "unit": "celldays_0.1",
+      "region": "IN_Punjab",
+      "month": 10,
+      "factor": 2.486873508353222,
+      "lo": 2.390984308306174,
+      "hi": 2.59290176935328,
+      "n_years": 10,
+      "sum_a": 22626.0,
+      "sum_s": 56268.0
+    },
+    {
+      "pair": "Aqua->SNPP",
+      "unit": "celldays_0.1",
+      "region": "IN_Punjab",
+      "month": 11,
+      "factor": 2.148638222359386,
+      "lo": 2.011041197810108,
+      "hi": 2.2958994479477535,
+      "n_years": 10,
+      "sum_a": 25922.0,
+      "sum_s": 55697.0
+    },
+    {
+      "pair": "Aqua->SNPP",
+      "unit": "celldays_0.1",
+      "region": "IN_Punjab",
+      "month": 12,
+      "factor": 6.134199134199134,
+      "lo": 5.756685944179029,
+      "hi": 6.618548074258797,
+      "n_years": 10,
+      "sum_a": 462.0,
+      "sum_s": 2834.0
+    },
+    {
+      "pair": "Aqua->SNPP",
+      "unit": "celldays_0.1",
+      "region": "PK_Punjab",
+      "month": 1,
+      "factor": 4.786577181208053,
+      "lo": 4.450093729400132,
+      "hi": 5.1356061301692515,
+      "n_years": 10,
+      "sum_a": 2980.0,
+      "sum_s": 14264.0
+    },
+    {
+      "pair": "Aqua->SNPP",
+      "unit": "celldays_0.1",
+      "region": "PK_Punjab",
+      "month": 2,
+      "factor": 5.5546454481628835,
+      "lo": 5.2037736825443215,
+      "hi": 5.9558833633742365,
+      "n_years": 10,
+      "sum_a": 4273.0,
+      "sum_s": 23735.0
+    },
+    {
+      "pair": "Aqua->SNPP",
+      "unit": "celldays_0.1",
+      "region": "PK_Punjab",
+      "month": 3,
+      "factor": 6.818622174381055,
+      "lo": 6.447462598267287,
+      "hi": 7.245331437087552,
+      "n_years": 10,
+      "sum_a": 1858.0,
+      "sum_s": 12669.0
+    },
+    {
+      "pair": "Aqua->SNPP",
+      "unit": "celldays_0.1",
+      "region": "PK_Punjab",
+      "month": 4,
+      "factor": 7.338483146067416,
+      "lo": 6.6892979583108225,
+      "hi": 8.456777930429189,
+      "n_years": 10,
+      "sum_a": 1424.0,
+      "sum_s": 10450.0
+    },
+    {
+      "pair": "Aqua->SNPP",
+      "unit": "celldays_0.1",
+      "region": "PK_Punjab",
+      "month": 5,
+      "factor": 6.769458711971553,
+      "lo": 6.007300777453839,
+      "hi": 7.620865338686303,
+      "n_years": 10,
+      "sum_a": 5062.0,
+      "sum_s": 34267.0
+    },
+    {
+      "pair": "Aqua->SNPP",
+      "unit": "celldays_0.1",
+      "region": "PK_Punjab",
+      "month": 6,
+      "factor": 13.76,
+      "lo": 12.027942720137414,
+      "hi": 16.079975895316803,
+      "n_years": 10,
+      "sum_a": 475.0,
+      "sum_s": 6536.0
+    },
+    {
+      "pair": "Aqua->SNPP",
+      "unit": "celldays_0.1",
+      "region": "PK_Punjab",
+      "month": 7,
+      "factor": 9.51044776119403,
+      "lo": 7.934885356724551,
+      "hi": 11.06912791974552,
+      "n_years": 10,
+      "sum_a": 335.0,
+      "sum_s": 3186.0
+    },
+    {
+      "pair": "Aqua->SNPP",
+      "unit": "celldays_0.1",
+      "region": "PK_Punjab",
+      "month": 8,
+      "factor": 3.0028248587570623,
+      "lo": 1.9686271113401888,
+      "hi": 4.173755509805472,
+      "n_years": 10,
+      "sum_a": 354.0,
+      "sum_s": 1063.0
+    },
+    {
+      "pair": "Aqua->SNPP",
+      "unit": "celldays_0.1",
+      "region": "PK_Punjab",
+      "month": 9,
+      "factor": 5.911417322834645,
+      "lo": 4.721812958940017,
+      "hi": 7.023177447006597,
+      "n_years": 10,
+      "sum_a": 508.0,
+      "sum_s": 3003.0
+    },
+    {
+      "pair": "Aqua->SNPP",
+      "unit": "celldays_0.1",
+      "region": "PK_Punjab",
+      "month": 10,
+      "factor": 5.574180114523686,
+      "lo": 5.015264233647778,
+      "hi": 6.306667664662964,
+      "n_years": 10,
+      "sum_a": 3842.0,
+      "sum_s": 21416.0
+    },
+    {
+      "pair": "Aqua->SNPP",
+      "unit": "celldays_0.1",
+      "region": "PK_Punjab",
+      "month": 11,
+      "factor": 4.605975485188968,
+      "lo": 4.187661972675226,
+      "hi": 5.092831624087656,
+      "n_years": 10,
+      "sum_a": 7832.0,
+      "sum_s": 36074.0
+    },
+    {
+      "pair": "Aqua->SNPP",
+      "unit": "celldays_0.1",
+      "region": "PK_Punjab",
+      "month": 12,
+      "factor": 6.210385259631491,
+      "lo": 5.992817584938475,
+      "hi": 6.451811237743771,
+      "n_years": 10,
+      "sum_a": 2985.0,
+      "sum_s": 18538.0
+    },
+    {
+      "pair": "Aqua->SNPP",
+      "unit": "celldays_0.1",
+      "region": "rest_of_box",
+      "month": 1,
+      "factor": 6.718136613451976,
+      "lo": 6.386375477346434,
+      "hi": 7.0019631044788735,
+      "n_years": 10,
+      "sum_a": 3821.0,
+      "sum_s": 25670.0
+    },
+    {
+      "pair": "Aqua->SNPP",
+      "unit": "celldays_0.1",
+      "region": "rest_of_box",
+      "month": 2,
+      "factor": 6.495334370139969,
+      "lo": 6.189770998082424,
+      "hi": 6.807288811808609,
+      "n_years": 10,
+      "sum_a": 5144.0,
+      "sum_s": 33412.0
+    },
+    {
+      "pair": "Aqua->SNPP",
+      "unit": "celldays_0.1",
+      "region": "rest_of_box",
+      "month": 3,
+      "factor": 7.063586459286368,
+      "lo": 6.528084543387875,
+      "hi": 7.999665505364139,
+      "n_years": 10,
+      "sum_a": 4372.0,
+      "sum_s": 30882.0
+    },
+    {
+      "pair": "Aqua->SNPP",
+      "unit": "celldays_0.1",
+      "region": "rest_of_box",
+      "month": 4,
+      "factor": 6.845555318695374,
+      "lo": 6.283783087595049,
+      "hi": 7.69648233869462,
+      "n_years": 10,
+      "sum_a": 9382.0,
+      "sum_s": 64225.0
+    },
+    {
+      "pair": "Aqua->SNPP",
+      "unit": "celldays_0.1",
+      "region": "rest_of_box",
+      "month": 5,
+      "factor": 8.879994742376446,
+      "lo": 8.117492433653405,
+      "hi": 10.18741103374872,
+      "n_years": 10,
+      "sum_a": 7608.0,
+      "sum_s": 67559.0
+    },
+    {
+      "pair": "Aqua->SNPP",
+      "unit": "celldays_0.1",
+      "region": "rest_of_box",
+      "month": 6,
+      "factor": 11.264792032806092,
+      "lo": 9.858570591126718,
+      "hi": 13.895030565556555,
+      "n_years": 10,
+      "sum_a": 1707.0,
+      "sum_s": 19229.0
+    },
+    {
+      "pair": "Aqua->SNPP",
+      "unit": "celldays_0.1",
+      "region": "rest_of_box",
+      "month": 7,
+      "factor": 6.1645569620253164,
+      "lo": 4.533545101626469,
+      "hi": 7.7827589435619275,
+      "n_years": 10,
+      "sum_a": 316.0,
+      "sum_s": 1948.0
+    },
+    {
+      "pair": "Aqua->SNPP",
+      "unit": "celldays_0.1",
+      "region": "rest_of_box",
+      "month": 8,
+      "factor": 2.3068181818181817,
+      "lo": 1.7219600491593048,
+      "hi": 3.4447645600991312,
+      "n_years": 10,
+      "sum_a": 352.0,
+      "sum_s": 812.0
+    },
+    {
+      "pair": "Aqua->SNPP",
+      "unit": "celldays_0.1",
+      "region": "rest_of_box",
+      "month": 9,
+      "factor": 8.096296296296297,
+      "lo": 6.20149481611141,
+      "hi": 9.991671583667687,
+      "n_years": 10,
+      "sum_a": 270.0,
+      "sum_s": 2186.0
+    },
+    {
+      "pair": "Aqua->SNPP",
+      "unit": "celldays_0.1",
+      "region": "rest_of_box",
+      "month": 10,
+      "factor": 5.122720416838064,
+      "lo": 4.680836000555049,
+      "hi": 5.637846706992498,
+      "n_years": 10,
+      "sum_a": 7293.0,
+      "sum_s": 37360.0
+    },
+    {
+      "pair": "Aqua->SNPP",
+      "unit": "celldays_0.1",
+      "region": "rest_of_box",
+      "month": 11,
+      "factor": 4.734083714386212,
+      "lo": 4.5535887621943925,
+      "hi": 4.921943816767681,
+      "n_years": 10,
+      "sum_a": 11372.0,
+      "sum_s": 53836.0
+    },
+    {
+      "pair": "Aqua->SNPP",
+      "unit": "celldays_0.1",
+      "region": "rest_of_box",
+      "month": 12,
+      "factor": 7.201984564498346,
+      "lo": 6.841797584091957,
+      "hi": 7.680518713879242,
+      "n_years": 10,
+      "sum_a": 4535.0,
+      "sum_s": 32661.0
+    },
+    {
+      "pair": "Aqua->SNPP",
+      "unit": "celldays_0.25",
+      "region": "IN_Punjab",
+      "month": 1,
+      "factor": 5.016326530612245,
+      "lo": 4.020822192513369,
+      "hi": 6.432373733072139,
+      "n_years": 10,
+      "sum_a": 245.0,
+      "sum_s": 1229.0
+    },
+    {
+      "pair": "Aqua->SNPP",
+      "unit": "celldays_0.25",
+      "region": "IN_Punjab",
+      "month": 2,
+      "factor": 6.39375,
+      "lo": 5.471182598300816,
+      "hi": 7.535468296726067,
+      "n_years": 10,
+      "sum_a": 320.0,
+      "sum_s": 2046.0
+    },
+    {
+      "pair": "Aqua->SNPP",
+      "unit": "celldays_0.25",
+      "region": "IN_Punjab",
+      "month": 3,
+      "factor": 7.701298701298701,
+      "lo": 6.483425113847192,
+      "hi": 9.704604231974923,
+      "n_years": 10,
+      "sum_a": 231.0,
+      "sum_s": 1779.0
+    },
+    {
+      "pair": "Aqua->SNPP",
+      "unit": "celldays_0.25",
+      "region": "IN_Punjab",
+      "month": 4,
+      "factor": 3.6083788706739526,
+      "lo": 3.0417827298050137,
+      "hi": 4.701424963924963,
+      "n_years": 10,
+      "sum_a": 549.0,
+      "sum_s": 1981.0
+    },
+    {
+      "pair": "Aqua->SNPP",
+      "unit": "celldays_0.25",
+      "region": "IN_Punjab",
+      "month": 5,
+      "factor": 3.1598739022742626,
+      "lo": 2.886050514610535,
+      "hi": 3.503903339102107,
+      "n_years": 10,
+      "sum_a": 4441.0,
+      "sum_s": 14033.0
+    },
+    {
+      "pair": "Aqua->SNPP",
+      "unit": "celldays_0.25",
+      "region": "IN_Punjab",
+      "month": 6,
+      "factor": 9.182857142857143,
+      "lo": 8.04395154185022,
+      "hi": 11.062629229323308,
+      "n_years": 10,
+      "sum_a": 175.0,
+      "sum_s": 1607.0
+    },
+    {
+      "pair": "Aqua->SNPP",
+      "unit": "celldays_0.25",
+      "region": "IN_Punjab",
+      "month": 7,
+      "factor": 3.308641975308642,
+      "lo": 2.0260841332580464,
+      "hi": 5.05489524576954,
+      "n_years": 10,
+      "sum_a": 81.0,
+      "sum_s": 268.0
+    },
+    {
+      "pair": "Aqua->SNPP",
+      "unit": "celldays_0.25",
+      "region": "IN_Punjab",
+      "month": 8,
+      "factor": 0.5454545454545454,
+      "lo": 0.25,
+      "hi": 1.6,
+      "n_years": 10,
+      "sum_a": 44.0,
+      "sum_s": 24.0
+    },
+    {
+      "pair": "Aqua->SNPP",
+      "unit": "celldays_0.25",
+      "region": "IN_Punjab",
+      "month": 9,
+      "factor": 5.040697674418604,
+      "lo": 4.716410005059449,
+      "hi": 5.523509457236842,
+      "n_years": 10,
+      "sum_a": 172.0,
+      "sum_s": 867.0
+    },
+    {
+      "pair": "Aqua->SNPP",
+      "unit": "celldays_0.25",
+      "region": "IN_Punjab",
+      "month": 10,
+      "factor": 1.961683121767748,
+      "lo": 1.8969124796982322,
+      "hi": 2.0375040538244282,
+      "n_years": 10,
+      "sum_a": 8508.0,
+      "sum_s": 16690.0
+    },
+    {
+      "pair": "Aqua->SNPP",
+      "unit": "celldays_0.25",
+      "region": "IN_Punjab",
+      "month": 11,
+      "factor": 1.7622232472324724,
+      "lo": 1.6815238600909241,
+      "hi": 1.8417508087243892,
+      "n_years": 10,
+      "sum_a": 8672.0,
+      "sum_s": 15282.0
+    },
+    {
+      "pair": "Aqua->SNPP",
+      "unit": "celldays_0.25",
+      "region": "IN_Punjab",
+      "month": 12,
+      "factor": 5.185446009389671,
+      "lo": 4.882739996152366,
+      "hi": 5.633563924182773,
+      "n_years": 10,
+      "sum_a": 426.0,
+      "sum_s": 2209.0
+    },
+    {
+      "pair": "Aqua->SNPP",
+      "unit": "celldays_0.25",
+      "region": "PK_Punjab",
+      "month": 1,
+      "factor": 4.122090805036246,
+      "lo": 3.900718390804598,
+      "hi": 4.337275782789282,
+      "n_years": 10,
+      "sum_a": 2621.0,
+      "sum_s": 10804.0
+    },
+    {
+      "pair": "Aqua->SNPP",
+      "unit": "celldays_0.25",
+      "region": "PK_Punjab",
+      "month": 2,
+      "factor": 4.413869625520111,
+      "lo": 4.127522119112345,
+      "hi": 4.723541356665888,
+      "n_years": 10,
+      "sum_a": 3605.0,
+      "sum_s": 15912.0
+    },
+    {
+      "pair": "Aqua->SNPP",
+      "unit": "celldays_0.25",
+      "region": "PK_Punjab",
+      "month": 3,
+      "factor": 5.728710462287105,
+      "lo": 5.400671466922558,
+      "hi": 6.13450303300128,
+      "n_years": 10,
+      "sum_a": 1644.0,
+      "sum_s": 9418.0
+    },
+    {
+      "pair": "Aqua->SNPP",
+      "unit": "celldays_0.25",
+      "region": "PK_Punjab",
+      "month": 4,
+      "factor": 6.090627420604183,
+      "lo": 5.584653105309112,
+      "hi": 6.921637319115179,
+      "n_years": 10,
+      "sum_a": 1291.0,
+      "sum_s": 7863.0
+    },
+    {
+      "pair": "Aqua->SNPP",
+      "unit": "celldays_0.25",
+      "region": "PK_Punjab",
+      "month": 5,
+      "factor": 5.22481243301179,
+      "lo": 4.7618419501336335,
+      "hi": 5.7127569997566745,
+      "n_years": 10,
+      "sum_a": 3732.0,
+      "sum_s": 19499.0
+    },
+    {
+      "pair": "Aqua->SNPP",
+      "unit": "celldays_0.25",
+      "region": "PK_Punjab",
+      "month": 6,
+      "factor": 11.007009345794392,
+      "lo": 9.682757575757575,
+      "hi": 12.912131444788983,
+      "n_years": 10,
+      "sum_a": 428.0,
+      "sum_s": 4711.0
+    },
+    {
+      "pair": "Aqua->SNPP",
+      "unit": "celldays_0.25",
+      "region": "PK_Punjab",
+      "month": 7,
+      "factor": 6.906148867313916,
+      "lo": 6.127933417378718,
+      "hi": 7.833383233532934,
+      "n_years": 10,
+      "sum_a": 309.0,
+      "sum_s": 2134.0
+    },
+    {
+      "pair": "Aqua->SNPP",
+      "unit": "celldays_0.25",
+      "region": "PK_Punjab",
+      "month": 8,
+      "factor": 2.7387387387387387,
+      "lo": 1.8560406055461234,
+      "hi": 3.798407286417437,
+      "n_years": 10,
+      "sum_a": 333.0,
+      "sum_s": 912.0
+    },
+    {
+      "pair": "Aqua->SNPP",
+      "unit": "celldays_0.25",
+      "region": "PK_Punjab",
+      "month": 9,
+      "factor": 5.0,
+      "lo": 4.111236958141846,
+      "hi": 5.822071135285022,
+      "n_years": 10,
+      "sum_a": 418.0,
+      "sum_s": 2090.0
+    },
+    {
+      "pair": "Aqua->SNPP",
+      "unit": "celldays_0.25",
+      "region": "PK_Punjab",
+      "month": 10,
+      "factor": 4.461510128913444,
+      "lo": 4.03377938010024,
+      "hi": 5.027222751756149,
+      "n_years": 10,
+      "sum_a": 2715.0,
+      "sum_s": 12113.0
+    },
+    {
+      "pair": "Aqua->SNPP",
+      "unit": "celldays_0.25",
+      "region": "PK_Punjab",
+      "month": 11,
+      "factor": 3.749323540780827,
+      "lo": 3.4721740026875043,
+      "hi": 4.035992903042919,
+      "n_years": 10,
+      "sum_a": 5174.0,
+      "sum_s": 19399.0
+    },
+    {
+      "pair": "Aqua->SNPP",
+      "unit": "celldays_0.25",
+      "region": "PK_Punjab",
+      "month": 12,
+      "factor": 5.105980317940954,
+      "lo": 4.926425947028138,
+      "hi": 5.333344489067381,
+      "n_years": 10,
+      "sum_a": 2642.0,
+      "sum_s": 13490.0
+    },
+    {
+      "pair": "Aqua->SNPP",
+      "unit": "celldays_0.25",
+      "region": "rest_of_box",
+      "month": 1,
+      "factor": 5.929468874928612,
+      "lo": 5.644056717231817,
+      "hi": 6.192196596224228,
+      "n_years": 10,
+      "sum_a": 3502.0,
+      "sum_s": 20765.0
+    },
+    {
+      "pair": "Aqua->SNPP",
+      "unit": "celldays_0.25",
+      "region": "rest_of_box",
+      "month": 2,
+      "factor": 5.8356347438752785,
+      "lo": 5.60342870811924,
+      "hi": 6.05338441890166,
+      "n_years": 10,
+      "sum_a": 4490.0,
+      "sum_s": 26202.0
+    },
+    {
+      "pair": "Aqua->SNPP",
+      "unit": "celldays_0.25",
+      "region": "rest_of_box",
+      "month": 3,
+      "factor": 6.353462157809984,
+      "lo": 5.76168325776955,
+      "hi": 7.394204366256719,
+      "n_years": 10,
+      "sum_a": 3726.0,
+      "sum_s": 23673.0
+    },
+    {
+      "pair": "Aqua->SNPP",
+      "unit": "celldays_0.25",
+      "region": "rest_of_box",
+      "month": 4,
+      "factor": 5.384763212079616,
+      "lo": 4.875932314310647,
+      "hi": 6.07117604945552,
+      "n_years": 10,
+      "sum_a": 7285.0,
+      "sum_s": 39228.0
+    },
+    {
+      "pair": "Aqua->SNPP",
+      "unit": "celldays_0.25",
+      "region": "rest_of_box",
+      "month": 5,
+      "factor": 7.13762392875147,
+      "lo": 6.493224237706853,
+      "hi": 8.136363476948171,
+      "n_years": 10,
+      "sum_a": 5951.0,
+      "sum_s": 42476.0
+    },
+    {
+      "pair": "Aqua->SNPP",
+      "unit": "celldays_0.25",
+      "region": "rest_of_box",
+      "month": 6,
+      "factor": 9.437759336099585,
+      "lo": 8.002675403494731,
+      "hi": 11.937744185289663,
+      "n_years": 10,
+      "sum_a": 1446.0,
+      "sum_s": 13647.0
+    },
+    {
+      "pair": "Aqua->SNPP",
+      "unit": "celldays_0.25",
+      "region": "rest_of_box",
+      "month": 7,
+      "factor": 5.885521885521886,
+      "lo": 4.345081137309293,
+      "hi": 7.576788718178759,
+      "n_years": 10,
+      "sum_a": 297.0,
+      "sum_s": 1748.0
+    },
+    {
+      "pair": "Aqua->SNPP",
+      "unit": "celldays_0.25",
+      "region": "rest_of_box",
+      "month": 8,
+      "factor": 2.4722222222222223,
+      "lo": 1.859577480484153,
+      "hi": 3.6227219346700874,
+      "n_years": 10,
+      "sum_a": 324.0,
+      "sum_s": 801.0
+    },
+    {
+      "pair": "Aqua->SNPP",
+      "unit": "celldays_0.25",
+      "region": "rest_of_box",
+      "month": 9,
+      "factor": 7.747035573122529,
+      "lo": 5.9238392723741224,
+      "hi": 9.613507708937815,
+      "n_years": 10,
+      "sum_a": 253.0,
+      "sum_s": 1960.0
+    },
+    {
+      "pair": "Aqua->SNPP",
+      "unit": "celldays_0.25",
+      "region": "rest_of_box",
+      "month": 10,
+      "factor": 4.678579025739205,
+      "lo": 4.321116398257853,
+      "hi": 5.078992582892915,
+      "n_years": 10,
+      "sum_a": 4701.0,
+      "sum_s": 21994.0
+    },
+    {
+      "pair": "Aqua->SNPP",
+      "unit": "celldays_0.25",
+      "region": "rest_of_box",
+      "month": 11,
+      "factor": 4.558002936857562,
+      "lo": 4.360037212874228,
+      "hi": 4.740237905875144,
+      "n_years": 10,
+      "sum_a": 7491.0,
+      "sum_s": 34144.0
+    },
+    {
+      "pair": "Aqua->SNPP",
+      "unit": "celldays_0.25",
+      "region": "rest_of_box",
+      "month": 12,
+      "factor": 6.270509977827051,
+      "lo": 5.862301216332721,
+      "hi": 6.731830151617029,
+      "n_years": 10,
+      "sum_a": 4059.0,
+      "sum_s": 25452.0
+    },
+    {
+      "pair": "Aqua->SNPP",
+      "unit": "hotspots",
+      "region": "IN_Punjab",
+      "month": 1,
+      "factor": 6.138801261829653,
+      "lo": 4.903948000192058,
+      "hi": 7.953239253148067,
+      "n_years": 10,
+      "sum_a": 317.0,
+      "sum_s": 1946.0
+    },
+    {
+      "pair": "Aqua->SNPP",
+      "unit": "hotspots",
+      "region": "IN_Punjab",
+      "month": 2,
+      "factor": 7.912854030501089,
+      "lo": 6.680968198897037,
+      "hi": 9.862223828205657,
+      "n_years": 10,
+      "sum_a": 459.0,
+      "sum_s": 3632.0
+    },
+    {
+      "pair": "Aqua->SNPP",
+      "unit": "hotspots",
+      "region": "IN_Punjab",
+      "month": 3,
+      "factor": 9.864077669902912,
+      "lo": 8.327942588325653,
+      "hi": 12.34300498678202,
+      "n_years": 10,
+      "sum_a": 309.0,
+      "sum_s": 3048.0
+    },
+    {
+      "pair": "Aqua->SNPP",
+      "unit": "hotspots",
+      "region": "IN_Punjab",
+      "month": 4,
+      "factor": 5.076433121019108,
+      "lo": 4.071133745184712,
+      "hi": 6.805982415902138,
+      "n_years": 10,
+      "sum_a": 1099.0,
+      "sum_s": 5579.0
+    },
+    {
+      "pair": "Aqua->SNPP",
+      "unit": "hotspots",
+      "region": "IN_Punjab",
+      "month": 5,
+      "factor": 9.23747478143914,
+      "lo": 8.27088856062086,
+      "hi": 10.680965129241692,
+      "n_years": 10,
+      "sum_a": 11896.0,
+      "sum_s": 109889.0
+    },
+    {
+      "pair": "Aqua->SNPP",
+      "unit": "hotspots",
+      "region": "IN_Punjab",
+      "month": 6,
+      "factor": 13.475609756097562,
+      "lo": 12.087183101554775,
+      "hi": 15.443082595870203,
+      "n_years": 10,
+      "sum_a": 246.0,
+      "sum_s": 3315.0
+    },
+    {
+      "pair": "Aqua->SNPP",
+      "unit": "hotspots",
+      "region": "IN_Punjab",
+      "month": 7,
+      "factor": 5.609523809523809,
+      "lo": 3.145758928571429,
+      "hi": 8.663732232039951,
+      "n_years": 10,
+      "sum_a": 105.0,
+      "sum_s": 589.0
+    },
+    {
+      "pair": "Aqua->SNPP",
+      "unit": "hotspots",
+      "region": "IN_Punjab",
+      "month": 8,
+      "factor": 0.5208333333333334,
+      "lo": 0.2288889736159829,
+      "hi": 1.682272727272725,
+      "n_years": 10,
+      "sum_a": 48.0,
+      "sum_s": 25.0
+    },
+    {
+      "pair": "Aqua->SNPP",
+      "unit": "hotspots",
+      "region": "IN_Punjab",
+      "month": 9,
+      "factor": 7.49636803874092,
+      "lo": 6.514349733028223,
+      "hi": 8.501556561085971,
+      "n_years": 10,
+      "sum_a": 413.0,
+      "sum_s": 3096.0
+    },
+    {
+      "pair": "Aqua->SNPP",
+      "unit": "hotspots",
+      "region": "IN_Punjab",
+      "month": 10,
+      "factor": 4.362213199886696,
+      "lo": 4.179007873668179,
+      "hi": 4.515025782248746,
+      "n_years": 10,
+      "sum_a": 52955.0,
+      "sum_s": 231001.0
+    },
+    {
+      "pair": "Aqua->SNPP",
+      "unit": "hotspots",
+      "region": "IN_Punjab",
+      "month": 11,
+      "factor": 5.439017201650501,
+      "lo": 5.091231726570587,
+      "hi": 5.916348215394851,
+      "n_years": 10,
+      "sum_a": 74644.0,
+      "sum_s": 405990.0
+    },
+    {
+      "pair": "Aqua->SNPP",
+      "unit": "hotspots",
+      "region": "IN_Punjab",
+      "month": 12,
+      "factor": 6.629963898916968,
+      "lo": 6.087409374001917,
+      "hi": 7.29263548795183,
+      "n_years": 10,
+      "sum_a": 554.0,
+      "sum_s": 3673.0
+    },
+    {
+      "pair": "Aqua->SNPP",
+      "unit": "hotspots",
+      "region": "PK_Punjab",
+      "month": 1,
+      "factor": 5.124738493723849,
+      "lo": 4.787927465079783,
+      "hi": 5.449595054837297,
+      "n_years": 10,
+      "sum_a": 3824.0,
+      "sum_s": 19597.0
+    },
+    {
+      "pair": "Aqua->SNPP",
+      "unit": "hotspots",
+      "region": "PK_Punjab",
+      "month": 2,
+      "factor": 6.29665071770335,
+      "lo": 5.869465928435016,
+      "hi": 6.787339446790135,
+      "n_years": 10,
+      "sum_a": 5643.0,
+      "sum_s": 35532.0
+    },
+    {
+      "pair": "Aqua->SNPP",
+      "unit": "hotspots",
+      "region": "PK_Punjab",
+      "month": 3,
+      "factor": 7.74214103653356,
+      "lo": 7.353561621008805,
+      "hi": 8.27525044909063,
+      "n_years": 10,
+      "sum_a": 2354.0,
+      "sum_s": 18225.0
+    },
+    {
+      "pair": "Aqua->SNPP",
+      "unit": "hotspots",
+      "region": "PK_Punjab",
+      "month": 4,
+      "factor": 8.705051602390006,
+      "lo": 7.811990012271401,
+      "hi": 10.250786652835403,
+      "n_years": 10,
+      "sum_a": 1841.0,
+      "sum_s": 16026.0
+    },
+    {
+      "pair": "Aqua->SNPP",
+      "unit": "hotspots",
+      "region": "PK_Punjab",
+      "month": 5,
+      "factor": 10.001780334155026,
+      "lo": 9.063445245774979,
+      "hi": 11.151991473220923,
+      "n_years": 10,
+      "sum_a": 7302.0,
+      "sum_s": 73033.0
+    },
+    {
+      "pair": "Aqua->SNPP",
+      "unit": "hotspots",
+      "region": "PK_Punjab",
+      "month": 6,
+      "factor": 18.2013201320132,
+      "lo": 16.286115007012622,
+      "hi": 20.807809568480298,
+      "n_years": 10,
+      "sum_a": 606.0,
+      "sum_s": 11030.0
+    },
+    {
+      "pair": "Aqua->SNPP",
+      "unit": "hotspots",
+      "region": "PK_Punjab",
+      "month": 7,
+      "factor": 12.324324324324325,
+      "lo": 9.8611925221944,
+      "hi": 14.541079555723508,
+      "n_years": 10,
+      "sum_a": 407.0,
+      "sum_s": 5016.0
+    },
+    {
+      "pair": "Aqua->SNPP",
+      "unit": "hotspots",
+      "region": "PK_Punjab",
+      "month": 8,
+      "factor": 3.4975124378109452,
+      "lo": 2.3858253588516747,
+      "hi": 4.864097349776961,
+      "n_years": 10,
+      "sum_a": 402.0,
+      "sum_s": 1406.0
+    },
+    {
+      "pair": "Aqua->SNPP",
+      "unit": "hotspots",
+      "region": "PK_Punjab",
+      "month": 9,
+      "factor": 7.466996699669967,
+      "lo": 5.991762937062937,
+      "hi": 8.894572481697828,
+      "n_years": 10,
+      "sum_a": 606.0,
+      "sum_s": 4525.0
+    },
+    {
+      "pair": "Aqua->SNPP",
+      "unit": "hotspots",
+      "region": "PK_Punjab",
+      "month": 10,
+      "factor": 7.009329779131759,
+      "lo": 6.436814380446931,
+      "hi": 7.810487594510332,
+      "n_years": 10,
+      "sum_a": 5252.0,
+      "sum_s": 36813.0
+    },
+    {
+      "pair": "Aqua->SNPP",
+      "unit": "hotspots",
+      "region": "PK_Punjab",
+      "month": 11,
+      "factor": 6.154598825831703,
+      "lo": 5.654393721478291,
+      "hi": 6.808945481125678,
+      "n_years": 10,
+      "sum_a": 11242.0,
+      "sum_s": 69190.0
+    },
+    {
+      "pair": "Aqua->SNPP",
+      "unit": "hotspots",
+      "region": "PK_Punjab",
+      "month": 12,
+      "factor": 6.8628367234744365,
+      "lo": 6.546909538676984,
+      "hi": 7.171591169467452,
+      "n_years": 10,
+      "sum_a": 3638.0,
+      "sum_s": 24967.0
+    },
+    {
+      "pair": "Aqua->SNPP",
+      "unit": "hotspots",
+      "region": "rest_of_box",
+      "month": 1,
+      "factor": 7.7302524429967425,
+      "lo": 7.103808416839698,
+      "hi": 8.272545531925687,
+      "n_years": 10,
+      "sum_a": 4912.0,
+      "sum_s": 37971.0
+    },
+    {
+      "pair": "Aqua->SNPP",
+      "unit": "hotspots",
+      "region": "rest_of_box",
+      "month": 2,
+      "factor": 7.428674041086051,
+      "lo": 6.997230991399664,
+      "hi": 7.82668963155284,
+      "n_years": 10,
+      "sum_a": 6961.0,
+      "sum_s": 51711.0
+    },
+    {
+      "pair": "Aqua->SNPP",
+      "unit": "hotspots",
+      "region": "rest_of_box",
+      "month": 3,
+      "factor": 9.234426229508196,
+      "lo": 8.613049475302395,
+      "hi": 9.906539348855928,
+      "n_years": 10,
+      "sum_a": 6100.0,
+      "sum_s": 56330.0
+    },
+    {
+      "pair": "Aqua->SNPP",
+      "unit": "hotspots",
+      "region": "rest_of_box",
+      "month": 4,
+      "factor": 11.489587671803415,
+      "lo": 10.760235375015395,
+      "hi": 12.552242311052243,
+      "n_years": 10,
+      "sum_a": 14406.0,
+      "sum_s": 165519.0
+    },
+    {
+      "pair": "Aqua->SNPP",
+      "unit": "hotspots",
+      "region": "rest_of_box",
+      "month": 5,
+      "factor": 14.546540880503144,
+      "lo": 13.66250708943284,
+      "hi": 15.88699808711451,
+      "n_years": 10,
+      "sum_a": 11130.0,
+      "sum_s": 161903.0
+    },
+    {
+      "pair": "Aqua->SNPP",
+      "unit": "hotspots",
+      "region": "rest_of_box",
+      "month": 6,
+      "factor": 17.660047656870532,
+      "lo": 16.016276448199275,
+      "hi": 19.91514329268881,
+      "n_years": 10,
+      "sum_a": 2518.0,
+      "sum_s": 44468.0
+    },
+    {
+      "pair": "Aqua->SNPP",
+      "unit": "hotspots",
+      "region": "rest_of_box",
+      "month": 7,
+      "factor": 8.463730569948186,
+      "lo": 6.06730694980695,
+      "hi": 10.68110632183908,
+      "n_years": 10,
+      "sum_a": 386.0,
+      "sum_s": 3267.0
+    },
+    {
+      "pair": "Aqua->SNPP",
+      "unit": "hotspots",
+      "region": "rest_of_box",
+      "month": 8,
+      "factor": 2.711217183770883,
+      "lo": 2.0688160799349364,
+      "hi": 3.917100821460659,
+      "n_years": 10,
+      "sum_a": 419.0,
+      "sum_s": 1136.0
+    },
+    {
+      "pair": "Aqua->SNPP",
+      "unit": "hotspots",
+      "region": "rest_of_box",
+      "month": 9,
+      "factor": 9.306962025316455,
+      "lo": 6.876565601114819,
+      "hi": 11.803560825435824,
+      "n_years": 10,
+      "sum_a": 316.0,
+      "sum_s": 2941.0
+    },
+    {
+      "pair": "Aqua->SNPP",
+      "unit": "hotspots",
+      "region": "rest_of_box",
+      "month": 10,
+      "factor": 6.652014339364971,
+      "lo": 6.268095645879143,
+      "hi": 7.126324136318081,
+      "n_years": 10,
+      "sum_a": 11716.0,
+      "sum_s": 77935.0
+    },
+    {
+      "pair": "Aqua->SNPP",
+      "unit": "hotspots",
+      "region": "rest_of_box",
+      "month": 11,
+      "factor": 6.433839368140322,
+      "lo": 6.191971335994168,
+      "hi": 6.68778409930523,
+      "n_years": 10,
+      "sum_a": 19498.0,
+      "sum_s": 125447.0
+    },
+    {
+      "pair": "Aqua->SNPP",
+      "unit": "hotspots",
+      "region": "rest_of_box",
+      "month": 12,
+      "factor": 8.873319179051663,
+      "lo": 8.337079427315704,
+      "hi": 9.382511066422254,
+      "n_years": 10,
+      "sum_a": 5652.0,
+      "sum_s": 50152.0
+    },
+    {
+      "pair": "NOAA20->SNPP",
+      "unit": "celldays_0.05",
+      "region": "IN_Punjab",
+      "month": 1,
+      "factor": 1.063758389261745,
+      "lo": 0.9001670240844606,
+      "hi": 1.2310588673159228,
+      "n_years": 7,
+      "sum_a": 894.0,
+      "sum_s": 951.0
+    },
+    {
+      "pair": "NOAA20->SNPP",
+      "unit": "celldays_0.05",
+      "region": "IN_Punjab",
+      "month": 2,
+      "factor": 0.8648139425341498,
+      "lo": 0.8284031919999475,
+      "hi": 0.9040216153581778,
+      "n_years": 7,
+      "sum_a": 2123.0,
+      "sum_s": 1836.0
+    },
+    {
+      "pair": "NOAA20->SNPP",
+      "unit": "celldays_0.05",
+      "region": "IN_Punjab",
+      "month": 3,
+      "factor": 1.0121405750798722,
+      "lo": 0.929388363998011,
+      "hi": 1.1318437475556746,
+      "n_years": 7,
+      "sum_a": 1565.0,
+      "sum_s": 1584.0
+    },
+    {
+      "pair": "NOAA20->SNPP",
+      "unit": "celldays_0.05",
+      "region": "IN_Punjab",
+      "month": 4,
+      "factor": 0.970508658008658,
+      "lo": 0.8560348428679369,
+      "hi": 1.08156690944377,
+      "n_years": 7,
+      "sum_a": 3696.0,
+      "sum_s": 3587.0
+    },
+    {
+      "pair": "NOAA20->SNPP",
+      "unit": "celldays_0.05",
+      "region": "IN_Punjab",
+      "month": 5,
+      "factor": 1.0234336089251919,
+      "lo": 0.9904428087393387,
+      "hi": 1.0579069066050066,
+      "n_years": 7,
+      "sum_a": 40156.0,
+      "sum_s": 41097.0
+    },
+    {
+      "pair": "NOAA20->SNPP",
+      "unit": "celldays_0.05",
+      "region": "IN_Punjab",
+      "month": 6,
+      "factor": 1.0345334313005143,
+      "lo": 0.9505678022712091,
+      "hi": 1.1470588235294117,
+      "n_years": 7,
+      "sum_a": 2722.0,
+      "sum_s": 2816.0
+    },
+    {
+      "pair": "NOAA20->SNPP",
+      "unit": "celldays_0.05",
+      "region": "IN_Punjab",
+      "month": 7,
+      "factor": 0.8518518518518519,
+      "lo": 0.7633789204139098,
+      "hi": 0.9530869451762016,
+      "n_years": 7,
+      "sum_a": 648.0,
+      "sum_s": 552.0
+    },
+    {
+      "pair": "NOAA20->SNPP",
+      "unit": "celldays_0.05",
+      "region": "IN_Punjab",
+      "month": 8,
+      "factor": 1.0666666666666667,
+      "lo": 0.5184587813620072,
+      "hi": 1.903225806451613,
+      "n_years": 7,
+      "sum_a": 30.0,
+      "sum_s": 32.0
+    },
+    {
+      "pair": "NOAA20->SNPP",
+      "unit": "celldays_0.05",
+      "region": "IN_Punjab",
+      "month": 9,
+      "factor": 1.088638195004029,
+      "lo": 1.0149960536700868,
+      "hi": 1.1933349056603775,
+      "n_years": 7,
+      "sum_a": 1241.0,
+      "sum_s": 1351.0
+    },
+    {
+      "pair": "NOAA20->SNPP",
+      "unit": "celldays_0.05",
+      "region": "IN_Punjab",
+      "month": 10,
+      "factor": 0.9475343646509096,
+      "lo": 0.9182906989881051,
+      "hi": 0.9767175437092883,
+      "n_years": 7,
+      "sum_a": 44086.0,
+      "sum_s": 41773.0
+    },
+    {
+      "pair": "NOAA20->SNPP",
+      "unit": "celldays_0.05",
+      "region": "IN_Punjab",
+      "month": 11,
+      "factor": 0.9722511272979535,
+      "lo": 0.9520503675193823,
+      "hi": 0.9904746003030713,
+      "n_years": 7,
+      "sum_a": 69192.0,
+      "sum_s": 67272.0
+    },
+    {
+      "pair": "NOAA20->SNPP",
+      "unit": "celldays_0.05",
+      "region": "IN_Punjab",
+      "month": 12,
+      "factor": 0.9912434325744308,
+      "lo": 0.914384907473997,
+      "hi": 1.067769477054429,
+      "n_years": 7,
+      "sum_a": 1713.0,
+      "sum_s": 1698.0
+    },
+    {
+      "pair": "NOAA20->SNPP",
+      "unit": "celldays_0.05",
+      "region": "PK_Punjab",
+      "month": 1,
+      "factor": 0.9806021759298305,
+      "lo": 0.943163903386432,
+      "hi": 1.0134103304459416,
+      "n_years": 7,
+      "sum_a": 11857.0,
+      "sum_s": 11627.0
+    },
+    {
+      "pair": "NOAA20->SNPP",
+      "unit": "celldays_0.05",
+      "region": "PK_Punjab",
+      "month": 2,
+      "factor": 0.9480578966654453,
+      "lo": 0.9331069306045846,
+      "hi": 0.9640734574153004,
+      "n_years": 7,
+      "sum_a": 21832.0,
+      "sum_s": 20698.0
+    },
+    {
+      "pair": "NOAA20->SNPP",
+      "unit": "celldays_0.05",
+      "region": "PK_Punjab",
+      "month": 3,
+      "factor": 0.9508474576271186,
+      "lo": 0.9201292258136567,
+      "hi": 0.9876718824087245,
+      "n_years": 7,
+      "sum_a": 8260.0,
+      "sum_s": 7854.0
+    },
+    {
+      "pair": "NOAA20->SNPP",
+      "unit": "celldays_0.05",
+      "region": "PK_Punjab",
+      "month": 4,
+      "factor": 0.9581965419128913,
+      "lo": 0.9264416759589214,
+      "hi": 0.9892369089369936,
+      "n_years": 7,
+      "sum_a": 9138.0,
+      "sum_s": 8756.0
+    },
+    {
+      "pair": "NOAA20->SNPP",
+      "unit": "celldays_0.05",
+      "region": "PK_Punjab",
+      "month": 5,
+      "factor": 0.9801203720590917,
+      "lo": 0.9564528103118728,
+      "hi": 1.0049804189686569,
+      "n_years": 7,
+      "sum_a": 27415.0,
+      "sum_s": 26870.0
+    },
+    {
+      "pair": "NOAA20->SNPP",
+      "unit": "celldays_0.05",
+      "region": "PK_Punjab",
+      "month": 6,
+      "factor": 0.9611707089552238,
+      "lo": 0.8989403270013915,
+      "hi": 1.0295234007483902,
+      "n_years": 7,
+      "sum_a": 8576.0,
+      "sum_s": 8243.0
+    },
+    {
+      "pair": "NOAA20->SNPP",
+      "unit": "celldays_0.05",
+      "region": "PK_Punjab",
+      "month": 7,
+      "factor": 0.9770069375619426,
+      "lo": 0.9101237723990258,
+      "hi": 1.0303385011503152,
+      "n_years": 7,
+      "sum_a": 5045.0,
+      "sum_s": 4929.0
+    },
+    {
+      "pair": "NOAA20->SNPP",
+      "unit": "celldays_0.05",
+      "region": "PK_Punjab",
+      "month": 8,
+      "factor": 0.9647283126787417,
+      "lo": 0.9057425742574258,
+      "hi": 1.0434500648508431,
+      "n_years": 7,
+      "sum_a": 2098.0,
+      "sum_s": 2024.0
+    },
+    {
+      "pair": "NOAA20->SNPP",
+      "unit": "celldays_0.05",
+      "region": "PK_Punjab",
+      "month": 9,
+      "factor": 0.9351963382317514,
+      "lo": 0.8977116704805492,
+      "hi": 0.964252956591856,
+      "n_years": 7,
+      "sum_a": 4151.0,
+      "sum_s": 3882.0
+    },
+    {
+      "pair": "NOAA20->SNPP",
+      "unit": "celldays_0.05",
+      "region": "PK_Punjab",
+      "month": 10,
+      "factor": 0.9613001967786604,
+      "lo": 0.9322514429287917,
+      "hi": 0.9955089691624424,
+      "n_years": 7,
+      "sum_a": 27442.0,
+      "sum_s": 26380.0
+    },
+    {
+      "pair": "NOAA20->SNPP",
+      "unit": "celldays_0.05",
+      "region": "PK_Punjab",
+      "month": 11,
+      "factor": 0.9538274605103281,
+      "lo": 0.9294298526585522,
+      "hi": 0.9816475842251291,
+      "n_years": 7,
+      "sum_a": 32097.0,
+      "sum_s": 30615.0
+    },
+    {
+      "pair": "NOAA20->SNPP",
+      "unit": "celldays_0.05",
+      "region": "PK_Punjab",
+      "month": 12,
+      "factor": 0.9374912697304093,
+      "lo": 0.906753840388824,
+      "hi": 0.9750707769738911,
+      "n_years": 7,
+      "sum_a": 14318.0,
+      "sum_s": 13423.0
+    },
+    {
+      "pair": "NOAA20->SNPP",
+      "unit": "celldays_0.05",
+      "region": "rest_of_box",
+      "month": 1,
+      "factor": 0.9511659192825113,
+      "lo": 0.914606504665015,
+      "hi": 0.9921117569070426,
+      "n_years": 7,
+      "sum_a": 22300.0,
+      "sum_s": 21211.0
+    },
+    {
+      "pair": "NOAA20->SNPP",
+      "unit": "celldays_0.05",
+      "region": "rest_of_box",
+      "month": 2,
+      "factor": 0.9549564979105296,
+      "lo": 0.9410688424086014,
+      "hi": 0.9711528590493789,
+      "n_years": 7,
+      "sum_a": 29194.0,
+      "sum_s": 27879.0
+    },
+    {
+      "pair": "NOAA20->SNPP",
+      "unit": "celldays_0.05",
+      "region": "rest_of_box",
+      "month": 3,
+      "factor": 0.9731464455469591,
+      "lo": 0.9549999781223504,
+      "hi": 0.9907619166653503,
+      "n_years": 7,
+      "sum_a": 28823.0,
+      "sum_s": 28049.0
+    },
+    {
+      "pair": "NOAA20->SNPP",
+      "unit": "celldays_0.05",
+      "region": "rest_of_box",
+      "month": 4,
+      "factor": 0.9739148555388029,
+      "lo": 0.945886274618683,
+      "hi": 0.9984141578565907,
+      "n_years": 7,
+      "sum_a": 81579.0,
+      "sum_s": 79451.0
+    },
+    {
+      "pair": "NOAA20->SNPP",
+      "unit": "celldays_0.05",
+      "region": "rest_of_box",
+      "month": 5,
+      "factor": 0.9762151509488456,
+      "lo": 0.9518403950257782,
+      "hi": 0.9988175009854159,
+      "n_years": 7,
+      "sum_a": 58861.0,
+      "sum_s": 57461.0
+    },
+    {
+      "pair": "NOAA20->SNPP",
+      "unit": "celldays_0.05",
+      "region": "rest_of_box",
+      "month": 6,
+      "factor": 0.9536221370090164,
+      "lo": 0.931667148223057,
+      "hi": 0.9854471332647878,
+      "n_years": 7,
+      "sum_a": 19298.0,
+      "sum_s": 18403.0
+    },
+    {
+      "pair": "NOAA20->SNPP",
+      "unit": "celldays_0.05",
+      "region": "rest_of_box",
+      "month": 7,
+      "factor": 0.8745874587458746,
+      "lo": 0.8147282291057861,
+      "hi": 0.925564975128447,
+      "n_years": 7,
+      "sum_a": 2121.0,
+      "sum_s": 1855.0
+    },
+    {
+      "pair": "NOAA20->SNPP",
+      "unit": "celldays_0.05",
+      "region": "rest_of_box",
+      "month": 8,
+      "factor": 0.9728331177231565,
+      "lo": 0.8790202759023089,
+      "hi": 1.0788485607008762,
+      "n_years": 7,
+      "sum_a": 773.0,
+      "sum_s": 752.0
+    },
+    {
+      "pair": "NOAA20->SNPP",
+      "unit": "celldays_0.05",
+      "region": "rest_of_box",
+      "month": 9,
+      "factor": 0.9923285198555957,
+      "lo": 0.9468576709796673,
+      "hi": 1.0348528923563847,
+      "n_years": 7,
+      "sum_a": 2216.0,
+      "sum_s": 2199.0
+    },
+    {
+      "pair": "NOAA20->SNPP",
+      "unit": "celldays_0.05",
+      "region": "rest_of_box",
+      "month": 10,
+      "factor": 0.9440366688345876,
+      "lo": 0.9183175262360401,
+      "hi": 0.9746845260183192,
+      "n_years": 7,
+      "sum_a": 32289.0,
+      "sum_s": 30482.0
+    },
+    {
+      "pair": "NOAA20->SNPP",
+      "unit": "celldays_0.05",
+      "region": "rest_of_box",
+      "month": 11,
+      "factor": 0.9542231620848364,
+      "lo": 0.9381224754223159,
+      "hi": 0.9716237913220467,
+      "n_years": 7,
+      "sum_a": 56273.0,
+      "sum_s": 53697.0
+    },
+    {
+      "pair": "NOAA20->SNPP",
+      "unit": "celldays_0.05",
+      "region": "rest_of_box",
+      "month": 12,
+      "factor": 0.947084083668098,
+      "lo": 0.9289383208781085,
+      "hi": 0.9599810711605913,
+      "n_years": 7,
+      "sum_a": 28876.0,
+      "sum_s": 27348.0
+    },
+    {
+      "pair": "NOAA20->SNPP",
+      "unit": "celldays_0.1",
+      "region": "IN_Punjab",
+      "month": 1,
+      "factor": 1.063095238095238,
+      "lo": 0.9152737551719219,
+      "hi": 1.2153859761439445,
+      "n_years": 7,
+      "sum_a": 840.0,
+      "sum_s": 893.0
+    },
+    {
+      "pair": "NOAA20->SNPP",
+      "unit": "celldays_0.1",
+      "region": "IN_Punjab",
+      "month": 2,
+      "factor": 0.8592184368737475,
+      "lo": 0.8220482395493898,
+      "hi": 0.9091019239242178,
+      "n_years": 7,
+      "sum_a": 1996.0,
+      "sum_s": 1715.0
+    },
+    {
+      "pair": "NOAA20->SNPP",
+      "unit": "celldays_0.1",
+      "region": "IN_Punjab",
+      "month": 3,
+      "factor": 1.0027045300878972,
+      "lo": 0.9249845009299442,
+      "hi": 1.1108806893091527,
+      "n_years": 7,
+      "sum_a": 1479.0,
+      "sum_s": 1483.0
+    },
+    {
+      "pair": "NOAA20->SNPP",
+      "unit": "celldays_0.1",
+      "region": "IN_Punjab",
+      "month": 4,
+      "factor": 0.9774774774774775,
+      "lo": 0.8704746580852776,
+      "hi": 1.0725552050473186,
+      "n_years": 7,
+      "sum_a": 2886.0,
+      "sum_s": 2821.0
+    },
+    {
+      "pair": "NOAA20->SNPP",
+      "unit": "celldays_0.1",
+      "region": "IN_Punjab",
+      "month": 5,
+      "factor": 1.0219870988042794,
+      "lo": 0.996796886130265,
+      "hi": 1.0526741567311,
+      "n_years": 7,
+      "sum_a": 25424.0,
+      "sum_s": 25983.0
+    },
+    {
+      "pair": "NOAA20->SNPP",
+      "unit": "celldays_0.1",
+      "region": "IN_Punjab",
+      "month": 6,
+      "factor": 1.022707797772065,
+      "lo": 0.956338028169014,
+      "hi": 1.1067258885877898,
+      "n_years": 7,
+      "sum_a": 2334.0,
+      "sum_s": 2387.0
+    },
+    {
+      "pair": "NOAA20->SNPP",
+      "unit": "celldays_0.1",
+      "region": "IN_Punjab",
+      "month": 7,
+      "factor": 0.8731343283582089,
+      "lo": 0.7839547632498484,
+      "hi": 0.9728260869565217,
+      "n_years": 7,
+      "sum_a": 536.0,
+      "sum_s": 468.0
+    },
+    {
+      "pair": "NOAA20->SNPP",
+      "unit": "celldays_0.1",
+      "region": "IN_Punjab",
+      "month": 8,
+      "factor": 1.0333333333333334,
+      "lo": 0.5184587813620072,
+      "hi": 1.8064516129032258,
+      "n_years": 7,
+      "sum_a": 30.0,
+      "sum_s": 31.0
+    },
+    {
+      "pair": "NOAA20->SNPP",
+      "unit": "celldays_0.1",
+      "region": "IN_Punjab",
+      "month": 9,
+      "factor": 1.040554962646745,
+      "lo": 0.9676044330775788,
+      "hi": 1.1626248216833095,
+      "n_years": 7,
+      "sum_a": 937.0,
+      "sum_s": 975.0
+    },
+    {
+      "pair": "NOAA20->SNPP",
+      "unit": "celldays_0.1",
+      "region": "IN_Punjab",
+      "month": 10,
+      "factor": 0.9629569123953441,
+      "lo": 0.9382120227886767,
+      "hi": 0.9856824316394789,
+      "n_years": 7,
+      "sum_a": 24485.0,
+      "sum_s": 23578.0
+    },
+    {
+      "pair": "NOAA20->SNPP",
+      "unit": "celldays_0.1",
+      "region": "IN_Punjab",
+      "month": 11,
+      "factor": 0.9703759969616407,
+      "lo": 0.9514664930580986,
+      "hi": 0.9833074774737282,
+      "n_years": 7,
+      "sum_a": 31596.0,
+      "sum_s": 30660.0
+    },
+    {
+      "pair": "NOAA20->SNPP",
+      "unit": "celldays_0.1",
+      "region": "IN_Punjab",
+      "month": 12,
+      "factor": 0.9907521578298397,
+      "lo": 0.9181881263215138,
+      "hi": 1.0592403190443582,
+      "n_years": 7,
+      "sum_a": 1622.0,
+      "sum_s": 1607.0
+    },
+    {
+      "pair": "NOAA20->SNPP",
+      "unit": "celldays_0.1",
+      "region": "PK_Punjab",
+      "month": 1,
+      "factor": 0.9804784162771515,
+      "lo": 0.9471474909368441,
+      "hi": 1.0123915737298637,
+      "n_years": 7,
+      "sum_a": 10911.0,
+      "sum_s": 10698.0
+    },
+    {
+      "pair": "NOAA20->SNPP",
+      "unit": "celldays_0.1",
+      "region": "PK_Punjab",
+      "month": 2,
+      "factor": 0.9532467532467532,
+      "lo": 0.9396814710536763,
+      "hi": 0.964747839464108,
+      "n_years": 7,
+      "sum_a": 19250.0,
+      "sum_s": 18350.0
+    },
+    {
+      "pair": "NOAA20->SNPP",
+      "unit": "celldays_0.1",
+      "region": "PK_Punjab",
+      "month": 3,
+      "factor": 0.9511710996427154,
+      "lo": 0.9245760566945077,
+      "hi": 0.985077051898477,
+      "n_years": 7,
+      "sum_a": 7557.0,
+      "sum_s": 7188.0
+    },
+    {
+      "pair": "NOAA20->SNPP",
+      "unit": "celldays_0.1",
+      "region": "PK_Punjab",
+      "month": 4,
+      "factor": 0.9633345720302242,
+      "lo": 0.9296283164898035,
+      "hi": 0.9952755619103367,
+      "n_years": 7,
+      "sum_a": 8073.0,
+      "sum_s": 7777.0
+    },
+    {
+      "pair": "NOAA20->SNPP",
+      "unit": "celldays_0.1",
+      "region": "PK_Punjab",
+      "month": 5,
+      "factor": 0.9867177160143694,
+      "lo": 0.9573820395738204,
+      "hi": 1.0143270487212992,
+      "n_years": 7,
+      "sum_a": 21156.0,
+      "sum_s": 20875.0
+    },
+    {
+      "pair": "NOAA20->SNPP",
+      "unit": "celldays_0.1",
+      "region": "PK_Punjab",
+      "month": 6,
+      "factor": 0.9507845934379457,
+      "lo": 0.8981986285781719,
+      "hi": 1.0093710292249047,
+      "n_years": 7,
+      "sum_a": 7010.0,
+      "sum_s": 6665.0
+    },
+    {
+      "pair": "NOAA20->SNPP",
+      "unit": "celldays_0.1",
+      "region": "PK_Punjab",
+      "month": 7,
+      "factor": 0.9723612103883726,
+      "lo": 0.8918594172424151,
+      "hi": 1.031515010247879,
+      "n_years": 7,
+      "sum_a": 4197.0,
+      "sum_s": 4081.0
+    },
+    {
+      "pair": "NOAA20->SNPP",
+      "unit": "celldays_0.1",
+      "region": "PK_Punjab",
+      "month": 8,
+      "factor": 0.967725143154607,
+      "lo": 0.9162967660114141,
+      "hi": 1.0457239627434378,
+      "n_years": 7,
+      "sum_a": 1921.0,
+      "sum_s": 1859.0
+    },
+    {
+      "pair": "NOAA20->SNPP",
+      "unit": "celldays_0.1",
+      "region": "PK_Punjab",
+      "month": 9,
+      "factor": 0.9321169841695733,
+      "lo": 0.9013151798799225,
+      "hi": 0.9578237030788697,
+      "n_years": 7,
+      "sum_a": 3727.0,
+      "sum_s": 3474.0
+    },
+    {
+      "pair": "NOAA20->SNPP",
+      "unit": "celldays_0.1",
+      "region": "PK_Punjab",
+      "month": 10,
+      "factor": 0.9658745247148289,
+      "lo": 0.9358236203486683,
+      "hi": 0.9973342902547804,
+      "n_years": 7,
+      "sum_a": 21040.0,
+      "sum_s": 20322.0
+    },
+    {
+      "pair": "NOAA20->SNPP",
+      "unit": "celldays_0.1",
+      "region": "PK_Punjab",
+      "month": 11,
+      "factor": 0.9566640097327684,
+      "lo": 0.9326828924703271,
+      "hi": 0.9898531635689546,
+      "n_years": 7,
+      "sum_a": 23837.0,
+      "sum_s": 22804.0
+    },
+    {
+      "pair": "NOAA20->SNPP",
+      "unit": "celldays_0.1",
+      "region": "PK_Punjab",
+      "month": 12,
+      "factor": 0.9444742694991948,
+      "lo": 0.9199324741815095,
+      "hi": 0.9727464964497475,
+      "n_years": 7,
+      "sum_a": 13039.0,
+      "sum_s": 12315.0
+    },
+    {
+      "pair": "NOAA20->SNPP",
+      "unit": "celldays_0.1",
+      "region": "rest_of_box",
+      "month": 1,
+      "factor": 0.9497863760741203,
+      "lo": 0.9122846729836744,
+      "hi": 0.988988934692992,
+      "n_years": 7,
+      "sum_a": 20831.0,
+      "sum_s": 19785.0
+    },
+    {
+      "pair": "NOAA20->SNPP",
+      "unit": "celldays_0.1",
+      "region": "rest_of_box",
+      "month": 2,
+      "factor": 0.951539872020357,
+      "lo": 0.9378211359533398,
+      "hi": 0.9673596792244064,
+      "n_years": 7,
+      "sum_a": 26723.0,
+      "sum_s": 25428.0
+    },
+    {
+      "pair": "NOAA20->SNPP",
+      "unit": "celldays_0.1",
+      "region": "rest_of_box",
+      "month": 3,
+      "factor": 0.9744623655913979,
+      "lo": 0.9560504387582037,
+      "hi": 0.9923163171085608,
+      "n_years": 7,
+      "sum_a": 25296.0,
+      "sum_s": 24650.0
+    },
+    {
+      "pair": "NOAA20->SNPP",
+      "unit": "celldays_0.1",
+      "region": "rest_of_box",
+      "month": 4,
+      "factor": 0.9748849543717338,
+      "lo": 0.948000029680477,
+      "hi": 0.9969208990712738,
+      "n_years": 7,
+      "sum_a": 64105.0,
+      "sum_s": 62495.0
+    },
+    {
+      "pair": "NOAA20->SNPP",
+      "unit": "celldays_0.1",
+      "region": "rest_of_box",
+      "month": 5,
+      "factor": 0.9802006883111498,
+      "lo": 0.9616360139589171,
+      "hi": 0.9972875980637623,
+      "n_years": 7,
+      "sum_a": 48234.0,
+      "sum_s": 47279.0
+    },
+    {
+      "pair": "NOAA20->SNPP",
+      "unit": "celldays_0.1",
+      "region": "rest_of_box",
+      "month": 6,
+      "factor": 0.9572333054593238,
+      "lo": 0.9401584281097082,
+      "hi": 0.9827528576854869,
+      "n_years": 7,
+      "sum_a": 16742.0,
+      "sum_s": 16026.0
+    },
+    {
+      "pair": "NOAA20->SNPP",
+      "unit": "celldays_0.1",
+      "region": "rest_of_box",
+      "month": 7,
+      "factor": 0.8876629889669007,
+      "lo": 0.8348402652200121,
+      "hi": 0.9316696946054391,
+      "n_years": 7,
+      "sum_a": 1994.0,
+      "sum_s": 1770.0
+    },
+    {
+      "pair": "NOAA20->SNPP",
+      "unit": "celldays_0.1",
+      "region": "rest_of_box",
+      "month": 8,
+      "factor": 0.976063829787234,
+      "lo": 0.8936078359330638,
+      "hi": 1.0665929344620337,
+      "n_years": 7,
+      "sum_a": 752.0,
+      "sum_s": 734.0
+    },
+    {
+      "pair": "NOAA20->SNPP",
+      "unit": "celldays_0.1",
+      "region": "rest_of_box",
+      "month": 9,
+      "factor": 0.9888320148906468,
+      "lo": 0.9452052776454823,
+      "hi": 1.0299276843858851,
+      "n_years": 7,
+      "sum_a": 2149.0,
+      "sum_s": 2125.0
+    },
+    {
+      "pair": "NOAA20->SNPP",
+      "unit": "celldays_0.1",
+      "region": "rest_of_box",
+      "month": 10,
+      "factor": 0.9440259153231881,
+      "lo": 0.9223373951574616,
+      "hi": 0.9692640165508402,
+      "n_years": 7,
+      "sum_a": 26548.0,
+      "sum_s": 25062.0
+    },
+    {
+      "pair": "NOAA20->SNPP",
+      "unit": "celldays_0.1",
+      "region": "rest_of_box",
+      "month": 11,
+      "factor": 0.9506290551382526,
+      "lo": 0.9332247020209063,
+      "hi": 0.9665604654384263,
+      "n_years": 7,
+      "sum_a": 43001.0,
+      "sum_s": 40878.0
+    },
+    {
+      "pair": "NOAA20->SNPP",
+      "unit": "celldays_0.1",
+      "region": "rest_of_box",
+      "month": 12,
+      "factor": 0.9490955779615573,
+      "lo": 0.9295101073021742,
+      "hi": 0.9626058106342494,
+      "n_years": 7,
+      "sum_a": 26481.0,
+      "sum_s": 25133.0
+    },
+    {
+      "pair": "NOAA20->SNPP",
+      "unit": "celldays_0.25",
+      "region": "IN_Punjab",
+      "month": 1,
+      "factor": 1.0678466076696165,
+      "lo": 0.9244394442013575,
+      "hi": 1.208095730027548,
+      "n_years": 7,
+      "sum_a": 678.0,
+      "sum_s": 724.0
+    },
+    {
+      "pair": "NOAA20->SNPP",
+      "unit": "celldays_0.25",
+      "region": "IN_Punjab",
+      "month": 2,
+      "factor": 0.8669695003244646,
+      "lo": 0.8292440923737916,
+      "hi": 0.9074200913242009,
+      "n_years": 7,
+      "sum_a": 1541.0,
+      "sum_s": 1336.0
+    },
+    {
+      "pair": "NOAA20->SNPP",
+      "unit": "celldays_0.25",
+      "region": "IN_Punjab",
+      "month": 3,
+      "factor": 1.0260723296888141,
+      "lo": 0.9541501976284585,
+      "hi": 1.1259066202408003,
+      "n_years": 7,
+      "sum_a": 1189.0,
+      "sum_s": 1220.0
+    },
+    {
+      "pair": "NOAA20->SNPP",
+      "unit": "celldays_0.25",
+      "region": "IN_Punjab",
+      "month": 4,
+      "factor": 0.9540034071550255,
+      "lo": 0.8590909090909091,
+      "hi": 1.009120875788452,
+      "n_years": 7,
+      "sum_a": 1761.0,
+      "sum_s": 1680.0
+    },
+    {
+      "pair": "NOAA20->SNPP",
+      "unit": "celldays_0.25",
+      "region": "IN_Punjab",
+      "month": 5,
+      "factor": 1.014621409921671,
+      "lo": 0.9956018771487629,
+      "hi": 1.0367254821501846,
+      "n_years": 7,
+      "sum_a": 9575.0,
+      "sum_s": 9715.0
+    },
+    {
+      "pair": "NOAA20->SNPP",
+      "unit": "celldays_0.25",
+      "region": "IN_Punjab",
+      "month": 6,
+      "factor": 1.0343137254901962,
+      "lo": 0.9829950205105354,
+      "hi": 1.0982961992136304,
+      "n_years": 7,
+      "sum_a": 1632.0,
+      "sum_s": 1688.0
+    },
+    {
+      "pair": "NOAA20->SNPP",
+      "unit": "celldays_0.25",
+      "region": "IN_Punjab",
+      "month": 7,
+      "factor": 0.9205882352941176,
+      "lo": 0.8278301886792453,
+      "hi": 1.06,
+      "n_years": 7,
+      "sum_a": 340.0,
+      "sum_s": 313.0
+    },
+    {
+      "pair": "NOAA20->SNPP",
+      "unit": "celldays_0.25",
+      "region": "IN_Punjab",
+      "month": 8,
+      "factor": 1.0333333333333334,
+      "lo": 0.5184587813620072,
+      "hi": 1.8064516129032258,
+      "n_years": 7,
+      "sum_a": 30.0,
+      "sum_s": 31.0
+    },
+    {
+      "pair": "NOAA20->SNPP",
+      "unit": "celldays_0.25",
+      "region": "IN_Punjab",
+      "month": 9,
+      "factor": 1.0374149659863945,
+      "lo": 0.9493844049247606,
+      "hi": 1.187904967602592,
+      "n_years": 7,
+      "sum_a": 588.0,
+      "sum_s": 610.0
+    },
+    {
+      "pair": "NOAA20->SNPP",
+      "unit": "celldays_0.25",
+      "region": "IN_Punjab",
+      "month": 10,
+      "factor": 0.979034902787538,
+      "lo": 0.9550069517080073,
+      "hi": 1.0002718868950518,
+      "n_years": 7,
+      "sum_a": 8538.0,
+      "sum_s": 8359.0
+    },
+    {
+      "pair": "NOAA20->SNPP",
+      "unit": "celldays_0.25",
+      "region": "IN_Punjab",
+      "month": 11,
+      "factor": 0.9755443526761772,
+      "lo": 0.9581866666666666,
+      "hi": 0.9920540146376637,
+      "n_years": 7,
+      "sum_a": 9323.0,
+      "sum_s": 9095.0
+    },
+    {
+      "pair": "NOAA20->SNPP",
+      "unit": "celldays_0.25",
+      "region": "IN_Punjab",
+      "month": 12,
+      "factor": 0.9850857568978374,
+      "lo": 0.9056451612903226,
+      "hi": 1.0581521967290197,
+      "n_years": 7,
+      "sum_a": 1341.0,
+      "sum_s": 1321.0
+    },
+    {
+      "pair": "NOAA20->SNPP",
+      "unit": "celldays_0.25",
+      "region": "PK_Punjab",
+      "month": 1,
+      "factor": 0.975975975975976,
+      "lo": 0.9459875359218513,
+      "hi": 1.003320090878865,
+      "n_years": 7,
+      "sum_a": 7992.0,
+      "sum_s": 7800.0
+    },
+    {
+      "pair": "NOAA20->SNPP",
+      "unit": "celldays_0.25",
+      "region": "PK_Punjab",
+      "month": 2,
+      "factor": 0.9598913390859699,
+      "lo": 0.946231568511105,
+      "hi": 0.9719989145102709,
+      "n_years": 7,
+      "sum_a": 12516.0,
+      "sum_s": 12014.0
+    },
+    {
+      "pair": "NOAA20->SNPP",
+      "unit": "celldays_0.25",
+      "region": "PK_Punjab",
+      "month": 3,
+      "factor": 0.9564462953322922,
+      "lo": 0.9277385449170635,
+      "hi": 0.9916171002199525,
+      "n_years": 7,
+      "sum_a": 5763.0,
+      "sum_s": 5512.0
+    },
+    {
+      "pair": "NOAA20->SNPP",
+      "unit": "celldays_0.25",
+      "region": "PK_Punjab",
+      "month": 4,
+      "factor": 0.9702595839779955,
+      "lo": 0.9410735620118317,
+      "hi": 0.9976500078333073,
+      "n_years": 7,
+      "sum_a": 5817.0,
+      "sum_s": 5644.0
+    },
+    {
+      "pair": "NOAA20->SNPP",
+      "unit": "celldays_0.25",
+      "region": "PK_Punjab",
+      "month": 5,
+      "factor": 1.0044150110375276,
+      "lo": 0.9678486997635933,
+      "hi": 1.0386660506916428,
+      "n_years": 7,
+      "sum_a": 11778.0,
+      "sum_s": 11830.0
+    },
+    {
+      "pair": "NOAA20->SNPP",
+      "unit": "celldays_0.25",
+      "region": "PK_Punjab",
+      "month": 6,
+      "factor": 0.9563563115487914,
+      "lo": 0.9181406010057236,
+      "hi": 0.9980285855101035,
+      "n_years": 7,
+      "sum_a": 4468.0,
+      "sum_s": 4273.0
+    },
+    {
+      "pair": "NOAA20->SNPP",
+      "unit": "celldays_0.25",
+      "region": "PK_Punjab",
+      "month": 7,
+      "factor": 0.9790697674418605,
+      "lo": 0.8939098122094472,
+      "hi": 1.0374409305707015,
+      "n_years": 7,
+      "sum_a": 2580.0,
+      "sum_s": 2526.0
+    },
+    {
+      "pair": "NOAA20->SNPP",
+      "unit": "celldays_0.25",
+      "region": "PK_Punjab",
+      "month": 8,
+      "factor": 0.9572930354796321,
+      "lo": 0.8924399466159854,
+      "hi": 1.053072625698324,
+      "n_years": 7,
+      "sum_a": 1522.0,
+      "sum_s": 1457.0
+    },
+    {
+      "pair": "NOAA20->SNPP",
+      "unit": "celldays_0.25",
+      "region": "PK_Punjab",
+      "month": 9,
+      "factor": 0.9399496583962603,
+      "lo": 0.91356097353054,
+      "hi": 0.9587271649326183,
+      "n_years": 7,
+      "sum_a": 2781.0,
+      "sum_s": 2614.0
+    },
+    {
+      "pair": "NOAA20->SNPP",
+      "unit": "celldays_0.25",
+      "region": "PK_Punjab",
+      "month": 10,
+      "factor": 0.96146080238785,
+      "lo": 0.933397993028383,
+      "hi": 0.992954147718802,
+      "n_years": 7,
+      "sum_a": 11391.0,
+      "sum_s": 10952.0
+    },
+    {
+      "pair": "NOAA20->SNPP",
+      "unit": "celldays_0.25",
+      "region": "PK_Punjab",
+      "month": 11,
+      "factor": 0.9646031498518634,
+      "lo": 0.9411887486409334,
+      "hi": 0.9932513945305615,
+      "n_years": 7,
+      "sum_a": 12826.0,
+      "sum_s": 12372.0
+    },
+    {
+      "pair": "NOAA20->SNPP",
+      "unit": "celldays_0.25",
+      "region": "PK_Punjab",
+      "month": 12,
+      "factor": 0.9577268835616438,
+      "lo": 0.9392831879273756,
+      "hi": 0.9749376709321534,
+      "n_years": 7,
+      "sum_a": 9344.0,
+      "sum_s": 8949.0
+    },
+    {
+      "pair": "NOAA20->SNPP",
+      "unit": "celldays_0.25",
+      "region": "rest_of_box",
+      "month": 1,
+      "factor": 0.951233981964879,
+      "lo": 0.9190129290542758,
+      "hi": 0.9847225997744203,
+      "n_years": 7,
+      "sum_a": 16856.0,
+      "sum_s": 16034.0
+    },
+    {
+      "pair": "NOAA20->SNPP",
+      "unit": "celldays_0.25",
+      "region": "rest_of_box",
+      "month": 2,
+      "factor": 0.9590902656537535,
+      "lo": 0.947239372415281,
+      "hi": 0.9719419414018238,
+      "n_years": 7,
+      "sum_a": 21193.0,
+      "sum_s": 20326.0
+    },
+    {
+      "pair": "NOAA20->SNPP",
+      "unit": "celldays_0.25",
+      "region": "rest_of_box",
+      "month": 3,
+      "factor": 0.974894745049119,
+      "lo": 0.9620288608031276,
+      "hi": 0.9882973217680858,
+      "n_years": 7,
+      "sum_a": 19239.0,
+      "sum_s": 18756.0
+    },
+    {
+      "pair": "NOAA20->SNPP",
+      "unit": "celldays_0.25",
+      "region": "rest_of_box",
+      "month": 4,
+      "factor": 0.9717349715733031,
+      "lo": 0.9497336803325092,
+      "hi": 0.9916127874818026,
+      "n_years": 7,
+      "sum_a": 37113.0,
+      "sum_s": 36064.0
+    },
+    {
+      "pair": "NOAA20->SNPP",
+      "unit": "celldays_0.25",
+      "region": "rest_of_box",
+      "month": 5,
+      "factor": 0.9852334279081765,
+      "lo": 0.9791862420191779,
+      "hi": 0.9913710766393308,
+      "n_years": 7,
+      "sum_a": 31016.0,
+      "sum_s": 30558.0
+    },
+    {
+      "pair": "NOAA20->SNPP",
+      "unit": "celldays_0.25",
+      "region": "rest_of_box",
+      "month": 6,
+      "factor": 0.961462774680223,
+      "lo": 0.9465143705749982,
+      "hi": 0.9828310502283105,
+      "n_years": 7,
+      "sum_a": 12196.0,
+      "sum_s": 11726.0
+    },
+    {
+      "pair": "NOAA20->SNPP",
+      "unit": "celldays_0.25",
+      "region": "rest_of_box",
+      "month": 7,
+      "factor": 0.8944413250982594,
+      "lo": 0.8392678351377519,
+      "hi": 0.9409799554565702,
+      "n_years": 7,
+      "sum_a": 1781.0,
+      "sum_s": 1593.0
+    },
+    {
+      "pair": "NOAA20->SNPP",
+      "unit": "celldays_0.25",
+      "region": "rest_of_box",
+      "month": 8,
+      "factor": 0.9754768392370572,
+      "lo": 0.8970380818053597,
+      "hi": 1.0632334614722587,
+      "n_years": 7,
+      "sum_a": 734.0,
+      "sum_s": 716.0
+    },
+    {
+      "pair": "NOAA20->SNPP",
+      "unit": "celldays_0.25",
+      "region": "rest_of_box",
+      "month": 9,
+      "factor": 0.9717314487632509,
+      "lo": 0.9318370300149398,
+      "hi": 1.0141441039032435,
+      "n_years": 7,
+      "sum_a": 1981.0,
+      "sum_s": 1925.0
+    },
+    {
+      "pair": "NOAA20->SNPP",
+      "unit": "celldays_0.25",
+      "region": "rest_of_box",
+      "month": 10,
+      "factor": 0.9398504693911968,
+      "lo": 0.9201550897023066,
+      "hi": 0.9604652640945783,
+      "n_years": 7,
+      "sum_a": 17789.0,
+      "sum_s": 16719.0
+    },
+    {
+      "pair": "NOAA20->SNPP",
+      "unit": "celldays_0.25",
+      "region": "rest_of_box",
+      "month": 11,
+      "factor": 0.9516894003456009,
+      "lo": 0.9372883781448369,
+      "hi": 0.9666976718520358,
+      "n_years": 7,
+      "sum_a": 27199.0,
+      "sum_s": 25885.0
+    },
+    {
+      "pair": "NOAA20->SNPP",
+      "unit": "celldays_0.25",
+      "region": "rest_of_box",
+      "month": 12,
+      "factor": 0.9564085254122866,
+      "lo": 0.9332731820150216,
+      "hi": 0.976514609433662,
+      "n_years": 7,
+      "sum_a": 20738.0,
+      "sum_s": 19834.0
+    },
+    {
+      "pair": "NOAA20->SNPP",
+      "unit": "hotspots",
+      "region": "IN_Punjab",
+      "month": 1,
+      "factor": 1.0874882408278457,
+      "lo": 0.9289740698985344,
+      "hi": 1.2847141190198366,
+      "n_years": 7,
+      "sum_a": 1063.0,
+      "sum_s": 1156.0
+    },
+    {
+      "pair": "NOAA20->SNPP",
+      "unit": "hotspots",
+      "region": "IN_Punjab",
+      "month": 2,
+      "factor": 0.9020217729393468,
+      "lo": 0.85431654676259,
+      "hi": 0.9548557291290624,
+      "n_years": 7,
+      "sum_a": 2572.0,
+      "sum_s": 2320.0
+    },
+    {
+      "pair": "NOAA20->SNPP",
+      "unit": "hotspots",
+      "region": "IN_Punjab",
+      "month": 3,
+      "factor": 1.0238821138211383,
+      "lo": 0.9472839698199312,
+      "hi": 1.1260804033376395,
+      "n_years": 7,
+      "sum_a": 1968.0,
+      "sum_s": 2015.0
+    },
+    {
+      "pair": "NOAA20->SNPP",
+      "unit": "hotspots",
+      "region": "IN_Punjab",
+      "month": 4,
+      "factor": 0.9283378746594005,
+      "lo": 0.8175770308123249,
+      "hi": 1.1314424093674356,
+      "n_years": 7,
+      "sum_a": 7340.0,
+      "sum_s": 6814.0
+    },
+    {
+      "pair": "NOAA20->SNPP",
+      "unit": "hotspots",
+      "region": "IN_Punjab",
+      "month": 5,
+      "factor": 1.0326927779851467,
+      "lo": 0.9830271616230912,
+      "hi": 1.0810601494237708,
+      "n_years": 7,
+      "sum_a": 77693.0,
+      "sum_s": 80233.0
+    },
+    {
+      "pair": "NOAA20->SNPP",
+      "unit": "hotspots",
+      "region": "IN_Punjab",
+      "month": 6,
+      "factor": 1.0852183061546554,
+      "lo": 0.9771380165872584,
+      "hi": 1.2255726854586237,
+      "n_years": 7,
+      "sum_a": 3802.0,
+      "sum_s": 4126.0
+    },
+    {
+      "pair": "NOAA20->SNPP",
+      "unit": "hotspots",
+      "region": "IN_Punjab",
+      "month": 7,
+      "factor": 0.8245614035087719,
+      "lo": 0.7436249792373585,
+      "hi": 0.9150511279780729,
+      "n_years": 7,
+      "sum_a": 855.0,
+      "sum_s": 705.0
+    },
+    {
+      "pair": "NOAA20->SNPP",
+      "unit": "hotspots",
+      "region": "IN_Punjab",
+      "month": 8,
+      "factor": 0.9428571428571428,
+      "lo": 0.42592592592592593,
+      "hi": 1.8684847198641763,
+      "n_years": 7,
+      "sum_a": 35.0,
+      "sum_s": 33.0
+    },
+    {
+      "pair": "NOAA20->SNPP",
+      "unit": "hotspots",
+      "region": "IN_Punjab",
+      "month": 9,
+      "factor": 1.114300903774588,
+      "lo": 1.0580527689481205,
+      "hi": 1.1573894689042128,
+      "n_years": 7,
+      "sum_a": 1881.0,
+      "sum_s": 2096.0
+    },
+    {
+      "pair": "NOAA20->SNPP",
+      "unit": "hotspots",
+      "region": "IN_Punjab",
+      "month": 10,
+      "factor": 0.9486409336344565,
+      "lo": 0.9107900503301498,
+      "hi": 0.9843043950530268,
+      "n_years": 7,
+      "sum_a": 87229.0,
+      "sum_s": 82749.0
+    },
+    {
+      "pair": "NOAA20->SNPP",
+      "unit": "hotspots",
+      "region": "IN_Punjab",
+      "month": 11,
+      "factor": 0.9976953179378509,
+      "lo": 0.9574261129816686,
+      "hi": 1.0350374095827772,
+      "n_years": 7,
+      "sum_a": 193953.0,
+      "sum_s": 193506.0
+    },
+    {
+      "pair": "NOAA20->SNPP",
+      "unit": "hotspots",
+      "region": "IN_Punjab",
+      "month": 12,
+      "factor": 0.9839849269901083,
+      "lo": 0.8914446652779636,
+      "hi": 1.0747456877487835,
+      "n_years": 7,
+      "sum_a": 2123.0,
+      "sum_s": 2089.0
+    },
+    {
+      "pair": "NOAA20->SNPP",
+      "unit": "hotspots",
+      "region": "PK_Punjab",
+      "month": 1,
+      "factor": 0.9825849632854636,
+      "lo": 0.9474671023634956,
+      "hi": 1.0077020157421135,
+      "n_years": 7,
+      "sum_a": 15389.0,
+      "sum_s": 15121.0
+    },
+    {
+      "pair": "NOAA20->SNPP",
+      "unit": "hotspots",
+      "region": "PK_Punjab",
+      "month": 2,
+      "factor": 0.9671931533537433,
+      "lo": 0.9481347345948896,
+      "hi": 0.9887273146446709,
+      "n_years": 7,
+      "sum_a": 28744.0,
+      "sum_s": 27801.0
+    },
+    {
+      "pair": "NOAA20->SNPP",
+      "unit": "hotspots",
+      "region": "PK_Punjab",
+      "month": 3,
+      "factor": 0.990928445802092,
+      "lo": 0.961064354331378,
+      "hi": 1.0206206229976968,
+      "n_years": 7,
+      "sum_a": 10803.0,
+      "sum_s": 10705.0
+    },
+    {
+      "pair": "NOAA20->SNPP",
+      "unit": "hotspots",
+      "region": "PK_Punjab",
+      "month": 4,
+      "factor": 0.9637012332273327,
+      "lo": 0.9166733242789806,
+      "hi": 1.0183260483585101,
+      "n_years": 7,
+      "sum_a": 12893.0,
+      "sum_s": 12425.0
+    },
+    {
+      "pair": "NOAA20->SNPP",
+      "unit": "hotspots",
+      "region": "PK_Punjab",
+      "month": 5,
+      "factor": 0.9762213672154617,
+      "lo": 0.9386248231556811,
+      "hi": 1.0160045522788035,
+      "n_years": 7,
+      "sum_a": 44704.0,
+      "sum_s": 43641.0
+    },
+    {
+      "pair": "NOAA20->SNPP",
+      "unit": "hotspots",
+      "region": "PK_Punjab",
+      "month": 6,
+      "factor": 0.9684488654025489,
+      "lo": 0.8956447359041985,
+      "hi": 1.0517748389518442,
+      "n_years": 7,
+      "sum_a": 12868.0,
+      "sum_s": 12462.0
+    },
+    {
+      "pair": "NOAA20->SNPP",
+      "unit": "hotspots",
+      "region": "PK_Punjab",
+      "month": 7,
+      "factor": 1.0057134485789627,
+      "lo": 0.9431652802769849,
+      "hi": 1.0630566596474826,
+      "n_years": 7,
+      "sum_a": 6826.0,
+      "sum_s": 6865.0
+    },
+    {
+      "pair": "NOAA20->SNPP",
+      "unit": "hotspots",
+      "region": "PK_Punjab",
+      "month": 8,
+      "factor": 0.9580995136550692,
+      "lo": 0.8575295805512467,
+      "hi": 1.081823289432095,
+      "n_years": 7,
+      "sum_a": 2673.0,
+      "sum_s": 2561.0
+    },
+    {
+      "pair": "NOAA20->SNPP",
+      "unit": "hotspots",
+      "region": "PK_Punjab",
+      "month": 9,
+      "factor": 0.9399924041017851,
+      "lo": 0.9032145458791866,
+      "hi": 0.976588379079547,
+      "n_years": 7,
+      "sum_a": 5266.0,
+      "sum_s": 4950.0
+    },
+    {
+      "pair": "NOAA20->SNPP",
+      "unit": "hotspots",
+      "region": "PK_Punjab",
+      "month": 10,
+      "factor": 0.969026775200942,
+      "lo": 0.9415999805414346,
+      "hi": 1.0012328091559846,
+      "n_years": 7,
+      "sum_a": 39066.0,
+      "sum_s": 37856.0
+    },
+    {
+      "pair": "NOAA20->SNPP",
+      "unit": "hotspots",
+      "region": "PK_Punjab",
+      "month": 11,
+      "factor": 0.9693749871797501,
+      "lo": 0.9474817614485366,
+      "hi": 0.9890905824521411,
+      "n_years": 7,
+      "sum_a": 48751.0,
+      "sum_s": 47258.0
+    },
+    {
+      "pair": "NOAA20->SNPP",
+      "unit": "hotspots",
+      "region": "PK_Punjab",
+      "month": 12,
+      "factor": 0.9635233876071573,
+      "lo": 0.9287918204368081,
+      "hi": 1.0070352348009615,
+      "n_years": 7,
+      "sum_a": 17381.0,
+      "sum_s": 16747.0
+    },
+    {
+      "pair": "NOAA20->SNPP",
+      "unit": "hotspots",
+      "region": "rest_of_box",
+      "month": 1,
+      "factor": 0.9823533099297894,
+      "lo": 0.9601927771171058,
+      "hi": 1.0022397270546013,
+      "n_years": 7,
+      "sum_a": 31904.0,
+      "sum_s": 31341.0
+    },
+    {
+      "pair": "NOAA20->SNPP",
+      "unit": "hotspots",
+      "region": "rest_of_box",
+      "month": 2,
+      "factor": 0.9835595354694278,
+      "lo": 0.9680234529904235,
+      "hi": 1.0008173093532935,
+      "n_years": 7,
+      "sum_a": 42882.0,
+      "sum_s": 42177.0
+    },
+    {
+      "pair": "NOAA20->SNPP",
+      "unit": "hotspots",
+      "region": "rest_of_box",
+      "month": 3,
+      "factor": 0.9989939637826962,
+      "lo": 0.9742419453946776,
+      "hi": 1.020476132195056,
+      "n_years": 7,
+      "sum_a": 48706.0,
+      "sum_s": 48657.0
+    },
+    {
+      "pair": "NOAA20->SNPP",
+      "unit": "hotspots",
+      "region": "rest_of_box",
+      "month": 4,
+      "factor": 1.002165357922716,
+      "lo": 0.9631170702760745,
+      "hi": 1.044355209457467,
+      "n_years": 7,
+      "sum_a": 164407.0,
+      "sum_s": 164763.0
+    },
+    {
+      "pair": "NOAA20->SNPP",
+      "unit": "hotspots",
+      "region": "rest_of_box",
+      "month": 5,
+      "factor": 1.013909320659349,
+      "lo": 0.9671643444213998,
+      "hi": 1.056777809652007,
+      "n_years": 7,
+      "sum_a": 106044.0,
+      "sum_s": 107519.0
+    },
+    {
+      "pair": "NOAA20->SNPP",
+      "unit": "hotspots",
+      "region": "rest_of_box",
+      "month": 6,
+      "factor": 0.9821234347547202,
+      "lo": 0.9689732228389037,
+      "hi": 1.0111690015015151,
+      "n_years": 7,
+      "sum_a": 35857.0,
+      "sum_s": 35216.0
+    },
+    {
+      "pair": "NOAA20->SNPP",
+      "unit": "hotspots",
+      "region": "rest_of_box",
+      "month": 7,
+      "factor": 0.9204315576534052,
+      "lo": 0.832632400346207,
+      "hi": 0.9852868731916027,
+      "n_years": 7,
+      "sum_a": 2966.0,
+      "sum_s": 2730.0
+    },
+    {
+      "pair": "NOAA20->SNPP",
+      "unit": "hotspots",
+      "region": "rest_of_box",
+      "month": 8,
+      "factor": 0.9424736337488016,
+      "lo": 0.8287671232876712,
+      "hi": 1.058502479622653,
+      "n_years": 7,
+      "sum_a": 1043.0,
+      "sum_s": 983.0
+    },
+    {
+      "pair": "NOAA20->SNPP",
+      "unit": "hotspots",
+      "region": "rest_of_box",
+      "month": 9,
+      "factor": 1.0119465917076598,
+      "lo": 0.9696151249155975,
+      "hi": 1.0444363256538507,
+      "n_years": 7,
+      "sum_a": 2846.0,
+      "sum_s": 2880.0
+    },
+    {
+      "pair": "NOAA20->SNPP",
+      "unit": "hotspots",
+      "region": "rest_of_box",
+      "month": 10,
+      "factor": 0.9636500268384326,
+      "lo": 0.9408114089775201,
+      "hi": 0.9896610470255749,
+      "n_years": 7,
+      "sum_a": 46575.0,
+      "sum_s": 44882.0
+    },
+    {
+      "pair": "NOAA20->SNPP",
+      "unit": "hotspots",
+      "region": "rest_of_box",
+      "month": 11,
+      "factor": 0.9775297603245229,
+      "lo": 0.9639808413865967,
+      "hi": 0.9907969219429709,
+      "n_years": 7,
+      "sum_a": 94169.0,
+      "sum_s": 92053.0
+    },
+    {
+      "pair": "NOAA20->SNPP",
+      "unit": "hotspots",
+      "region": "rest_of_box",
+      "month": 12,
+      "factor": 0.9708567415730337,
+      "lo": 0.9489732571272677,
+      "hi": 0.9889044880213759,
+      "n_years": 7,
+      "sum_a": 39872.0,
+      "sum_s": 38710.0
+    }
+  ],
+  "saturation_2012_2021_by_month": [
+    {
+      "region": "IN_Punjab",
+      "grid_deg": 0.05,
+      "month": 1,
+      "n_both": 32,
+      "n_either": 1857,
+      "share_saturated": 0.01723209477652127
+    },
+    {
+      "region": "IN_Punjab",
+      "grid_deg": 0.05,
+      "month": 2,
+      "n_both": 69,
+      "n_either": 3254,
+      "share_saturated": 0.021204671173939767
+    },
+    {
+      "region": "IN_Punjab",
+      "grid_deg": 0.05,
+      "month": 3,
+      "n_both": 58,
+      "n_either": 2591,
+      "share_saturated": 0.02238517946738711
+    },
+    {
+      "region": "IN_Punjab",
+      "grid_deg": 0.05,
+      "month": 4,
+      "n_both": 273,
+      "n_either": 3781,
+      "share_saturated": 0.07220312086749538
+    },
+    {
+      "region": "IN_Punjab",
+      "grid_deg": 0.05,
+      "month": 5,
+      "n_both": 4373,
+      "n_either": 59584,
+      "share_saturated": 0.0733921858216971
+    },
+    {
+      "region": "IN_Punjab",
+      "grid_deg": 0.05,
+      "month": 6,
+      "n_both": 70,
+      "n_either": 2408,
+      "share_saturated": 0.029069767441860465
+    },
+    {
+      "region": "IN_Punjab",
+      "grid_deg": 0.05,
+      "month": 7,
+      "n_both": 15,
+      "n_either": 538,
+      "share_saturated": 0.027881040892193308
+    },
+    {
+      "region": "IN_Punjab",
+      "grid_deg": 0.05,
+      "month": 8,
+      "n_both": 0,
+      "n_either": 70,
+      "share_saturated": 0.0
+    },
+    {
+      "region": "IN_Punjab",
+      "grid_deg": 0.05,
+      "month": 9,
+      "n_both": 151,
+      "n_either": 2219,
+      "share_saturated": 0.06804867057232988
+    },
+    {
+      "region": "IN_Punjab",
+      "grid_deg": 0.05,
+      "month": 10,
+      "n_both": 23636,
+      "n_either": 121338,
+      "share_saturated": 0.19479470569813248
+    },
+    {
+      "region": "IN_Punjab",
+      "grid_deg": 0.05,
+      "month": 11,
+      "n_both": 35670,
+      "n_either": 140143,
+      "share_saturated": 0.25452573442840526
+    },
+    {
+      "region": "IN_Punjab",
+      "grid_deg": 0.05,
+      "month": 12,
+      "n_both": 70,
+      "n_either": 3421,
+      "share_saturated": 0.02046185325928091
+    },
+    {
+      "region": "IN_Punjab",
+      "grid_deg": 0.1,
+      "month": 1,
+      "n_both": 54,
+      "n_either": 1733,
+      "share_saturated": 0.031159838430467397
+    },
+    {
+      "region": "IN_Punjab",
+      "grid_deg": 0.1,
+      "month": 2,
+      "n_both": 102,
+      "n_either": 2972,
+      "share_saturated": 0.034320323014804845
+    },
+    {
+      "region": "IN_Punjab",
+      "grid_deg": 0.1,
+      "month": 3,
+      "n_both": 73,
+      "n_either": 2415,
+      "share_saturated": 0.030227743271221533
+    },
+    {
+      "region": "IN_Punjab",
+      "grid_deg": 0.1,
+      "month": 4,
+      "n_both": 309,
+      "n_either": 3218,
+      "share_saturated": 0.09602237414543195
+    },
+    {
+      "region": "IN_Punjab",
+      "grid_deg": 0.1,
+      "month": 5,
+      "n_both": 4909,
+      "n_either": 38199,
+      "share_saturated": 0.12851121757114062
+    },
+    {
+      "region": "IN_Punjab",
+      "grid_deg": 0.1,
+      "month": 6,
+      "n_both": 73,
+      "n_either": 2145,
+      "share_saturated": 0.034032634032634033
+    },
+    {
+      "region": "IN_Punjab",
+      "grid_deg": 0.1,
+      "month": 7,
+      "n_both": 19,
+      "n_either": 459,
+      "share_saturated": 0.04139433551198257
+    },
+    {
+      "region": "IN_Punjab",
+      "grid_deg": 0.1,
+      "month": 8,
+      "n_both": 0,
+      "n_either": 70,
+      "share_saturated": 0.0
+    },
+    {
+      "region": "IN_Punjab",
+      "grid_deg": 0.1,
+      "month": 9,
+      "n_both": 169,
+      "n_either": 1581,
+      "share_saturated": 0.1068943706514864
+    },
+    {
+      "region": "IN_Punjab",
+      "grid_deg": 0.1,
+      "month": 10,
+      "n_both": 19124,
+      "n_either": 59770,
+      "share_saturated": 0.3199598460766271
+    },
+    {
+      "region": "IN_Punjab",
+      "grid_deg": 0.1,
+      "month": 11,
+      "n_both": 23162,
+      "n_either": 58457,
+      "share_saturated": 0.39622286466975726
+    },
+    {
+      "region": "IN_Punjab",
+      "grid_deg": 0.1,
+      "month": 12,
+      "n_both": 95,
+      "n_either": 3201,
+      "share_saturated": 0.029678225554514215
+    },
+    {
+      "region": "IN_Punjab",
+      "grid_deg": 0.25,
+      "month": 1,
+      "n_both": 103,
+      "n_either": 1371,
+      "share_saturated": 0.07512764405543398
+    },
+    {
+      "region": "IN_Punjab",
+      "grid_deg": 0.25,
+      "month": 2,
+      "n_both": 177,
+      "n_either": 2189,
+      "share_saturated": 0.0808588396528095
+    },
+    {
+      "region": "IN_Punjab",
+      "grid_deg": 0.25,
+      "month": 3,
+      "n_both": 112,
+      "n_either": 1898,
+      "share_saturated": 0.059009483667017915
+    },
+    {
+      "region": "IN_Punjab",
+      "grid_deg": 0.25,
+      "month": 4,
+      "n_both": 340,
+      "n_either": 2190,
+      "share_saturated": 0.1552511415525114
+    },
+    {
+      "region": "IN_Punjab",
+      "grid_deg": 0.25,
+      "month": 5,
+      "n_both": 3821,
+      "n_either": 14653,
+      "share_saturated": 0.2607657135057667
+    },
+    {
+      "region": "IN_Punjab",
+      "grid_deg": 0.25,
+      "month": 6,
+      "n_both": 82,
+      "n_either": 1700,
+      "share_saturated": 0.04823529411764706
+    },
+    {
+      "region": "IN_Punjab",
+      "grid_deg": 0.25,
+      "month": 7,
+      "n_both": 25,
+      "n_either": 324,
+      "share_saturated": 0.07716049382716049
+    },
+    {
+      "region": "IN_Punjab",
+      "grid_deg": 0.25,
+      "month": 8,
+      "n_both": 1,
+      "n_either": 67,
+      "share_saturated": 0.014925373134328358
+    },
+    {
+      "region": "IN_Punjab",
+      "grid_deg": 0.25,
+      "month": 9,
+      "n_both": 124,
+      "n_either": 915,
+      "share_saturated": 0.1355191256830601
+    },
+    {
+      "region": "IN_Punjab",
+      "grid_deg": 0.25,
+      "month": 10,
+      "n_both": 7985,
+      "n_either": 17213,
+      "share_saturated": 0.4638935688142683
+    },
+    {
+      "region": "IN_Punjab",
+      "grid_deg": 0.25,
+      "month": 11,
+      "n_both": 8212,
+      "n_either": 15742,
+      "share_saturated": 0.5216617964680472
+    },
+    {
+      "region": "IN_Punjab",
+      "grid_deg": 0.25,
+      "month": 12,
+      "n_both": 186,
+      "n_either": 2449,
+      "share_saturated": 0.0759493670886076
+    },
+    {
+      "region": "PK_Punjab",
+      "grid_deg": 0.05,
+      "month": 1,
+      "n_both": 871,
+      "n_either": 17562,
+      "share_saturated": 0.0495957180275595
+    },
+    {
+      "region": "PK_Punjab",
+      "grid_deg": 0.05,
+      "month": 2,
+      "n_both": 1554,
+      "n_either": 29739,
+      "share_saturated": 0.05225461515182084
+    },
+    {
+      "region": "PK_Punjab",
+      "grid_deg": 0.05,
+      "month": 3,
+      "n_both": 653,
+      "n_either": 15110,
+      "share_saturated": 0.04321641297154202
+    },
+    {
+      "region": "PK_Punjab",
+      "grid_deg": 0.05,
+      "month": 4,
+      "n_both": 523,
+      "n_either": 12469,
+      "share_saturated": 0.04194402117250782
+    },
+    {
+      "region": "PK_Punjab",
+      "grid_deg": 0.05,
+      "month": 5,
+      "n_both": 2624,
+      "n_either": 46884,
+      "share_saturated": 0.0559679208258681
+    },
+    {
+      "region": "PK_Punjab",
+      "grid_deg": 0.05,
+      "month": 6,
+      "n_both": 234,
+      "n_either": 7830,
+      "share_saturated": 0.029885057471264367
+    },
+    {
+      "region": "PK_Punjab",
+      "grid_deg": 0.05,
+      "month": 7,
+      "n_both": 93,
+      "n_either": 3959,
+      "share_saturated": 0.023490780500126294
+    },
+    {
+      "region": "PK_Punjab",
+      "grid_deg": 0.05,
+      "month": 8,
+      "n_both": 33,
+      "n_either": 1473,
+      "share_saturated": 0.02240325865580448
+    },
+    {
+      "region": "PK_Punjab",
+      "grid_deg": 0.05,
+      "month": 9,
+      "n_both": 170,
+      "n_either": 3855,
+      "share_saturated": 0.04409857328145266
+    },
+    {
+      "region": "PK_Punjab",
+      "grid_deg": 0.05,
+      "month": 10,
+      "n_both": 1928,
+      "n_either": 29304,
+      "share_saturated": 0.06579306579306579
+    },
+    {
+      "region": "PK_Punjab",
+      "grid_deg": 0.05,
+      "month": 11,
+      "n_both": 4453,
+      "n_either": 52383,
+      "share_saturated": 0.08500849512246339
+    },
+    {
+      "region": "PK_Punjab",
+      "grid_deg": 0.05,
+      "month": 12,
+      "n_both": 698,
+      "n_either": 22687,
+      "share_saturated": 0.030766518270375104
+    },
+    {
+      "region": "PK_Punjab",
+      "grid_deg": 0.1,
+      "month": 1,
+      "n_both": 1103,
+      "n_either": 16141,
+      "share_saturated": 0.06833529521095347
+    },
+    {
+      "region": "PK_Punjab",
+      "grid_deg": 0.1,
+      "month": 2,
+      "n_both": 1988,
+      "n_either": 26020,
+      "share_saturated": 0.07640276710222905
+    },
+    {
+      "region": "PK_Punjab",
+      "grid_deg": 0.1,
+      "month": 3,
+      "n_both": 813,
+      "n_either": 13714,
+      "share_saturated": 0.05928248505177191
+    },
+    {
+      "region": "PK_Punjab",
+      "grid_deg": 0.1,
+      "month": 4,
+      "n_both": 626,
+      "n_either": 11248,
+      "share_saturated": 0.055654338549075394
+    },
+    {
+      "region": "PK_Punjab",
+      "grid_deg": 0.1,
+      "month": 5,
+      "n_both": 3036,
+      "n_either": 36293,
+      "share_saturated": 0.08365249497148211
+    },
+    {
+      "region": "PK_Punjab",
+      "grid_deg": 0.1,
+      "month": 6,
+      "n_both": 259,
+      "n_either": 6752,
+      "share_saturated": 0.03835900473933649
+    },
+    {
+      "region": "PK_Punjab",
+      "grid_deg": 0.1,
+      "month": 7,
+      "n_both": 108,
+      "n_either": 3413,
+      "share_saturated": 0.03164371520656314
+    },
+    {
+      "region": "PK_Punjab",
+      "grid_deg": 0.1,
+      "month": 8,
+      "n_both": 41,
+      "n_either": 1376,
+      "share_saturated": 0.029796511627906978
+    },
+    {
+      "region": "PK_Punjab",
+      "grid_deg": 0.1,
+      "month": 9,
+      "n_both": 226,
+      "n_either": 3285,
+      "share_saturated": 0.06879756468797564
+    },
+    {
+      "region": "PK_Punjab",
+      "grid_deg": 0.1,
+      "month": 10,
+      "n_both": 2308,
+      "n_either": 22950,
+      "share_saturated": 0.10056644880174292
+    },
+    {
+      "region": "PK_Punjab",
+      "grid_deg": 0.1,
+      "month": 11,
+      "n_both": 5011,
+      "n_either": 38895,
+      "share_saturated": 0.1288340403650855
+    },
+    {
+      "region": "PK_Punjab",
+      "grid_deg": 0.1,
+      "month": 12,
+      "n_both": 986,
+      "n_either": 20537,
+      "share_saturated": 0.048010907143204946
+    },
+    {
+      "region": "PK_Punjab",
+      "grid_deg": 0.25,
+      "month": 1,
+      "n_both": 1587,
+      "n_either": 11838,
+      "share_saturated": 0.13405980739989865
+    },
+    {
+      "region": "PK_Punjab",
+      "grid_deg": 0.25,
+      "month": 2,
+      "n_both": 2594,
+      "n_either": 16923,
+      "share_saturated": 0.15328251492052236
+    },
+    {
+      "region": "PK_Punjab",
+      "grid_deg": 0.25,
+      "month": 3,
+      "n_both": 1099,
+      "n_either": 9963,
+      "share_saturated": 0.11030814011843822
+    },
+    {
+      "region": "PK_Punjab",
+      "grid_deg": 0.25,
+      "month": 4,
+      "n_both": 819,
+      "n_either": 8335,
+      "share_saturated": 0.09826034793041391
+    },
+    {
+      "region": "PK_Punjab",
+      "grid_deg": 0.25,
+      "month": 5,
+      "n_both": 2872,
+      "n_either": 20359,
+      "share_saturated": 0.14106783240827153
+    },
+    {
+      "region": "PK_Punjab",
+      "grid_deg": 0.25,
+      "month": 6,
+      "n_both": 281,
+      "n_either": 4858,
+      "share_saturated": 0.05784273363524084
+    },
+    {
+      "region": "PK_Punjab",
+      "grid_deg": 0.25,
+      "month": 7,
+      "n_both": 127,
+      "n_either": 2316,
+      "share_saturated": 0.05483592400690846
+    },
+    {
+      "region": "PK_Punjab",
+      "grid_deg": 0.25,
+      "month": 8,
+      "n_both": 53,
+      "n_either": 1192,
+      "share_saturated": 0.044463087248322146
+    },
+    {
+      "region": "PK_Punjab",
+      "grid_deg": 0.25,
+      "month": 9,
+      "n_both": 251,
+      "n_either": 2257,
+      "share_saturated": 0.11120957022596367
+    },
+    {
+      "region": "PK_Punjab",
+      "grid_deg": 0.25,
+      "month": 10,
+      "n_both": 2125,
+      "n_either": 12703,
+      "share_saturated": 0.167283318901047
+    },
+    {
+      "region": "PK_Punjab",
+      "grid_deg": 0.25,
+      "month": 11,
+      "n_both": 4161,
+      "n_either": 20412,
+      "share_saturated": 0.2038506760728983
+    },
+    {
+      "region": "PK_Punjab",
+      "grid_deg": 0.25,
+      "month": 12,
+      "n_both": 1560,
+      "n_either": 14572,
+      "share_saturated": 0.10705462530881142
+    },
+    {
+      "region": "rest_of_box",
+      "grid_deg": 0.05,
+      "month": 1,
+      "n_both": 1353,
+      "n_either": 30114,
+      "share_saturated": 0.04492926877864117
+    },
+    {
+      "region": "rest_of_box",
+      "grid_deg": 0.05,
+      "month": 2,
+      "n_both": 2303,
+      "n_either": 39992,
+      "share_saturated": 0.05758651730346069
+    },
+    {
+      "region": "rest_of_box",
+      "grid_deg": 0.05,
+      "month": 3,
+      "n_both": 2455,
+      "n_either": 37208,
+      "share_saturated": 0.06598043431520104
+    },
+    {
+      "region": "rest_of_box",
+      "grid_deg": 0.05,
+      "month": 4,
+      "n_both": 6158,
+      "n_either": 85061,
+      "share_saturated": 0.07239510468957572
+    },
+    {
+      "region": "rest_of_box",
+      "grid_deg": 0.05,
+      "month": 5,
+      "n_both": 4876,
+      "n_either": 87028,
+      "share_saturated": 0.05602794502918601
+    },
+    {
+      "region": "rest_of_box",
+      "grid_deg": 0.05,
+      "month": 6,
+      "n_both": 1265,
+      "n_either": 23323,
+      "share_saturated": 0.05423830553530849
+    },
+    {
+      "region": "rest_of_box",
+      "grid_deg": 0.05,
+      "month": 7,
+      "n_both": 103,
+      "n_either": 2269,
+      "share_saturated": 0.045394446892904367
+    },
+    {
+      "region": "rest_of_box",
+      "grid_deg": 0.05,
+      "month": 8,
+      "n_both": 38,
+      "n_either": 1161,
+      "share_saturated": 0.03273040482342808
+    },
+    {
+      "region": "rest_of_box",
+      "grid_deg": 0.05,
+      "month": 9,
+      "n_both": 69,
+      "n_either": 2499,
+      "share_saturated": 0.027611044417767107
+    },
+    {
+      "region": "rest_of_box",
+      "grid_deg": 0.05,
+      "month": 10,
+      "n_both": 4706,
+      "n_either": 54591,
+      "share_saturated": 0.08620468575406202
+    },
+    {
+      "region": "rest_of_box",
+      "grid_deg": 0.05,
+      "month": 11,
+      "n_both": 8107,
+      "n_either": 78323,
+      "share_saturated": 0.10350727117194183
+    },
+    {
+      "region": "rest_of_box",
+      "grid_deg": 0.05,
+      "month": 12,
+      "n_both": 1564,
+      "n_either": 38765,
+      "share_saturated": 0.04034567264284793
+    },
+    {
+      "region": "rest_of_box",
+      "grid_deg": 0.1,
+      "month": 1,
+      "n_both": 1529,
+      "n_either": 27962,
+      "share_saturated": 0.05468135326514555
+    },
+    {
+      "region": "rest_of_box",
+      "grid_deg": 0.1,
+      "month": 2,
+      "n_both": 2569,
+      "n_either": 35987,
+      "share_saturated": 0.07138688971017312
+    },
+    {
+      "region": "rest_of_box",
+      "grid_deg": 0.1,
+      "month": 3,
+      "n_both": 2602,
+      "n_either": 32652,
+      "share_saturated": 0.07968883988729633
+    },
+    {
+      "region": "rest_of_box",
+      "grid_deg": 0.1,
+      "month": 4,
+      "n_both": 6400,
+      "n_either": 67207,
+      "share_saturated": 0.09522817563646643
+    },
+    {
+      "region": "rest_of_box",
+      "grid_deg": 0.1,
+      "month": 5,
+      "n_both": 5132,
+      "n_either": 70035,
+      "share_saturated": 0.07327764689084029
+    },
+    {
+      "region": "rest_of_box",
+      "grid_deg": 0.1,
+      "month": 6,
+      "n_both": 1274,
+      "n_either": 19662,
+      "share_saturated": 0.06479503611026345
+    },
+    {
+      "region": "rest_of_box",
+      "grid_deg": 0.1,
+      "month": 7,
+      "n_both": 106,
+      "n_either": 2158,
+      "share_saturated": 0.04911955514365153
+    },
+    {
+      "region": "rest_of_box",
+      "grid_deg": 0.1,
+      "month": 8,
+      "n_both": 40,
+      "n_either": 1124,
+      "share_saturated": 0.03558718861209965
+    },
+    {
+      "region": "rest_of_box",
+      "grid_deg": 0.1,
+      "month": 9,
+      "n_both": 79,
+      "n_either": 2377,
+      "share_saturated": 0.03323517038283551
+    },
+    {
+      "region": "rest_of_box",
+      "grid_deg": 0.1,
+      "month": 10,
+      "n_both": 5081,
+      "n_either": 39572,
+      "share_saturated": 0.1283988678863843
+    },
+    {
+      "region": "rest_of_box",
+      "grid_deg": 0.1,
+      "month": 11,
+      "n_both": 7758,
+      "n_either": 57450,
+      "share_saturated": 0.13503916449086162
+    },
+    {
+      "region": "rest_of_box",
+      "grid_deg": 0.1,
+      "month": 12,
+      "n_both": 1883,
+      "n_either": 35313,
+      "share_saturated": 0.0533231387874154
+    },
+    {
+      "region": "rest_of_box",
+      "grid_deg": 0.25,
+      "month": 1,
+      "n_both": 1923,
+      "n_either": 22344,
+      "share_saturated": 0.08606337271750805
+    },
+    {
+      "region": "rest_of_box",
+      "grid_deg": 0.25,
+      "month": 2,
+      "n_both": 2891,
+      "n_either": 27801,
+      "share_saturated": 0.10398906514154167
+    },
+    {
+      "region": "rest_of_box",
+      "grid_deg": 0.25,
+      "month": 3,
+      "n_both": 2629,
+      "n_either": 24770,
+      "share_saturated": 0.10613645538958418
+    },
+    {
+      "region": "rest_of_box",
+      "grid_deg": 0.25,
+      "month": 4,
+      "n_both": 5877,
+      "n_either": 40636,
+      "share_saturated": 0.14462545526134463
+    },
+    {
+      "region": "rest_of_box",
+      "grid_deg": 0.25,
+      "month": 5,
+      "n_both": 4741,
+      "n_either": 43686,
+      "share_saturated": 0.10852447008194845
+    },
+    {
+      "region": "rest_of_box",
+      "grid_deg": 0.25,
+      "month": 6,
+      "n_both": 1170,
+      "n_either": 13923,
+      "share_saturated": 0.08403361344537816
+    },
+    {
+      "region": "rest_of_box",
+      "grid_deg": 0.25,
+      "month": 7,
+      "n_both": 110,
+      "n_either": 1935,
+      "share_saturated": 0.056847545219638244
+    },
+    {
+      "region": "rest_of_box",
+      "grid_deg": 0.25,
+      "month": 8,
+      "n_both": 42,
+      "n_either": 1083,
+      "share_saturated": 0.038781163434903045
+    },
+    {
+      "region": "rest_of_box",
+      "grid_deg": 0.25,
+      "month": 9,
+      "n_both": 84,
+      "n_either": 2129,
+      "share_saturated": 0.03945514325974636
+    },
+    {
+      "region": "rest_of_box",
+      "grid_deg": 0.25,
+      "month": 10,
+      "n_both": 3856,
+      "n_either": 22839,
+      "share_saturated": 0.16883401199702264
+    },
+    {
+      "region": "rest_of_box",
+      "grid_deg": 0.25,
+      "month": 11,
+      "n_both": 5791,
+      "n_either": 35844,
+      "share_saturated": 0.16156120968641893
+    },
+    {
+      "region": "rest_of_box",
+      "grid_deg": 0.25,
+      "month": 12,
+      "n_both": 2360,
+      "n_either": 27151,
+      "share_saturated": 0.0869212920334426
+    }
+  ],
+  "provenance": {
+    "inputs": {
+      "hotspots": {
+        "path": "data/processed/hotspots",
+        "sha256": "cac1f5389175862199fd67262959f51df4e861a35278e3c90fc07c8568dc372e",
+        "n_files": 138
+      },
+      "mask_cells": {
+        "path": "data/processed/persistent_mask_cells.parquet",
+        "sha256": "e87641b578ba533a0467fb8e8d69627bec4eb16911d78472661c1adbf75c3b18",
+        "n_files": 1
+      },
+      "mask_report": {
+        "path": "data/processed/mask_report.json",
+        "sha256": "713618c5a1e72d54b4264e9743350472fbfbcbf705680231eee722f1801d9952",
+        "n_files": 1
+      },
+      "boundaries_manifest": {
+        "path": "data/raw/boundaries/manifest.json",
+        "sha256": "088ef7a1fbd207d89b7b8a193e7c80288c15f4a5aa54f1b62967e41a7bfe456b",
+        "n_files": 1
+      },
+      "point_regions": {
+        "path": "data/processed/regions/point_regions.parquet",
+        "sha256": "47e4e66064693b4a1b425ed279267e73616c92dcb641ce9d72646e98a881d18b",
+        "n_files": 1
+      },
+      "regions_json": {
+        "path": "data/processed/regions/regions.json",
+        "sha256": "5f9e0b95c18947ec55acc489a4e2dc092a96422514ee586cf2472ec019958ab6",
+        "n_files": 1
+      },
+      "harmonized": {
+        "path": "data/processed/harmonized",
+        "sha256": "7ee3c1cb08b16db7b92162cd6750a7d8b94f2aa929f11ac7c019b5ea19d89e1e",
+        "n_files": 7
+      }
+    },
+    "code": {
+      "commit": "1fc5a58180d4d041cf9a4ddaa25d857541e9545f",
+      "code_dirty": false
+    }
+  }
+}

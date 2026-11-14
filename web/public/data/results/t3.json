@@ -1,0 +1,2251 @@
+{
+  "test": "T3 explanation tests O/T/D (docs/DECISIONS.md D-039, pre-registered)",
+  "generated": "2026-11-01T06:13:43+00:00",
+  "regions": [
+    "PK_Punjab",
+    "IN_Punjab",
+    "rest_of_box"
+  ],
+  "control_region": "rest_of_box",
+  "window": {
+    "start": "10-15",
+    "end": "11-30",
+    "time_basis": "local solar date"
+  },
+  "parameters": {
+    "pre_years": [
+      2012,
+      2013,
+      2014,
+      2015,
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021
+    ],
+    "post_years": [
+      2022,
+      2023,
+      2024,
+      2025
+    ],
+    "close_tolerance_h": 0.16666666666666666,
+    "min_close_days": 10,
+    "drift_tolerance_h": 0.5,
+    "a4_note": "factor = S-NPP/Aqua day+night detections on common days (scene table); no a4 for rest_of_box (no T1 step)"
+  },
+  "reason_codes": {
+    "pre2012_terra_aqua_trend": "Terra/Aqua ratio trends in 2003-2011, so Aqua x factor may not be stable before VIIRS",
+    "splice_step_outside_normal": "2012 harmonized step exceeds 2 sd of the 2013-21 factor",
+    "aqua_overpass_drift": "Aqua's overpass drifted > 30 min later; the Aqua-to-VIIRS factor cannot be checked this year",
+    "burning_time_shift": "part of the burning moved later in the day; 13:30 satellite counts may understate it (a real decline is not ruled out)"
+  },
+  "district_inheritance": "districts take the flags of their calibration region: ADM1 PK Punjab -> PK_Punjab, IN Punjab -> IN_Punjab, else rest_of_box (D-039)",
+  "t3": {
+    "PK_Punjab": {
+      "a1_noaa20_snpp": {
+        "by_year": {
+          "2019": {
+            "noaa20": 8913.0,
+            "snpp": 8552.0,
+            "ratio": 1.0422123479887746,
+            "n_days": 47
+          },
+          "2020": {
+            "noaa20": 10074.0,
+            "snpp": 9737.0,
+            "ratio": 1.0346102495635205,
+            "n_days": 47
+          },
+          "2021": {
+            "noaa20": 18439.0,
+            "snpp": 17578.0,
+            "ratio": 1.048981681647514,
+            "n_days": 47
+          },
+          "2022": {
+            "noaa20": 9525.0,
+            "snpp": 9425.0,
+            "ratio": 1.0106100795755968,
+            "n_days": 47
+          },
+          "2023": {
+            "noaa20": 8571.0,
+            "snpp": 8836.0,
+            "ratio": 0.9700090538705296,
+            "n_days": 46
+          },
+          "2024": {
+            "noaa20": 9336.0,
+            "snpp": 8566.0,
+            "ratio": 1.0898902638337613,
+            "n_days": 44
+          },
+          "2025": {
+            "noaa20": 11262.0,
+            "snpp": 11189.0,
+            "ratio": 1.0065242649030297,
+            "n_days": 46
+          }
+        },
+        "theil_sen": {
+          "years": [
+            2019,
+            2020,
+            2021,
+            2022,
+            2023,
+            2024,
+            2025
+          ],
+          "slope_ln_per_year": -0.005807106236498937,
+          "ci95_ln_per_year": [
+            -0.03726567890188396,
+            0.013795081253734569
+          ],
+          "slope_pct_per_year": -0.00579027758608941,
+          "ci95_pct_per_year": [
+            -0.036579859060695274,
+            0.01389067244409814
+          ],
+          "excludes_zero": false
+        },
+        "stable": true
+      },
+      "a2_viirs_only": {
+        "snpp": {
+          "2012": {
+            "night": 40.0,
+            "day": 5451.0,
+            "share": 0.0072846476051721,
+            "n_days": 47
+          },
+          "2013": {
+            "night": 92.0,
+            "day": 7304.0,
+            "share": 0.012439156300703082,
+            "n_days": 47
+          },
+          "2014": {
+            "night": 67.0,
+            "day": 8856.0,
+            "share": 0.007508685419701894,
+            "n_days": 47
+          },
+          "2015": {
+            "night": 72.0,
+            "day": 7195.0,
+            "share": 0.009907802394385578,
+            "n_days": 47
+          },
+          "2016": {
+            "night": 241.0,
+            "day": 9135.0,
+            "share": 0.02570392491467577,
+            "n_days": 47
+          },
+          "2017": {
+            "night": 155.0,
+            "day": 9178.0,
+            "share": 0.016607735990571092,
+            "n_days": 47
+          },
+          "2018": {
+            "night": 144.0,
+            "day": 9684.0,
+            "share": 0.014652014652014652,
+            "n_days": 47
+          },
+          "2019": {
+            "night": 108.0,
+            "day": 8444.0,
+            "share": 0.012628624883068288,
+            "n_days": 47
+          },
+          "2020": {
+            "night": 219.0,
+            "day": 9518.0,
+            "share": 0.02249152716442436,
+            "n_days": 47
+          },
+          "2021": {
+            "night": 163.0,
+            "day": 17415.0,
+            "share": 0.009272954829901012,
+            "n_days": 47
+          },
+          "2022": {
+            "night": 96.0,
+            "day": 9329.0,
+            "share": 0.010185676392572944,
+            "n_days": 47
+          },
+          "2023": {
+            "night": 189.0,
+            "day": 8647.0,
+            "share": 0.021389769126301493,
+            "n_days": 46
+          },
+          "2024": {
+            "night": 178.0,
+            "day": 8388.0,
+            "share": 0.020779827223908476,
+            "n_days": 44
+          },
+          "2025": {
+            "night": 355.0,
+            "day": 10834.0,
+            "share": 0.03172758959692555,
+            "n_days": 46
+          }
+        },
+        "noaa20": {
+          "2019": {
+            "night": 119.0,
+            "day": 8794.0,
+            "share": 0.01335128464041288,
+            "n_days": 47
+          },
+          "2020": {
+            "night": 219.0,
+            "day": 9855.0,
+            "share": 0.021739130434782608,
+            "n_days": 47
+          },
+          "2021": {
+            "night": 182.0,
+            "day": 18257.0,
+            "share": 0.009870383426433104,
+            "n_days": 47
+          },
+          "2022": {
+            "night": 94.0,
+            "day": 9431.0,
+            "share": 0.009868766404199475,
+            "n_days": 47
+          },
+          "2023": {
+            "night": 201.0,
+            "day": 8655.0,
+            "share": 0.022696476964769646,
+            "n_days": 47
+          },
+          "2024": {
+            "night": 195.0,
+            "day": 10150.0,
+            "share": 0.018849685838569358,
+            "n_days": 47
+          },
+          "2025": {
+            "night": 387.0,
+            "day": 11172.0,
+            "share": 0.03348040487931482,
+            "n_days": 47
+          }
+        },
+        "snpp_day_pi": {
+          "n_base": 10,
+          "n_test": 4,
+          "base_mean_ln": 9.08608006632448,
+          "base_sd_ln": 0.2963699745752495,
+          "t_quantile": 2.262157162798205,
+          "pi_ln": [
+            8.689445098759249,
+            9.48271503388971
+          ],
+          "pi_ratio": [
+            5939.885278339044,
+            13130.788698051318
+          ],
+          "test_mean_ln": 9.132821792494298,
+          "test_mean_ratio": 9254.098306017275,
+          "test_vs_base_pct": 0.04785134154854753,
+          "outside": false
+        },
+        "snpp_night_pi": {
+          "n_base": 10,
+          "n_test": 4,
+          "base_mean_ln": 4.745650803841456,
+          "base_sd_ln": 0.5618728673079819,
+          "t_quantile": 2.262157162798205,
+          "pi_ln": [
+            3.993690599978431,
+            5.4976110077044815
+          ],
+          "pi_ratio": [
+            54.25475291820675,
+            244.1080628307471
+          ],
+          "test_mean_ln": 5.221012896839163,
+          "test_mean_ratio": 185.12159822075864,
+          "test_vs_base_pct": 0.6085965535940774,
+          "outside": false
+        },
+        "snpp_day_change_pct": 0.04785134154854753,
+        "snpp_night_change_pct": 0.6085965535940774,
+        "snpp_night_share_pre_max": 0.02570392491467577,
+        "snpp_night_share_post_mean": 0.021020715584927116,
+        "noaa20_day_change_pct_vs_2019_21": -0.1991546090066656,
+        "noaa20_night_change_pct_vs_2019_21": 0.264903846153846,
+        "day_fall": false,
+        "night_fall": false,
+        "night_share_rise": false
+      },
+      "a3_close_overpass": {
+        "tolerance_h": 0.16666666666666666,
+        "min_usable_days": 10,
+        "by_year": {
+          "2012": {
+            "aqua": 115.0,
+            "snpp": 482.0,
+            "ratio": 0.23858921161825727,
+            "usable_days": 4,
+            "evaluable": null
+          },
+          "2013": {
+            "aqua": 146.0,
+            "snpp": 984.0,
+            "ratio": 0.1483739837398374,
+            "usable_days": 8,
+            "evaluable": null
+          },
+          "2014": {
+            "aqua": 67.0,
+            "snpp": 994.0,
+            "ratio": 0.06740442655935612,
+            "usable_days": 8,
+            "evaluable": null
+          },
+          "2015": {
+            "aqua": 239.0,
+            "snpp": 1533.0,
+            "ratio": 0.15590345727332025,
+            "usable_days": 10,
+            "evaluable": null
+          },
+          "2016": {
+            "aqua": 311.0,
+            "snpp": 2041.0,
+            "ratio": 0.15237628613424792,
+            "usable_days": 11,
+            "evaluable": null
+          },
+          "2017": {
+            "aqua": 385.0,
+            "snpp": 1736.0,
+            "ratio": 0.2217741935483871,
+            "usable_days": 10,
+            "evaluable": null
+          },
+          "2018": {
+            "aqua": 253.0,
+            "snpp": 1396.0,
+            "ratio": 0.18123209169054444,
+            "usable_days": 9,
+            "evaluable": null
+          },
+          "2019": {
+            "aqua": 390.0,
+            "snpp": 2057.0,
+            "ratio": 0.18959649975692755,
+            "usable_days": 8,
+            "evaluable": null
+          },
+          "2020": {
+            "aqua": 407.0,
+            "snpp": 1803.0,
+            "ratio": 0.2257348863006101,
+            "usable_days": 9,
+            "evaluable": null
+          },
+          "2021": {
+            "aqua": 689.0,
+            "snpp": 3670.0,
+            "ratio": 0.1877384196185286,
+            "usable_days": 11,
+            "evaluable": null
+          },
+          "2022": {
+            "aqua": 247.0,
+            "snpp": 1702.0,
+            "ratio": 0.14512338425381904,
+            "usable_days": 8,
+            "evaluable": false
+          },
+          "2023": {
+            "aqua": 110.0,
+            "snpp": 1216.0,
+            "ratio": 0.09046052631578948,
+            "usable_days": 5,
+            "evaluable": false
+          },
+          "2024": {
+            "aqua": 146.0,
+            "snpp": 2160.0,
+            "ratio": 0.06759259259259258,
+            "usable_days": 9,
+            "evaluable": false
+          },
+          "2025": {
+            "aqua": 2.0,
+            "snpp": 204.0,
+            "ratio": 0.009803921568627454,
+            "usable_days": 1,
+            "evaluable": false
+          }
+        },
+        "evaluable_post_years": [],
+        "pi_test": null,
+        "close_shift": "insufficient",
+        "post_vs_pre": null
+      },
+      "a3_orbit_curve": {
+        "fit_years": [
+          2012,
+          2013,
+          2014,
+          2015,
+          2016,
+          2017,
+          2018,
+          2019,
+          2020,
+          2021
+        ],
+        "n_days_fit": 397,
+        "slope_ln_per_hour": 0.2884293141503637,
+        "slope_se": 0.10635281394669326,
+        "slope_p": 0.006979927355545861,
+        "effect_pct_per_hour": 0.3343300279376178,
+        "pre_daily_delta_range_h": [
+          -1.0554583333333352,
+          1.2792638888888896
+        ],
+        "ref_delta_h": 0.13927777777777778,
+        "by_year": {
+          "2012": {
+            "observed_ratio": 0.14125848468170982,
+            "expected_ratio": 0.16085301777876648,
+            "residual_pct": -0.12181638471966094,
+            "delta_h": 0.22180555555555515,
+            "beyond_pre_daily_range": false
+          },
+          "2013": {
+            "observed_ratio": 0.14895947426067907,
+            "expected_ratio": 0.15730361678892057,
+            "residual_pct": -0.05304482311705627,
+            "delta_h": 0.14444444444444393,
+            "beyond_pre_daily_range": false
+          },
+          "2014": {
+            "observed_ratio": 0.13595302619692864,
+            "expected_ratio": 0.15259885346654492,
+            "residual_pct": -0.10908225646181313,
+            "delta_h": 0.03916666666666657,
+            "beyond_pre_daily_range": false
+          },
+          "2015": {
+            "observed_ratio": 0.14704656011118833,
+            "expected_ratio": 0.1564552072090712,
+            "residual_pct": -0.06013636276937784,
+            "delta_h": 0.1256944444444441,
+            "beyond_pre_daily_range": false
+          },
+          "2016": {
+            "observed_ratio": 0.1440613026819923,
+            "expected_ratio": 0.15744546500086434,
+            "residual_pct": -0.08500824281473307,
+            "delta_h": 0.14756944444444553,
+            "beyond_pre_daily_range": false
+          },
+          "2017": {
+            "observed_ratio": 0.16936542669584245,
+            "expected_ratio": 0.15638627948727676,
+            "residual_pct": 0.08299415556862622,
+            "delta_h": 0.12416666666666742,
+            "beyond_pre_daily_range": false
+          },
+          "2018": {
+            "observed_ratio": 0.1557207765386204,
+            "expected_ratio": 0.15637375043715498,
+            "residual_pct": -0.004175725764133387,
+            "delta_h": 0.12388888888888872,
+            "beyond_pre_daily_range": false
+          },
+          "2019": {
+            "observed_ratio": 0.15277119848413073,
+            "expected_ratio": 0.15808694974169604,
+            "residual_pct": -0.03362549069515808,
+            "delta_h": 0.16166666666666707,
+            "beyond_pre_daily_range": false
+          },
+          "2020": {
+            "observed_ratio": 0.19867619247741122,
+            "expected_ratio": 0.15820415189411363,
+            "residual_pct": 0.25582160833797607,
+            "delta_h": 0.16423611111111125,
+            "beyond_pre_daily_range": false
+          },
+          "2021": {
+            "observed_ratio": 0.18840080390467986,
+            "expected_ratio": 0.15710839078408984,
+            "residual_pct": 0.19917722385429038,
+            "delta_h": 0.14013888888888815,
+            "beyond_pre_daily_range": false
+          },
+          "2022": {
+            "observed_ratio": 0.19326830314074392,
+            "expected_ratio": 0.1620625165141336,
+            "residual_pct": 0.19255400507056097,
+            "delta_h": 0.24777777777777743,
+            "beyond_pre_daily_range": false
+          },
+          "2023": {
+            "observed_ratio": 0.2417023245056089,
+            "expected_ratio": 0.17524387181097814,
+            "residual_pct": 0.3792341039252676,
+            "delta_h": 0.5188888888888901,
+            "beyond_pre_daily_range": false
+          },
+          "2024": {
+            "observed_ratio": 0.20672389127324747,
+            "expected_ratio": 0.19221530928611305,
+            "residual_pct": 0.07548088672551256,
+            "delta_h": 0.8393750000000004,
+            "beyond_pre_daily_range": false
+          },
+          "2025": {
+            "observed_ratio": 0.18155805796566366,
+            "expected_ratio": 0.22965565595395362,
+            "residual_pct": -0.20943354427087846,
+            "delta_h": 1.4563888888888883,
+            "beyond_pre_daily_range": true
+          }
+        },
+        "residual_pi_test": {
+          "n_base": 10,
+          "n_test": 4,
+          "base_mean_ln": -2.2204460492503132e-17,
+          "base_sd_ln": 0.12353527311174808,
+          "t_quantile": 2.262157162798205,
+          "pi_ln": [
+            -0.16532851924039674,
+            0.16532851924039668
+          ],
+          "pi_ratio": [
+            0.8476152004417197,
+            1.1797806356927858
+          ],
+          "test_mean_ln": 0.0838469795292886,
+          "test_mean_ratio": 1.0874624770564458,
+          "test_vs_base_pct": 0.08746247705644583,
+          "outside": false
+        },
+        "post_residual_mean_pct": 0.08746247705644583,
+        "orbit_sufficient": true,
+        "residual_sign": null
+      },
+      "a4_factor_spread": {
+        "years": [
+          2013,
+          2014,
+          2015,
+          2016,
+          2017,
+          2018,
+          2019,
+          2020,
+          2021
+        ],
+        "factor_by_year": {
+          "2013": 6.797794117647059,
+          "2014": 7.411129568106312,
+          "2015": 6.868620037807183,
+          "2016": 7.124620060790273,
+          "2017": 6.001937984496124,
+          "2018": 6.517241379310345,
+          "2019": 6.629457364341086,
+          "2020": 5.143687268885367,
+          "2021": 5.35588056063376
+        },
+        "mean": 6.427818704668613,
+        "sd": 0.7755396416516814,
+        "cv": 0.12065362719212917,
+        "sd_ln": 0.1258783954563637,
+        "harmonized_step_2012": 0.12668484182590878,
+        "step_abs_ln": 0.11927955249484555,
+        "step_in_sd": 0.9475776368327982,
+        "step_normal": true
+      },
+      "a5_terra_aqua_pre2012": {
+        "by_year": {
+          "2003": {
+            "ratio": 0.2540322580645161,
+            "n_days": 40
+          },
+          "2004": {
+            "ratio": 0.20746268656716418,
+            "n_days": 45
+          },
+          "2005": {
+            "ratio": 0.2805194805194805,
+            "n_days": 44
+          },
+          "2006": {
+            "ratio": 0.14156626506024098,
+            "n_days": 39
+          },
+          "2007": {
+            "ratio": 0.18395303326810175,
+            "n_days": 47
+          },
+          "2008": {
+            "ratio": 0.24004305705059203,
+            "n_days": 45
+          },
+          "2009": {
+            "ratio": 0.18059299191374664,
+            "n_days": 42
+          },
+          "2010": {
+            "ratio": 0.11216429699842022,
+            "n_days": 42
+          },
+          "2011": {
+            "ratio": 0.22792937399678972,
+            "n_days": 45
+          }
+        },
+        "cv": 0.26690098081752706,
+        "theil_sen": {
+          "years": [
+            2003,
+            2004,
+            2005,
+            2006,
+            2007,
+            2008,
+            2009,
+            2010,
+            2011
+          ],
+          "slope_ln_per_year": -0.03734578428178244,
+          "ci95_ln_per_year": [
+            -0.18333568758785926,
+            0.05358883668687703
+          ],
+          "slope_pct_per_year": -0.03665703110609775,
+          "ci95_pct_per_year": [
+            -0.1675113472808828,
+            0.055050714814498525
+          ],
+          "excludes_zero": false
+        },
+        "stable": true
+      },
+      "evidence": {
+        "O": {
+          "supporting": [
+            "pre-drift curve explains the 2022-25 ratio (mean residual +8.7%)",
+            "close-overpass (\u0394 < 10 min) ratio: insufficient"
+          ],
+          "against": [],
+          "verdict": "supported"
+        },
+        "T": {
+          "supporting": [
+            "S-NPP night count +60.9% (not below PI)"
+          ],
+          "against": [
+            "S-NPP night share 2022-25 mean 2.1% vs 2012-21 max 2.6%"
+          ],
+          "verdict": "not supported"
+        },
+        "D": {
+          "supporting": [
+            "NOAA-20/S-NPP stable 2019-25 (Theil-Sen -0.6%/yr)"
+          ],
+          "against": [
+            "S-NPP day count 2022-25 +4.8% vs 2012-21 (not below PI)",
+            "S-NPP night count +60.9% (not below PI)"
+          ],
+          "verdict": "not supported"
+        }
+      },
+      "reliability": {
+        "2003": {
+          "harmonization_reliable": "yes",
+          "reasons": []
+        },
+        "2004": {
+          "harmonization_reliable": "yes",
+          "reasons": []
+        },
+        "2005": {
+          "harmonization_reliable": "yes",
+          "reasons": []
+        },
+        "2006": {
+          "harmonization_reliable": "yes",
+          "reasons": []
+        },
+        "2007": {
+          "harmonization_reliable": "yes",
+          "reasons": []
+        },
+        "2008": {
+          "harmonization_reliable": "yes",
+          "reasons": []
+        },
+        "2009": {
+          "harmonization_reliable": "yes",
+          "reasons": []
+        },
+        "2010": {
+          "harmonization_reliable": "yes",
+          "reasons": []
+        },
+        "2011": {
+          "harmonization_reliable": "yes",
+          "reasons": []
+        },
+        "2012": {
+          "harmonization_reliable": "yes",
+          "reasons": []
+        },
+        "2013": {
+          "harmonization_reliable": "yes",
+          "reasons": []
+        },
+        "2014": {
+          "harmonization_reliable": "yes",
+          "reasons": []
+        },
+        "2015": {
+          "harmonization_reliable": "yes",
+          "reasons": []
+        },
+        "2016": {
+          "harmonization_reliable": "yes",
+          "reasons": []
+        },
+        "2017": {
+          "harmonization_reliable": "yes",
+          "reasons": []
+        },
+        "2018": {
+          "harmonization_reliable": "yes",
+          "reasons": []
+        },
+        "2019": {
+          "harmonization_reliable": "yes",
+          "reasons": []
+        },
+        "2020": {
+          "harmonization_reliable": "yes",
+          "reasons": []
+        },
+        "2021": {
+          "harmonization_reliable": "yes",
+          "reasons": []
+        },
+        "2022": {
+          "harmonization_reliable": "yes",
+          "reasons": []
+        },
+        "2023": {
+          "harmonization_reliable": "caution",
+          "reasons": [
+            "aqua_overpass_drift"
+          ]
+        },
+        "2024": {
+          "harmonization_reliable": "caution",
+          "reasons": [
+            "aqua_overpass_drift"
+          ]
+        },
+        "2025": {
+          "harmonization_reliable": "caution",
+          "reasons": [
+            "aqua_overpass_drift"
+          ]
+        }
+      }
+    },
+    "IN_Punjab": {
+      "a1_noaa20_snpp": {
+        "by_year": {
+          "2019": {
+            "noaa20": 42658.0,
+            "snpp": 42754.0,
+            "ratio": 0.9977545960611872,
+            "n_days": 47
+          },
+          "2020": {
+            "noaa20": 68892.0,
+            "snpp": 67623.0,
+            "ratio": 1.0187658045339603,
+            "n_days": 47
+          },
+          "2021": {
+            "noaa20": 72553.0,
+            "snpp": 73461.0,
+            "ratio": 0.9876396999768585,
+            "n_days": 47
+          },
+          "2022": {
+            "noaa20": 47368.0,
+            "snpp": 44312.0,
+            "ratio": 1.0689655172413792,
+            "n_days": 47
+          },
+          "2023": {
+            "noaa20": 29752.0,
+            "snpp": 29125.0,
+            "ratio": 1.0215278969957082,
+            "n_days": 46
+          },
+          "2024": {
+            "noaa20": 8506.0,
+            "snpp": 8123.0,
+            "ratio": 1.0471500677089745,
+            "n_days": 44
+          },
+          "2025": {
+            "noaa20": 3785.0,
+            "snpp": 3756.0,
+            "ratio": 1.0077209797657083,
+            "n_days": 46
+          }
+        },
+        "theil_sen": {
+          "years": [
+            2019,
+            2020,
+            2021,
+            2022,
+            2023,
+            2024,
+            2025
+          ],
+          "slope_ln_per_year": 0.005032162356240138,
+          "ci95_ln_per_year": [
+            -0.01966668298509214,
+            0.022979767712310185
+          ],
+          "slope_pct_per_year": 0.005044844949929406,
+          "ci95_pct_per_year": [
+            -0.019474555341240984,
+            0.023245836733639447
+          ],
+          "excludes_zero": false
+        },
+        "stable": true
+      },
+      "a2_viirs_only": {
+        "snpp": {
+          "2012": {
+            "night": 6.0,
+            "day": 62051.0,
+            "share": 9.668530544499411e-05,
+            "n_days": 47
+          },
+          "2013": {
+            "night": 7.0,
+            "day": 57575.0,
+            "share": 0.00012156576707999027,
+            "n_days": 47
+          },
+          "2014": {
+            "night": 10.0,
+            "day": 65717.0,
+            "share": 0.0001521444763947845,
+            "n_days": 47
+          },
+          "2015": {
+            "night": 1.0,
+            "day": 57590.0,
+            "share": 1.736382420864371e-05,
+            "n_days": 47
+          },
+          "2016": {
+            "night": 6.0,
+            "day": 79052.0,
+            "share": 7.589364770168737e-05,
+            "n_days": 47
+          },
+          "2017": {
+            "night": 18.0,
+            "day": 53175.0,
+            "share": 0.00033839038971293216,
+            "n_days": 47
+          },
+          "2018": {
+            "night": 44.0,
+            "day": 55627.0,
+            "share": 0.0007903576368306659,
+            "n_days": 47
+          },
+          "2019": {
+            "night": 15.0,
+            "day": 42739.0,
+            "share": 0.00035084436543949106,
+            "n_days": 47
+          },
+          "2020": {
+            "night": 59.0,
+            "day": 67564.0,
+            "share": 0.0008724842139508747,
+            "n_days": 47
+          },
+          "2021": {
+            "night": 31.0,
+            "day": 73430.0,
+            "share": 0.0004219926219354487,
+            "n_days": 47
+          },
+          "2022": {
+            "night": 31.0,
+            "day": 44281.0,
+            "share": 0.0006995847625925258,
+            "n_days": 47
+          },
+          "2023": {
+            "night": 50.0,
+            "day": 29075.0,
+            "share": 0.0017167381974248926,
+            "n_days": 46
+          },
+          "2024": {
+            "night": 112.0,
+            "day": 8011.0,
+            "share": 0.013788009356149206,
+            "n_days": 44
+          },
+          "2025": {
+            "night": 86.0,
+            "day": 3670.0,
+            "share": 0.022896698615548456,
+            "n_days": 46
+          }
+        },
+        "noaa20": {
+          "2019": {
+            "night": 22.0,
+            "day": 42636.0,
+            "share": 0.0005157297576070139,
+            "n_days": 47
+          },
+          "2020": {
+            "night": 65.0,
+            "day": 68827.0,
+            "share": 0.000943505777158451,
+            "n_days": 47
+          },
+          "2021": {
+            "night": 48.0,
+            "day": 72505.0,
+            "share": 0.000661585323832233,
+            "n_days": 47
+          },
+          "2022": {
+            "night": 33.0,
+            "day": 47335.0,
+            "share": 0.000696672859314305,
+            "n_days": 47
+          },
+          "2023": {
+            "night": 66.0,
+            "day": 31490.0,
+            "share": 0.002091519837748764,
+            "n_days": 47
+          },
+          "2024": {
+            "night": 102.0,
+            "day": 9205.0,
+            "share": 0.010959492854840443,
+            "n_days": 47
+          },
+          "2025": {
+            "night": 126.0,
+            "day": 3796.0,
+            "share": 0.03212646608873024,
+            "n_days": 47
+          }
+        },
+        "snpp_day_pi": {
+          "n_base": 10,
+          "n_test": 4,
+          "base_mean_ln": 11.012435440241125,
+          "base_sd_ln": 0.17576804033746604,
+          "t_quantile": 2.262157162798205,
+          "pi_ln": [
+            10.777203274505816,
+            11.247667605976435
+          ],
+          "pi_ratio": [
+            47915.928971990164,
+            76700.8144525616
+          ],
+          "test_mean_ln": 9.543229250951994,
+          "test_mean_ratio": 13949.92276886341,
+          "test_vs_base_pct": -0.7698919250391622,
+          "outside": true
+        },
+        "snpp_night_pi": {
+          "n_base": 10,
+          "n_test": 4,
+          "base_mean_ln": 2.6146074949347144,
+          "base_sd_ln": 1.021353793697306,
+          "t_quantile": 2.262157162798205,
+          "pi_ln": [
+            1.2477192687696246,
+            3.9814957210998045
+          ],
+          "pi_ratio": [
+            3.4823914942960053,
+            53.59714067830415
+          ],
+          "test_mean_ln": 4.1477143682227435,
+          "test_mean_ratio": 63.289179098298455,
+          "test_vs_base_pct": 3.632547224458297,
+          "outside": true
+        },
+        "snpp_day_change_pct": -0.7698919250391622,
+        "snpp_night_change_pct": 3.632547224458297,
+        "snpp_night_share_pre_max": 0.0008724842139508747,
+        "snpp_night_share_post_mean": 0.009775257732928769,
+        "noaa20_day_change_pct_vs_2019_21": -0.6256441337623935,
+        "noaa20_night_change_pct_vs_2019_21": 0.8166666666666667,
+        "day_fall": true,
+        "night_fall": false,
+        "night_share_rise": true
+      },
+      "a3_close_overpass": {
+        "tolerance_h": 0.16666666666666666,
+        "min_usable_days": 10,
+        "by_year": {
+          "2012": {
+            "aqua": 1678.0,
+            "snpp": 10259.0,
+            "ratio": 0.16356370016570815,
+            "usable_days": 7,
+            "evaluable": null
+          },
+          "2013": {
+            "aqua": 1369.0,
+            "snpp": 8397.0,
+            "ratio": 0.16303441705370966,
+            "usable_days": 10,
+            "evaluable": null
+          },
+          "2014": {
+            "aqua": 910.0,
+            "snpp": 6364.0,
+            "ratio": 0.14299182903834068,
+            "usable_days": 7,
+            "evaluable": null
+          },
+          "2015": {
+            "aqua": 2692.0,
+            "snpp": 14733.0,
+            "ratio": 0.18271906604221816,
+            "usable_days": 11,
+            "evaluable": null
+          },
+          "2016": {
+            "aqua": 3537.0,
+            "snpp": 19473.0,
+            "ratio": 0.1816361115390541,
+            "usable_days": 10,
+            "evaluable": null
+          },
+          "2017": {
+            "aqua": 2343.0,
+            "snpp": 13014.0,
+            "ratio": 0.1800368833563854,
+            "usable_days": 11,
+            "evaluable": null
+          },
+          "2018": {
+            "aqua": 2198.0,
+            "snpp": 10680.0,
+            "ratio": 0.2058052434456929,
+            "usable_days": 11,
+            "evaluable": null
+          },
+          "2019": {
+            "aqua": 2243.0,
+            "snpp": 9900.0,
+            "ratio": 0.22656565656565658,
+            "usable_days": 11,
+            "evaluable": null
+          },
+          "2020": {
+            "aqua": 3273.0,
+            "snpp": 15677.0,
+            "ratio": 0.2087771895132997,
+            "usable_days": 10,
+            "evaluable": null
+          },
+          "2021": {
+            "aqua": 3432.0,
+            "snpp": 16517.0,
+            "ratio": 0.20778591753950476,
+            "usable_days": 10,
+            "evaluable": null
+          },
+          "2022": {
+            "aqua": 2404.0,
+            "snpp": 7276.0,
+            "ratio": 0.3304013194062671,
+            "usable_days": 6,
+            "evaluable": false
+          },
+          "2023": {
+            "aqua": 1746.0,
+            "snpp": 6889.0,
+            "ratio": 0.2534475250399187,
+            "usable_days": 6,
+            "evaluable": false
+          },
+          "2024": {
+            "aqua": 495.0,
+            "snpp": 1404.0,
+            "ratio": 0.35256410256410253,
+            "usable_days": 7,
+            "evaluable": false
+          },
+          "2025": {
+            "aqua": 5.0,
+            "snpp": 84.0,
+            "ratio": 0.05952380952380952,
+            "usable_days": 2,
+            "evaluable": false
+          }
+        },
+        "evaluable_post_years": [],
+        "pi_test": null,
+        "close_shift": "insufficient",
+        "post_vs_pre": null
+      },
+      "a3_orbit_curve": {
+        "fit_years": [
+          2012,
+          2013,
+          2014,
+          2015,
+          2016,
+          2017,
+          2018,
+          2019,
+          2020,
+          2021
+        ],
+        "n_days_fit": 420,
+        "slope_ln_per_hour": 0.23206063580137554,
+        "slope_se": 0.09189265321202066,
+        "slope_p": 0.011927261682574387,
+        "effect_pct_per_hour": 0.26119620015214395,
+        "pre_daily_delta_range_h": [
+          -1.2655624999999984,
+          1.3545902777777776
+        ],
+        "ref_delta_h": 0.08888194444444472,
+        "by_year": {
+          "2012": {
+            "observed_ratio": 0.2123736926076937,
+            "expected_ratio": 0.20596027615726767,
+            "residual_pct": 0.031139094247129684,
+            "delta_h": 0.19798611111111075,
+            "beyond_pre_daily_range": false
+          },
+          "2013": {
+            "observed_ratio": 0.20246634824142423,
+            "expected_ratio": 0.20250778764259197,
+            "residual_pct": -0.00020463114851110298,
+            "delta_h": 0.12513888888888935,
+            "beyond_pre_daily_range": false
+          },
+          "2014": {
+            "observed_ratio": 0.1975592312491441,
+            "expected_ratio": 0.19778597505433068,
+            "residual_pct": -0.001146409926812586,
+            "delta_h": 0.023472222222222783,
+            "beyond_pre_daily_range": false
+          },
+          "2015": {
+            "observed_ratio": 0.1750130230942872,
+            "expected_ratio": 0.20227947297116616,
+            "residual_pct": -0.1347959309779576,
+            "delta_h": 0.12027777777777882,
+            "beyond_pre_daily_range": false
+          },
+          "2016": {
+            "observed_ratio": 0.18971057025755197,
+            "expected_ratio": 0.20183662579845918,
+            "residual_pct": -0.06007856846068893,
+            "delta_h": 0.11083333333333378,
+            "beyond_pre_daily_range": false
+          },
+          "2017": {
+            "observed_ratio": 0.18630043826507478,
+            "expected_ratio": 0.1938103699157426,
+            "residual_pct": -0.03874886392267196,
+            "delta_h": -0.06402777777777757,
+            "beyond_pre_daily_range": false
+          },
+          "2018": {
+            "observed_ratio": 0.2076329839825984,
+            "expected_ratio": 0.20344329662130425,
+            "residual_pct": 0.02059388257502026,
+            "delta_h": 0.14499999999999957,
+            "beyond_pre_daily_range": false
+          },
+          "2019": {
+            "observed_ratio": 0.2118907789138726,
+            "expected_ratio": 0.2019928139849236,
+            "residual_pct": 0.049001569579043336,
+            "delta_h": 0.11416666666666764,
+            "beyond_pre_daily_range": false
+          },
+          "2020": {
+            "observed_ratio": 0.21715706589307912,
+            "expected_ratio": 0.19549171869603255,
+            "residual_pct": 0.11082488476524044,
+            "delta_h": -0.02680555555555486,
+            "beyond_pre_daily_range": false
+          },
+          "2021": {
+            "observed_ratio": 0.21240637341685958,
+            "expected_ratio": 0.2033384099331227,
+            "residual_pct": 0.04459542831440122,
+            "delta_h": 0.142777777777777,
+            "beyond_pre_daily_range": false
+          },
+          "2022": {
+            "observed_ratio": 0.22325602402836428,
+            "expected_ratio": 0.20850167525357025,
+            "residual_pct": 0.07076369413747141,
+            "delta_h": 0.25083333333333435,
+            "beyond_pre_daily_range": false
+          },
+          "2023": {
+            "observed_ratio": 0.2729492691315563,
+            "expected_ratio": 0.21564382726604925,
+            "residual_pct": 0.26574116492009225,
+            "delta_h": 0.3959722222222233,
+            "beyond_pre_daily_range": false
+          },
+          "2024": {
+            "observed_ratio": 0.41805018100112346,
+            "expected_ratio": 0.23980160964817612,
+            "residual_pct": 0.7433168259982239,
+            "delta_h": 0.8535416666666658,
+            "beyond_pre_daily_range": false
+          },
+          "2025": {
+            "observed_ratio": 0.7664850136239783,
+            "expected_ratio": 0.27001272038006846,
+            "residual_pct": 1.838699645502175,
+            "delta_h": 1.364861111111109,
+            "beyond_pre_daily_range": true
+          }
+        },
+        "residual_pi_test": {
+          "n_base": 10,
+          "n_test": 4,
+          "base_mean_ln": 1.1102230246251565e-16,
+          "base_sd_ln": 0.06908989310746569,
+          "t_quantile": 2.262157162798205,
+          "pi_ln": [
+            -0.09246371043841008,
+            0.0924637104384103
+          ],
+          "pi_ratio": [
+            0.9116822949149488,
+            1.0968733357855662
+          ],
+          "test_mean_ln": 0.4757913937501675,
+          "test_mean_ratio": 1.6092872735576327,
+          "test_vs_base_pct": 0.6092872735576325,
+          "outside": true
+        },
+        "post_residual_mean_pct": 0.6092872735576325,
+        "orbit_sufficient": false,
+        "residual_sign": "positive"
+      },
+      "a4_factor_spread": {
+        "years": [
+          2013,
+          2014,
+          2015,
+          2016,
+          2017,
+          2018,
+          2019,
+          2020,
+          2021
+        ],
+        "factor_by_year": {
+          "2013": 4.93969288839324,
+          "2014": 5.0625433258877,
+          "2015": 5.713959718226015,
+          "2016": 5.2712361648219765,
+          "2017": 5.369499087406206,
+          "2018": 4.819582720110813,
+          "2019": 4.72106890459364,
+          "2020": 4.608354913452365,
+          "2021": 4.709944220042316
+        },
+        "mean": 5.023986882548253,
+        "sd": 0.3657318984986965,
+        "cv": 0.07279714438927654,
+        "sd_ln": 0.07141918796225913,
+        "harmonized_step_2012": -0.060869370307207515,
+        "step_abs_ln": 0.06280069369580066,
+        "step_in_sd": 0.8793252274022936,
+        "step_normal": true
+      },
+      "a5_terra_aqua_pre2012": {
+        "by_year": {
+          "2003": {
+            "ratio": 0.21575281300232185,
+            "n_days": 40
+          },
+          "2004": {
+            "ratio": 0.20133381398702235,
+            "n_days": 45
+          },
+          "2005": {
+            "ratio": 0.20124525116082737,
+            "n_days": 44
+          },
+          "2006": {
+            "ratio": 0.14014821272885788,
+            "n_days": 39
+          },
+          "2007": {
+            "ratio": 0.18025751072961374,
+            "n_days": 47
+          },
+          "2008": {
+            "ratio": 0.1952206971462427,
+            "n_days": 45
+          },
+          "2009": {
+            "ratio": 0.20224982423248183,
+            "n_days": 42
+          },
+          "2010": {
+            "ratio": 0.1159274193548387,
+            "n_days": 42
+          },
+          "2011": {
+            "ratio": 0.14549758718018757,
+            "n_days": 45
+          }
+        },
+        "cv": 0.19656052738107657,
+        "theil_sen": {
+          "years": [
+            2003,
+            2004,
+            2005,
+            2006,
+            2007,
+            2008,
+            2009,
+            2010,
+            2011
+          ],
+          "slope_ln_per_year": -0.04566870791756807,
+          "ci95_ln_per_year": [
+            -0.09799039843348585,
+            0.0012448418934212224
+          ],
+          "slope_pct_per_year": -0.04464158755298342,
+          "ci95_pct_per_year": [
+            -0.09334239095453256,
+            0.001245617030698698
+          ],
+          "excludes_zero": false
+        },
+        "stable": true
+      },
+      "evidence": {
+        "O": {
+          "supporting": [
+            "close-overpass (\u0394 < 10 min) ratio: insufficient"
+          ],
+          "against": [
+            "pre-drift curve does not explain the 2022-25 ratio (mean residual +60.9%)"
+          ],
+          "verdict": "cannot separate"
+        },
+        "T": {
+          "supporting": [
+            "S-NPP night share 2022-25 mean 1.0% vs 2012-21 max 0.1%",
+            "S-NPP night count +363.3% (not below PI)",
+            "pre-drift curve does not explain the 2022-25 ratio (mean residual +60.9%)"
+          ],
+          "against": [],
+          "verdict": "supported"
+        },
+        "D": {
+          "supporting": [
+            "S-NPP day count 2022-25 -77.0% vs 2012-21 (below PI)",
+            "NOAA-20/S-NPP stable 2019-25 (Theil-Sen +0.5%/yr)"
+          ],
+          "against": [
+            "S-NPP night count +363.3% (not below PI)"
+          ],
+          "verdict": "cannot separate"
+        }
+      },
+      "reliability": {
+        "2003": {
+          "harmonization_reliable": "yes",
+          "reasons": []
+        },
+        "2004": {
+          "harmonization_reliable": "yes",
+          "reasons": []
+        },
+        "2005": {
+          "harmonization_reliable": "yes",
+          "reasons": []
+        },
+        "2006": {
+          "harmonization_reliable": "yes",
+          "reasons": []
+        },
+        "2007": {
+          "harmonization_reliable": "yes",
+          "reasons": []
+        },
+        "2008": {
+          "harmonization_reliable": "yes",
+          "reasons": []
+        },
+        "2009": {
+          "harmonization_reliable": "yes",
+          "reasons": []
+        },
+        "2010": {
+          "harmonization_reliable": "yes",
+          "reasons": []
+        },
+        "2011": {
+          "harmonization_reliable": "yes",
+          "reasons": []
+        },
+        "2012": {
+          "harmonization_reliable": "yes",
+          "reasons": []
+        },
+        "2013": {
+          "harmonization_reliable": "yes",
+          "reasons": []
+        },
+        "2014": {
+          "harmonization_reliable": "yes",
+          "reasons": []
+        },
+        "2015": {
+          "harmonization_reliable": "yes",
+          "reasons": []
+        },
+        "2016": {
+          "harmonization_reliable": "yes",
+          "reasons": []
+        },
+        "2017": {
+          "harmonization_reliable": "yes",
+          "reasons": []
+        },
+        "2018": {
+          "harmonization_reliable": "yes",
+          "reasons": []
+        },
+        "2019": {
+          "harmonization_reliable": "yes",
+          "reasons": []
+        },
+        "2020": {
+          "harmonization_reliable": "yes",
+          "reasons": []
+        },
+        "2021": {
+          "harmonization_reliable": "yes",
+          "reasons": []
+        },
+        "2022": {
+          "harmonization_reliable": "caution",
+          "reasons": [
+            "burning_time_shift"
+          ]
+        },
+        "2023": {
+          "harmonization_reliable": "caution",
+          "reasons": [
+            "burning_time_shift"
+          ]
+        },
+        "2024": {
+          "harmonization_reliable": "caution",
+          "reasons": [
+            "aqua_overpass_drift",
+            "burning_time_shift"
+          ]
+        },
+        "2025": {
+          "harmonization_reliable": "caution",
+          "reasons": [
+            "aqua_overpass_drift",
+            "burning_time_shift"
+          ]
+        }
+      }
+    },
+    "rest_of_box": {
+      "a1_noaa20_snpp": {
+        "by_year": {
+          "2019": {
+            "noaa20": 13098.0,
+            "snpp": 12930.0,
+            "ratio": 1.0129930394431554,
+            "n_days": 47
+          },
+          "2020": {
+            "noaa20": 22642.0,
+            "snpp": 22204.0,
+            "ratio": 1.0197261754638804,
+            "n_days": 47
+          },
+          "2021": {
+            "noaa20": 19906.0,
+            "snpp": 19330.0,
+            "ratio": 1.0297982410760476,
+            "n_days": 47
+          },
+          "2022": {
+            "noaa20": 16991.0,
+            "snpp": 16446.0,
+            "ratio": 1.0331387571445945,
+            "n_days": 47
+          },
+          "2023": {
+            "noaa20": 15852.0,
+            "snpp": 15708.0,
+            "ratio": 1.0091673032849504,
+            "n_days": 46
+          },
+          "2024": {
+            "noaa20": 21044.0,
+            "snpp": 20307.0,
+            "ratio": 1.036292903924755,
+            "n_days": 44
+          },
+          "2025": {
+            "noaa20": 20877.0,
+            "snpp": 20612.0,
+            "ratio": 1.0128565883951097,
+            "n_days": 46
+          }
+        },
+        "theil_sen": {
+          "years": [
+            2019,
+            2020,
+            2021,
+            2022,
+            2023,
+            2024,
+            2025
+          ],
+          "slope_ln_per_year": 0.0018245527262097374,
+          "ci95_ln_per_year": [
+            -0.006608953830024332,
+            0.0066247818159071645
+          ],
+          "slope_pct_per_year": 0.0018262182353174783,
+          "ci95_pct_per_year": [
+            -0.006587162726553353,
+            0.006646774221100493
+          ],
+          "excludes_zero": false
+        },
+        "stable": true
+      },
+      "a2_viirs_only": {
+        "snpp": {
+          "2012": {
+            "night": 434.0,
+            "day": 14291.0,
+            "share": 0.029473684210526315,
+            "n_days": 47
+          },
+          "2013": {
+            "night": 855.0,
+            "day": 17560.0,
+            "share": 0.04642954113494434,
+            "n_days": 47
+          },
+          "2014": {
+            "night": 841.0,
+            "day": 17664.0,
+            "share": 0.04544717643880032,
+            "n_days": 47
+          },
+          "2015": {
+            "night": 579.0,
+            "day": 16537.0,
+            "share": 0.03382799719560645,
+            "n_days": 47
+          },
+          "2016": {
+            "night": 3729.0,
+            "day": 24524.0,
+            "share": 0.1319859837893321,
+            "n_days": 47
+          },
+          "2017": {
+            "night": 1607.0,
+            "day": 18718.0,
+            "share": 0.07906519065190652,
+            "n_days": 47
+          },
+          "2018": {
+            "night": 661.0,
+            "day": 15160.0,
+            "share": 0.041779912774160925,
+            "n_days": 47
+          },
+          "2019": {
+            "night": 545.0,
+            "day": 12385.0,
+            "share": 0.04215003866976025,
+            "n_days": 47
+          },
+          "2020": {
+            "night": 3726.0,
+            "day": 18478.0,
+            "share": 0.16780760223383173,
+            "n_days": 47
+          },
+          "2021": {
+            "night": 908.0,
+            "day": 18422.0,
+            "share": 0.046973616140713916,
+            "n_days": 47
+          },
+          "2022": {
+            "night": 660.0,
+            "day": 15786.0,
+            "share": 0.04013133892739876,
+            "n_days": 47
+          },
+          "2023": {
+            "night": 858.0,
+            "day": 14850.0,
+            "share": 0.0546218487394958,
+            "n_days": 46
+          },
+          "2024": {
+            "night": 1338.0,
+            "day": 18969.0,
+            "share": 0.06588860983897178,
+            "n_days": 44
+          },
+          "2025": {
+            "night": 1450.0,
+            "day": 19162.0,
+            "share": 0.07034737046380748,
+            "n_days": 46
+          }
+        },
+        "noaa20": {
+          "2019": {
+            "night": 578.0,
+            "day": 12520.0,
+            "share": 0.044128874637349214,
+            "n_days": 47
+          },
+          "2020": {
+            "night": 3920.0,
+            "day": 18722.0,
+            "share": 0.17312958219238583,
+            "n_days": 47
+          },
+          "2021": {
+            "night": 901.0,
+            "day": 19005.0,
+            "share": 0.04526273485381292,
+            "n_days": 47
+          },
+          "2022": {
+            "night": 724.0,
+            "day": 16267.0,
+            "share": 0.042610793949738095,
+            "n_days": 47
+          },
+          "2023": {
+            "night": 949.0,
+            "day": 15438.0,
+            "share": 0.05791175932141331,
+            "n_days": 47
+          },
+          "2024": {
+            "night": 1526.0,
+            "day": 20979.0,
+            "share": 0.06780715396578538,
+            "n_days": 47
+          },
+          "2025": {
+            "night": 1648.0,
+            "day": 20268.0,
+            "share": 0.07519620368680416,
+            "n_days": 47
+          }
+        },
+        "snpp_day_pi": {
+          "n_base": 10,
+          "n_test": 4,
+          "base_mean_ln": 9.747493934438394,
+          "base_sd_ln": 0.18358958568290434,
+          "t_quantile": 2.262157162798205,
+          "pi_ln": [
+            9.501794114586488,
+            9.9931937542903
+          ],
+          "pi_ratio": [
+            13383.71722476224,
+            21877.057288770946
+          ],
+          "test_mean_ln": 9.746028813990057,
+          "test_mean_ratio": 17086.241260781655,
+          "test_vs_base_pct": -0.0014640476833469585,
+          "outside": false
+        },
+        "snpp_night_pi": {
+          "n_base": 10,
+          "n_test": 4,
+          "base_mean_ln": 6.936692301272863,
+          "base_sd_ln": 0.7652023220054521,
+          "t_quantile": 2.262157162798205,
+          "pi_ln": [
+            5.9126142090017115,
+            7.960770393544015
+          ],
+          "pi_ratio": [
+            369.6712913436863,
+            2866.280265959506
+          ],
+          "test_mean_ln": 6.932302340102825,
+          "test_mean_ratio": 1024.850820600478,
+          "test_vs_base_pct": -0.004380339375418707,
+          "outside": false
+        },
+        "snpp_day_change_pct": -0.0014640476833469585,
+        "snpp_night_change_pct": -0.004380339375418707,
+        "snpp_night_share_pre_max": 0.16780760223383173,
+        "snpp_night_share_post_mean": 0.05774729199241845,
+        "noaa20_day_change_pct_vs_2019_21": 0.08890082990029247,
+        "noaa20_night_change_pct_vs_2019_21": -0.3266808668271902,
+        "day_fall": false,
+        "night_fall": false,
+        "night_share_rise": false
+      },
+      "a3_close_overpass": {
+        "tolerance_h": 0.16666666666666666,
+        "min_usable_days": 10,
+        "by_year": {
+          "2012": {
+            "aqua": 195.0,
+            "snpp": 1956.0,
+            "ratio": 0.09969325153374232,
+            "usable_days": 8,
+            "evaluable": null
+          },
+          "2013": {
+            "aqua": 610.0,
+            "snpp": 3947.0,
+            "ratio": 0.15454775779072713,
+            "usable_days": 12,
+            "evaluable": null
+          },
+          "2014": {
+            "aqua": 434.0,
+            "snpp": 3218.0,
+            "ratio": 0.1348663766314481,
+            "usable_days": 7,
+            "evaluable": null
+          },
+          "2015": {
+            "aqua": 644.0,
+            "snpp": 4508.0,
+            "ratio": 0.14285714285714285,
+            "usable_days": 14,
+            "evaluable": null
+          },
+          "2016": {
+            "aqua": 1006.0,
+            "snpp": 6339.0,
+            "ratio": 0.1587001104275122,
+            "usable_days": 11,
+            "evaluable": null
+          },
+          "2017": {
+            "aqua": 818.0,
+            "snpp": 4697.0,
+            "ratio": 0.17415371513732172,
+            "usable_days": 12,
+            "evaluable": null
+          },
+          "2018": {
+            "aqua": 558.0,
+            "snpp": 3574.0,
+            "ratio": 0.15612758813654168,
+            "usable_days": 11,
+            "evaluable": null
+          },
+          "2019": {
+            "aqua": 468.0,
+            "snpp": 3180.0,
+            "ratio": 0.1471698113207547,
+            "usable_days": 12,
+            "evaluable": null
+          },
+          "2020": {
+            "aqua": 398.0,
+            "snpp": 3374.0,
+            "ratio": 0.11796087729697688,
+            "usable_days": 9,
+            "evaluable": null
+          },
+          "2021": {
+            "aqua": 619.0,
+            "snpp": 3912.0,
+            "ratio": 0.15823108384458076,
+            "usable_days": 10,
+            "evaluable": null
+          },
+          "2022": {
+            "aqua": 786.0,
+            "snpp": 3670.0,
+            "ratio": 0.21416893732970024,
+            "usable_days": 11,
+            "evaluable": true
+          },
+          "2023": {
+            "aqua": 700.0,
+            "snpp": 3621.0,
+            "ratio": 0.19331676332504832,
+            "usable_days": 8,
+            "evaluable": false
+          },
+          "2024": {
+            "aqua": 316.0,
+            "snpp": 1364.0,
+            "ratio": 0.23167155425219937,
+            "usable_days": 5,
+            "evaluable": false
+          },
+          "2025": {
+            "aqua": 0.0,
+            "snpp": 0.0,
+            "ratio": null,
+            "usable_days": 0,
+            "evaluable": false
+          }
+        },
+        "evaluable_post_years": [
+          2022
+        ],
+        "pi_test": null,
+        "close_shift": "insufficient",
+        "post_vs_pre": null
+      },
+      "a3_orbit_curve": {
+        "fit_years": [
+          2012,
+          2013,
+          2014,
+          2015,
+          2016,
+          2017,
+          2018,
+          2019,
+          2020,
+          2021
+        ],
+        "n_days_fit": 456,
+        "slope_ln_per_hour": 0.3527918577230285,
+        "slope_se": 0.09592626402066752,
+        "slope_p": 0.000263492433785958,
+        "effect_pct_per_hour": 0.42303491887801936,
+        "pre_daily_delta_range_h": [
+          -1.128715277777777,
+          1.1558854166666668
+        ],
+        "ref_delta_h": 0.10929166666666665,
+        "by_year": {
+          "2012": {
+            "observed_ratio": 0.17402561052410612,
+            "expected_ratio": 0.17210830402231103,
+            "residual_pct": 0.011140116176768133,
+            "delta_h": 0.18444444444444485,
+            "beyond_pre_daily_range": false
+          },
+          "2013": {
+            "observed_ratio": 0.1729498861047836,
+            "expected_ratio": 0.17019208511216097,
+            "residual_pct": 0.016204049623137262,
+            "delta_h": 0.1527083333333321,
+            "beyond_pre_daily_range": false
+          },
+          "2014": {
+            "observed_ratio": 0.16734601449275363,
+            "expected_ratio": 0.16197845834622626,
+            "residual_pct": 0.03313746902723502,
+            "delta_h": 0.01249999999999929,
+            "beyond_pre_daily_range": false
+          },
+          "2015": {
+            "observed_ratio": 0.165265767672492,
+            "expected_ratio": 0.16499034021106307,
+            "residual_pct": 0.0016693550730095819,
+            "delta_h": 0.06472222222222257,
+            "beyond_pre_daily_range": false
+          },
+          "2016": {
+            "observed_ratio": 0.16901810471374978,
+            "expected_ratio": 0.16552477034464652,
+            "residual_pct": 0.021104601817780066,
+            "delta_h": 0.07388888888888978,
+            "beyond_pre_daily_range": false
+          },
+          "2017": {
+            "observed_ratio": 0.17650547199309938,
+            "expected_ratio": 0.16832194193021652,
+            "residual_pct": 0.048618320160990214,
+            "delta_h": 0.12138888888888921,
+            "beyond_pre_daily_range": false
+          },
+          "2018": {
+            "observed_ratio": 0.1633961017509085,
+            "expected_ratio": 0.16382226530230296,
+            "residual_pct": -0.00260137747825695,
+            "delta_h": 0.04458333333333364,
+            "beyond_pre_daily_range": false
+          },
+          "2019": {
+            "observed_ratio": 0.15510698425514735,
+            "expected_ratio": 0.16858607166276318,
+            "residual_pct": -0.07995374276576761,
+            "delta_h": 0.12583333333333258,
+            "beyond_pre_daily_range": false
+          },
+          "2020": {
+            "observed_ratio": 0.16700941660352853,
+            "expected_ratio": 0.1713006263482129,
+            "residual_pct": -0.02505075338114271,
+            "delta_h": 0.1711111111111112,
+            "beyond_pre_daily_range": false
+          },
+          "2021": {
+            "observed_ratio": 0.1664314406687656,
+            "expected_ratio": 0.16953456018660948,
+            "residual_pct": -0.01830375773782178,
+            "delta_h": 0.14173611111111128,
+            "beyond_pre_daily_range": false
+          },
+          "2022": {
+            "observed_ratio": 0.15596097808184467,
+            "expected_ratio": 0.17268271206661498,
+            "residual_pct": -0.09683502062626659,
+            "delta_h": 0.1938888888888881,
+            "beyond_pre_daily_range": false
+          },
+          "2023": {
+            "observed_ratio": 0.1595959595959596,
+            "expected_ratio": 0.1940987748185737,
+            "residual_pct": -0.17775905723703966,
+            "delta_h": 0.5252777777777773,
+            "beyond_pre_daily_range": false
+          },
+          "2024": {
+            "observed_ratio": 0.16606041436027205,
+            "expected_ratio": 0.2272265508504524,
+            "residual_pct": -0.26918569269854575,
+            "delta_h": 0.9719444444444445,
+            "beyond_pre_daily_range": false
+          },
+          "2025": {
+            "observed_ratio": 0.17185053752217933,
+            "expected_ratio": 0.27371686835743575,
+            "residual_pct": -0.3721594925681867,
+            "delta_h": 1.4995833333333328,
+            "beyond_pre_daily_range": true
+          }
+        },
+        "residual_pi_test": {
+          "n_base": 10,
+          "n_test": 4,
+          "base_mean_ln": 1.3322676295501878e-16,
+          "base_sd_ln": 0.036624777209270556,
+          "t_quantile": 2.262157162798205,
+          "pi_ln": [
+            -0.0490153138532405,
+            0.04901531385324076
+          ],
+          "pi_ratio": [
+            0.9521665482480757,
+            1.0502364337834962
+          ],
+          "test_mean_ln": -0.26915921022785494,
+          "test_mean_ratio": 0.7640216059105516,
+          "test_vs_base_pct": -0.23597839408944854,
+          "outside": true
+        },
+        "post_residual_mean_pct": -0.23597839408944854,
+        "orbit_sufficient": false,
+        "residual_sign": "negative"
+      },
+      "a4_factor_spread": null,
+      "a5_terra_aqua_pre2012": {
+        "by_year": {
+          "2003": {
+            "ratio": 0.287292817679558,
+            "n_days": 40
+          },
+          "2004": {
+            "ratio": 0.25083333333333335,
+            "n_days": 45
+          },
+          "2005": {
+            "ratio": 0.28689006466784245,
+            "n_days": 44
+          },
+          "2006": {
+            "ratio": 0.37247924080664296,
+            "n_days": 39
+          },
+          "2007": {
+            "ratio": 0.33034872761545714,
+            "n_days": 47
+          },
+          "2008": {
+            "ratio": 0.25597269624573377,
+            "n_days": 45
+          },
+          "2009": {
+            "ratio": 0.4151436031331593,
+            "n_days": 42
+          },
+          "2010": {
+            "ratio": 0.15821812596006143,
+            "n_days": 42
+          },
+          "2011": {
+            "ratio": 0.20492565055762083,
+            "n_days": 45
+          }
+        },
+        "cv": 0.2808814029064161,
+        "theil_sen": {
+          "years": [
+            2003,
+            2004,
+            2005,
+            2006,
+            2007,
+            2008,
+            2009,
+            2010,
+            2011
+          ],
+          "slope_ln_per_year": -0.03344339492831275,
+          "ci95_ln_per_year": [
+            -0.1200324600457362,
+            0.0917867129626259
+          ],
+          "slope_pct_per_year": -0.032890347006705234,
+          "ci95_pct_per_year": [
+            -0.11310835229353389,
+            0.09613100661182483
+          ],
+          "excludes_zero": false
+        },
+        "stable": true
+      },
+      "evidence": {
+        "O": {
+          "supporting": [
+            "close-overpass (\u0394 < 10 min) ratio: insufficient"
+          ],
+          "against": [
+            "pre-drift curve does not explain the 2022-25 ratio (mean residual -23.6%)"
+          ],
+          "verdict": "cannot separate"
+        },
+        "T": {
+          "supporting": [
+            "S-NPP night count -0.4% (not below PI)"
+          ],
+          "against": [
+            "S-NPP night share 2022-25 mean 5.8% vs 2012-21 max 16.8%"
+          ],
+          "verdict": "not supported"
+        },
+        "D": {
+          "supporting": [
+            "NOAA-20/S-NPP stable 2019-25 (Theil-Sen +0.2%/yr)"
+          ],
+          "against": [
+            "S-NPP day count 2022-25 -0.1% vs 2012-21 (not below PI)",
+            "S-NPP night count -0.4% (not below PI)"
+          ],
+          "verdict": "not supported"
+        }
+      },
+      "reliability": {
+        "2003": {
+          "harmonization_reliable": "yes",
+          "reasons": []
+        },
+        "2004": {
+          "harmonization_reliable": "yes",
+          "reasons": []
+        },
+        "2005": {
+          "harmonization_reliable": "yes",
+          "reasons": []
+        },
+        "2006": {
+          "harmonization_reliable": "yes",
+          "reasons": []
+        },
+        "2007": {
+          "harmonization_reliable": "yes",
+          "reasons": []
+        },
+        "2008": {
+          "harmonization_reliable": "yes",
+          "reasons": []
+        },
+        "2009": {
+          "harmonization_reliable": "yes",
+          "reasons": []
+        },
+        "2010": {
+          "harmonization_reliable": "yes",
+          "reasons": []
+        },
+        "2011": {
+          "harmonization_reliable": "yes",
+          "reasons": []
+        },
+        "2012": {
+          "harmonization_reliable": "yes",
+          "reasons": []
+        },
+        "2013": {
+          "harmonization_reliable": "yes",
+          "reasons": []
+        },
+        "2014": {
+          "harmonization_reliable": "yes",
+          "reasons": []
+        },
+        "2015": {
+          "harmonization_reliable": "yes",
+          "reasons": []
+        },
+        "2016": {
+          "harmonization_reliable": "yes",
+          "reasons": []
+        },
+        "2017": {
+          "harmonization_reliable": "yes",
+          "reasons": []
+        },
+        "2018": {
+          "harmonization_reliable": "yes",
+          "reasons": []
+        },
+        "2019": {
+          "harmonization_reliable": "yes",
+          "reasons": []
+        },
+        "2020": {
+          "harmonization_reliable": "yes",
+          "reasons": []
+        },
+        "2021": {
+          "harmonization_reliable": "yes",
+          "reasons": []
+        },
+        "2022": {
+          "harmonization_reliable": "yes",
+          "reasons": []
+        },
+        "2023": {
+          "harmonization_reliable": "caution",
+          "reasons": [
+            "aqua_overpass_drift"
+          ]
+        },
+        "2024": {
+          "harmonization_reliable": "caution",
+          "reasons": [
+            "aqua_overpass_drift"
+          ]
+        },
+        "2025": {
+          "harmonization_reliable": "caution",
+          "reasons": [
+            "aqua_overpass_drift"
+          ]
+        }
+      }
+    }
+  },
+  "provenance": {
+    "inputs": {
+      "hotspots": {
+        "path": "data/processed/hotspots",
+        "sha256": "cac1f5389175862199fd67262959f51df4e861a35278e3c90fc07c8568dc372e",
+        "n_files": 138
+      },
+      "mask_cells": {
+        "path": "data/processed/persistent_mask_cells.parquet",
+        "sha256": "e87641b578ba533a0467fb8e8d69627bec4eb16911d78472661c1adbf75c3b18",
+        "n_files": 1
+      },
+      "point_regions": {
+        "path": "data/processed/regions/point_regions.parquet",
+        "sha256": "47e4e66064693b4a1b425ed279267e73616c92dcb641ce9d72646e98a881d18b",
+        "n_files": 1
+      },
+      "platform_days": {
+        "path": "data/processed/harmonized/platform_days.parquet",
+        "sha256": "070553e05fb7dcf141b3894a6f70747b0ad7265724d51815b8b144955cd2c744",
+        "n_files": 1
+      },
+      "t1_json": {
+        "path": "data/processed/results/t1.json",
+        "sha256": "a729493e1bbf8284351291560c38ebbbd894e18196b391cf0674ee65dca02a15",
+        "n_files": 1
+      }
+    },
+    "code": {
+      "commit": "1fc5a58180d4d041cf9a4ddaa25d857541e9545f",
+      "code_dirty": false
+    }
+  }
+}

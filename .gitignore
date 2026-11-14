@@ -1,0 +1,63 @@
+# Secrets
+.env
+.env.*
+!.env.example
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+build/
+dist/
+.venv/
+venv/
+.python-version
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.coverage
+.coverage.*
+htmlcov/
+.ipynb_checkpoints/
+
+# Node / Next.js
+node_modules/
+.next/
+out/
+.vercel/
+*.tsbuildinfo
+next-env.d.ts
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Data: raw downloads never committed
+data/raw/
+# Data: large processed outputs never committed (small results JSON is fine)
+data/processed/**/*.parquet
+data/processed/**/*.csv
+data/processed/**/*.duckdb
+data/processed/**/*.zip
+*.duckdb
+*.duckdb.wal
+
+# OS / editors
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# Claude Code local-only settings
+.claude/settings.local.json
+
+# Web app data (web/public/data, ~116 MB) IS tracked in the private repo so the site can be built
+# with `npm install && npm run build` alone. Regenerate with `make appdata`. See DECISIONS.md.
+
+# Web: self-hosted DuckDB-WASM bundles (copied from node_modules at build)
+web/public/duckdb/
+web/public/maplibre/
+web/.serve.pid
+web/e2e/artifacts/
+.dev.vars

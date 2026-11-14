@@ -1,0 +1,42 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "blindspot"
+version = "0.1.0"
+description = "Blind Spot pipeline: FIRMS MODIS + VIIRS download, ingest, persistent-hotspot mask, QC, regions, calibration, T1-T3. Code written with Super Intelligence (SI) assistance: Claude Code (Anthropic), directed and reviewed by the team."
+keywords = ["NASA Space Apps 2026", "FIRMS", "MODIS", "VIIRS", "SI-assisted", "AI-assisted"]
+requires-python = ">=3.11"
+dependencies = [
+    "duckdb>=1.1",
+    "pandas>=2.2",
+    "pyarrow>=16",
+    "scipy>=1.11",
+    "shapely>=2.0",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8", "ruff>=0.6"]
+
+[tool.setuptools.packages.find]
+where = ["pipeline"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["pipeline"]
+addopts = "-q"
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+src = ["pipeline", "tests"]
+extend-exclude = [".claude", "docs"]
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "B", "UP", "S", "SIM"]
+ignore = ["S101"]  # assert is fine in tests
+
+[tool.ruff.lint.per-file-ignores]
+"tests/*" = ["S"]
+"scripts/*" = ["E501", "SIM115"]

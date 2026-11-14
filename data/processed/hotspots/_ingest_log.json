@@ -1,0 +1,2668 @@
+{
+  "n_files": 90,
+  "n_rows": 16132466,
+  "box": {
+    "lon_min": 60.0,
+    "lon_max": 80.0,
+    "lat_min": 23.0,
+    "lat_max": 37.0
+  },
+  "files": [
+    {
+      "source_file": "modis_2003_India.csv",
+      "path": "data/raw/firms/modis/2003/modis_2003_India.csv",
+      "sha256": "5694e17a05064509a388f5f39811a61fd27c91418c34d25c10dac2985751dc3f",
+      "instrument": "MODIS",
+      "platforms": [
+        "Aqua",
+        "Terra"
+      ],
+      "n_rows": 56091,
+      "columns": [
+        "latitude",
+        "longitude",
+        "brightness",
+        "scan",
+        "track",
+        "acq_date",
+        "acq_time",
+        "satellite",
+        "instrument",
+        "confidence",
+        "version",
+        "bright_t31",
+        "frp",
+        "daynight",
+        "type"
+      ],
+      "missing_expected": [],
+      "extra": []
+    },
+    {
+      "source_file": "modis_2003_Pakistan.csv",
+      "path": "data/raw/firms/modis/2003/modis_2003_Pakistan.csv",
+      "sha256": "07fd98cfdef66f5b4fca6c7bb9404a147bbdccbf663205e1d2fe55b1f690db16",
+      "instrument": "MODIS",
+      "platforms": [
+        "Aqua",
+        "Terra"
+      ],
+      "n_rows": 7094,
+      "columns": [
+        "latitude",
+        "longitude",
+        "brightness",
+        "scan",
+        "track",
+        "acq_date",
+        "acq_time",
+        "satellite",
+        "instrument",
+        "confidence",
+        "version",
+        "bright_t31",
+        "frp",
+        "daynight",
+        "type"
+      ],
+      "missing_expected": [],
+      "extra": []
+    },
+    {
+      "source_file": "modis_2004_India.csv",
+      "path": "data/raw/firms/modis/2004/modis_2004_India.csv",
+      "sha256": "05501540032d6d5bd7ad6362d1e92ffa3a0ccbaa15b258e65f45138a43651b86",
+      "instrument": "MODIS",
+      "platforms": [
+        "Aqua",
+        "Terra"
+      ],
+      "n_rows": 64725,
+      "columns": [
+        "latitude",
+        "longitude",
+        "brightness",
+        "scan",
+        "track",
+        "acq_date",
+        "acq_time",
+        "satellite",
+        "instrument",
+        "confidence",
+        "version",
+        "bright_t31",
+        "frp",
+        "daynight",
+        "type"
+      ],
+      "missing_expected": [],
+      "extra": []
+    },
+    {
+      "source_file": "modis_2004_Pakistan.csv",
+      "path": "data/raw/firms/modis/2004/modis_2004_Pakistan.csv",
+      "sha256": "63dedecbb39d0ad57709814139e422538f5d512cc0ca87750f6970fb2d36c29c",
+      "instrument": "MODIS",
+      "platforms": [
+        "Aqua",
+        "Terra"
+      ],
+      "n_rows": 8207,
+      "columns": [
+        "latitude",
+        "longitude",
+        "brightness",
+        "scan",
+        "track",
+        "acq_date",
+        "acq_time",
+        "satellite",
+        "instrument",
+        "confidence",
+        "version",
+        "bright_t31",
+        "frp",
+        "daynight",
+        "type"
+      ],
+      "missing_expected": [],
+      "extra": []
+    },
+    {
+      "source_file": "modis_2005_India.csv",
+      "path": "data/raw/firms/modis/2005/modis_2005_India.csv",
+      "sha256": "6b3953f03a998e0c8c5349378c0e43861b11aec8938af12ab517bce366c26b0b",
+      "instrument": "MODIS",
+      "platforms": [
+        "Aqua",
+        "Terra"
+      ],
+      "n_rows": 63485,
+      "columns": [
+        "latitude",
+        "longitude",
+        "brightness",
+        "scan",
+        "track",
+        "acq_date",
+        "acq_time",
+        "satellite",
+        "instrument",
+        "confidence",
+        "version",
+        "bright_t31",
+        "frp",
+        "daynight",
+        "type"
+      ],
+      "missing_expected": [],
+      "extra": []
+    },
+    {
+      "source_file": "modis_2005_Pakistan.csv",
+      "path": "data/raw/firms/modis/2005/modis_2005_Pakistan.csv",
+      "sha256": "f78980dc65a32d9eee9949d8221548f7862391011d704eef676568c97f6c0a0f",
+      "instrument": "MODIS",
+      "platforms": [
+        "Aqua",
+        "Terra"
+      ],
+      "n_rows": 7792,
+      "columns": [
+        "latitude",
+        "longitude",
+        "brightness",
+        "scan",
+        "track",
+        "acq_date",
+        "acq_time",
+        "satellite",
+        "instrument",
+        "confidence",
+        "version",
+        "bright_t31",
+        "frp",
+        "daynight",
+        "type"
+      ],
+      "missing_expected": [],
+      "extra": []
+    },
+    {
+      "source_file": "modis_2006_India.csv",
+      "path": "data/raw/firms/modis/2006/modis_2006_India.csv",
+      "sha256": "ffecb04d232595780d8d8c94f1daa3d5c0d179cea73caf283a58d7b54ad9ee34",
+      "instrument": "MODIS",
+      "platforms": [
+        "Aqua",
+        "Terra"
+      ],
+      "n_rows": 65980,
+      "columns": [
+        "latitude",
+        "longitude",
+        "brightness",
+        "scan",
+        "track",
+        "acq_date",
+        "acq_time",
+        "satellite",
+        "instrument",
+        "confidence",
+        "version",
+        "bright_t31",
+        "frp",
+        "daynight",
+        "type"
+      ],
+      "missing_expected": [],
+      "extra": []
+    },
+    {
+      "source_file": "modis_2006_Pakistan.csv",
+      "path": "data/raw/firms/modis/2006/modis_2006_Pakistan.csv",
+      "sha256": "406c66c616881a8eb5b9d0b34ceef2bbb69b35343aa631e2b0c21ba910abef45",
+      "instrument": "MODIS",
+      "platforms": [
+        "Aqua",
+        "Terra"
+      ],
+      "n_rows": 5846,
+      "columns": [
+        "latitude",
+        "longitude",
+        "brightness",
+        "scan",
+        "track",
+        "acq_date",
+        "acq_time",
+        "satellite",
+        "instrument",
+        "confidence",
+        "version",
+        "bright_t31",
+        "frp",
+        "daynight",
+        "type"
+      ],
+      "missing_expected": [],
+      "extra": []
+    },
+    {
+      "source_file": "modis_2007_India.csv",
+      "path": "data/raw/firms/modis/2007/modis_2007_India.csv",
+      "sha256": "97e35d63e2c66845a7bfe5d1d9da2bf16ea344c101fa16c54161ad969337ebd0",
+      "instrument": "MODIS",
+      "platforms": [
+        "Aqua",
+        "Terra"
+      ],
+      "n_rows": 75320,
+      "columns": [
+        "latitude",
+        "longitude",
+        "brightness",
+        "scan",
+        "track",
+        "acq_date",
+        "acq_time",
+        "satellite",
+        "instrument",
+        "confidence",
+        "version",
+        "bright_t31",
+        "frp",
+        "daynight",
+        "type"
+      ],
+      "missing_expected": [],
+      "extra": []
+    },
+    {
+      "source_file": "modis_2007_Pakistan.csv",
+      "path": "data/raw/firms/modis/2007/modis_2007_Pakistan.csv",
+      "sha256": "6c5353b6c343affc961b6e1dbdc896fbf6ee49f57d1f9f0b88dd886d38e1d9bd",
+      "instrument": "MODIS",
+      "platforms": [
+        "Aqua",
+        "Terra"
+      ],
+      "n_rows": 7074,
+      "columns": [
+        "latitude",
+        "longitude",
+        "brightness",
+        "scan",
+        "track",
+        "acq_date",
+        "acq_time",
+        "satellite",
+        "instrument",
+        "confidence",
+        "version",
+        "bright_t31",
+        "frp",
+        "daynight",
+        "type"
+      ],
+      "missing_expected": [],
+      "extra": []
+    },
+    {
+      "source_file": "modis_2008_India.csv",
+      "path": "data/raw/firms/modis/2008/modis_2008_India.csv",
+      "sha256": "791182e389cfb93d1fa687c83a5652e6607281838d86c8ef4ac1b913659e80f0",
+      "instrument": "MODIS",
+      "platforms": [
+        "Aqua",
+        "Terra"
+      ],
+      "n_rows": 70913,
+      "columns": [
+        "latitude",
+        "longitude",
+        "brightness",
+        "scan",
+        "track",
+        "acq_date",
+        "acq_time",
+        "satellite",
+        "instrument",
+        "confidence",
+        "version",
+        "bright_t31",
+        "frp",
+        "daynight",
+        "type"
+      ],
+      "missing_expected": [],
+      "extra": []
+    },
+    {
+      "source_file": "modis_2008_Pakistan.csv",
+      "path": "data/raw/firms/modis/2008/modis_2008_Pakistan.csv",
+      "sha256": "754c75858f4dd7904f5f0d95550e698cc7c5f2d42c38bdcd58ba4c1a8ca67311",
+      "instrument": "MODIS",
+      "platforms": [
+        "Aqua",
+        "Terra"
+      ],
+      "n_rows": 10447,
+      "columns": [
+        "latitude",
+        "longitude",
+        "brightness",
+        "scan",
+        "track",
+        "acq_date",
+        "acq_time",
+        "satellite",
+        "instrument",
+        "confidence",
+        "version",
+        "bright_t31",
+        "frp",
+        "daynight",
+        "type"
+      ],
+      "missing_expected": [],
+      "extra": []
+    },
+    {
+      "source_file": "modis_2009_India.csv",
+      "path": "data/raw/firms/modis/2009/modis_2009_India.csv",
+      "sha256": "20e3a38cec2b9577fed5097ccf3e6bf077e013cacd73f8a3c7adc1f439845c19",
+      "instrument": "MODIS",
+      "platforms": [
+        "Aqua",
+        "Terra"
+      ],
+      "n_rows": 90236,
+      "columns": [
+        "latitude",
+        "longitude",
+        "brightness",
+        "scan",
+        "track",
+        "acq_date",
+        "acq_time",
+        "satellite",
+        "instrument",
+        "confidence",
+        "version",
+        "bright_t31",
+        "frp",
+        "daynight",
+        "type"
+      ],
+      "missing_expected": [],
+      "extra": []
+    },
+    {
+      "source_file": "modis_2009_Pakistan.csv",
+      "path": "data/raw/firms/modis/2009/modis_2009_Pakistan.csv",
+      "sha256": "1e4c98f8a850c393a5d47f85b4ce98bd96ec9c6ec76e2da796edee0b9006c630",
+      "instrument": "MODIS",
+      "platforms": [
+        "Aqua",
+        "Terra"
+      ],
+      "n_rows": 8835,
+      "columns": [
+        "latitude",
+        "longitude",
+        "brightness",
+        "scan",
+        "track",
+        "acq_date",
+        "acq_time",
+        "satellite",
+        "instrument",
+        "confidence",
+        "version",
+        "bright_t31",
+        "frp",
+        "daynight",
+        "type"
+      ],
+      "missing_expected": [],
+      "extra": []
+    },
+    {
+      "source_file": "modis_2010_India.csv",
+      "path": "data/raw/firms/modis/2010/modis_2010_India.csv",
+      "sha256": "b86609a65797c81a051b25668c75047f2cb62ff68aa4d9acbd81665e1ceb84c7",
+      "instrument": "MODIS",
+      "platforms": [
+        "Aqua",
+        "Terra"
+      ],
+      "n_rows": 76668,
+      "columns": [
+        "latitude",
+        "longitude",
+        "brightness",
+        "scan",
+        "track",
+        "acq_date",
+        "acq_time",
+        "satellite",
+        "instrument",
+        "confidence",
+        "version",
+        "bright_t31",
+        "frp",
+        "daynight",
+        "type"
+      ],
+      "missing_expected": [],
+      "extra": []
+    },
+    {
+      "source_file": "modis_2010_Pakistan.csv",
+      "path": "data/raw/firms/modis/2010/modis_2010_Pakistan.csv",
+      "sha256": "23922b4996fe97c86482a148dc839e1cc4597b721deb35e84c79efe454c8a336",
+      "instrument": "MODIS",
+      "platforms": [
+        "Aqua",
+        "Terra"
+      ],
+      "n_rows": 8002,
+      "columns": [
+        "latitude",
+        "longitude",
+        "brightness",
+        "scan",
+        "track",
+        "acq_date",
+        "acq_time",
+        "satellite",
+        "instrument",
+        "confidence",
+        "version",
+        "bright_t31",
+        "frp",
+        "daynight",
+        "type"
+      ],
+      "missing_expected": [],
+      "extra": []
+    },
+    {
+      "source_file": "modis_2011_India.csv",
+      "path": "data/raw/firms/modis/2011/modis_2011_India.csv",
+      "sha256": "836b7099adddd0e390c9ad77650209ec47dac39b6f45968dad1e7131511f9e50",
+      "instrument": "MODIS",
+      "platforms": [
+        "Aqua",
+        "Terra"
+      ],
+      "n_rows": 72372,
+      "columns": [
+        "latitude",
+        "longitude",
+        "brightness",
+        "scan",
+        "track",
+        "acq_date",
+        "acq_time",
+        "satellite",
+        "instrument",
+        "confidence",
+        "version",
+        "bright_t31",
+        "frp",
+        "daynight",
+        "type"
+      ],
+      "missing_expected": [],
+      "extra": []
+    },
+    {
+      "source_file": "modis_2011_Pakistan.csv",
+      "path": "data/raw/firms/modis/2011/modis_2011_Pakistan.csv",
+      "sha256": "d5bf61de4d7767369d3487b46bcf4bcf2c00d8202fd28328e55f1980a7889bfb",
+      "instrument": "MODIS",
+      "platforms": [
+        "Aqua",
+        "Terra"
+      ],
+      "n_rows": 8380,
+      "columns": [
+        "latitude",
+        "longitude",
+        "brightness",
+        "scan",
+        "track",
+        "acq_date",
+        "acq_time",
+        "satellite",
+        "instrument",
+        "confidence",
+        "version",
+        "bright_t31",
+        "frp",
+        "daynight",
+        "type"
+      ],
+      "missing_expected": [],
+      "extra": []
+    },
+    {
+      "source_file": "modis_2012_India.csv",
+      "path": "data/raw/firms/modis/2012/modis_2012_India.csv",
+      "sha256": "368fe651a78ae6304a9fb9e8b74d29d9f1f8585e8568864d810a1dd68ad91cb1",
+      "instrument": "MODIS",
+      "platforms": [
+        "Aqua",
+        "Terra"
+      ],
+      "n_rows": 93150,
+      "columns": [
+        "latitude",
+        "longitude",
+        "brightness",
+        "scan",
+        "track",
+        "acq_date",
+        "acq_time",
+        "satellite",
+        "instrument",
+        "confidence",
+        "version",
+        "bright_t31",
+        "frp",
+        "daynight",
+        "type"
+      ],
+      "missing_expected": [],
+      "extra": []
+    },
+    {
+      "source_file": "modis_2012_Pakistan.csv",
+      "path": "data/raw/firms/modis/2012/modis_2012_Pakistan.csv",
+      "sha256": "5875ed55dcc142581df814dc549c410818a1cda33fe4ad70fbdeb5f2840291b0",
+      "instrument": "MODIS",
+      "platforms": [
+        "Aqua",
+        "Terra"
+      ],
+      "n_rows": 12133,
+      "columns": [
+        "latitude",
+        "longitude",
+        "brightness",
+        "scan",
+        "track",
+        "acq_date",
+        "acq_time",
+        "satellite",
+        "instrument",
+        "confidence",
+        "version",
+        "bright_t31",
+        "frp",
+        "daynight",
+        "type"
+      ],
+      "missing_expected": [],
+      "extra": []
+    },
+    {
+      "source_file": "modis_2013_India.csv",
+      "path": "data/raw/firms/modis/2013/modis_2013_India.csv",
+      "sha256": "5868ef22aaed86a2fae31de7912831a647924d10caf116dd547988fba1edeb91",
+      "instrument": "MODIS",
+      "platforms": [
+        "Aqua",
+        "Terra"
+      ],
+      "n_rows": 71173,
+      "columns": [
+        "latitude",
+        "longitude",
+        "brightness",
+        "scan",
+        "track",
+        "acq_date",
+        "acq_time",
+        "satellite",
+        "instrument",
+        "confidence",
+        "version",
+        "bright_t31",
+        "frp",
+        "daynight",
+        "type"
+      ],
+      "missing_expected": [],
+      "extra": []
+    },
+    {
+      "source_file": "modis_2013_Pakistan.csv",
+      "path": "data/raw/firms/modis/2013/modis_2013_Pakistan.csv",
+      "sha256": "e592922baf946a84359a359f3ccc4ab74b88ce44858e6db5b661c8d6098c1aed",
+      "instrument": "MODIS",
+      "platforms": [
+        "Aqua",
+        "Terra"
+      ],
+      "n_rows": 9054,
+      "columns": [
+        "latitude",
+        "longitude",
+        "brightness",
+        "scan",
+        "track",
+        "acq_date",
+        "acq_time",
+        "satellite",
+        "instrument",
+        "confidence",
+        "version",
+        "bright_t31",
+        "frp",
+        "daynight",
+        "type"
+      ],
+      "missing_expected": [],
+      "extra": []
+    },
+    {
+      "source_file": "modis_2014_India.csv",
+      "path": "data/raw/firms/modis/2014/modis_2014_India.csv",
+      "sha256": "a88dddd97ed045a08b06100edea7b9ea29330c4282a5da85f12f3f17ee5ebb82",
+      "instrument": "MODIS",
+      "platforms": [
+        "Aqua",
+        "Terra"
+      ],
+      "n_rows": 76416,
+      "columns": [
+        "latitude",
+        "longitude",
+        "brightness",
+        "scan",
+        "track",
+        "acq_date",
+        "acq_time",
+        "satellite",
+        "instrument",
+        "confidence",
+        "version",
+        "bright_t31",
+        "frp",
+        "daynight",
+        "type"
+      ],
+      "missing_expected": [],
+      "extra": []
+    },
+    {
+      "source_file": "modis_2014_Pakistan.csv",
+      "path": "data/raw/firms/modis/2014/modis_2014_Pakistan.csv",
+      "sha256": "979c99c8a73efe9b0cecacd0c429de3ff8c9f580c3e744d66be982273e6b1c20",
+      "instrument": "MODIS",
+      "platforms": [
+        "Aqua",
+        "Terra"
+      ],
+      "n_rows": 10255,
+      "columns": [
+        "latitude",
+        "longitude",
+        "brightness",
+        "scan",
+        "track",
+        "acq_date",
+        "acq_time",
+        "satellite",
+        "instrument",
+        "confidence",
+        "version",
+        "bright_t31",
+        "frp",
+        "daynight",
+        "type"
+      ],
+      "missing_expected": [],
+      "extra": []
+    },
+    {
+      "source_file": "modis_2015_India.csv",
+      "path": "data/raw/firms/modis/2015/modis_2015_India.csv",
+      "sha256": "0a6cb1763d344f2d510baa1ceb67e63f2026640b30813290c75754228b97266f",
+      "instrument": "MODIS",
+      "platforms": [
+        "Aqua",
+        "Terra"
+      ],
+      "n_rows": 68433,
+      "columns": [
+        "latitude",
+        "longitude",
+        "brightness",
+        "scan",
+        "track",
+        "acq_date",
+        "acq_time",
+        "satellite",
+        "instrument",
+        "confidence",
+        "version",
+        "bright_t31",
+        "frp",
+        "daynight",
+        "type"
+      ],
+      "missing_expected": [],
+      "extra": []
+    },
+    {
+      "source_file": "modis_2015_Pakistan.csv",
+      "path": "data/raw/firms/modis/2015/modis_2015_Pakistan.csv",
+      "sha256": "6be32ec526e907efabc5b919133e852462ad9dd8b8170c21fa060a304ca0a711",
+      "instrument": "MODIS",
+      "platforms": [
+        "Aqua",
+        "Terra"
+      ],
+      "n_rows": 8610,
+      "columns": [
+        "latitude",
+        "longitude",
+        "brightness",
+        "scan",
+        "track",
+        "acq_date",
+        "acq_time",
+        "satellite",
+        "instrument",
+        "confidence",
+        "version",
+        "bright_t31",
+        "frp",
+        "daynight",
+        "type"
+      ],
+      "missing_expected": [],
+      "extra": []
+    },
+    {
+      "source_file": "modis_2016_India.csv",
+      "path": "data/raw/firms/modis/2016/modis_2016_India.csv",
+      "sha256": "dd5a936983cd1d109ab618614c798c8c9017edddcea852c757d891830f256163",
+      "instrument": "MODIS",
+      "platforms": [
+        "Aqua",
+        "Terra"
+      ],
+      "n_rows": 88809,
+      "columns": [
+        "latitude",
+        "longitude",
+        "brightness",
+        "scan",
+        "track",
+        "acq_date",
+        "acq_time",
+        "satellite",
+        "instrument",
+        "confidence",
+        "version",
+        "bright_t31",
+        "frp",
+        "daynight",
+        "type"
+      ],
+      "missing_expected": [],
+      "extra": []
+    },
+    {
+      "source_file": "modis_2016_Pakistan.csv",
+      "path": "data/raw/firms/modis/2016/modis_2016_Pakistan.csv",
+      "sha256": "e74b0186b7904058dcfa6a412a7cbb61d2d452142003e65d4ff96fa0a2c84864",
+      "instrument": "MODIS",
+      "platforms": [
+        "Aqua",
+        "Terra"
+      ],
+      "n_rows": 10853,
+      "columns": [
+        "latitude",
+        "longitude",
+        "brightness",
+        "scan",
+        "track",
+        "acq_date",
+        "acq_time",
+        "satellite",
+        "instrument",
+        "confidence",
+        "version",
+        "bright_t31",
+        "frp",
+        "daynight",
+        "type"
+      ],
+      "missing_expected": [],
+      "extra": []
+    },
+    {
+      "source_file": "modis_2017_India.csv",
+      "path": "data/raw/firms/modis/2017/modis_2017_India.csv",
+      "sha256": "e193583c401047a0ade386deef0a07d77cbd0f0666065cbed28c4d8c9144bef5",
+      "instrument": "MODIS",
+      "platforms": [
+        "Aqua",
+        "Terra"
+      ],
+      "n_rows": 82545,
+      "columns": [
+        "latitude",
+        "longitude",
+        "brightness",
+        "scan",
+        "track",
+        "acq_date",
+        "acq_time",
+        "satellite",
+        "instrument",
+        "confidence",
+        "version",
+        "bright_t31",
+        "frp",
+        "daynight",
+        "type"
+      ],
+      "missing_expected": [],
+      "extra": []
+    },
+    {
+      "source_file": "modis_2017_Pakistan.csv",
+      "path": "data/raw/firms/modis/2017/modis_2017_Pakistan.csv",
+      "sha256": "c3bfbc7d90ab9de214a8e7b0a347a3ea76f7d82936eb8e7c607c422318736a9e",
+      "instrument": "MODIS",
+      "platforms": [
+        "Aqua",
+        "Terra"
+      ],
+      "n_rows": 12234,
+      "columns": [
+        "latitude",
+        "longitude",
+        "brightness",
+        "scan",
+        "track",
+        "acq_date",
+        "acq_time",
+        "satellite",
+        "instrument",
+        "confidence",
+        "version",
+        "bright_t31",
+        "frp",
+        "daynight",
+        "type"
+      ],
+      "missing_expected": [],
+      "extra": []
+    },
+    {
+      "source_file": "modis_2018_India.csv",
+      "path": "data/raw/firms/modis/2018/modis_2018_India.csv",
+      "sha256": "4b601294526d27a48665e39531fc6de01412f4e741b7fa40d723269edd76499f",
+      "instrument": "MODIS",
+      "platforms": [
+        "Aqua",
+        "Terra"
+      ],
+      "n_rows": 91110,
+      "columns": [
+        "latitude",
+        "longitude",
+        "brightness",
+        "scan",
+        "track",
+        "acq_date",
+        "acq_time",
+        "satellite",
+        "instrument",
+        "confidence",
+        "version",
+        "bright_t31",
+        "frp",
+        "daynight",
+        "type"
+      ],
+      "missing_expected": [],
+      "extra": []
+    },
+    {
+      "source_file": "modis_2018_Pakistan.csv",
+      "path": "data/raw/firms/modis/2018/modis_2018_Pakistan.csv",
+      "sha256": "ecd6985c17ca07df395c74970c370463a3f88477fa3fc3ab1a07151f97d99a5d",
+      "instrument": "MODIS",
+      "platforms": [
+        "Aqua",
+        "Terra"
+      ],
+      "n_rows": 12961,
+      "columns": [
+        "latitude",
+        "longitude",
+        "brightness",
+        "scan",
+        "track",
+        "acq_date",
+        "acq_time",
+        "satellite",
+        "instrument",
+        "confidence",
+        "version",
+        "bright_t31",
+        "frp",
+        "daynight",
+        "type"
+      ],
+      "missing_expected": [],
+      "extra": []
+    },
+    {
+      "source_file": "modis_2019_India.csv",
+      "path": "data/raw/firms/modis/2019/modis_2019_India.csv",
+      "sha256": "2a5d04ebac60ea99392a9b67cb0945381d9863a817a9d188196016e830b51227",
+      "instrument": "MODIS",
+      "platforms": [
+        "Aqua",
+        "Terra"
+      ],
+      "n_rows": 75502,
+      "columns": [
+        "latitude",
+        "longitude",
+        "brightness",
+        "scan",
+        "track",
+        "acq_date",
+        "acq_time",
+        "satellite",
+        "instrument",
+        "confidence",
+        "version",
+        "bright_t31",
+        "frp",
+        "daynight",
+        "type"
+      ],
+      "missing_expected": [],
+      "extra": []
+    },
+    {
+      "source_file": "modis_2019_Pakistan.csv",
+      "path": "data/raw/firms/modis/2019/modis_2019_Pakistan.csv",
+      "sha256": "15dadf9b6355c41272565a0e376efbdfada01947f8c72dd2bae271bc2ae47630",
+      "instrument": "MODIS",
+      "platforms": [
+        "Aqua",
+        "Terra"
+      ],
+      "n_rows": 9578,
+      "columns": [
+        "latitude",
+        "longitude",
+        "brightness",
+        "scan",
+        "track",
+        "acq_date",
+        "acq_time",
+        "satellite",
+        "instrument",
+        "confidence",
+        "version",
+        "bright_t31",
+        "frp",
+        "daynight",
+        "type"
+      ],
+      "missing_expected": [],
+      "extra": []
+    },
+    {
+      "source_file": "modis_2020_India.csv",
+      "path": "data/raw/firms/modis/2020/modis_2020_India.csv",
+      "sha256": "3266f33c0a190d8e970f562664820cef3d0724cfa42895e3cdbd4c4641894552",
+      "instrument": "MODIS",
+      "platforms": [
+        "Aqua",
+        "Terra"
+      ],
+      "n_rows": 76021,
+      "columns": [
+        "latitude",
+        "longitude",
+        "brightness",
+        "scan",
+        "track",
+        "acq_date",
+        "acq_time",
+        "satellite",
+        "instrument",
+        "confidence",
+        "version",
+        "bright_t31",
+        "frp",
+        "daynight",
+        "type"
+      ],
+      "missing_expected": [],
+      "extra": []
+    },
+    {
+      "source_file": "modis_2020_Pakistan.csv",
+      "path": "data/raw/firms/modis/2020/modis_2020_Pakistan.csv",
+      "sha256": "871429e9ac9b3d52a15a6e844f0133043ba3da0874c1788aefcbbbd3939f4f60",
+      "instrument": "MODIS",
+      "platforms": [
+        "Aqua",
+        "Terra"
+      ],
+      "n_rows": 9904,
+      "columns": [
+        "latitude",
+        "longitude",
+        "brightness",
+        "scan",
+        "track",
+        "acq_date",
+        "acq_time",
+        "satellite",
+        "instrument",
+        "confidence",
+        "version",
+        "bright_t31",
+        "frp",
+        "daynight",
+        "type"
+      ],
+      "missing_expected": [],
+      "extra": []
+    },
+    {
+      "source_file": "modis_2021_India.csv",
+      "path": "data/raw/firms/modis/2021/modis_2021_India.csv",
+      "sha256": "4e9f8583f92fc81e3e4bdaaa02981f56b529c991c9c9d35897b72b1558d99a5c",
+      "instrument": "MODIS",
+      "platforms": [
+        "Aqua",
+        "Terra"
+      ],
+      "n_rows": 111267,
+      "columns": [
+        "latitude",
+        "longitude",
+        "brightness",
+        "scan",
+        "track",
+        "acq_date",
+        "acq_time",
+        "satellite",
+        "instrument",
+        "confidence",
+        "version",
+        "bright_t31",
+        "frp",
+        "daynight",
+        "type"
+      ],
+      "missing_expected": [],
+      "extra": []
+    },
+    {
+      "source_file": "modis_2021_Pakistan.csv",
+      "path": "data/raw/firms/modis/2021/modis_2021_Pakistan.csv",
+      "sha256": "323099e19feb47b22b8db8fc25a70aadeb6d9c4782b6d1c2455d7a27b898831b",
+      "instrument": "MODIS",
+      "platforms": [
+        "Aqua",
+        "Terra"
+      ],
+      "n_rows": 12988,
+      "columns": [
+        "latitude",
+        "longitude",
+        "brightness",
+        "scan",
+        "track",
+        "acq_date",
+        "acq_time",
+        "satellite",
+        "instrument",
+        "confidence",
+        "version",
+        "bright_t31",
+        "frp",
+        "daynight",
+        "type"
+      ],
+      "missing_expected": [],
+      "extra": []
+    },
+    {
+      "source_file": "modis_2022_India.csv",
+      "path": "data/raw/firms/modis/2022/modis_2022_India.csv",
+      "sha256": "a51ead4831610c560fae5540d3bd79b621644e7aed04d14eeb2594dece0999fa",
+      "instrument": "MODIS",
+      "platforms": [
+        "Aqua",
+        "Terra"
+      ],
+      "n_rows": 81525,
+      "columns": [
+        "latitude",
+        "longitude",
+        "brightness",
+        "scan",
+        "track",
+        "acq_date",
+        "acq_time",
+        "satellite",
+        "instrument",
+        "confidence",
+        "version",
+        "bright_t31",
+        "frp",
+        "daynight",
+        "type"
+      ],
+      "missing_expected": [],
+      "extra": []
+    },
+    {
+      "source_file": "modis_2022_Pakistan.csv",
+      "path": "data/raw/firms/modis/2022/modis_2022_Pakistan.csv",
+      "sha256": "d4a14ccca8367ca968c5a060f4ba7fd8ee0ff1fe418c305c87d40c6c8a61a13f",
+      "instrument": "MODIS",
+      "platforms": [
+        "Aqua",
+        "Terra"
+      ],
+      "n_rows": 11517,
+      "columns": [
+        "latitude",
+        "longitude",
+        "brightness",
+        "scan",
+        "track",
+        "acq_date",
+        "acq_time",
+        "satellite",
+        "instrument",
+        "confidence",
+        "version",
+        "bright_t31",
+        "frp",
+        "daynight",
+        "type"
+      ],
+      "missing_expected": [],
+      "extra": []
+    },
+    {
+      "source_file": "modis_2023_India.csv",
+      "path": "data/raw/firms/modis/2023/modis_2023_India.csv",
+      "sha256": "b62507fb982b492e9a3af159105aea4cf2b842d10fee562d495a0af7da630452",
+      "instrument": "MODIS",
+      "platforms": [
+        "Aqua",
+        "Terra"
+      ],
+      "n_rows": 78425,
+      "columns": [
+        "latitude",
+        "longitude",
+        "brightness",
+        "scan",
+        "track",
+        "acq_date",
+        "acq_time",
+        "satellite",
+        "instrument",
+        "confidence",
+        "version",
+        "bright_t31",
+        "frp",
+        "daynight",
+        "type"
+      ],
+      "missing_expected": [],
+      "extra": []
+    },
+    {
+      "source_file": "modis_2023_Pakistan.csv",
+      "path": "data/raw/firms/modis/2023/modis_2023_Pakistan.csv",
+      "sha256": "16575fc9619bc396071c84458f0c96a0b9091a97126ab16466bba359d1250f95",
+      "instrument": "MODIS",
+      "platforms": [
+        "Aqua",
+        "Terra"
+      ],
+      "n_rows": 10449,
+      "columns": [
+        "latitude",
+        "longitude",
+        "brightness",
+        "scan",
+        "track",
+        "acq_date",
+        "acq_time",
+        "satellite",
+        "instrument",
+        "confidence",
+        "version",
+        "bright_t31",
+        "frp",
+        "daynight",
+        "type"
+      ],
+      "missing_expected": [],
+      "extra": []
+    },
+    {
+      "source_file": "modis_2024_India.csv",
+      "path": "data/raw/firms/modis/2024/modis_2024_India.csv",
+      "sha256": "8b4a7056fb7324c225b2792253980b964c0a3d4912d97302692a6b7b32d862de",
+      "instrument": "MODIS",
+      "platforms": [
+        "Aqua",
+        "Terra"
+      ],
+      "n_rows": 74029,
+      "columns": [
+        "latitude",
+        "longitude",
+        "brightness",
+        "scan",
+        "track",
+        "acq_date",
+        "acq_time",
+        "satellite",
+        "instrument",
+        "confidence",
+        "version",
+        "bright_t31",
+        "frp",
+        "daynight",
+        "type"
+      ],
+      "missing_expected": [],
+      "extra": []
+    },
+    {
+      "source_file": "modis_2024_Pakistan.csv",
+      "path": "data/raw/firms/modis/2024/modis_2024_Pakistan.csv",
+      "sha256": "7f02fa12a1f0dd548eca2f01281a6302d6d37fe7f659623cf016d32b2415c62b",
+      "instrument": "MODIS",
+      "platforms": [
+        "Aqua",
+        "Terra"
+      ],
+      "n_rows": 12399,
+      "columns": [
+        "latitude",
+        "longitude",
+        "brightness",
+        "scan",
+        "track",
+        "acq_date",
+        "acq_time",
+        "satellite",
+        "instrument",
+        "confidence",
+        "version",
+        "bright_t31",
+        "frp",
+        "daynight",
+        "type"
+      ],
+      "missing_expected": [],
+      "extra": []
+    },
+    {
+      "source_file": "modis_2025_India.csv",
+      "path": "data/raw/firms/modis/2025/modis_2025_India.csv",
+      "sha256": "091916c3b1e72f26746a363a1a04e18abef397982280794f1d1aec0334f0a809",
+      "instrument": "MODIS",
+      "platforms": [
+        "Aqua",
+        "Terra"
+      ],
+      "n_rows": 94917,
+      "columns": [
+        "latitude",
+        "longitude",
+        "brightness",
+        "scan",
+        "track",
+        "acq_date",
+        "acq_time",
+        "satellite",
+        "instrument",
+        "confidence",
+        "version",
+        "bright_t31",
+        "frp",
+        "daynight",
+        "type"
+      ],
+      "missing_expected": [],
+      "extra": []
+    },
+    {
+      "source_file": "modis_2025_Pakistan.csv",
+      "path": "data/raw/firms/modis/2025/modis_2025_Pakistan.csv",
+      "sha256": "8f0b8766c34e42feae2c9e64574e052eddff6182e06b4659ce1995da2d98fe6c",
+      "instrument": "MODIS",
+      "platforms": [
+        "Aqua",
+        "Terra"
+      ],
+      "n_rows": 12691,
+      "columns": [
+        "latitude",
+        "longitude",
+        "brightness",
+        "scan",
+        "track",
+        "acq_date",
+        "acq_time",
+        "satellite",
+        "instrument",
+        "confidence",
+        "version",
+        "bright_t31",
+        "frp",
+        "daynight",
+        "type"
+      ],
+      "missing_expected": [],
+      "extra": []
+    },
+    {
+      "source_file": "viirs-jpss1_2018_India.csv",
+      "path": "data/raw/firms/viirs-jpss1/2018/viirs-jpss1_2018_India.csv",
+      "sha256": "aa67b105ad5c24cc10646fe15cfeb0488d375969a33164d8ceceee26e7054f14",
+      "instrument": "VIIRS",
+      "platforms": [
+        "NOAA20"
+      ],
+      "n_rows": 334339,
+      "columns": [
+        "latitude",
+        "longitude",
+        "bright_ti4",
+        "scan",
+        "track",
+        "acq_date",
+        "acq_time",
+        "satellite",
+        "instrument",
+        "confidence",
+        "version",
+        "bright_ti5",
+        "frp",
+        "daynight",
+        "type"
+      ],
+      "missing_expected": [],
+      "extra": []
+    },
+    {
+      "source_file": "viirs-jpss1_2018_Pakistan.csv",
+      "path": "data/raw/firms/viirs-jpss1/2018/viirs-jpss1_2018_Pakistan.csv",
+      "sha256": "a8f759009cd82c70705d2d3f194e2977bdfa25c27fc4e85cd630053a1e7b2dbe",
+      "instrument": "VIIRS",
+      "platforms": [
+        "NOAA20"
+      ],
+      "n_rows": 46698,
+      "columns": [
+        "latitude",
+        "longitude",
+        "bright_ti4",
+        "scan",
+        "track",
+        "acq_date",
+        "acq_time",
+        "satellite",
+        "instrument",
+        "confidence",
+        "version",
+        "bright_ti5",
+        "frp",
+        "daynight",
+        "type"
+      ],
+      "missing_expected": [],
+      "extra": []
+    },
+    {
+      "source_file": "viirs-jpss1_2019_India.csv",
+      "path": "data/raw/firms/viirs-jpss1/2019/viirs-jpss1_2019_India.csv",
+      "sha256": "bc7c67edcd8997a3b2c5b051fe25539666f13d927e99e8ba2413e8a73933c9ec",
+      "instrument": "VIIRS",
+      "platforms": [
+        "NOAA20"
+      ],
+      "n_rows": 538952,
+      "columns": [
+        "latitude",
+        "longitude",
+        "bright_ti4",
+        "scan",
+        "track",
+        "acq_date",
+        "acq_time",
+        "satellite",
+        "instrument",
+        "confidence",
+        "version",
+        "bright_ti5",
+        "frp",
+        "daynight",
+        "type"
+      ],
+      "missing_expected": [],
+      "extra": []
+    },
+    {
+      "source_file": "viirs-jpss1_2019_Pakistan.csv",
+      "path": "data/raw/firms/viirs-jpss1/2019/viirs-jpss1_2019_Pakistan.csv",
+      "sha256": "9f280975c7df91dee4dbafbb5a6def870b801ad20f979564ba288a205f4aaf3e",
+      "instrument": "VIIRS",
+      "platforms": [
+        "NOAA20"
+      ],
+      "n_rows": 54688,
+      "columns": [
+        "latitude",
+        "longitude",
+        "bright_ti4",
+        "scan",
+        "track",
+        "acq_date",
+        "acq_time",
+        "satellite",
+        "instrument",
+        "confidence",
+        "version",
+        "bright_ti5",
+        "frp",
+        "daynight",
+        "type"
+      ],
+      "missing_expected": [],
+      "extra": []
+    },
+    {
+      "source_file": "viirs-jpss1_2020_India.csv",
+      "path": "data/raw/firms/viirs-jpss1/2020/viirs-jpss1_2020_India.csv",
+      "sha256": "076e2f152d587fa8bbc60e227dc3c0655f59b1a90611435f25673547f34de114",
+      "instrument": "VIIRS",
+      "platforms": [
+        "NOAA20"
+      ],
+      "n_rows": 494734,
+      "columns": [
+        "latitude",
+        "longitude",
+        "bright_ti4",
+        "scan",
+        "track",
+        "acq_date",
+        "acq_time",
+        "satellite",
+        "instrument",
+        "confidence",
+        "version",
+        "bright_ti5",
+        "frp",
+        "daynight",
+        "type"
+      ],
+      "missing_expected": [],
+      "extra": []
+    },
+    {
+      "source_file": "viirs-jpss1_2020_Pakistan.csv",
+      "path": "data/raw/firms/viirs-jpss1/2020/viirs-jpss1_2020_Pakistan.csv",
+      "sha256": "699a32586dbbc1429fae470c8692f08ee5ba10245f25509127a650d808680b2e",
+      "instrument": "VIIRS",
+      "platforms": [
+        "NOAA20"
+      ],
+      "n_rows": 54695,
+      "columns": [
+        "latitude",
+        "longitude",
+        "bright_ti4",
+        "scan",
+        "track",
+        "acq_date",
+        "acq_time",
+        "satellite",
+        "instrument",
+        "confidence",
+        "version",
+        "bright_ti5",
+        "frp",
+        "daynight",
+        "type"
+      ],
+      "missing_expected": [],
+      "extra": []
+    },
+    {
+      "source_file": "viirs-jpss1_2021_India.csv",
+      "path": "data/raw/firms/viirs-jpss1/2021/viirs-jpss1_2021_India.csv",
+      "sha256": "ebcb9c1661a2bf555d49c656bfdd062c78de1ee4291d1aa879330399aca47ac3",
+      "instrument": "VIIRS",
+      "platforms": [
+        "NOAA20"
+      ],
+      "n_rows": 764797,
+      "columns": [
+        "latitude",
+        "longitude",
+        "bright_ti4",
+        "scan",
+        "track",
+        "acq_date",
+        "acq_time",
+        "satellite",
+        "instrument",
+        "confidence",
+        "version",
+        "bright_ti5",
+        "frp",
+        "daynight",
+        "type"
+      ],
+      "missing_expected": [],
+      "extra": []
+    },
+    {
+      "source_file": "viirs-jpss1_2021_Pakistan.csv",
+      "path": "data/raw/firms/viirs-jpss1/2021/viirs-jpss1_2021_Pakistan.csv",
+      "sha256": "e2d99a74a094757fa71f038f94f008f63530c7b38d98b2285c55f590385a1209",
+      "instrument": "VIIRS",
+      "platforms": [
+        "NOAA20"
+      ],
+      "n_rows": 72577,
+      "columns": [
+        "latitude",
+        "longitude",
+        "bright_ti4",
+        "scan",
+        "track",
+        "acq_date",
+        "acq_time",
+        "satellite",
+        "instrument",
+        "confidence",
+        "version",
+        "bright_ti5",
+        "frp",
+        "daynight",
+        "type"
+      ],
+      "missing_expected": [],
+      "extra": []
+    },
+    {
+      "source_file": "viirs-jpss1_2022_India.csv",
+      "path": "data/raw/firms/viirs-jpss1/2022/viirs-jpss1_2022_India.csv",
+      "sha256": "e77613419c818fa94acc3ac47ff3d9dd485fa8e77da28938bee73df76eaf5bfc",
+      "instrument": "VIIRS",
+      "platforms": [
+        "NOAA20"
+      ],
+      "n_rows": 606855,
+      "columns": [
+        "latitude",
+        "longitude",
+        "bright_ti4",
+        "scan",
+        "track",
+        "acq_date",
+        "acq_time",
+        "satellite",
+        "instrument",
+        "confidence",
+        "version",
+        "bright_ti5",
+        "frp",
+        "daynight",
+        "type"
+      ],
+      "missing_expected": [],
+      "extra": []
+    },
+    {
+      "source_file": "viirs-jpss1_2022_Pakistan.csv",
+      "path": "data/raw/firms/viirs-jpss1/2022/viirs-jpss1_2022_Pakistan.csv",
+      "sha256": "000c3cfa5a58c33bc0f818346ca721e992fecc50525b0e4f9969f106f78f3b3e",
+      "instrument": "VIIRS",
+      "platforms": [
+        "NOAA20"
+      ],
+      "n_rows": 62372,
+      "columns": [
+        "latitude",
+        "longitude",
+        "bright_ti4",
+        "scan",
+        "track",
+        "acq_date",
+        "acq_time",
+        "satellite",
+        "instrument",
+        "confidence",
+        "version",
+        "bright_ti5",
+        "frp",
+        "daynight",
+        "type"
+      ],
+      "missing_expected": [],
+      "extra": []
+    },
+    {
+      "source_file": "viirs-jpss1_2023_India.csv",
+      "path": "data/raw/firms/viirs-jpss1/2023/viirs-jpss1_2023_India.csv",
+      "sha256": "5505655a53ac5bfe6e88b472e933e7e12a7ab78a55beb297a137e624b79fb7a2",
+      "instrument": "VIIRS",
+      "platforms": [
+        "NOAA20"
+      ],
+      "n_rows": 591145,
+      "columns": [
+        "latitude",
+        "longitude",
+        "bright_ti4",
+        "scan",
+        "track",
+        "acq_date",
+        "acq_time",
+        "satellite",
+        "instrument",
+        "confidence",
+        "version",
+        "bright_ti5",
+        "frp",
+        "daynight",
+        "type"
+      ],
+      "missing_expected": [],
+      "extra": []
+    },
+    {
+      "source_file": "viirs-jpss1_2023_Pakistan.csv",
+      "path": "data/raw/firms/viirs-jpss1/2023/viirs-jpss1_2023_Pakistan.csv",
+      "sha256": "bc02c33f59dae1724b53ef4f0fe56244dcdb5c0cd07c087ab0b33ffaf1c6c70f",
+      "instrument": "VIIRS",
+      "platforms": [
+        "NOAA20"
+      ],
+      "n_rows": 54421,
+      "columns": [
+        "latitude",
+        "longitude",
+        "bright_ti4",
+        "scan",
+        "track",
+        "acq_date",
+        "acq_time",
+        "satellite",
+        "instrument",
+        "confidence",
+        "version",
+        "bright_ti5",
+        "frp",
+        "daynight",
+        "type"
+      ],
+      "missing_expected": [],
+      "extra": []
+    },
+    {
+      "source_file": "viirs-jpss1_2024_India.csv",
+      "path": "data/raw/firms/viirs-jpss1/2024/viirs-jpss1_2024_India.csv",
+      "sha256": "4dc6c62485066902ee614d8f3fc63278f5259d37ba71050efb54e15ae2012cb8",
+      "instrument": "VIIRS",
+      "platforms": [
+        "NOAA20"
+      ],
+      "n_rows": 578062,
+      "columns": [
+        "latitude",
+        "longitude",
+        "bright_ti4",
+        "scan",
+        "track",
+        "acq_date",
+        "acq_time",
+        "satellite",
+        "instrument",
+        "confidence",
+        "version",
+        "bright_ti5",
+        "frp",
+        "daynight",
+        "type"
+      ],
+      "missing_expected": [],
+      "extra": []
+    },
+    {
+      "source_file": "viirs-jpss1_2024_Pakistan.csv",
+      "path": "data/raw/firms/viirs-jpss1/2024/viirs-jpss1_2024_Pakistan.csv",
+      "sha256": "f5733a198ce5485f8a256a37197eb2b3e8e069687c74b36e6466fd69036fd0f2",
+      "instrument": "VIIRS",
+      "platforms": [
+        "NOAA20"
+      ],
+      "n_rows": 71798,
+      "columns": [
+        "latitude",
+        "longitude",
+        "bright_ti4",
+        "scan",
+        "track",
+        "acq_date",
+        "acq_time",
+        "satellite",
+        "instrument",
+        "confidence",
+        "version",
+        "bright_ti5",
+        "frp",
+        "daynight",
+        "type"
+      ],
+      "missing_expected": [],
+      "extra": []
+    },
+    {
+      "source_file": "viirs-jpss1_2025_India.csv",
+      "path": "data/raw/firms/viirs-jpss1/2025/viirs-jpss1_2025_India.csv",
+      "sha256": "5019cfedbc40ed7c2a66144f42a52a36c89864db7d1e62b031686f8ab7f05347",
+      "instrument": "VIIRS",
+      "platforms": [
+        "NOAA20"
+      ],
+      "n_rows": 655554,
+      "columns": [
+        "latitude",
+        "longitude",
+        "bright_ti4",
+        "scan",
+        "track",
+        "acq_date",
+        "acq_time",
+        "satellite",
+        "instrument",
+        "confidence",
+        "version",
+        "bright_ti5",
+        "frp",
+        "daynight",
+        "type"
+      ],
+      "missing_expected": [],
+      "extra": []
+    },
+    {
+      "source_file": "viirs-jpss1_2025_Pakistan.csv",
+      "path": "data/raw/firms/viirs-jpss1/2025/viirs-jpss1_2025_Pakistan.csv",
+      "sha256": "79fbcbeee455e0e98ba9c4a62b7f4acc14e504553b2f61ad93544df37229405d",
+      "instrument": "VIIRS",
+      "platforms": [
+        "NOAA20"
+      ],
+      "n_rows": 72058,
+      "columns": [
+        "latitude",
+        "longitude",
+        "bright_ti4",
+        "scan",
+        "track",
+        "acq_date",
+        "acq_time",
+        "satellite",
+        "instrument",
+        "confidence",
+        "version",
+        "bright_ti5",
+        "frp",
+        "daynight",
+        "type"
+      ],
+      "missing_expected": [],
+      "extra": []
+    },
+    {
+      "source_file": "viirs-snpp_2012_India.csv",
+      "path": "data/raw/firms/viirs-snpp/2012/viirs-snpp_2012_India.csv",
+      "sha256": "387e05d932d31b5487db0da7e309fb196fba908b6aec9731b61eea9c96dbdb23",
+      "instrument": "VIIRS",
+      "platforms": [
+        "SNPP"
+      ],
+      "n_rows": 589159,
+      "columns": [
+        "latitude",
+        "longitude",
+        "bright_ti4",
+        "scan",
+        "track",
+        "acq_date",
+        "acq_time",
+        "satellite",
+        "instrument",
+        "confidence",
+        "version",
+        "bright_ti5",
+        "frp",
+        "daynight",
+        "type"
+      ],
+      "missing_expected": [],
+      "extra": []
+    },
+    {
+      "source_file": "viirs-snpp_2012_Pakistan.csv",
+      "path": "data/raw/firms/viirs-snpp/2012/viirs-snpp_2012_Pakistan.csv",
+      "sha256": "c524f92496b506bec44c8cac2d0127f685e5959bd1342a3d9a165930cc9c2ee9",
+      "instrument": "VIIRS",
+      "platforms": [
+        "SNPP"
+      ],
+      "n_rows": 56047,
+      "columns": [
+        "latitude",
+        "longitude",
+        "bright_ti4",
+        "scan",
+        "track",
+        "acq_date",
+        "acq_time",
+        "satellite",
+        "instrument",
+        "confidence",
+        "version",
+        "bright_ti5",
+        "frp",
+        "daynight",
+        "type"
+      ],
+      "missing_expected": [],
+      "extra": []
+    },
+    {
+      "source_file": "viirs-snpp_2013_India.csv",
+      "path": "data/raw/firms/viirs-snpp/2013/viirs-snpp_2013_India.csv",
+      "sha256": "26f42a07064d58283c19fd97c56a50a6ecc55998badfd027b7e20479c4b4f261",
+      "instrument": "VIIRS",
+      "platforms": [
+        "SNPP"
+      ],
+      "n_rows": 498116,
+      "columns": [
+        "latitude",
+        "longitude",
+        "bright_ti4",
+        "scan",
+        "track",
+        "acq_date",
+        "acq_time",
+        "satellite",
+        "instrument",
+        "confidence",
+        "version",
+        "bright_ti5",
+        "frp",
+        "daynight",
+        "type"
+      ],
+      "missing_expected": [],
+      "extra": []
+    },
+    {
+      "source_file": "viirs-snpp_2013_Pakistan.csv",
+      "path": "data/raw/firms/viirs-snpp/2013/viirs-snpp_2013_Pakistan.csv",
+      "sha256": "f1e7fa86ce33e47ee1104cb985059adc90ba9c66b592ff054478d65c65b07583",
+      "instrument": "VIIRS",
+      "platforms": [
+        "SNPP"
+      ],
+      "n_rows": 49625,
+      "columns": [
+        "latitude",
+        "longitude",
+        "bright_ti4",
+        "scan",
+        "track",
+        "acq_date",
+        "acq_time",
+        "satellite",
+        "instrument",
+        "confidence",
+        "version",
+        "bright_ti5",
+        "frp",
+        "daynight",
+        "type"
+      ],
+      "missing_expected": [],
+      "extra": []
+    },
+    {
+      "source_file": "viirs-snpp_2014_India.csv",
+      "path": "data/raw/firms/viirs-snpp/2014/viirs-snpp_2014_India.csv",
+      "sha256": "b2aac071fcffa7b155d7002f43963cf76e0bc827fd1f3204403b4af4ce7f1db4",
+      "instrument": "VIIRS",
+      "platforms": [
+        "SNPP"
+      ],
+      "n_rows": 544467,
+      "columns": [
+        "latitude",
+        "longitude",
+        "bright_ti4",
+        "scan",
+        "track",
+        "acq_date",
+        "acq_time",
+        "satellite",
+        "instrument",
+        "confidence",
+        "version",
+        "bright_ti5",
+        "frp",
+        "daynight",
+        "type"
+      ],
+      "missing_expected": [],
+      "extra": []
+    },
+    {
+      "source_file": "viirs-snpp_2014_Pakistan.csv",
+      "path": "data/raw/firms/viirs-snpp/2014/viirs-snpp_2014_Pakistan.csv",
+      "sha256": "f02d656d1074686f60afb80e1c0aa336497cf547015b193e259b034da37e0363",
+      "instrument": "VIIRS",
+      "platforms": [
+        "SNPP"
+      ],
+      "n_rows": 57328,
+      "columns": [
+        "latitude",
+        "longitude",
+        "bright_ti4",
+        "scan",
+        "track",
+        "acq_date",
+        "acq_time",
+        "satellite",
+        "instrument",
+        "confidence",
+        "version",
+        "bright_ti5",
+        "frp",
+        "daynight",
+        "type"
+      ],
+      "missing_expected": [],
+      "extra": []
+    },
+    {
+      "source_file": "viirs-snpp_2015_India.csv",
+      "path": "data/raw/firms/viirs-snpp/2015/viirs-snpp_2015_India.csv",
+      "sha256": "475ce811e88de199af34842d6b6afb05a3557be7db10b6385af4aceebf5495b0",
+      "instrument": "VIIRS",
+      "platforms": [
+        "SNPP"
+      ],
+      "n_rows": 485756,
+      "columns": [
+        "latitude",
+        "longitude",
+        "bright_ti4",
+        "scan",
+        "track",
+        "acq_date",
+        "acq_time",
+        "satellite",
+        "instrument",
+        "confidence",
+        "version",
+        "bright_ti5",
+        "frp",
+        "daynight",
+        "type"
+      ],
+      "missing_expected": [],
+      "extra": []
+    },
+    {
+      "source_file": "viirs-snpp_2015_Pakistan.csv",
+      "path": "data/raw/firms/viirs-snpp/2015/viirs-snpp_2015_Pakistan.csv",
+      "sha256": "cff1197dc69a0de2bc1c5b7ac37794bf740473ddfd6920fef01ea8c19b5e0999",
+      "instrument": "VIIRS",
+      "platforms": [
+        "SNPP"
+      ],
+      "n_rows": 48630,
+      "columns": [
+        "latitude",
+        "longitude",
+        "bright_ti4",
+        "scan",
+        "track",
+        "acq_date",
+        "acq_time",
+        "satellite",
+        "instrument",
+        "confidence",
+        "version",
+        "bright_ti5",
+        "frp",
+        "daynight",
+        "type"
+      ],
+      "missing_expected": [],
+      "extra": []
+    },
+    {
+      "source_file": "viirs-snpp_2016_India.csv",
+      "path": "data/raw/firms/viirs-snpp/2016/viirs-snpp_2016_India.csv",
+      "sha256": "db835e1e9568f8f29c5ebccfbf2b1f43cd7e0ffe0e33b7bb2ff8f34c141db429",
+      "instrument": "VIIRS",
+      "platforms": [
+        "SNPP"
+      ],
+      "n_rows": 681943,
+      "columns": [
+        "latitude",
+        "longitude",
+        "bright_ti4",
+        "scan",
+        "track",
+        "acq_date",
+        "acq_time",
+        "satellite",
+        "instrument",
+        "confidence",
+        "version",
+        "bright_ti5",
+        "frp",
+        "daynight",
+        "type"
+      ],
+      "missing_expected": [],
+      "extra": []
+    },
+    {
+      "source_file": "viirs-snpp_2016_Pakistan.csv",
+      "path": "data/raw/firms/viirs-snpp/2016/viirs-snpp_2016_Pakistan.csv",
+      "sha256": "36d590f3ee9497f8d2f6001a4953883fc420cb292082367d377700ffa60ad945",
+      "instrument": "VIIRS",
+      "platforms": [
+        "SNPP"
+      ],
+      "n_rows": 62692,
+      "columns": [
+        "latitude",
+        "longitude",
+        "bright_ti4",
+        "scan",
+        "track",
+        "acq_date",
+        "acq_time",
+        "satellite",
+        "instrument",
+        "confidence",
+        "version",
+        "bright_ti5",
+        "frp",
+        "daynight",
+        "type"
+      ],
+      "missing_expected": [],
+      "extra": []
+    },
+    {
+      "source_file": "viirs-snpp_2017_India.csv",
+      "path": "data/raw/firms/viirs-snpp/2017/viirs-snpp_2017_India.csv",
+      "sha256": "723e76a50eeebefa6f901d1a79b18ec96300c0034d8aa581f3ce9f5d4553ea65",
+      "instrument": "VIIRS",
+      "platforms": [
+        "SNPP"
+      ],
+      "n_rows": 604151,
+      "columns": [
+        "latitude",
+        "longitude",
+        "bright_ti4",
+        "scan",
+        "track",
+        "acq_date",
+        "acq_time",
+        "satellite",
+        "instrument",
+        "confidence",
+        "version",
+        "bright_ti5",
+        "frp",
+        "daynight",
+        "type"
+      ],
+      "missing_expected": [],
+      "extra": []
+    },
+    {
+      "source_file": "viirs-snpp_2017_Pakistan.csv",
+      "path": "data/raw/firms/viirs-snpp/2017/viirs-snpp_2017_Pakistan.csv",
+      "sha256": "cecc92c01c4128f1a1eceebbbb4d0d6480e08daf0f27cae4a9c53a231b52ab7c",
+      "instrument": "VIIRS",
+      "platforms": [
+        "SNPP"
+      ],
+      "n_rows": 64856,
+      "columns": [
+        "latitude",
+        "longitude",
+        "bright_ti4",
+        "scan",
+        "track",
+        "acq_date",
+        "acq_time",
+        "satellite",
+        "instrument",
+        "confidence",
+        "version",
+        "bright_ti5",
+        "frp",
+        "daynight",
+        "type"
+      ],
+      "missing_expected": [],
+      "extra": []
+    },
+    {
+      "source_file": "viirs-snpp_2018_India.csv",
+      "path": "data/raw/firms/viirs-snpp/2018/viirs-snpp_2018_India.csv",
+      "sha256": "1b6b9fbf3ee95cf5d73e9f3b01616b77e86ffd4fb0f43dfa6bc4223861d08766",
+      "instrument": "VIIRS",
+      "platforms": [
+        "SNPP"
+      ],
+      "n_rows": 650470,
+      "columns": [
+        "latitude",
+        "longitude",
+        "bright_ti4",
+        "scan",
+        "track",
+        "acq_date",
+        "acq_time",
+        "satellite",
+        "instrument",
+        "confidence",
+        "version",
+        "bright_ti5",
+        "frp",
+        "daynight",
+        "type"
+      ],
+      "missing_expected": [],
+      "extra": []
+    },
+    {
+      "source_file": "viirs-snpp_2018_Pakistan.csv",
+      "path": "data/raw/firms/viirs-snpp/2018/viirs-snpp_2018_Pakistan.csv",
+      "sha256": "42244332ce099625be3ff1a3ea62854915eeba32b4508553457b15abb364cf64",
+      "instrument": "VIIRS",
+      "platforms": [
+        "SNPP"
+      ],
+      "n_rows": 64304,
+      "columns": [
+        "latitude",
+        "longitude",
+        "bright_ti4",
+        "scan",
+        "track",
+        "acq_date",
+        "acq_time",
+        "satellite",
+        "instrument",
+        "confidence",
+        "version",
+        "bright_ti5",
+        "frp",
+        "daynight",
+        "type"
+      ],
+      "missing_expected": [],
+      "extra": []
+    },
+    {
+      "source_file": "viirs-snpp_2019_India.csv",
+      "path": "data/raw/firms/viirs-snpp/2019/viirs-snpp_2019_India.csv",
+      "sha256": "59398f63e4ec3429126b743692bdded609b5504060b6a63793fc3f42c43417e0",
+      "instrument": "VIIRS",
+      "platforms": [
+        "SNPP"
+      ],
+      "n_rows": 537746,
+      "columns": [
+        "latitude",
+        "longitude",
+        "bright_ti4",
+        "scan",
+        "track",
+        "acq_date",
+        "acq_time",
+        "satellite",
+        "instrument",
+        "confidence",
+        "version",
+        "bright_ti5",
+        "frp",
+        "daynight",
+        "type"
+      ],
+      "missing_expected": [],
+      "extra": []
+    },
+    {
+      "source_file": "viirs-snpp_2019_Pakistan.csv",
+      "path": "data/raw/firms/viirs-snpp/2019/viirs-snpp_2019_Pakistan.csv",
+      "sha256": "5d9a1a0aa937febf8ac50c981079cc5036f43f201880cab5228eb98148ba5606",
+      "instrument": "VIIRS",
+      "platforms": [
+        "SNPP"
+      ],
+      "n_rows": 53302,
+      "columns": [
+        "latitude",
+        "longitude",
+        "bright_ti4",
+        "scan",
+        "track",
+        "acq_date",
+        "acq_time",
+        "satellite",
+        "instrument",
+        "confidence",
+        "version",
+        "bright_ti5",
+        "frp",
+        "daynight",
+        "type"
+      ],
+      "missing_expected": [],
+      "extra": []
+    },
+    {
+      "source_file": "viirs-snpp_2020_India.csv",
+      "path": "data/raw/firms/viirs-snpp/2020/viirs-snpp_2020_India.csv",
+      "sha256": "c8fac46c8b31f0522c275bf6aaa5345dc523b98096b69f4014390a100d374992",
+      "instrument": "VIIRS",
+      "platforms": [
+        "SNPP"
+      ],
+      "n_rows": 489632,
+      "columns": [
+        "latitude",
+        "longitude",
+        "bright_ti4",
+        "scan",
+        "track",
+        "acq_date",
+        "acq_time",
+        "satellite",
+        "instrument",
+        "confidence",
+        "version",
+        "bright_ti5",
+        "frp",
+        "daynight",
+        "type"
+      ],
+      "missing_expected": [],
+      "extra": []
+    },
+    {
+      "source_file": "viirs-snpp_2020_Pakistan.csv",
+      "path": "data/raw/firms/viirs-snpp/2020/viirs-snpp_2020_Pakistan.csv",
+      "sha256": "29f87be2b2dfcf4a53ed8bc9d264581377bb6b1a821b238abf3d3fdbb11e568c",
+      "instrument": "VIIRS",
+      "platforms": [
+        "SNPP"
+      ],
+      "n_rows": 52838,
+      "columns": [
+        "latitude",
+        "longitude",
+        "bright_ti4",
+        "scan",
+        "track",
+        "acq_date",
+        "acq_time",
+        "satellite",
+        "instrument",
+        "confidence",
+        "version",
+        "bright_ti5",
+        "frp",
+        "daynight",
+        "type"
+      ],
+      "missing_expected": [],
+      "extra": []
+    },
+    {
+      "source_file": "viirs-snpp_2021_India.csv",
+      "path": "data/raw/firms/viirs-snpp/2021/viirs-snpp_2021_India.csv",
+      "sha256": "7dbae20742bedb5723f6c8648f9e3bfb6e2b41c7fb184fd2cda73068cd98664a",
+      "instrument": "VIIRS",
+      "platforms": [
+        "SNPP"
+      ],
+      "n_rows": 771938,
+      "columns": [
+        "latitude",
+        "longitude",
+        "bright_ti4",
+        "scan",
+        "track",
+        "acq_date",
+        "acq_time",
+        "satellite",
+        "instrument",
+        "confidence",
+        "version",
+        "bright_ti5",
+        "frp",
+        "daynight",
+        "type"
+      ],
+      "missing_expected": [],
+      "extra": []
+    },
+    {
+      "source_file": "viirs-snpp_2021_Pakistan.csv",
+      "path": "data/raw/firms/viirs-snpp/2021/viirs-snpp_2021_Pakistan.csv",
+      "sha256": "992ac0d43ab1cf9f308d9deb2e43fc7baae4018539433dea790e0b18cc1ce499",
+      "instrument": "VIIRS",
+      "platforms": [
+        "SNPP"
+      ],
+      "n_rows": 69652,
+      "columns": [
+        "latitude",
+        "longitude",
+        "bright_ti4",
+        "scan",
+        "track",
+        "acq_date",
+        "acq_time",
+        "satellite",
+        "instrument",
+        "confidence",
+        "version",
+        "bright_ti5",
+        "frp",
+        "daynight",
+        "type"
+      ],
+      "missing_expected": [],
+      "extra": []
+    },
+    {
+      "source_file": "viirs-snpp_2022_India.csv",
+      "path": "data/raw/firms/viirs-snpp/2022/viirs-snpp_2022_India.csv",
+      "sha256": "517bcb87ede917538ad8c72b478d638f2d1e3fe58d16f231457ba809d81250eb",
+      "instrument": "VIIRS",
+      "platforms": [
+        "SNPP"
+      ],
+      "n_rows": 591594,
+      "columns": [
+        "latitude",
+        "longitude",
+        "bright_ti4",
+        "scan",
+        "track",
+        "acq_date",
+        "acq_time",
+        "satellite",
+        "instrument",
+        "confidence",
+        "version",
+        "bright_ti5",
+        "frp",
+        "daynight",
+        "type"
+      ],
+      "missing_expected": [],
+      "extra": []
+    },
+    {
+      "source_file": "viirs-snpp_2022_Pakistan.csv",
+      "path": "data/raw/firms/viirs-snpp/2022/viirs-snpp_2022_Pakistan.csv",
+      "sha256": "4bbdef783afdc56ec9f4c9c76cea61c8a11a6515877b888a169e092b9b987533",
+      "instrument": "VIIRS",
+      "platforms": [
+        "SNPP"
+      ],
+      "n_rows": 60973,
+      "columns": [
+        "latitude",
+        "longitude",
+        "bright_ti4",
+        "scan",
+        "track",
+        "acq_date",
+        "acq_time",
+        "satellite",
+        "instrument",
+        "confidence",
+        "version",
+        "bright_ti5",
+        "frp",
+        "daynight",
+        "type"
+      ],
+      "missing_expected": [],
+      "extra": []
+    },
+    {
+      "source_file": "viirs-snpp_2023_India.csv",
+      "path": "data/raw/firms/viirs-snpp/2023/viirs-snpp_2023_India.csv",
+      "sha256": "ae665975f00b08e4c3f88b8057385f6c499c94283c13357ca607cdd54b89e2e1",
+      "instrument": "VIIRS",
+      "platforms": [
+        "SNPP"
+      ],
+      "n_rows": 579733,
+      "columns": [
+        "latitude",
+        "longitude",
+        "bright_ti4",
+        "scan",
+        "track",
+        "acq_date",
+        "acq_time",
+        "satellite",
+        "instrument",
+        "confidence",
+        "version",
+        "bright_ti5",
+        "frp",
+        "daynight",
+        "type"
+      ],
+      "missing_expected": [],
+      "extra": []
+    },
+    {
+      "source_file": "viirs-snpp_2023_Pakistan.csv",
+      "path": "data/raw/firms/viirs-snpp/2023/viirs-snpp_2023_Pakistan.csv",
+      "sha256": "e1cc95cff4692a1555228d63ee0e35a7fcd9826b81c9bb40189ca5e17b3c9655",
+      "instrument": "VIIRS",
+      "platforms": [
+        "SNPP"
+      ],
+      "n_rows": 52473,
+      "columns": [
+        "latitude",
+        "longitude",
+        "bright_ti4",
+        "scan",
+        "track",
+        "acq_date",
+        "acq_time",
+        "satellite",
+        "instrument",
+        "confidence",
+        "version",
+        "bright_ti5",
+        "frp",
+        "daynight",
+        "type"
+      ],
+      "missing_expected": [],
+      "extra": []
+    },
+    {
+      "source_file": "viirs-snpp_2024_India.csv",
+      "path": "data/raw/firms/viirs-snpp/2024/viirs-snpp_2024_India.csv",
+      "sha256": "561c85c5eb63441bae042d6be8b79fd1052be154e3445f355ac5e1fb0451b48f",
+      "instrument": "VIIRS",
+      "platforms": [
+        "SNPP"
+      ],
+      "n_rows": 552312,
+      "columns": [
+        "latitude",
+        "longitude",
+        "bright_ti4",
+        "scan",
+        "track",
+        "acq_date",
+        "acq_time",
+        "satellite",
+        "instrument",
+        "confidence",
+        "version",
+        "bright_ti5",
+        "frp",
+        "daynight",
+        "type"
+      ],
+      "missing_expected": [],
+      "extra": []
+    },
+    {
+      "source_file": "viirs-snpp_2024_Pakistan.csv",
+      "path": "data/raw/firms/viirs-snpp/2024/viirs-snpp_2024_Pakistan.csv",
+      "sha256": "598d2dcf9181fcd034a634ddf50945a238c352aac1f7473f36af29616b1a73f3",
+      "instrument": "VIIRS",
+      "platforms": [
+        "SNPP"
+      ],
+      "n_rows": 66543,
+      "columns": [
+        "latitude",
+        "longitude",
+        "bright_ti4",
+        "scan",
+        "track",
+        "acq_date",
+        "acq_time",
+        "satellite",
+        "instrument",
+        "confidence",
+        "version",
+        "bright_ti5",
+        "frp",
+        "daynight",
+        "type"
+      ],
+      "missing_expected": [],
+      "extra": []
+    },
+    {
+      "source_file": "viirs-snpp_2025_India.csv",
+      "path": "data/raw/firms/viirs-snpp/2025/viirs-snpp_2025_India.csv",
+      "sha256": "d2d173f93ea906f03e2c1ad29560d57160460698ede5e40fe04d9861f00ea6a4",
+      "instrument": "VIIRS",
+      "platforms": [
+        "SNPP"
+      ],
+      "n_rows": 646376,
+      "columns": [
+        "latitude",
+        "longitude",
+        "bright_ti4",
+        "scan",
+        "track",
+        "acq_date",
+        "acq_time",
+        "satellite",
+        "instrument",
+        "confidence",
+        "version",
+        "bright_ti5",
+        "frp",
+        "daynight",
+        "type"
+      ],
+      "missing_expected": [],
+      "extra": []
+    },
+    {
+      "source_file": "viirs-snpp_2025_Pakistan.csv",
+      "path": "data/raw/firms/viirs-snpp/2025/viirs-snpp_2025_Pakistan.csv",
+      "sha256": "8b2ec9cef4ebb29fc7c1860fa7ea6e0a6375a13b59e6e4c89e566b32e963af06",
+      "instrument": "VIIRS",
+      "platforms": [
+        "SNPP"
+      ],
+      "n_rows": 69650,
+      "columns": [
+        "latitude",
+        "longitude",
+        "bright_ti4",
+        "scan",
+        "track",
+        "acq_date",
+        "acq_time",
+        "satellite",
+        "instrument",
+        "confidence",
+        "version",
+        "bright_ti5",
+        "frp",
+        "daynight",
+        "type"
+      ],
+      "missing_expected": [],
+      "extra": []
+    }
+  ]
+}

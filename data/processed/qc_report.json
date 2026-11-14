@@ -1,0 +1,3019 @@
+{
+  "generated_at_utc": "2026-11-01T05:25:18+00:00",
+  "stages": [
+    "raw",
+    "after_standard",
+    "after_type",
+    "after_confidence",
+    "after_box",
+    "after_dedup",
+    "after_mask"
+  ],
+  "mask_applied": true,
+  "n_raw_files": 90,
+  "counts": [
+    {
+      "platform": "Aqua",
+      "year": 2003,
+      "raw": 44315,
+      "after_standard": 44315,
+      "after_type": 43884,
+      "after_confidence": 42229,
+      "after_box": 16583,
+      "after_dedup": 16583,
+      "after_mask": 16564
+    },
+    {
+      "platform": "Aqua",
+      "year": 2004,
+      "raw": 52667,
+      "after_standard": 52667,
+      "after_type": 51986,
+      "after_confidence": 50121,
+      "after_box": 17980,
+      "after_dedup": 17980,
+      "after_mask": 17957
+    },
+    {
+      "platform": "Aqua",
+      "year": 2005,
+      "raw": 51829,
+      "after_standard": 51829,
+      "after_type": 51189,
+      "after_confidence": 49315,
+      "after_box": 22908,
+      "after_dedup": 22908,
+      "after_mask": 22882
+    },
+    {
+      "platform": "Aqua",
+      "year": 2006,
+      "raw": 51356,
+      "after_standard": 51356,
+      "after_type": 50528,
+      "after_confidence": 48641,
+      "after_box": 15695,
+      "after_dedup": 15695,
+      "after_mask": 15665
+    },
+    {
+      "platform": "Aqua",
+      "year": 2007,
+      "raw": 57398,
+      "after_standard": 57398,
+      "after_type": 56519,
+      "after_confidence": 54463,
+      "after_box": 21410,
+      "after_dedup": 21410,
+      "after_mask": 21377
+    },
+    {
+      "platform": "Aqua",
+      "year": 2008,
+      "raw": 54609,
+      "after_standard": 54609,
+      "after_type": 53939,
+      "after_confidence": 51901,
+      "after_box": 24392,
+      "after_dedup": 24392,
+      "after_mask": 24361
+    },
+    {
+      "platform": "Aqua",
+      "year": 2009,
+      "raw": 69075,
+      "after_standard": 69075,
+      "after_type": 68448,
+      "after_confidence": 65805,
+      "after_box": 23789,
+      "after_dedup": 23789,
+      "after_mask": 23777
+    },
+    {
+      "platform": "Aqua",
+      "year": 2010,
+      "raw": 60206,
+      "after_standard": 60206,
+      "after_type": 59064,
+      "after_confidence": 56774,
+      "after_box": 22122,
+      "after_dedup": 22122,
+      "after_mask": 22101
+    },
+    {
+      "platform": "Aqua",
+      "year": 2011,
+      "raw": 54836,
+      "after_standard": 54836,
+      "after_type": 54014,
+      "after_confidence": 51891,
+      "after_box": 22371,
+      "after_dedup": 22371,
+      "after_mask": 22314
+    },
+    {
+      "platform": "Aqua",
+      "year": 2012,
+      "raw": 71860,
+      "after_standard": 71860,
+      "after_type": 71227,
+      "after_confidence": 68518,
+      "after_box": 28801,
+      "after_dedup": 28801,
+      "after_mask": 28743
+    },
+    {
+      "platform": "Aqua",
+      "year": 2013,
+      "raw": 55706,
+      "after_standard": 55706,
+      "after_type": 54711,
+      "after_confidence": 52680,
+      "after_box": 23741,
+      "after_dedup": 23741,
+      "after_mask": 23704
+    },
+    {
+      "platform": "Aqua",
+      "year": 2014,
+      "raw": 59277,
+      "after_standard": 59277,
+      "after_type": 57835,
+      "after_confidence": 55589,
+      "after_box": 25802,
+      "after_dedup": 25802,
+      "after_mask": 25763
+    },
+    {
+      "platform": "Aqua",
+      "year": 2015,
+      "raw": 52961,
+      "after_standard": 52961,
+      "after_type": 51520,
+      "after_confidence": 49492,
+      "after_box": 21581,
+      "after_dedup": 21581,
+      "after_mask": 21540
+    },
+    {
+      "platform": "Aqua",
+      "year": 2016,
+      "raw": 70231,
+      "after_standard": 70231,
+      "after_type": 69058,
+      "after_confidence": 66336,
+      "after_box": 32814,
+      "after_dedup": 32814,
+      "after_mask": 32736
+    },
+    {
+      "platform": "Aqua",
+      "year": 2017,
+      "raw": 64242,
+      "after_standard": 64242,
+      "after_type": 62765,
+      "after_confidence": 60299,
+      "after_box": 24947,
+      "after_dedup": 24947,
+      "after_mask": 24932
+    },
+    {
+      "platform": "Aqua",
+      "year": 2018,
+      "raw": 69594,
+      "after_standard": 69594,
+      "after_type": 66867,
+      "after_confidence": 64403,
+      "after_box": 27201,
+      "after_dedup": 27201,
+      "after_mask": 27189
+    },
+    {
+      "platform": "Aqua",
+      "year": 2019,
+      "raw": 55109,
+      "after_standard": 55109,
+      "after_type": 52779,
+      "after_confidence": 50887,
+      "after_box": 22986,
+      "after_dedup": 22986,
+      "after_mask": 22970
+    },
+    {
+      "platform": "Aqua",
+      "year": 2020,
+      "raw": 58644,
+      "after_standard": 58644,
+      "after_type": 56534,
+      "after_confidence": 54203,
+      "after_box": 28432,
+      "after_dedup": 28432,
+      "after_mask": 28415
+    },
+    {
+      "platform": "Aqua",
+      "year": 2021,
+      "raw": 86251,
+      "after_standard": 86251,
+      "after_type": 84175,
+      "after_confidence": 81046,
+      "after_box": 33937,
+      "after_dedup": 33937,
+      "after_mask": 33926
+    },
+    {
+      "platform": "Aqua",
+      "year": 2022,
+      "raw": 60774,
+      "after_standard": 60774,
+      "after_type": 58724,
+      "after_confidence": 56722,
+      "after_box": 24969,
+      "after_dedup": 24969,
+      "after_mask": 24924
+    },
+    {
+      "platform": "Aqua",
+      "year": 2023,
+      "raw": 59894,
+      "after_standard": 59894,
+      "after_type": 57758,
+      "after_confidence": 55749,
+      "after_box": 20740,
+      "after_dedup": 20740,
+      "after_mask": 20726
+    },
+    {
+      "platform": "Aqua",
+      "year": 2024,
+      "raw": 56949,
+      "after_standard": 56949,
+      "after_type": 54716,
+      "after_confidence": 52861,
+      "after_box": 21692,
+      "after_dedup": 21692,
+      "after_mask": 21682
+    },
+    {
+      "platform": "Aqua",
+      "year": 2025,
+      "raw": 72730,
+      "after_standard": 72730,
+      "after_type": 70138,
+      "after_confidence": 67918,
+      "after_box": 22497,
+      "after_dedup": 22497,
+      "after_mask": 22475
+    },
+    {
+      "platform": "NOAA20",
+      "year": 2018,
+      "raw": 381037,
+      "after_standard": 381037,
+      "after_type": 327204,
+      "after_confidence": 273032,
+      "after_box": 168801,
+      "after_dedup": 168801,
+      "after_mask": 168110
+    },
+    {
+      "platform": "NOAA20",
+      "year": 2019,
+      "raw": 593640,
+      "after_standard": 593640,
+      "after_type": 515115,
+      "after_confidence": 415864,
+      "after_box": 169364,
+      "after_dedup": 169364,
+      "after_mask": 168481
+    },
+    {
+      "platform": "NOAA20",
+      "year": 2020,
+      "raw": 549429,
+      "after_standard": 549429,
+      "after_type": 482074,
+      "after_confidence": 397942,
+      "after_box": 191658,
+      "after_dedup": 191658,
+      "after_mask": 190279
+    },
+    {
+      "platform": "NOAA20",
+      "year": 2021,
+      "raw": 837374,
+      "after_standard": 837374,
+      "after_type": 766806,
+      "after_confidence": 639063,
+      "after_box": 233743,
+      "after_dedup": 233743,
+      "after_mask": 232430
+    },
+    {
+      "platform": "NOAA20",
+      "year": 2022,
+      "raw": 669227,
+      "after_standard": 669227,
+      "after_type": 596475,
+      "after_confidence": 486233,
+      "after_box": 187603,
+      "after_dedup": 187603,
+      "after_mask": 186024
+    },
+    {
+      "platform": "NOAA20",
+      "year": 2023,
+      "raw": 645566,
+      "after_standard": 645566,
+      "after_type": 565850,
+      "after_confidence": 462336,
+      "after_box": 143827,
+      "after_dedup": 143827,
+      "after_mask": 142225
+    },
+    {
+      "platform": "NOAA20",
+      "year": 2024,
+      "raw": 649860,
+      "after_standard": 649860,
+      "after_type": 574146,
+      "after_confidence": 458453,
+      "after_box": 172336,
+      "after_dedup": 172336,
+      "after_mask": 170796
+    },
+    {
+      "platform": "NOAA20",
+      "year": 2025,
+      "raw": 727612,
+      "after_standard": 727612,
+      "after_type": 644939,
+      "after_confidence": 524479,
+      "after_box": 164817,
+      "after_dedup": 164817,
+      "after_mask": 163692
+    },
+    {
+      "platform": "SNPP",
+      "year": 2012,
+      "raw": 645206,
+      "after_standard": 645206,
+      "after_type": 591379,
+      "after_confidence": 490577,
+      "after_box": 190373,
+      "after_dedup": 190373,
+      "after_mask": 189828
+    },
+    {
+      "platform": "SNPP",
+      "year": 2013,
+      "raw": 547741,
+      "after_standard": 547741,
+      "after_type": 487505,
+      "after_confidence": 397121,
+      "after_box": 155369,
+      "after_dedup": 155369,
+      "after_mask": 154474
+    },
+    {
+      "platform": "SNPP",
+      "year": 2014,
+      "raw": 601795,
+      "after_standard": 601795,
+      "after_type": 542058,
+      "after_confidence": 445361,
+      "after_box": 185941,
+      "after_dedup": 185941,
+      "after_mask": 185066
+    },
+    {
+      "platform": "SNPP",
+      "year": 2015,
+      "raw": 534386,
+      "after_standard": 534386,
+      "after_type": 473402,
+      "after_confidence": 388752,
+      "after_box": 160816,
+      "after_dedup": 160816,
+      "after_mask": 159691
+    },
+    {
+      "platform": "SNPP",
+      "year": 2016,
+      "raw": 744635,
+      "after_standard": 744635,
+      "after_type": 683093,
+      "after_confidence": 559262,
+      "after_box": 235030,
+      "after_dedup": 235030,
+      "after_mask": 233925
+    },
+    {
+      "platform": "SNPP",
+      "year": 2017,
+      "raw": 669007,
+      "after_standard": 669007,
+      "after_type": 600336,
+      "after_confidence": 485319,
+      "after_box": 178020,
+      "after_dedup": 178020,
+      "after_mask": 177134
+    },
+    {
+      "platform": "SNPP",
+      "year": 2018,
+      "raw": 714774,
+      "after_standard": 714774,
+      "after_type": 637057,
+      "after_confidence": 520376,
+      "after_box": 194098,
+      "after_dedup": 194098,
+      "after_mask": 192887
+    },
+    {
+      "platform": "SNPP",
+      "year": 2019,
+      "raw": 591048,
+      "after_standard": 591048,
+      "after_type": 518938,
+      "after_confidence": 419182,
+      "after_box": 168284,
+      "after_dedup": 168284,
+      "after_mask": 167258
+    },
+    {
+      "platform": "SNPP",
+      "year": 2020,
+      "raw": 542470,
+      "after_standard": 542470,
+      "after_type": 477860,
+      "after_confidence": 396319,
+      "after_box": 191746,
+      "after_dedup": 191746,
+      "after_mask": 190409
+    },
+    {
+      "platform": "SNPP",
+      "year": 2021,
+      "raw": 841590,
+      "after_standard": 841590,
+      "after_type": 772124,
+      "after_confidence": 639997,
+      "after_box": 230458,
+      "after_dedup": 230458,
+      "after_mask": 229229
+    },
+    {
+      "platform": "SNPP",
+      "year": 2022,
+      "raw": 652567,
+      "after_standard": 652567,
+      "after_type": 581880,
+      "after_confidence": 471667,
+      "after_box": 182538,
+      "after_dedup": 182538,
+      "after_mask": 181170
+    },
+    {
+      "platform": "SNPP",
+      "year": 2023,
+      "raw": 632206,
+      "after_standard": 632206,
+      "after_type": 554473,
+      "after_confidence": 453011,
+      "after_box": 138383,
+      "after_dedup": 138383,
+      "after_mask": 136955
+    },
+    {
+      "platform": "SNPP",
+      "year": 2024,
+      "raw": 618855,
+      "after_standard": 618855,
+      "after_type": 547301,
+      "after_confidence": 436332,
+      "after_box": 161370,
+      "after_dedup": 161369,
+      "after_mask": 159934
+    },
+    {
+      "platform": "SNPP",
+      "year": 2025,
+      "raw": 716026,
+      "after_standard": 716026,
+      "after_type": 635664,
+      "after_confidence": 517649,
+      "after_box": 163105,
+      "after_dedup": 163105,
+      "after_mask": 162031
+    },
+    {
+      "platform": "Terra",
+      "year": 2003,
+      "raw": 18870,
+      "after_standard": 18870,
+      "after_type": 18444,
+      "after_confidence": 17644,
+      "after_box": 9902,
+      "after_dedup": 9902,
+      "after_mask": 9884
+    },
+    {
+      "platform": "Terra",
+      "year": 2004,
+      "raw": 20265,
+      "after_standard": 20265,
+      "after_type": 19482,
+      "after_confidence": 18551,
+      "after_box": 9353,
+      "after_dedup": 9353,
+      "after_mask": 9307
+    },
+    {
+      "platform": "Terra",
+      "year": 2005,
+      "raw": 19448,
+      "after_standard": 19448,
+      "after_type": 18725,
+      "after_confidence": 17934,
+      "after_box": 10523,
+      "after_dedup": 10523,
+      "after_mask": 10472
+    },
+    {
+      "platform": "Terra",
+      "year": 2006,
+      "raw": 20470,
+      "after_standard": 20470,
+      "after_type": 19539,
+      "after_confidence": 18638,
+      "after_box": 8035,
+      "after_dedup": 8035,
+      "after_mask": 8001
+    },
+    {
+      "platform": "Terra",
+      "year": 2007,
+      "raw": 24996,
+      "after_standard": 24996,
+      "after_type": 23921,
+      "after_confidence": 22861,
+      "after_box": 10848,
+      "after_dedup": 10848,
+      "after_mask": 10813
+    },
+    {
+      "platform": "Terra",
+      "year": 2008,
+      "raw": 26751,
+      "after_standard": 26751,
+      "after_type": 25963,
+      "after_confidence": 24871,
+      "after_box": 13019,
+      "after_dedup": 13019,
+      "after_mask": 12995
+    },
+    {
+      "platform": "Terra",
+      "year": 2009,
+      "raw": 29996,
+      "after_standard": 29996,
+      "after_type": 29125,
+      "after_confidence": 27804,
+      "after_box": 12087,
+      "after_dedup": 12087,
+      "after_mask": 12060
+    },
+    {
+      "platform": "Terra",
+      "year": 2010,
+      "raw": 24464,
+      "after_standard": 24464,
+      "after_type": 23043,
+      "after_confidence": 21922,
+      "after_box": 8907,
+      "after_dedup": 8907,
+      "after_mask": 8876
+    },
+    {
+      "platform": "Terra",
+      "year": 2011,
+      "raw": 25916,
+      "after_standard": 25916,
+      "after_type": 24688,
+      "after_confidence": 23628,
+      "after_box": 11006,
+      "after_dedup": 11006,
+      "after_mask": 10926
+    },
+    {
+      "platform": "Terra",
+      "year": 2012,
+      "raw": 33423,
+      "after_standard": 33423,
+      "after_type": 32406,
+      "after_confidence": 31013,
+      "after_box": 15221,
+      "after_dedup": 15221,
+      "after_mask": 15163
+    },
+    {
+      "platform": "Terra",
+      "year": 2013,
+      "raw": 24521,
+      "after_standard": 24521,
+      "after_type": 23138,
+      "after_confidence": 22166,
+      "after_box": 10722,
+      "after_dedup": 10722,
+      "after_mask": 10665
+    },
+    {
+      "platform": "Terra",
+      "year": 2014,
+      "raw": 27394,
+      "after_standard": 27394,
+      "after_type": 25553,
+      "after_confidence": 24369,
+      "after_box": 11392,
+      "after_dedup": 11392,
+      "after_mask": 11346
+    },
+    {
+      "platform": "Terra",
+      "year": 2015,
+      "raw": 24082,
+      "after_standard": 24082,
+      "after_type": 22310,
+      "after_confidence": 21219,
+      "after_box": 9726,
+      "after_dedup": 9726,
+      "after_mask": 9656
+    },
+    {
+      "platform": "Terra",
+      "year": 2016,
+      "raw": 29431,
+      "after_standard": 29431,
+      "after_type": 27932,
+      "after_confidence": 26592,
+      "after_box": 12871,
+      "after_dedup": 12871,
+      "after_mask": 12788
+    },
+    {
+      "platform": "Terra",
+      "year": 2017,
+      "raw": 30537,
+      "after_standard": 30537,
+      "after_type": 28730,
+      "after_confidence": 27405,
+      "after_box": 11696,
+      "after_dedup": 11696,
+      "after_mask": 11662
+    },
+    {
+      "platform": "Terra",
+      "year": 2018,
+      "raw": 34477,
+      "after_standard": 34477,
+      "after_type": 31195,
+      "after_confidence": 29921,
+      "after_box": 13813,
+      "after_dedup": 13813,
+      "after_mask": 13793
+    },
+    {
+      "platform": "Terra",
+      "year": 2019,
+      "raw": 29971,
+      "after_standard": 29971,
+      "after_type": 27265,
+      "after_confidence": 26119,
+      "after_box": 11712,
+      "after_dedup": 11712,
+      "after_mask": 11693
+    },
+    {
+      "platform": "Terra",
+      "year": 2020,
+      "raw": 27281,
+      "after_standard": 27281,
+      "after_type": 24896,
+      "after_confidence": 23723,
+      "after_box": 11801,
+      "after_dedup": 11801,
+      "after_mask": 11773
+    },
+    {
+      "platform": "Terra",
+      "year": 2021,
+      "raw": 38004,
+      "after_standard": 38004,
+      "after_type": 35535,
+      "after_confidence": 33848,
+      "after_box": 13257,
+      "after_dedup": 13257,
+      "after_mask": 13235
+    },
+    {
+      "platform": "Terra",
+      "year": 2022,
+      "raw": 32268,
+      "after_standard": 32268,
+      "after_type": 29678,
+      "after_confidence": 28436,
+      "after_box": 11907,
+      "after_dedup": 11907,
+      "after_mask": 11840
+    },
+    {
+      "platform": "Terra",
+      "year": 2023,
+      "raw": 28980,
+      "after_standard": 28980,
+      "after_type": 26119,
+      "after_confidence": 24871,
+      "after_box": 8415,
+      "after_dedup": 8415,
+      "after_mask": 8391
+    },
+    {
+      "platform": "Terra",
+      "year": 2024,
+      "raw": 29479,
+      "after_standard": 29479,
+      "after_type": 26345,
+      "after_confidence": 25168,
+      "after_box": 11310,
+      "after_dedup": 11310,
+      "after_mask": 11297
+    },
+    {
+      "platform": "Terra",
+      "year": 2025,
+      "raw": 34878,
+      "after_standard": 34878,
+      "after_type": 30927,
+      "after_confidence": 29826,
+      "after_box": 11980,
+      "after_dedup": 11980,
+      "after_mask": 11953
+    }
+  ],
+  "duplicates": [
+    {
+      "platform": "Aqua",
+      "year": 2003,
+      "n_duplicates": 0
+    },
+    {
+      "platform": "Aqua",
+      "year": 2004,
+      "n_duplicates": 0
+    },
+    {
+      "platform": "Aqua",
+      "year": 2005,
+      "n_duplicates": 0
+    },
+    {
+      "platform": "Aqua",
+      "year": 2006,
+      "n_duplicates": 0
+    },
+    {
+      "platform": "Aqua",
+      "year": 2007,
+      "n_duplicates": 0
+    },
+    {
+      "platform": "Aqua",
+      "year": 2008,
+      "n_duplicates": 0
+    },
+    {
+      "platform": "Aqua",
+      "year": 2009,
+      "n_duplicates": 0
+    },
+    {
+      "platform": "Aqua",
+      "year": 2010,
+      "n_duplicates": 0
+    },
+    {
+      "platform": "Aqua",
+      "year": 2011,
+      "n_duplicates": 0
+    },
+    {
+      "platform": "Aqua",
+      "year": 2012,
+      "n_duplicates": 0
+    },
+    {
+      "platform": "Aqua",
+      "year": 2013,
+      "n_duplicates": 0
+    },
+    {
+      "platform": "Aqua",
+      "year": 2014,
+      "n_duplicates": 0
+    },
+    {
+      "platform": "Aqua",
+      "year": 2015,
+      "n_duplicates": 0
+    },
+    {
+      "platform": "Aqua",
+      "year": 2016,
+      "n_duplicates": 0
+    },
+    {
+      "platform": "Aqua",
+      "year": 2017,
+      "n_duplicates": 0
+    },
+    {
+      "platform": "Aqua",
+      "year": 2018,
+      "n_duplicates": 0
+    },
+    {
+      "platform": "Aqua",
+      "year": 2019,
+      "n_duplicates": 0
+    },
+    {
+      "platform": "Aqua",
+      "year": 2020,
+      "n_duplicates": 0
+    },
+    {
+      "platform": "Aqua",
+      "year": 2021,
+      "n_duplicates": 0
+    },
+    {
+      "platform": "Aqua",
+      "year": 2022,
+      "n_duplicates": 0
+    },
+    {
+      "platform": "Aqua",
+      "year": 2023,
+      "n_duplicates": 0
+    },
+    {
+      "platform": "Aqua",
+      "year": 2024,
+      "n_duplicates": 0
+    },
+    {
+      "platform": "Aqua",
+      "year": 2025,
+      "n_duplicates": 0
+    },
+    {
+      "platform": "NOAA20",
+      "year": 2018,
+      "n_duplicates": 0
+    },
+    {
+      "platform": "NOAA20",
+      "year": 2019,
+      "n_duplicates": 0
+    },
+    {
+      "platform": "NOAA20",
+      "year": 2020,
+      "n_duplicates": 0
+    },
+    {
+      "platform": "NOAA20",
+      "year": 2021,
+      "n_duplicates": 1
+    },
+    {
+      "platform": "NOAA20",
+      "year": 2022,
+      "n_duplicates": 0
+    },
+    {
+      "platform": "NOAA20",
+      "year": 2023,
+      "n_duplicates": 0
+    },
+    {
+      "platform": "NOAA20",
+      "year": 2024,
+      "n_duplicates": 0
+    },
+    {
+      "platform": "NOAA20",
+      "year": 2025,
+      "n_duplicates": 0
+    },
+    {
+      "platform": "SNPP",
+      "year": 2012,
+      "n_duplicates": 0
+    },
+    {
+      "platform": "SNPP",
+      "year": 2013,
+      "n_duplicates": 0
+    },
+    {
+      "platform": "SNPP",
+      "year": 2014,
+      "n_duplicates": 0
+    },
+    {
+      "platform": "SNPP",
+      "year": 2015,
+      "n_duplicates": 0
+    },
+    {
+      "platform": "SNPP",
+      "year": 2016,
+      "n_duplicates": 1
+    },
+    {
+      "platform": "SNPP",
+      "year": 2017,
+      "n_duplicates": 0
+    },
+    {
+      "platform": "SNPP",
+      "year": 2018,
+      "n_duplicates": 0
+    },
+    {
+      "platform": "SNPP",
+      "year": 2019,
+      "n_duplicates": 0
+    },
+    {
+      "platform": "SNPP",
+      "year": 2020,
+      "n_duplicates": 0
+    },
+    {
+      "platform": "SNPP",
+      "year": 2021,
+      "n_duplicates": 0
+    },
+    {
+      "platform": "SNPP",
+      "year": 2022,
+      "n_duplicates": 0
+    },
+    {
+      "platform": "SNPP",
+      "year": 2023,
+      "n_duplicates": 0
+    },
+    {
+      "platform": "SNPP",
+      "year": 2024,
+      "n_duplicates": 1
+    },
+    {
+      "platform": "SNPP",
+      "year": 2025,
+      "n_duplicates": 1
+    },
+    {
+      "platform": "Terra",
+      "year": 2003,
+      "n_duplicates": 0
+    },
+    {
+      "platform": "Terra",
+      "year": 2004,
+      "n_duplicates": 0
+    },
+    {
+      "platform": "Terra",
+      "year": 2005,
+      "n_duplicates": 0
+    },
+    {
+      "platform": "Terra",
+      "year": 2006,
+      "n_duplicates": 0
+    },
+    {
+      "platform": "Terra",
+      "year": 2007,
+      "n_duplicates": 0
+    },
+    {
+      "platform": "Terra",
+      "year": 2008,
+      "n_duplicates": 0
+    },
+    {
+      "platform": "Terra",
+      "year": 2009,
+      "n_duplicates": 0
+    },
+    {
+      "platform": "Terra",
+      "year": 2010,
+      "n_duplicates": 0
+    },
+    {
+      "platform": "Terra",
+      "year": 2011,
+      "n_duplicates": 0
+    },
+    {
+      "platform": "Terra",
+      "year": 2012,
+      "n_duplicates": 0
+    },
+    {
+      "platform": "Terra",
+      "year": 2013,
+      "n_duplicates": 0
+    },
+    {
+      "platform": "Terra",
+      "year": 2014,
+      "n_duplicates": 0
+    },
+    {
+      "platform": "Terra",
+      "year": 2015,
+      "n_duplicates": 0
+    },
+    {
+      "platform": "Terra",
+      "year": 2016,
+      "n_duplicates": 0
+    },
+    {
+      "platform": "Terra",
+      "year": 2017,
+      "n_duplicates": 0
+    },
+    {
+      "platform": "Terra",
+      "year": 2018,
+      "n_duplicates": 0
+    },
+    {
+      "platform": "Terra",
+      "year": 2019,
+      "n_duplicates": 0
+    },
+    {
+      "platform": "Terra",
+      "year": 2020,
+      "n_duplicates": 0
+    },
+    {
+      "platform": "Terra",
+      "year": 2021,
+      "n_duplicates": 0
+    },
+    {
+      "platform": "Terra",
+      "year": 2022,
+      "n_duplicates": 0
+    },
+    {
+      "platform": "Terra",
+      "year": 2023,
+      "n_duplicates": 0
+    },
+    {
+      "platform": "Terra",
+      "year": 2024,
+      "n_duplicates": 0
+    },
+    {
+      "platform": "Terra",
+      "year": 2025,
+      "n_duplicates": 0
+    }
+  ],
+  "coverage_gaps": [
+    {
+      "platform": "Aqua",
+      "year": 2003,
+      "expected_days": 365,
+      "days_with_data": 358,
+      "zero_days": 7,
+      "zero_day_ranges": [
+        [
+          "2003-05-12",
+          "2003-05-12"
+        ],
+        [
+          "2003-07-13",
+          "2003-07-13"
+        ],
+        [
+          "2003-07-21",
+          "2003-07-22"
+        ],
+        [
+          "2003-08-13",
+          "2003-08-13"
+        ],
+        [
+          "2003-09-04",
+          "2003-09-04"
+        ],
+        [
+          "2003-09-17",
+          "2003-09-17"
+        ]
+      ]
+    },
+    {
+      "platform": "Aqua",
+      "year": 2004,
+      "expected_days": 366,
+      "days_with_data": 353,
+      "zero_days": 13,
+      "zero_day_ranges": [
+        [
+          "2004-06-16",
+          "2004-06-16"
+        ],
+        [
+          "2004-06-18",
+          "2004-06-18"
+        ],
+        [
+          "2004-07-06",
+          "2004-07-06"
+        ],
+        [
+          "2004-07-10",
+          "2004-07-10"
+        ],
+        [
+          "2004-07-15",
+          "2004-07-15"
+        ],
+        [
+          "2004-07-22",
+          "2004-07-22"
+        ],
+        [
+          "2004-08-03",
+          "2004-08-03"
+        ],
+        [
+          "2004-08-08",
+          "2004-08-08"
+        ],
+        [
+          "2004-08-10",
+          "2004-08-11"
+        ],
+        [
+          "2004-08-19",
+          "2004-08-19"
+        ],
+        [
+          "2004-08-26",
+          "2004-08-26"
+        ],
+        [
+          "2004-08-28",
+          "2004-08-28"
+        ]
+      ]
+    },
+    {
+      "platform": "Aqua",
+      "year": 2005,
+      "expected_days": 365,
+      "days_with_data": 350,
+      "zero_days": 15,
+      "zero_day_ranges": [
+        [
+          "2005-06-28",
+          "2005-06-28"
+        ],
+        [
+          "2005-06-30",
+          "2005-06-30"
+        ],
+        [
+          "2005-07-03",
+          "2005-07-04"
+        ],
+        [
+          "2005-07-13",
+          "2005-07-15"
+        ],
+        [
+          "2005-07-23",
+          "2005-07-23"
+        ],
+        [
+          "2005-07-27",
+          "2005-07-27"
+        ],
+        [
+          "2005-07-30",
+          "2005-07-30"
+        ],
+        [
+          "2005-08-11",
+          "2005-08-12"
+        ],
+        [
+          "2005-08-20",
+          "2005-08-20"
+        ],
+        [
+          "2005-08-22",
+          "2005-08-22"
+        ],
+        [
+          "2005-08-24",
+          "2005-08-24"
+        ]
+      ]
+    },
+    {
+      "platform": "Aqua",
+      "year": 2006,
+      "expected_days": 365,
+      "days_with_data": 358,
+      "zero_days": 7,
+      "zero_day_ranges": [
+        [
+          "2006-07-05",
+          "2006-07-05"
+        ],
+        [
+          "2006-07-12",
+          "2006-07-12"
+        ],
+        [
+          "2006-07-14",
+          "2006-07-14"
+        ],
+        [
+          "2006-07-25",
+          "2006-07-25"
+        ],
+        [
+          "2006-07-28",
+          "2006-07-28"
+        ],
+        [
+          "2006-08-29",
+          "2006-08-29"
+        ],
+        [
+          "2006-09-05",
+          "2006-09-05"
+        ]
+      ]
+    },
+    {
+      "platform": "Aqua",
+      "year": 2007,
+      "expected_days": 365,
+      "days_with_data": 351,
+      "zero_days": 14,
+      "zero_day_ranges": [
+        [
+          "2007-06-14",
+          "2007-06-14"
+        ],
+        [
+          "2007-07-07",
+          "2007-07-08"
+        ],
+        [
+          "2007-07-10",
+          "2007-07-10"
+        ],
+        [
+          "2007-07-14",
+          "2007-07-14"
+        ],
+        [
+          "2007-07-17",
+          "2007-07-17"
+        ],
+        [
+          "2007-07-27",
+          "2007-07-27"
+        ],
+        [
+          "2007-08-07",
+          "2007-08-07"
+        ],
+        [
+          "2007-08-14",
+          "2007-08-14"
+        ],
+        [
+          "2007-08-16",
+          "2007-08-17"
+        ],
+        [
+          "2007-08-19",
+          "2007-08-19"
+        ],
+        [
+          "2007-09-06",
+          "2007-09-06"
+        ],
+        [
+          "2007-09-10",
+          "2007-09-10"
+        ]
+      ]
+    },
+    {
+      "platform": "Aqua",
+      "year": 2008,
+      "expected_days": 366,
+      "days_with_data": 353,
+      "zero_days": 13,
+      "zero_day_ranges": [
+        [
+          "2008-06-16",
+          "2008-06-18"
+        ],
+        [
+          "2008-07-13",
+          "2008-07-13"
+        ],
+        [
+          "2008-07-15",
+          "2008-07-15"
+        ],
+        [
+          "2008-07-31",
+          "2008-07-31"
+        ],
+        [
+          "2008-08-07",
+          "2008-08-07"
+        ],
+        [
+          "2008-08-09",
+          "2008-08-09"
+        ],
+        [
+          "2008-08-12",
+          "2008-08-12"
+        ],
+        [
+          "2008-08-14",
+          "2008-08-14"
+        ],
+        [
+          "2008-08-20",
+          "2008-08-20"
+        ],
+        [
+          "2008-09-22",
+          "2008-09-22"
+        ],
+        [
+          "2008-09-28",
+          "2008-09-28"
+        ]
+      ]
+    },
+    {
+      "platform": "Aqua",
+      "year": 2009,
+      "expected_days": 365,
+      "days_with_data": 358,
+      "zero_days": 7,
+      "zero_day_ranges": [
+        [
+          "2009-07-21",
+          "2009-07-21"
+        ],
+        [
+          "2009-07-28",
+          "2009-07-28"
+        ],
+        [
+          "2009-08-03",
+          "2009-08-03"
+        ],
+        [
+          "2009-08-07",
+          "2009-08-07"
+        ],
+        [
+          "2009-08-13",
+          "2009-08-13"
+        ],
+        [
+          "2009-08-17",
+          "2009-08-17"
+        ],
+        [
+          "2009-08-24",
+          "2009-08-24"
+        ]
+      ]
+    },
+    {
+      "platform": "Aqua",
+      "year": 2010,
+      "expected_days": 365,
+      "days_with_data": 362,
+      "zero_days": 3,
+      "zero_day_ranges": [
+        [
+          "2010-07-20",
+          "2010-07-20"
+        ],
+        [
+          "2010-08-01",
+          "2010-08-01"
+        ],
+        [
+          "2010-08-06",
+          "2010-08-06"
+        ]
+      ]
+    },
+    {
+      "platform": "Aqua",
+      "year": 2011,
+      "expected_days": 365,
+      "days_with_data": 353,
+      "zero_days": 12,
+      "zero_day_ranges": [
+        [
+          "2011-06-20",
+          "2011-06-20"
+        ],
+        [
+          "2011-06-27",
+          "2011-06-27"
+        ],
+        [
+          "2011-07-01",
+          "2011-07-01"
+        ],
+        [
+          "2011-07-03",
+          "2011-07-03"
+        ],
+        [
+          "2011-07-14",
+          "2011-07-15"
+        ],
+        [
+          "2011-07-20",
+          "2011-07-20"
+        ],
+        [
+          "2011-08-05",
+          "2011-08-05"
+        ],
+        [
+          "2011-08-07",
+          "2011-08-07"
+        ],
+        [
+          "2011-08-11",
+          "2011-08-11"
+        ],
+        [
+          "2011-08-18",
+          "2011-08-18"
+        ],
+        [
+          "2011-09-24",
+          "2011-09-24"
+        ]
+      ]
+    },
+    {
+      "platform": "Aqua",
+      "year": 2012,
+      "expected_days": 366,
+      "days_with_data": 357,
+      "zero_days": 9,
+      "zero_day_ranges": [
+        [
+          "2012-07-08",
+          "2012-07-08"
+        ],
+        [
+          "2012-07-24",
+          "2012-07-24"
+        ],
+        [
+          "2012-08-06",
+          "2012-08-06"
+        ],
+        [
+          "2012-08-09",
+          "2012-08-09"
+        ],
+        [
+          "2012-08-21",
+          "2012-08-21"
+        ],
+        [
+          "2012-08-25",
+          "2012-08-25"
+        ],
+        [
+          "2012-09-03",
+          "2012-09-03"
+        ],
+        [
+          "2012-09-10",
+          "2012-09-10"
+        ],
+        [
+          "2012-09-16",
+          "2012-09-16"
+        ]
+      ]
+    },
+    {
+      "platform": "Aqua",
+      "year": 2013,
+      "expected_days": 365,
+      "days_with_data": 356,
+      "zero_days": 9,
+      "zero_day_ranges": [
+        [
+          "2013-06-29",
+          "2013-06-30"
+        ],
+        [
+          "2013-07-12",
+          "2013-07-12"
+        ],
+        [
+          "2013-07-31",
+          "2013-07-31"
+        ],
+        [
+          "2013-08-06",
+          "2013-08-06"
+        ],
+        [
+          "2013-08-11",
+          "2013-08-11"
+        ],
+        [
+          "2013-08-21",
+          "2013-08-21"
+        ],
+        [
+          "2013-09-03",
+          "2013-09-03"
+        ],
+        [
+          "2013-10-01",
+          "2013-10-01"
+        ]
+      ]
+    },
+    {
+      "platform": "Aqua",
+      "year": 2014,
+      "expected_days": 365,
+      "days_with_data": 357,
+      "zero_days": 8,
+      "zero_day_ranges": [
+        [
+          "2014-06-21",
+          "2014-06-21"
+        ],
+        [
+          "2014-06-30",
+          "2014-06-30"
+        ],
+        [
+          "2014-07-18",
+          "2014-07-18"
+        ],
+        [
+          "2014-07-20",
+          "2014-07-20"
+        ],
+        [
+          "2014-08-05",
+          "2014-08-05"
+        ],
+        [
+          "2014-08-17",
+          "2014-08-17"
+        ],
+        [
+          "2014-08-21",
+          "2014-08-21"
+        ],
+        [
+          "2014-09-12",
+          "2014-09-12"
+        ]
+      ]
+    },
+    {
+      "platform": "Aqua",
+      "year": 2015,
+      "expected_days": 365,
+      "days_with_data": 359,
+      "zero_days": 6,
+      "zero_day_ranges": [
+        [
+          "2015-07-10",
+          "2015-07-10"
+        ],
+        [
+          "2015-07-17",
+          "2015-07-18"
+        ],
+        [
+          "2015-07-31",
+          "2015-08-01"
+        ],
+        [
+          "2015-08-20",
+          "2015-08-20"
+        ]
+      ]
+    },
+    {
+      "platform": "Aqua",
+      "year": 2016,
+      "expected_days": 366,
+      "days_with_data": 358,
+      "zero_days": 8,
+      "zero_day_ranges": [
+        [
+          "2016-07-07",
+          "2016-07-07"
+        ],
+        [
+          "2016-07-16",
+          "2016-07-18"
+        ],
+        [
+          "2016-07-30",
+          "2016-07-30"
+        ],
+        [
+          "2016-08-17",
+          "2016-08-17"
+        ],
+        [
+          "2016-09-05",
+          "2016-09-05"
+        ],
+        [
+          "2016-09-07",
+          "2016-09-07"
+        ]
+      ]
+    },
+    {
+      "platform": "Aqua",
+      "year": 2017,
+      "expected_days": 365,
+      "days_with_data": 351,
+      "zero_days": 14,
+      "zero_day_ranges": [
+        [
+          "2017-06-20",
+          "2017-06-20"
+        ],
+        [
+          "2017-07-03",
+          "2017-07-04"
+        ],
+        [
+          "2017-07-06",
+          "2017-07-06"
+        ],
+        [
+          "2017-07-12",
+          "2017-07-12"
+        ],
+        [
+          "2017-07-20",
+          "2017-07-20"
+        ],
+        [
+          "2017-07-22",
+          "2017-07-22"
+        ],
+        [
+          "2017-08-11",
+          "2017-08-11"
+        ],
+        [
+          "2017-08-16",
+          "2017-08-16"
+        ],
+        [
+          "2017-08-18",
+          "2017-08-18"
+        ],
+        [
+          "2017-08-31",
+          "2017-09-01"
+        ],
+        [
+          "2017-09-05",
+          "2017-09-05"
+        ],
+        [
+          "2017-09-19",
+          "2017-09-19"
+        ]
+      ]
+    },
+    {
+      "platform": "Aqua",
+      "year": 2018,
+      "expected_days": 365,
+      "days_with_data": 359,
+      "zero_days": 6,
+      "zero_day_ranges": [
+        [
+          "2018-07-31",
+          "2018-08-01"
+        ],
+        [
+          "2018-08-12",
+          "2018-08-12"
+        ],
+        [
+          "2018-08-24",
+          "2018-08-24"
+        ],
+        [
+          "2018-09-04",
+          "2018-09-04"
+        ],
+        [
+          "2018-09-20",
+          "2018-09-20"
+        ]
+      ]
+    },
+    {
+      "platform": "Aqua",
+      "year": 2019,
+      "expected_days": 365,
+      "days_with_data": 363,
+      "zero_days": 2,
+      "zero_day_ranges": [
+        [
+          "2019-08-22",
+          "2019-08-22"
+        ],
+        [
+          "2019-09-25",
+          "2019-09-25"
+        ]
+      ]
+    },
+    {
+      "platform": "Aqua",
+      "year": 2020,
+      "expected_days": 366,
+      "days_with_data": 362,
+      "zero_days": 4,
+      "zero_day_ranges": [
+        [
+          "2020-08-20",
+          "2020-08-20"
+        ],
+        [
+          "2020-08-25",
+          "2020-08-25"
+        ],
+        [
+          "2020-09-01",
+          "2020-09-02"
+        ]
+      ]
+    },
+    {
+      "platform": "Aqua",
+      "year": 2021,
+      "expected_days": 365,
+      "days_with_data": 362,
+      "zero_days": 3,
+      "zero_day_ranges": [
+        [
+          "2021-07-20",
+          "2021-07-21"
+        ],
+        [
+          "2021-07-30",
+          "2021-07-30"
+        ]
+      ]
+    },
+    {
+      "platform": "Aqua",
+      "year": 2022,
+      "expected_days": 365,
+      "days_with_data": 340,
+      "zero_days": 25,
+      "zero_day_ranges": [
+        [
+          "2022-04-01",
+          "2022-04-16"
+        ],
+        [
+          "2022-06-22",
+          "2022-06-22"
+        ],
+        [
+          "2022-07-22",
+          "2022-07-25"
+        ],
+        [
+          "2022-08-24",
+          "2022-08-24"
+        ],
+        [
+          "2022-09-06",
+          "2022-09-06"
+        ],
+        [
+          "2022-09-13",
+          "2022-09-14"
+        ]
+      ]
+    },
+    {
+      "platform": "Aqua",
+      "year": 2023,
+      "expected_days": 365,
+      "days_with_data": 360,
+      "zero_days": 5,
+      "zero_day_ranges": [
+        [
+          "2023-07-26",
+          "2023-07-26"
+        ],
+        [
+          "2023-08-02",
+          "2023-08-02"
+        ],
+        [
+          "2023-08-07",
+          "2023-08-07"
+        ],
+        [
+          "2023-08-24",
+          "2023-08-25"
+        ]
+      ]
+    },
+    {
+      "platform": "Aqua",
+      "year": 2024,
+      "expected_days": 366,
+      "days_with_data": 358,
+      "zero_days": 8,
+      "zero_day_ranges": [
+        [
+          "2024-07-03",
+          "2024-07-03"
+        ],
+        [
+          "2024-07-05",
+          "2024-07-05"
+        ],
+        [
+          "2024-07-20",
+          "2024-07-20"
+        ],
+        [
+          "2024-08-03",
+          "2024-08-03"
+        ],
+        [
+          "2024-09-01",
+          "2024-09-01"
+        ],
+        [
+          "2024-09-14",
+          "2024-09-14"
+        ],
+        [
+          "2024-09-16",
+          "2024-09-16"
+        ],
+        [
+          "2024-09-26",
+          "2024-09-26"
+        ]
+      ]
+    },
+    {
+      "platform": "Aqua",
+      "year": 2025,
+      "expected_days": 365,
+      "days_with_data": 353,
+      "zero_days": 12,
+      "zero_day_ranges": [
+        [
+          "2025-06-16",
+          "2025-06-16"
+        ],
+        [
+          "2025-06-22",
+          "2025-06-22"
+        ],
+        [
+          "2025-07-23",
+          "2025-07-23"
+        ],
+        [
+          "2025-07-26",
+          "2025-07-26"
+        ],
+        [
+          "2025-07-28",
+          "2025-07-28"
+        ],
+        [
+          "2025-08-02",
+          "2025-08-02"
+        ],
+        [
+          "2025-08-22",
+          "2025-08-22"
+        ],
+        [
+          "2025-09-02",
+          "2025-09-02"
+        ],
+        [
+          "2025-09-15",
+          "2025-09-15"
+        ],
+        [
+          "2025-09-17",
+          "2025-09-17"
+        ],
+        [
+          "2025-09-22",
+          "2025-09-22"
+        ],
+        [
+          "2025-10-05",
+          "2025-10-05"
+        ]
+      ]
+    },
+    {
+      "platform": "NOAA20",
+      "year": 2018,
+      "expected_days": 275,
+      "days_with_data": 275,
+      "zero_days": 0,
+      "zero_day_ranges": []
+    },
+    {
+      "platform": "NOAA20",
+      "year": 2019,
+      "expected_days": 365,
+      "days_with_data": 365,
+      "zero_days": 0,
+      "zero_day_ranges": []
+    },
+    {
+      "platform": "NOAA20",
+      "year": 2020,
+      "expected_days": 366,
+      "days_with_data": 366,
+      "zero_days": 0,
+      "zero_day_ranges": []
+    },
+    {
+      "platform": "NOAA20",
+      "year": 2021,
+      "expected_days": 365,
+      "days_with_data": 365,
+      "zero_days": 0,
+      "zero_day_ranges": []
+    },
+    {
+      "platform": "NOAA20",
+      "year": 2022,
+      "expected_days": 365,
+      "days_with_data": 365,
+      "zero_days": 0,
+      "zero_day_ranges": []
+    },
+    {
+      "platform": "NOAA20",
+      "year": 2023,
+      "expected_days": 365,
+      "days_with_data": 360,
+      "zero_days": 5,
+      "zero_day_ranges": [
+        [
+          "2023-07-19",
+          "2023-07-22"
+        ],
+        [
+          "2023-09-30",
+          "2023-09-30"
+        ]
+      ]
+    },
+    {
+      "platform": "NOAA20",
+      "year": 2024,
+      "expected_days": 366,
+      "days_with_data": 365,
+      "zero_days": 1,
+      "zero_day_ranges": [
+        [
+          "2024-02-04",
+          "2024-02-04"
+        ]
+      ]
+    },
+    {
+      "platform": "NOAA20",
+      "year": 2025,
+      "expected_days": 365,
+      "days_with_data": 365,
+      "zero_days": 0,
+      "zero_day_ranges": []
+    },
+    {
+      "platform": "SNPP",
+      "year": 2012,
+      "expected_days": 347,
+      "days_with_data": 346,
+      "zero_days": 1,
+      "zero_day_ranges": [
+        [
+          "2012-03-25",
+          "2012-03-25"
+        ]
+      ]
+    },
+    {
+      "platform": "SNPP",
+      "year": 2013,
+      "expected_days": 365,
+      "days_with_data": 365,
+      "zero_days": 0,
+      "zero_day_ranges": []
+    },
+    {
+      "platform": "SNPP",
+      "year": 2014,
+      "expected_days": 365,
+      "days_with_data": 365,
+      "zero_days": 0,
+      "zero_day_ranges": []
+    },
+    {
+      "platform": "SNPP",
+      "year": 2015,
+      "expected_days": 365,
+      "days_with_data": 365,
+      "zero_days": 0,
+      "zero_day_ranges": []
+    },
+    {
+      "platform": "SNPP",
+      "year": 2016,
+      "expected_days": 366,
+      "days_with_data": 366,
+      "zero_days": 0,
+      "zero_day_ranges": []
+    },
+    {
+      "platform": "SNPP",
+      "year": 2017,
+      "expected_days": 365,
+      "days_with_data": 365,
+      "zero_days": 0,
+      "zero_day_ranges": []
+    },
+    {
+      "platform": "SNPP",
+      "year": 2018,
+      "expected_days": 365,
+      "days_with_data": 365,
+      "zero_days": 0,
+      "zero_day_ranges": []
+    },
+    {
+      "platform": "SNPP",
+      "year": 2019,
+      "expected_days": 365,
+      "days_with_data": 365,
+      "zero_days": 0,
+      "zero_day_ranges": []
+    },
+    {
+      "platform": "SNPP",
+      "year": 2020,
+      "expected_days": 366,
+      "days_with_data": 366,
+      "zero_days": 0,
+      "zero_day_ranges": []
+    },
+    {
+      "platform": "SNPP",
+      "year": 2021,
+      "expected_days": 365,
+      "days_with_data": 365,
+      "zero_days": 0,
+      "zero_day_ranges": []
+    },
+    {
+      "platform": "SNPP",
+      "year": 2022,
+      "expected_days": 365,
+      "days_with_data": 350,
+      "zero_days": 15,
+      "zero_day_ranges": [
+        [
+          "2022-07-27",
+          "2022-08-10"
+        ]
+      ]
+    },
+    {
+      "platform": "SNPP",
+      "year": 2023,
+      "expected_days": 365,
+      "days_with_data": 364,
+      "zero_days": 1,
+      "zero_day_ranges": [
+        [
+          "2023-07-26",
+          "2023-07-26"
+        ]
+      ]
+    },
+    {
+      "platform": "SNPP",
+      "year": 2024,
+      "expected_days": 366,
+      "days_with_data": 346,
+      "zero_days": 20,
+      "zero_day_ranges": [
+        [
+          "2024-05-30",
+          "2024-06-03"
+        ],
+        [
+          "2024-07-10",
+          "2024-07-15"
+        ],
+        [
+          "2024-07-24",
+          "2024-07-28"
+        ],
+        [
+          "2024-09-26",
+          "2024-09-26"
+        ],
+        [
+          "2024-11-03",
+          "2024-11-05"
+        ]
+      ]
+    },
+    {
+      "platform": "SNPP",
+      "year": 2025,
+      "expected_days": 365,
+      "days_with_data": 364,
+      "zero_days": 1,
+      "zero_day_ranges": [
+        [
+          "2025-07-07",
+          "2025-07-07"
+        ]
+      ]
+    },
+    {
+      "platform": "Terra",
+      "year": 2003,
+      "expected_days": 365,
+      "days_with_data": 345,
+      "zero_days": 20,
+      "zero_day_ranges": [
+        [
+          "2003-02-01",
+          "2003-02-01"
+        ],
+        [
+          "2003-07-01",
+          "2003-07-01"
+        ],
+        [
+          "2003-07-11",
+          "2003-07-11"
+        ],
+        [
+          "2003-07-22",
+          "2003-07-22"
+        ],
+        [
+          "2003-07-31",
+          "2003-07-31"
+        ],
+        [
+          "2003-08-10",
+          "2003-08-10"
+        ],
+        [
+          "2003-08-18",
+          "2003-08-19"
+        ],
+        [
+          "2003-08-23",
+          "2003-08-23"
+        ],
+        [
+          "2003-09-04",
+          "2003-09-04"
+        ],
+        [
+          "2003-09-12",
+          "2003-09-12"
+        ],
+        [
+          "2003-09-18",
+          "2003-09-18"
+        ],
+        [
+          "2003-12-17",
+          "2003-12-24"
+        ]
+      ]
+    },
+    {
+      "platform": "Terra",
+      "year": 2004,
+      "expected_days": 366,
+      "days_with_data": 356,
+      "zero_days": 10,
+      "zero_day_ranges": [
+        [
+          "2004-02-19",
+          "2004-02-19"
+        ],
+        [
+          "2004-06-18",
+          "2004-06-18"
+        ],
+        [
+          "2004-07-08",
+          "2004-07-08"
+        ],
+        [
+          "2004-07-10",
+          "2004-07-10"
+        ],
+        [
+          "2004-07-13",
+          "2004-07-13"
+        ],
+        [
+          "2004-08-01",
+          "2004-08-02"
+        ],
+        [
+          "2004-08-08",
+          "2004-08-09"
+        ],
+        [
+          "2004-08-11",
+          "2004-08-11"
+        ]
+      ]
+    },
+    {
+      "platform": "Terra",
+      "year": 2005,
+      "expected_days": 365,
+      "days_with_data": 351,
+      "zero_days": 14,
+      "zero_day_ranges": [
+        [
+          "2005-06-29",
+          "2005-06-29"
+        ],
+        [
+          "2005-07-02",
+          "2005-07-02"
+        ],
+        [
+          "2005-07-04",
+          "2005-07-05"
+        ],
+        [
+          "2005-07-16",
+          "2005-07-16"
+        ],
+        [
+          "2005-07-22",
+          "2005-07-22"
+        ],
+        [
+          "2005-07-26",
+          "2005-07-27"
+        ],
+        [
+          "2005-08-08",
+          "2005-08-08"
+        ],
+        [
+          "2005-08-12",
+          "2005-08-12"
+        ],
+        [
+          "2005-08-17",
+          "2005-08-17"
+        ],
+        [
+          "2005-08-19",
+          "2005-08-19"
+        ],
+        [
+          "2005-08-24",
+          "2005-08-24"
+        ],
+        [
+          "2005-08-26",
+          "2005-08-26"
+        ]
+      ]
+    },
+    {
+      "platform": "Terra",
+      "year": 2006,
+      "expected_days": 365,
+      "days_with_data": 355,
+      "zero_days": 10,
+      "zero_day_ranges": [
+        [
+          "2006-06-21",
+          "2006-06-21"
+        ],
+        [
+          "2006-07-10",
+          "2006-07-14"
+        ],
+        [
+          "2006-07-27",
+          "2006-07-27"
+        ],
+        [
+          "2006-08-23",
+          "2006-08-23"
+        ],
+        [
+          "2006-09-03",
+          "2006-09-03"
+        ],
+        [
+          "2006-09-22",
+          "2006-09-22"
+        ]
+      ]
+    },
+    {
+      "platform": "Terra",
+      "year": 2007,
+      "expected_days": 365,
+      "days_with_data": 361,
+      "zero_days": 4,
+      "zero_day_ranges": [
+        [
+          "2007-07-13",
+          "2007-07-13"
+        ],
+        [
+          "2007-08-16",
+          "2007-08-16"
+        ],
+        [
+          "2007-09-05",
+          "2007-09-06"
+        ]
+      ]
+    },
+    {
+      "platform": "Terra",
+      "year": 2008,
+      "expected_days": 366,
+      "days_with_data": 353,
+      "zero_days": 13,
+      "zero_day_ranges": [
+        [
+          "2008-06-22",
+          "2008-06-22"
+        ],
+        [
+          "2008-06-27",
+          "2008-06-27"
+        ],
+        [
+          "2008-07-01",
+          "2008-07-01"
+        ],
+        [
+          "2008-07-27",
+          "2008-07-28"
+        ],
+        [
+          "2008-08-09",
+          "2008-08-09"
+        ],
+        [
+          "2008-08-15",
+          "2008-08-16"
+        ],
+        [
+          "2008-08-23",
+          "2008-08-23"
+        ],
+        [
+          "2008-12-20",
+          "2008-12-23"
+        ]
+      ]
+    },
+    {
+      "platform": "Terra",
+      "year": 2009,
+      "expected_days": 365,
+      "days_with_data": 363,
+      "zero_days": 2,
+      "zero_day_ranges": [
+        [
+          "2009-08-16",
+          "2009-08-16"
+        ],
+        [
+          "2009-08-25",
+          "2009-08-25"
+        ]
+      ]
+    },
+    {
+      "platform": "Terra",
+      "year": 2010,
+      "expected_days": 365,
+      "days_with_data": 361,
+      "zero_days": 4,
+      "zero_day_ranges": [
+        [
+          "2010-07-13",
+          "2010-07-14"
+        ],
+        [
+          "2010-07-30",
+          "2010-07-30"
+        ],
+        [
+          "2010-09-14",
+          "2010-09-14"
+        ]
+      ]
+    },
+    {
+      "platform": "Terra",
+      "year": 2011,
+      "expected_days": 365,
+      "days_with_data": 358,
+      "zero_days": 7,
+      "zero_day_ranges": [
+        [
+          "2011-07-04",
+          "2011-07-04"
+        ],
+        [
+          "2011-08-04",
+          "2011-08-04"
+        ],
+        [
+          "2011-08-11",
+          "2011-08-11"
+        ],
+        [
+          "2011-08-13",
+          "2011-08-14"
+        ],
+        [
+          "2011-08-24",
+          "2011-08-24"
+        ],
+        [
+          "2011-09-01",
+          "2011-09-01"
+        ]
+      ]
+    },
+    {
+      "platform": "Terra",
+      "year": 2012,
+      "expected_days": 366,
+      "days_with_data": 364,
+      "zero_days": 2,
+      "zero_day_ranges": [
+        [
+          "2012-07-26",
+          "2012-07-26"
+        ],
+        [
+          "2012-08-04",
+          "2012-08-04"
+        ]
+      ]
+    },
+    {
+      "platform": "Terra",
+      "year": 2013,
+      "expected_days": 365,
+      "days_with_data": 362,
+      "zero_days": 3,
+      "zero_day_ranges": [
+        [
+          "2013-07-21",
+          "2013-07-21"
+        ],
+        [
+          "2013-08-07",
+          "2013-08-07"
+        ],
+        [
+          "2013-09-03",
+          "2013-09-03"
+        ]
+      ]
+    },
+    {
+      "platform": "Terra",
+      "year": 2014,
+      "expected_days": 365,
+      "days_with_data": 360,
+      "zero_days": 5,
+      "zero_day_ranges": [
+        [
+          "2014-07-18",
+          "2014-07-18"
+        ],
+        [
+          "2014-08-05",
+          "2014-08-05"
+        ],
+        [
+          "2014-08-14",
+          "2014-08-15"
+        ],
+        [
+          "2014-10-26",
+          "2014-10-26"
+        ]
+      ]
+    },
+    {
+      "platform": "Terra",
+      "year": 2015,
+      "expected_days": 365,
+      "days_with_data": 361,
+      "zero_days": 4,
+      "zero_day_ranges": [
+        [
+          "2015-07-18",
+          "2015-07-18"
+        ],
+        [
+          "2015-08-12",
+          "2015-08-12"
+        ],
+        [
+          "2015-08-30",
+          "2015-08-30"
+        ],
+        [
+          "2015-09-01",
+          "2015-09-01"
+        ]
+      ]
+    },
+    {
+      "platform": "Terra",
+      "year": 2016,
+      "expected_days": 366,
+      "days_with_data": 354,
+      "zero_days": 12,
+      "zero_day_ranges": [
+        [
+          "2016-02-19",
+          "2016-02-27"
+        ],
+        [
+          "2016-07-06",
+          "2016-07-06"
+        ],
+        [
+          "2016-07-16",
+          "2016-07-16"
+        ],
+        [
+          "2016-08-17",
+          "2016-08-17"
+        ]
+      ]
+    },
+    {
+      "platform": "Terra",
+      "year": 2017,
+      "expected_days": 365,
+      "days_with_data": 362,
+      "zero_days": 3,
+      "zero_day_ranges": [
+        [
+          "2017-04-24",
+          "2017-04-24"
+        ],
+        [
+          "2017-07-21",
+          "2017-07-21"
+        ],
+        [
+          "2017-08-02",
+          "2017-08-02"
+        ]
+      ]
+    },
+    {
+      "platform": "Terra",
+      "year": 2018,
+      "expected_days": 365,
+      "days_with_data": 356,
+      "zero_days": 9,
+      "zero_day_ranges": [
+        [
+          "2018-07-22",
+          "2018-07-22"
+        ],
+        [
+          "2018-07-26",
+          "2018-07-26"
+        ],
+        [
+          "2018-07-31",
+          "2018-07-31"
+        ],
+        [
+          "2018-08-05",
+          "2018-08-06"
+        ],
+        [
+          "2018-08-15",
+          "2018-08-15"
+        ],
+        [
+          "2018-08-24",
+          "2018-08-25"
+        ],
+        [
+          "2018-09-21",
+          "2018-09-21"
+        ]
+      ]
+    },
+    {
+      "platform": "Terra",
+      "year": 2019,
+      "expected_days": 365,
+      "days_with_data": 363,
+      "zero_days": 2,
+      "zero_day_ranges": [
+        [
+          "2019-07-27",
+          "2019-07-27"
+        ],
+        [
+          "2019-10-26",
+          "2019-10-26"
+        ]
+      ]
+    },
+    {
+      "platform": "Terra",
+      "year": 2020,
+      "expected_days": 366,
+      "days_with_data": 361,
+      "zero_days": 5,
+      "zero_day_ranges": [
+        [
+          "2020-07-06",
+          "2020-07-06"
+        ],
+        [
+          "2020-07-24",
+          "2020-07-24"
+        ],
+        [
+          "2020-08-05",
+          "2020-08-05"
+        ],
+        [
+          "2020-08-21",
+          "2020-08-21"
+        ],
+        [
+          "2020-09-26",
+          "2020-09-26"
+        ]
+      ]
+    },
+    {
+      "platform": "Terra",
+      "year": 2021,
+      "expected_days": 365,
+      "days_with_data": 364,
+      "zero_days": 1,
+      "zero_day_ranges": [
+        [
+          "2021-07-30",
+          "2021-07-30"
+        ]
+      ]
+    },
+    {
+      "platform": "Terra",
+      "year": 2022,
+      "expected_days": 365,
+      "days_with_data": 349,
+      "zero_days": 16,
+      "zero_day_ranges": [
+        [
+          "2022-07-22",
+          "2022-07-22"
+        ],
+        [
+          "2022-07-29",
+          "2022-07-29"
+        ],
+        [
+          "2022-09-14",
+          "2022-09-14"
+        ],
+        [
+          "2022-10-11",
+          "2022-10-23"
+        ]
+      ]
+    },
+    {
+      "platform": "Terra",
+      "year": 2023,
+      "expected_days": 365,
+      "days_with_data": 361,
+      "zero_days": 4,
+      "zero_day_ranges": [
+        [
+          "2023-01-01",
+          "2023-01-01"
+        ],
+        [
+          "2023-07-11",
+          "2023-07-11"
+        ],
+        [
+          "2023-07-22",
+          "2023-07-22"
+        ],
+        [
+          "2023-07-26",
+          "2023-07-26"
+        ]
+      ]
+    },
+    {
+      "platform": "Terra",
+      "year": 2024,
+      "expected_days": 366,
+      "days_with_data": 362,
+      "zero_days": 4,
+      "zero_day_ranges": [
+        [
+          "2024-08-01",
+          "2024-08-01"
+        ],
+        [
+          "2024-08-08",
+          "2024-08-08"
+        ],
+        [
+          "2024-08-23",
+          "2024-08-23"
+        ],
+        [
+          "2024-09-26",
+          "2024-09-26"
+        ]
+      ]
+    },
+    {
+      "platform": "Terra",
+      "year": 2025,
+      "expected_days": 365,
+      "days_with_data": 360,
+      "zero_days": 5,
+      "zero_day_ranges": [
+        [
+          "2025-07-15",
+          "2025-07-15"
+        ],
+        [
+          "2025-07-28",
+          "2025-07-28"
+        ],
+        [
+          "2025-08-12",
+          "2025-08-13"
+        ],
+        [
+          "2025-09-15",
+          "2025-09-15"
+        ]
+      ]
+    }
+  ],
+  "schema_drift": {
+    "files_with_missing_columns": {},
+    "files_with_extra_columns": {},
+    "column_signatures": {
+      "MODIS": [
+        {
+          "columns": [
+            "acq_date",
+            "acq_time",
+            "bright_t31",
+            "brightness",
+            "confidence",
+            "daynight",
+            "frp",
+            "instrument",
+            "latitude",
+            "longitude",
+            "satellite",
+            "scan",
+            "track",
+            "type",
+            "version"
+          ],
+          "files": [
+            "modis_2003_India.csv",
+            "modis_2003_Pakistan.csv",
+            "modis_2004_India.csv",
+            "modis_2004_Pakistan.csv",
+            "modis_2005_India.csv",
+            "modis_2005_Pakistan.csv",
+            "modis_2006_India.csv",
+            "modis_2006_Pakistan.csv",
+            "modis_2007_India.csv",
+            "modis_2007_Pakistan.csv",
+            "modis_2008_India.csv",
+            "modis_2008_Pakistan.csv",
+            "modis_2009_India.csv",
+            "modis_2009_Pakistan.csv",
+            "modis_2010_India.csv",
+            "modis_2010_Pakistan.csv",
+            "modis_2011_India.csv",
+            "modis_2011_Pakistan.csv",
+            "modis_2012_India.csv",
+            "modis_2012_Pakistan.csv",
+            "modis_2013_India.csv",
+            "modis_2013_Pakistan.csv",
+            "modis_2014_India.csv",
+            "modis_2014_Pakistan.csv",
+            "modis_2015_India.csv",
+            "modis_2015_Pakistan.csv",
+            "modis_2016_India.csv",
+            "modis_2016_Pakistan.csv",
+            "modis_2017_India.csv",
+            "modis_2017_Pakistan.csv",
+            "modis_2018_India.csv",
+            "modis_2018_Pakistan.csv",
+            "modis_2019_India.csv",
+            "modis_2019_Pakistan.csv",
+            "modis_2020_India.csv",
+            "modis_2020_Pakistan.csv",
+            "modis_2021_India.csv",
+            "modis_2021_Pakistan.csv",
+            "modis_2022_India.csv",
+            "modis_2022_Pakistan.csv",
+            "modis_2023_India.csv",
+            "modis_2023_Pakistan.csv",
+            "modis_2024_India.csv",
+            "modis_2024_Pakistan.csv",
+            "modis_2025_India.csv",
+            "modis_2025_Pakistan.csv"
+          ]
+        }
+      ],
+      "VIIRS": [
+        {
+          "columns": [
+            "acq_date",
+            "acq_time",
+            "bright_ti4",
+            "bright_ti5",
+            "confidence",
+            "daynight",
+            "frp",
+            "instrument",
+            "latitude",
+            "longitude",
+            "satellite",
+            "scan",
+            "track",
+            "type",
+            "version"
+          ],
+          "files": [
+            "viirs-jpss1_2018_India.csv",
+            "viirs-jpss1_2018_Pakistan.csv",
+            "viirs-jpss1_2019_India.csv",
+            "viirs-jpss1_2019_Pakistan.csv",
+            "viirs-jpss1_2020_India.csv",
+            "viirs-jpss1_2020_Pakistan.csv",
+            "viirs-jpss1_2021_India.csv",
+            "viirs-jpss1_2021_Pakistan.csv",
+            "viirs-jpss1_2022_India.csv",
+            "viirs-jpss1_2022_Pakistan.csv",
+            "viirs-jpss1_2023_India.csv",
+            "viirs-jpss1_2023_Pakistan.csv",
+            "viirs-jpss1_2024_India.csv",
+            "viirs-jpss1_2024_Pakistan.csv",
+            "viirs-jpss1_2025_India.csv",
+            "viirs-jpss1_2025_Pakistan.csv",
+            "viirs-snpp_2012_India.csv",
+            "viirs-snpp_2012_Pakistan.csv",
+            "viirs-snpp_2013_India.csv",
+            "viirs-snpp_2013_Pakistan.csv",
+            "viirs-snpp_2014_India.csv",
+            "viirs-snpp_2014_Pakistan.csv",
+            "viirs-snpp_2015_India.csv",
+            "viirs-snpp_2015_Pakistan.csv",
+            "viirs-snpp_2016_India.csv",
+            "viirs-snpp_2016_Pakistan.csv",
+            "viirs-snpp_2017_India.csv",
+            "viirs-snpp_2017_Pakistan.csv",
+            "viirs-snpp_2018_India.csv",
+            "viirs-snpp_2018_Pakistan.csv",
+            "viirs-snpp_2019_India.csv",
+            "viirs-snpp_2019_Pakistan.csv",
+            "viirs-snpp_2020_India.csv",
+            "viirs-snpp_2020_Pakistan.csv",
+            "viirs-snpp_2021_India.csv",
+            "viirs-snpp_2021_Pakistan.csv",
+            "viirs-snpp_2022_India.csv",
+            "viirs-snpp_2022_Pakistan.csv",
+            "viirs-snpp_2023_India.csv",
+            "viirs-snpp_2023_Pakistan.csv",
+            "viirs-snpp_2024_India.csv",
+            "viirs-snpp_2024_Pakistan.csv",
+            "viirs-snpp_2025_India.csv",
+            "viirs-snpp_2025_Pakistan.csv"
+          ]
+        }
+      ]
+    },
+    "drift_detected": {
+      "MODIS": false,
+      "VIIRS": false
+    }
+  }
+}

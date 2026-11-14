@@ -1,0 +1,10 @@
+# Cloudflare Pages config (D-041, docs/DEPLOY.md). Used by `wrangler pages deploy` / `pages dev`.
+# No secrets here: FIRMS_MAP_KEY is a Pages encrypted secret (dashboard or `wrangler pages secret put`).
+name = "blindspot"
+pages_build_output_dir = "out"
+compatibility_date = "2024-11-01"
+
+[vars]
+# Optional extra allowed Origin for /api/nrt (the site's own origin is always allowed).
+# Set per environment in the dashboard if a custom domain is added; empty means own origin only.
+ALLOWED_ORIGIN = ""

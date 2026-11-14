@@ -1,0 +1,150 @@
+{
+ "axe": "4.10.2",
+ "generated_by": "web/e2e/run.mjs",
+ "runs": [
+  {
+   "page": "explorer",
+   "viewport": "desktop",
+   "theme": "light",
+   "violations": []
+  },
+  {
+   "page": "use-case",
+   "viewport": "desktop",
+   "theme": "light",
+   "violations": []
+  },
+  {
+   "page": "results",
+   "viewport": "desktop",
+   "theme": "light",
+   "violations": []
+  },
+  {
+   "page": "methods",
+   "viewport": "desktop",
+   "theme": "light",
+   "violations": []
+  },
+  {
+   "page": "about",
+   "viewport": "desktop",
+   "theme": "light",
+   "violations": []
+  },
+  {
+   "page": "attribution",
+   "viewport": "desktop",
+   "theme": "light",
+   "violations": []
+  },
+  {
+   "page": "explorer",
+   "viewport": "phone",
+   "theme": "light",
+   "violations": []
+  },
+  {
+   "page": "use-case",
+   "viewport": "phone",
+   "theme": "light",
+   "violations": []
+  },
+  {
+   "page": "results",
+   "viewport": "phone",
+   "theme": "light",
+   "violations": []
+  },
+  {
+   "page": "methods",
+   "viewport": "phone",
+   "theme": "light",
+   "violations": []
+  },
+  {
+   "page": "about",
+   "viewport": "phone",
+   "theme": "light",
+   "violations": []
+  },
+  {
+   "page": "attribution",
+   "viewport": "phone",
+   "theme": "light",
+   "violations": []
+  },
+  {
+   "page": "explorer",
+   "viewport": "desktop",
+   "theme": "dark",
+   "violations": []
+  },
+  {
+   "page": "use-case",
+   "viewport": "desktop",
+   "theme": "dark",
+   "violations": []
+  },
+  {
+   "page": "results",
+   "viewport": "desktop",
+   "theme": "dark",
+   "violations": []
+  },
+  {
+   "page": "methods",
+   "viewport": "desktop",
+   "theme": "dark",
+   "violations": []
+  },
+  {
+   "page": "about",
+   "viewport": "desktop",
+   "theme": "dark",
+   "violations": []
+  },
+  {
+   "page": "attribution",
+   "viewport": "desktop",
+   "theme": "dark",
+   "violations": []
+  },
+  {
+   "page": "explorer",
+   "viewport": "phone",
+   "theme": "dark",
+   "violations": []
+  },
+  {
+   "page": "use-case",
+   "viewport": "phone",
+   "theme": "dark",
+   "violations": []
+  },
+  {
+   "page": "results",
+   "viewport": "phone",
+   "theme": "dark",
+   "violations": []
+  },
+  {
+   "page": "methods",
+   "viewport": "phone",
+   "theme": "dark",
+   "violations": []
+  },
+  {
+   "page": "about",
+   "viewport": "phone",
+   "theme": "dark",
+   "violations": []
+  },
+  {
+   "page": "attribution",
+   "viewport": "phone",
+   "theme": "dark",
+   "violations": []
+  }
+ ]
+}

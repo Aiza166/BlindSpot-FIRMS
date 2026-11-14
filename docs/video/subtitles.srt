@@ -1,0 +1,11 @@
+1
+00:00:00,000 --> 00:00:10,000
+Pakistani Punjab's October–November fire record jumps +613% in 2012, when the sensor changed; Blind Spot brings it to +12.7% and flags the years where it stops being comparable.
+
+2
+00:00:10,000 --> 00:00:20,000
+Sangrur, November 2021: 1.74× its November median, checked against a second satellite.
+
+3
+00:00:20,000 --> 00:00:30,000
+From 2022, some burning moved past the afternoon satellites, so we flag those years.

@@ -1,0 +1,55 @@
+{
+  "name": "blindspot-web",
+  "description": "Blind Spot web app (NASA Space Apps 2026). Code written with Super Intelligence (SI) assistance: Claude Code (Anthropic), directed and reviewed by the team.",
+  "keywords": [
+    "NASA Space Apps 2026",
+    "FIRMS",
+    "MODIS",
+    "VIIRS",
+    "SI-assisted",
+    "AI-assisted"
+  ],
+  "private": true,
+  "version": "0.1.0",
+  "scripts": {
+    "copy-duckdb": "node scripts/copy-duckdb.mjs",
+    "dev": "npm run copy-duckdb && next dev",
+    "build": "npm run copy-duckdb && next build && node scripts/gen-headers.mjs",
+    "typecheck": "tsc --noEmit",
+    "serve": "node scripts/serve.mjs",
+    "e2e": "node e2e/run.mjs",
+    "lint": "eslint .",
+    "test": "vitest run",
+    "serve:headers": "node scripts/serve.mjs --headers",
+    "e2e:full": "node scripts/e2e-full.mjs"
+  },
+  "dependencies": {
+    "@duckdb/duckdb-wasm": "1.28.0",
+    "@fontsource-variable/instrument-sans": "5.3.0",
+    "@fontsource/newsreader": "5.3.0",
+    "html-to-image": "1.11.13",
+    "maplibre-gl": "6.16.0",
+    "marked": "16.4.2",
+    "next": "15.5.28",
+    "react": "19.2.0",
+    "react-dom": "19.2.0"
+  },
+  "devDependencies": {
+    "@eslint/eslintrc": "^3.3.1",
+    "@types/geojson": "^7946.0.16",
+    "@types/node": "22.19.0",
+    "@types/react": "19.2.2",
+    "@types/react-dom": "19.2.2",
+    "axe-core": "^4.10.2",
+    "eslint": "^9.39.1",
+    "eslint-config-next": "^15.5.4",
+    "typescript": "5.9.3",
+    "vitest": "^3.2.4"
+  },
+  "overrides": {
+    "postcss": "8.5.32"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

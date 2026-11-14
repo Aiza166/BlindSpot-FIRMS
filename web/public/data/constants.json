@@ -1,0 +1,26 @@
+{
+ "schema_version": 1,
+ "csv_row_cap": 200000,
+ "csv_cap_message": "More than {cap} rows: narrow your range.",
+ "tile_deg": 1,
+ "tile_path_template": "tiles/year={year}/tile_{lat}_{lon}.parquet",
+ "coverage_box": {
+  "lon_min": 60.0,
+  "lon_max": 80.0,
+  "lat_min": 23.0,
+  "lat_max": 37.0
+ },
+ "platforms": [
+  "Terra",
+  "Aqua",
+  "SNPP",
+  "NOAA20"
+ ],
+ "units": {
+  "harmonized": "S-NPP-equivalent hotspots",
+  "raw": "hotspots (masked, filtered, one platform each; never summed)"
+ },
+ "partial_coverage": 0.9,
+ "nrt_label": "near-real-time, provisional",
+ "scope": "Coverage: Pakistan and northern India. The method should transfer to other regions."
+}

@@ -1,0 +1,31 @@
+{
+  "parameters": {
+    "rule": "year-round",
+    "grid_deg": 0.01,
+    "min_years": 3,
+    "min_months": 4,
+    "season_len": 3,
+    "max_seasons": 2,
+    "time_basis": "local_solar_datetime",
+    "source_view": "hotspots_filtered"
+  },
+  "n_masked_cells": 194,
+  "detections_total_by_platform": {
+    "Aqua": 547390,
+    "NOAA20": 1432149,
+    "SNPP": 2535530,
+    "Terra": 259503
+  },
+  "detections_removed_by_platform": {
+    "Aqua": 667,
+    "NOAA20": 10112,
+    "SNPP": 15539,
+    "Terra": 914
+  },
+  "share_removed_by_platform": {
+    "Aqua": 0.0012185096549078354,
+    "NOAA20": 0.0070607178443025135,
+    "SNPP": 0.006128501733365411,
+    "Terra": 0.0035221172780276143
+  }
+}
