@@ -188,3 +188,23 @@ def test_filter_rows_uses_type_only_for_standard_data():
     )
     out = extend.filter_rows(df, 2026, (2026, 10))
     assert sorted(out.lat.tolist()) == [30.0, 30.2]
+
+
+def test_stored_baseline_is_kept_not_recomputed_from_rounded_values():
+    """The stored 2003-2025 median and critical period came from full-precision series in the
+    pipeline; the app document holds rounded values. Recomputing from those can move the last
+    digit, so the extension must keep the stored baseline and only move the "this year" line."""
+    doc = _doc()
+    doc["median_excl_flagged"]["values"][9] = 10.04  # not what the rounded doc values give
+    doc["critical"]["threshold"] = 9.87
+    before = copy.deepcopy(doc)
+    harm, raw = _new(appdata.month_range((2026, 1), (2026, 10)))
+    out = extend.extend_doc(doc, harm, raw, (2026, 10), PROV, {}, first_year=2024)
+    assert out["median_excl_flagged"] == before["median_excl_flagged"]
+    crit = {k: v for k, v in out["critical"].items() if k != "this_year"}
+    assert crit == {k: v for k, v in before["critical"].items() if k != "this_year"}
+    ty = out["critical"]["this_year"]
+    assert ty["month"] == "2026-10"
+    assert ty["typical"] == 10.04
+    assert ty["ratio"] == appdata._r(100.0 / 10.04, 3)
+    assert ty["in_critical"] is (10 in before["critical"]["months"])

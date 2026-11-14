@@ -194,7 +194,10 @@ def extend_doc(
                 rel["caution_years"][ys].append(NOT_TESTED)
         rel["reason_codes"][NOT_TESTED] = NOT_TESTED_TEXT
 
-    # Critical period: baseline years are unchanged (full years only), the "this year" line moves.
+    # Critical period: the stored 2003-2025 baseline (median excluding caution years, critical
+    # months, threshold) is kept as the pipeline wrote it from full-precision series. Recomputing
+    # it here from the document's rounded values can move the last digit, so only the
+    # "this year" line moves, and it is read against the stored median.
     all_months = appdata.month_range(ym_tuple(out["period"]["first"]), last)
     full = pd.DataFrame(
         {
@@ -205,8 +208,19 @@ def extend_doc(
         }
     )
     caution = [int(y) for y in (rel or {}).get("caution_years", {})]
-    med_ex, crit = appdata.critical_periods(full, caution, last, first_year)
-    out["median_excl_flagged"], out["critical"] = med_ex, crit
+    _, fresh = appdata.critical_periods(full, caution, last, first_year)
+    med_ex, crit = doc["median_excl_flagged"], dict(doc["critical"])
+    ty = fresh["this_year"]
+    if ty is not None:
+        t = med_ex["values"][last[1] - 1]
+        ty = {
+            **ty,
+            "typical": t,
+            "ratio": appdata._r(ty["value"] / t, 3) if t else None,
+            "in_critical": last[1] in crit["months"],
+        }
+    crit["this_year"] = ty
+    out["median_excl_flagged"], out["critical"] = json.loads(json.dumps(med_ex)), crit
     out["provenance"] = {**out["provenance"], "extension": extension}
     return out
 
