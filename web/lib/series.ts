@@ -43,7 +43,7 @@ export function seriesFromDoc(doc: AreaDoc, mode: Mode): Series {
   if (mode === "harmonized") {
     const m = doc.median.harmonized;
     return {
-      months, value: doc.harmonized.value, partial: doc.harmonized.partial, source: doc.harmonized.source,
+      months, value: doc.harmonized.value, partial: doc.harmonized.partial, provisional: doc.harmonized.provisional, source: doc.harmonized.source,
       median: m.values, medianYears: m.baseline_years, medianN: m.n_years, unit: doc.units.harmonized, label: MODE_LABEL.harmonized,
     };
   }
@@ -57,15 +57,19 @@ export function seriesFromDoc(doc: AreaDoc, mode: Mode): Series {
       const src = doc.harmonized.source[i];
       return src ? (doc.raw[src as Platform]?.partial[i] ?? null) : null;
     });
+    const provisional = months.map((_, i) => {
+      const src = doc.harmonized.source[i];
+      return src ? (doc.raw[src as Platform]?.provisional?.[i] ?? false) : false;
+    });
     return {
-      months, value, partial, source: doc.harmonized.source, median: Array(12).fill(null), medianYears: null, medianN: Array(12).fill(0),
+      months, value, partial, provisional, source: doc.harmonized.source, median: Array(12).fill(null), medianYears: null, medianN: Array(12).fill(0),
       unit: doc.units.raw, label: MODE_LABEL.recorded,
     };
   }
   const r = doc.raw[mode];
   const m = doc.median[mode];
   return {
-    months, value: r.n, partial: r.partial, source: months.map(() => mode), median: m.values, medianYears: m.baseline_years,
+    months, value: r.n, partial: r.partial, provisional: r.provisional, source: months.map(() => mode), median: m.values, medianYears: m.baseline_years,
     medianN: m.n_years, unit: doc.units.raw, label: MODE_LABEL[mode],
   };
 }
@@ -92,11 +96,14 @@ export type CustomDoc = Omit<AreaDoc, "id" | "level" | "name" | "country" | "adm
 export function customDoc(inp: CustomInputs): CustomDoc {
   const { months, counts, cal } = inp;
   const avail = (p: string, ym: string) => cal.days_available[p]?.[ym] ?? 0;
+  // Near-real-time from this month on, per platform (W-12); shown as provisional (rule 8).
+  const prov = (p: string, ym: string) => { const s = cal.provisional_from?.[p as Platform]; return !!s && ym >= s; };
   const raw = {} as AreaDoc["raw"];
   for (const p of ["Terra", "Aqua", "SNPP", "NOAA20"] as Platform[]) {
     raw[p] = {
       n: months.map((ym) => (avail(p, ym) > 0 ? (counts.get(`${p}|${ym}`) ?? 0) : null)),
       partial: months.map((ym) => (avail(p, ym) > 0 ? avail(p, ym) / daysInMonth(ym) < inp.partialCoverage : null)),
+      provisional: months.map((ym) => avail(p, ym) > 0 && prov(p, ym)),
     };
   }
   // Region of each Aqua detection: PK Punjab polygon, else IN Punjab polygon, else rest_of_box.
@@ -157,7 +164,7 @@ export function customDoc(inp: CustomInputs): CustomDoc {
   return {
     period: { first: months[0]!, last: months[months.length - 1]!, n_months: months.length },
     units: { ...inp.units, time: "local solar month" },
-    harmonized: { value, lo, hi, source, partial },
+    harmonized: { value, lo, hi, source, partial, provisional: months.map((ym, i) => { const s = source[i]; return !!s && prov(s, ym); }) },
     raw,
     median,
     regionShare: regionCount,

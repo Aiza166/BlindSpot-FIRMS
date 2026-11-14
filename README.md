@@ -1,12 +1,12 @@
 # Blind Spot
 
-Blind Spot puts NASA's MODIS and VIIRS satellite fire detections on one consistent scale, so a fire count for any district in Pakistan and northern India can be compared across 2003 to 2025. It shows a month-by-day burning calendar, compares a month with its usual level, and tests whether the correction still works in recent years. Where it stops working, the app flags those years in plain words instead of hiding it.
+Blind Spot puts NASA's MODIS and VIIRS satellite fire detections on one consistent scale, so a fire count for any district in Pakistan and northern India can be compared across 2003 to 2025. It shows a burning calendar with one cell per month and one row per year, compares a month with its usual level, and tests whether the correction still works in recent years. Where it stops working, the app flags those years in plain words instead of hiding it.
 
 Built for the **NASA Space Apps Challenge 2026**, challenge "Harmonization of MODIS and VIIRS Hot Spots". Why: raw fire counts for Punjab jump when the record switches from MODIS to VIIRS in 2012, and a disaster or air-quality team reading the raw series would mistake a sensor change for a change in burning.
 
 > **Status (14 Nov 2026): the hackathon is open; built and tested locally, not yet deployed or submitted.** Submission closes **Sun 15 Nov 2026, 23:59** (Team Owner's local time for the Universal Event). Rules from the 2026 Project Submission Guide: `docs/GUIDE_2026_NOTES.md`. See "Status" below and `YOUR_TASKS/`.
 
-![Explorer: month-by-day calendar, sensor eras shaded](docs/screenshots/explorer-desktop-light.png)
+![Explorer: year-by-month calendar, sensor eras shaded](docs/screenshots/explorer-desktop-light.png)
 
 ## Key findings
 
@@ -26,7 +26,7 @@ Tests and thresholds were written before the data were run (`docs/DECISIONS.md`,
 |---|---|
 | Select an area of interest | 347 districts, region presets, or draw a box or radius |
 | Choose a date range | Start and end month controls |
-| Calendar view, 2000s to present | Month-by-day calendar, 2003 to 2025, raw or harmonized, sensor eras shaded |
+| Calendar view, 2000s to present | Year-by-month calendar (one cell per month), 2003 to 2025, raw or harmonized, sensor eras shaded |
 | Current month against the median | Month card (latest archive month for now; live month needs the NRT function and a key, see `docs/NRT.md`) |
 | Critical periods | Onset, peak and end month per district/region |
 | Accessible colour ramps | Cividis; flags use icon, stripes and text; axe-core 0 violations |

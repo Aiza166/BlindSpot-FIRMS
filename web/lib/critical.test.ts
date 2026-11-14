@@ -21,6 +21,15 @@ describe("critical-period text", () => {
   it("names onset, peak and end", () => {
     expect(criticalSentence(base)).toContain("starts in October, peaks in November and ends in December");
   });
+  it("does not repeat the month when the period is a single month", () => {
+    const s = criticalSentence({ ...base, months: [5], onset: 5, peak: 5, end: 5 });
+    expect(s).toContain("Typically confined to May");
+    expect(s.match(/May/g)).toHaveLength(1);
+  });
+  it("keeps the second group of months for a single-month period", () => {
+    const s = criticalSentence({ ...base, months: [5], onset: 5, peak: 5, end: 5, other_months: [9, 10] });
+    expect(s).toContain("A second, smaller group of months: September, October.");
+  });
   it("says so when no month qualifies", () => {
     expect(criticalSentence({ ...base, months: [], onset: null, peak: null, end: null })).toContain("No critical months");
   });

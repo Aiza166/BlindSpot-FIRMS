@@ -8,6 +8,7 @@ export function criticalSentence(c: CriticalDoc): string {
   if (c.peak === null || c.onset === null || c.end === null) return "No critical months: too few complete years to rank the months of the year.";
   const span = c.onset === c.end ? MONTH_NAMES[c.onset - 1]! : `${MONTH_NAMES[c.onset - 1]} to ${MONTH_NAMES[c.end - 1]}`;
   const more = c.other_months.length ? ` A second, smaller group of months: ${c.other_months.map((m) => MONTH_NAMES[m - 1]).join(", ")}.` : "";
+  if (c.onset === c.end) return `Typically confined to ${span}: burning starts, peaks and ends within that month.${more}`;
   return `Typically starts in ${MONTH_NAMES[c.onset - 1]}, peaks in ${MONTH_NAMES[c.peak - 1]} and ends in ${MONTH_NAMES[c.end - 1]} (${span}).${more}`;
 }
 

@@ -22,6 +22,7 @@ interface Cell {
   i: number;
   v: number | null;
   partial: boolean;
+  provisional: boolean;
   source: string | null;
   inRange: boolean;
 }
@@ -55,7 +56,7 @@ function describeValue(c: Cell, s: Series, harmonized: boolean): string {
   if (c.v === null) return `${when}: no data${c.inRange ? "" : ", outside selected period"}`;
   const src = c.source ? (SOURCE_TEXT[c.source] ?? c.source) : "";
   const how = harmonized && c.source === "Aqua" ? `${src} scaled to S-NPP` : src;
-  return `${when}: ${fmtCount(c.v)} ${s.unit.split(" (")[0]}${how ? `, ${how}` : ""}${c.partial ? ", partial month" : ""}${c.inRange ? "" : ", outside selected period"}`;
+  return `${when}: ${fmtCount(c.v)} ${s.unit.split(" (")[0]}${how ? `, ${how}` : ""}${c.partial ? ", partial month" : ""}${c.provisional ? ", provisional (near-real-time, will change)" : ""}${c.inRange ? "" : ", outside selected period"}`;
 }
 
 /** True when the sensor-switch line runs above month (y, m): the 12 months starting at the seam month. */
@@ -71,7 +72,7 @@ export const Calendar = forwardRef<HTMLDivElement, Props>(function Calendar({ se
     const cells: Cell[] = series.months.map((ym, i) => {
       const { y, m } = parseYm(ym);
       const v = series.value[i] ?? null;
-      return { ym, y, m, i, v, partial: series.partial[i] === true, source: series.source[i] ?? null, inRange: ym >= range[0] && ym <= range[1] };
+      return { ym, y, m, i, v, partial: series.partial[i] === true, provisional: series.provisional?.[i] === true, source: series.source[i] ?? null, inRange: ym >= range[0] && ym <= range[1] };
     });
     const ys = Array.from(new Set(cells.map((c) => c.y))).sort((a, b) => a - b);
     const g = new Map(cells.map((c) => [c.ym, c]));
@@ -156,7 +157,7 @@ export const Calendar = forwardRef<HTMLDivElement, Props>(function Calendar({ se
               }
               const t = cell.v === null ? 0 : scaleT(cell.v, max);
               const label = describe(cell, series, harmonized, flags);
-              const cls = ["cell", cell.v === null ? "nodata" : "", cell.partial ? "partial" : "", cell.inRange ? "" : "out", seamEdge(y, c + 1, seam) ? "seam" : ""].join(" ");
+              const cls = ["cell", cell.v === null ? "nodata" : "", cell.partial ? "partial" : "", cell.provisional ? "prov" : "", cell.inRange ? "" : "out", seamEdge(y, c + 1, seam) ? "seam" : ""].join(" ");
               return (
                 <span
                   key={c}
@@ -203,6 +204,7 @@ export const Calendar = forwardRef<HTMLDivElement, Props>(function Calendar({ se
         <span className="key"><i style={{ background: "repeating-linear-gradient(-45deg, var(--nodata) 0 2px, transparent 2px 5px)" }} />No data (platform not flying or no factor)</span>
         <span className="key"><i style={{ position: "relative" }}><b style={{ position: "absolute", top: 2, right: 2, width: 4, height: 4, borderRadius: "50%", background: "currentColor" }} /></i>Dot: partial month, left out of medians</span>
         <span className="key"><i style={{ background: "repeating-linear-gradient(45deg, var(--hatch) 0 4px, transparent 4px 8px)" }} />Hatched band: MODIS era{harmonized ? ", scaled to S-NPP" : ""}</span>
+        {series.provisional?.some(Boolean) && <span className="key" data-testid="legend-provisional"><i className="prov-key" />Dashed outline: provisional month (near-real-time data, will change)</span>}
         {flags && flags.years.size > 0 && <span className="key"><i className="flag-key"><FlagIcon size={12} /></i>Triangle and striped year: caution year (see notes below)</span>}
         {seam && <span className="key"><i style={{ borderTop: "2px solid var(--ink)" }} />Stepped line: sensor switch ({monthLong(seam.m)} {seam.y})</span>}
       </div>

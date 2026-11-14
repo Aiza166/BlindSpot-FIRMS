@@ -15,6 +15,8 @@ import { computeCritical } from "@/lib/criticalCalc";
 import { CriticalPanel } from "@/components/CriticalPanel";
 import { flaggedInRange, knownRegions, mergeFlags, overlappedRegions, plainReason, type Flags } from "@/lib/reliability";
 import { FlagIcon } from "./Calendar";
+import { landing, storyFromT1, type Story } from "@/lib/story";
+import type { T1 } from "@/lib/results";
 
 type Tab = "district" | "box" | "radius";
 type Doc = (AreaDoc | (CustomDoc & { eras: AreaDoc["eras"]; name: string })) & { name: string };
@@ -62,6 +64,9 @@ export function Explorer() {
   const [flags, setFlags] = useState<Flags | null>(null);
   const [exportMsg, setExportMsg] = useState<{ text: string; warn?: boolean }>({ text: "" });
   const [pickerOpen, setPickerOpen] = useState(false);
+  // First-screen story (W-07): raw record of one region until the visitor picks an area of their own.
+  const [story, setStory] = useState<Story | null>(null);
+  const endStory = () => { if (story) { setStory(null); setView("harmonized"); } };
   const toggleRef = useRef<HTMLButtonElement>(null);
   const panelRef = useRef<HTMLElement>(null);
   const focusPanel = useRef(false);
@@ -93,10 +98,20 @@ export function Explorer() {
         const ymOk = (v: string | null): v is string => !!v && /^\d{4}-\d{2}$/.test(v) && v >= i.period.first && v <= i.period.last;
         const qf = qs.get("from"), qt = qs.get("to");
         setRange([ymOk(qf) ? qf : i.period.first, ymOk(qt) && (!ymOk(qf) || qt >= qf) ? qt : i.period.last]);
-        const linked = i.districts.find((d) => d.id === qs.get("area"));
-        const first = linked ?? i.districts.find((d) => d.name === "Amritsar") ?? i.districts[0];
-        if (linked) setQuery(linked.name);
-        if (first) setAoi({ kind: "district", id: first.id, name: first.name, bbox: first.bbox, country: first.country });
+        const land = landing(i, qs.get("area"));
+        if (!land) return;
+        if (land.story) {
+          // Region bbox is filled in by loadAoi; the story text needs t1.json, so the raw view waits for it.
+          setAoi({ kind: "district", id: land.id, name: REGION_LABEL[land.id] ?? land.id, bbox: [0, 0, 0, 0], country: land.id.slice(0, 2) });
+          getJson<T1>("results/t1.json")
+            .then((t1) => { const s = storyFromT1(t1, land.id); if (s) { setStory(s); setView("raw"); } })
+            .catch(() => undefined); // no story strip without the results file; the Explorer still works
+          return;
+        }
+        const first = i.districts.find((d) => d.id === land.id);
+        if (!first) return;
+        if (qs.get("area") === first.id) setQuery(first.name);
+        setAoi({ kind: "district", id: first.id, name: first.name, bbox: first.bbox, country: first.country });
       })
       .catch((e: Error) => setStatus({ text: e.message, warn: true }));
   }, []);
@@ -183,6 +198,7 @@ export function Explorer() {
 
   const pickPreset = (p: Preset) => {
     afterPick();
+    endStory();
     setQuery(p.name);
     setAoi({ kind: "district", id: p.id, name: p.name, bbox: p.bbox, country: p.country });
   };
@@ -203,6 +219,7 @@ export function Explorer() {
     setBox({ w: String(bb[0]), s: String(bb[1]), e: String(bb[2]), n: String(bb[3]) });
     setDrawing(false);
     afterPick();
+    endStory();
     setAoi({ kind: "box", bbox: bb });
   };
 
@@ -217,6 +234,7 @@ export function Explorer() {
       return;
     }
     afterPick();
+    endStory();
     setAoi({ kind: "radius", lat, lon, km });
   };
 
@@ -241,12 +259,13 @@ export function Explorer() {
     const crit = ad.critical, ex = ad.median_excl_flagged;
     const rows = series.months.map((ym, i) => {
       const m = Number(ym.slice(5, 7));
-      const base = { month: ym, value: series.value[i] ?? "", partial: series.partial[i] ?? "", source_platform: series.source[i] ?? "" };
+      const base = { month: ym, value: series.value[i] ?? "", partial: series.partial[i] ?? "", provisional: series.provisional?.[i] ? "yes" : "no", source_platform: series.source[i] ?? "" };
       return mode === "harmonized" && crit && ex
         ? { ...base, median_all_years: series.median[m - 1] ?? "", median_excl_flagged_years: ex.values[m - 1] ?? "", critical_month: crit.months.includes(m) ? "yes" : "no" }
         : base;
     }).filter((r) => r.month >= range[0] && r.month <= range[1]);
     const head = [`# Blind Spot calendar: ${doc.name}`, `# series: ${series.label}; unit: ${series.unit}`, `# ${cons?.scope ?? ""}`];
+    if (series.provisional?.some(Boolean)) head.push("# provisional = yes: near-real-time FIRMS data, will change when the standard data replace it");
     if (crit && ex && mode === "harmonized") {
       head.push(`# critical months (month level, not daily): ${crit.months.join(" ") || "none"}; onset ${crit.onset ?? "n/a"}, peak ${crit.peak ?? "n/a"}, end ${crit.end ?? "n/a"} (month numbers); ${crit.rule}`);
       if (!("level" in doc)) head.push("# drawn area: critical months and median_excl_flagged_years computed in the browser; flagged years = union of the calibration regions the area overlaps (D-043)");
@@ -409,12 +428,29 @@ export function Explorer() {
             {!busy && index && <button type="button" className="btn" onClick={() => { setTab("district"); if (isPhone()) openPicker(); else setTimeout(() => document.getElementById("q")?.focus(), 0); }}>Choose a district</button>}
           </section>
         )}
+        {doc && story && aoi?.kind === "district" && aoi.id === story.region && (
+          <section className="story" aria-labelledby="story-title" data-testid="story">
+            <h2 id="story-title">Start here: the {story.year} jump</h2>
+            <p data-testid="story-text">
+              {view === "raw"
+                ? `Raw record, ${doc.name}: the ${story.window} fire count jumps ${story.raw} in ${story.year}, when MODIS gives way to VIIRS. The sensors changed, not the burning.`
+                : `Harmonized, the same ${story.year} step is ${story.harmonized} (raw: ${story.raw}). Years we can no longer check are flagged in the calendar.`}
+            </p>
+            <div className="toolbar">
+              <button type="button" className="btn" data-testid="story-toggle"
+                onClick={() => { setView(view === "raw" ? "harmonized" : "raw"); document.getElementById("calendar-plate")?.scrollIntoView({ block: "nearest" }); }}>
+                {view === "raw" ? "Harmonize the record" : "Show the raw record again"}
+              </button>
+              <a className="btn ghost story-jump" href="#calendar-plate">Go to the calendar</a>
+            </div>
+          </section>
+        )}
         {doc && index && <p className="eyebrow" data-testid="eyebrow">Is this month unusual here?</p>}
         {doc && index && <MonthCard ref={cardRef} doc={doc as AreaDoc} latest={index.period.last} nrt={nrt} />}
         {doc && <CriticalPanel doc={doc as AreaDoc} />}
 
         {series && doc && (
-          <div className="plate">
+          <div className="plate" id="calendar-plate">
             <div className="plate-head">
               <h2>Burning by month, {range[0].slice(0, 4)}–{range[1].slice(0, 4)}</h2>
               <div className="toolbar">

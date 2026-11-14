@@ -32,7 +32,7 @@ Source code and data: https://github.com/Aiza166/BlindSpot-FIRMS
 ### What it does
 
 - Pick one of {{index:districts|len}} districts (geoBoundaries ADM2), a region preset, or draw a box or radius.
-- See a month-by-day calendar of burning, raw or harmonized, with sensor eras shaded so you can see where the record changes.
+- See a calendar of burning with one cell per month and one row per year, raw or harmonized, with sensor eras shaded so you can see where the record changes.
 - Compare a month with its usual level for that place, both with all years and with the years we flag left out.
 - See the critical period of a district or region: the months in the top quarter of the year, with onset, peak and end (month level, not daily).
 - Download the calendar or the filtered hotspots as CSV (up to {{constants:csv_row_cap|int}} rows), or the chart as PNG.
@@ -41,7 +41,7 @@ Source code and data: https://github.com/Aiza166/BlindSpot-FIRMS
 
 **Contrast: November 2025, a flagged year.** The same districts in November {{usecase:sangrur25.ym|year}} look very different: Sangrur {{usecase:sangrur25.value|int}} hotspots ({{usecase:sangrur25.ratio|x2}} its median) and Kasur {{usecase:kasur25.value|int}} ({{usecase:kasur25.ratio|x2}}). Both years are on our caution list (Sangrur: Aqua's overpass drift and later burning; Kasur: Aqua's overpass drift), so the officer reads "far fewer fires seen at 13:30", not "far fewer fires". The app shows the caution banner and the flag in words.
 
-![Explorer: month-by-day calendar in the cividis ramp, sensor eras shaded, flagged years marked with a caution triangle and striped year labels](screenshots/explorer-desktop-light.png)
+![Explorer: year-by-month calendar in the cividis ramp, sensor eras shaded, flagged years marked with a caution triangle and striped year labels](screenshots/explorer-desktop-light.png)
 
 ![Use-case page: Sangrur and Kasur, highest-burning unflagged November, then November 2025 as a flagged contrast](screenshots/use-case-desktop-light.png)
 
@@ -57,7 +57,7 @@ Source code and data: https://github.com/Aiza166/BlindSpot-FIRMS
 |---|---|
 | Select an area of interest | District list ({{index:districts|len}} districts), region presets, or draw a box or radius on the map |
 | Choose a date range | Start and end month controls; the calendar and CSV follow them |
-| Calendar view, 2000s to present | Month-by-day calendar, {{index:period.first|year}}–{{index:period.last|year}} |
+| Calendar view, 2000s to present | Year-by-month calendar (one cell per month), {{index:period.first|year}}–{{index:period.last|year}} |
 | Current month against the median | Month card: latest available month (labelled "not live"; the live current month appears when the near-real-time service is switched on at launch) against that place's median for the same month, with all years and excluding the years we flag, plus NOAA-20 against its own median |
 | Critical periods | Panel per district and region: onset, peak and end month of the months in the top quarter of the year, and this year against typical; month level, not daily |
 | Accessible colour ramps | Cividis (colour-vision-deficiency safe); flags shown by a triangle, stripes and text, not colour alone; axe-core found {{axe:runs|nviol}} violations across {{axe:runs|len}} runs (pages × light/dark × desktop/phone) |

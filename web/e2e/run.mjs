@@ -415,10 +415,38 @@ try {
   }
 
 
+  // W-07: first screen opens on the 2012 story (raw record of the Punjab (Pakistan) region), one click to harmonize
+  {
+    const { ctx, page: p } = await newPage();
+    await p.goto(`${BASE}/`);
+    await p.waitForSelector("[data-testid=story]");
+    await p.waitForSelector("[data-testid=calendar] [data-ym]");
+    const st = data("results/t1.json").results.hotspots.PK_Punjab.step_2012;
+    const pct = (v, d) => `${v > 0 ? "+" : ""}${(v * 100).toFixed(d)}%`;
+    const rawText = await p.textContent("[data-testid=story-text]");
+    check("story: default area is Punjab (Pakistan) in the raw view", (await p.textContent("[data-testid=aoi-title]")) === "Punjab (Pakistan)" && (await p.getAttribute("[data-testid=toggle-raw]", "aria-pressed")) === "true" && (await p.textContent("[data-testid=series-label]")).startsWith("As recorded"));
+    check("story: raw step is read from t1.json", rawText.includes(pct(st.raw_step, 0)) && rawText.includes("2012"), rawText);
+    check("story: strip comes before the eyebrow and the month card", await p.evaluate(() => { const q = (s) => document.querySelector(s); return !!(q("[data-testid=story]").compareDocumentPosition(q("[data-testid=eyebrow]")) & Node.DOCUMENT_POSITION_FOLLOWING); }));
+    await p.click("[data-testid=story-toggle]");
+    const harmText = await p.textContent("[data-testid=story-text]");
+    check("story: one click harmonizes the calendar and shows the harmonized step from t1.json", (await p.getAttribute("[data-testid=toggle-harmonized]", "aria-pressed")) === "true" && harmText.includes(pct(st.harmonized_step, 1)) && harmText.includes(pct(st.raw_step, 0)), harmText);
+    await p.click("[data-testid=story-toggle]");
+    check("story: the button switches back to raw", (await p.getAttribute("[data-testid=toggle-raw]", "aria-pressed")) === "true");
+    await p.fill("[data-testid=district-search]", "Lahore");
+    await p.keyboard.press("Enter");
+    await p.waitForFunction(() => document.querySelector("[data-testid=aoi-title]")?.textContent === "Lahore");
+    check("story: picking an area ends the story and returns to the harmonized view", (await p.locator("[data-testid=story]").count()) === 0 && (await p.getAttribute("[data-testid=toggle-harmonized]", "aria-pressed")) === "true");
+    await p.goto(`${BASE}/?area=${index.districts.find((d) => d.name === "Amritsar").id}`);
+    await p.waitForSelector("[data-testid=calendar] [data-ym]");
+    check("story: a district deep link shows no story and opens harmonized", (await p.locator("[data-testid=story]").count()) === 0 && (await p.getAttribute("[data-testid=toggle-harmonized]", "aria-pressed")) === "true");
+    await ctx.close();
+  }
+
   // D-046: phone picker toggle and touch drawing (touch-enabled context, CDP touch events)
   {
     const { ctx, page: p } = await newPage({ viewport: { width: 390, height: 844 }, deviceScaleFactor: 2, hasTouch: true, isMobile: true });
-    await p.goto(`${BASE}/`);
+    // W-07: "/" now opens on the whole Punjab (Pakistan) region; the drag below assumes a district-sized map, so start from a district deep link.
+    await p.goto(`${BASE}/?area=${index.districts.find((d) => d.name === "Amritsar").id}`);
     await p.waitForSelector("[data-testid=calendar] [data-ym]");
     const toggle = p.locator("[data-testid=picker-toggle]");
     const expanded = () => toggle.getAttribute("aria-expanded");

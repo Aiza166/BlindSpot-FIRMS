@@ -19,6 +19,8 @@ export interface Constants {
   nrt_label: string;
   scope: string;
   partial_coverage: number;
+  /** First month (YYYY-MM) of near-real-time data per platform (decisions.md W-12); absent before 2026 data. */
+  provisional_from?: Partial<Record<Platform, string>>;
 }
 
 export interface DistrictEntry {
@@ -97,8 +99,10 @@ export interface AreaDoc {
     hi: (number | null)[];
     source: (Platform | null)[];
     partial: (boolean | null)[];
+    /** Near-real-time months (rule 8: shown as provisional); absent in older data. */
+    provisional?: boolean[];
   };
-  raw: Record<Platform, { n: (number | null)[]; partial: (boolean | null)[] }>;
+  raw: Record<Platform, { n: (number | null)[]; partial: (boolean | null)[]; provisional?: boolean[] }>;
   median: Record<"harmonized" | Platform, MedianBlock>;
   /** Harmonized median without the caution years (D-042); absent in older data. */
   median_excl_flagged?: MedianExclBlock;
@@ -116,6 +120,7 @@ export interface CalibrationDoc {
   punjab_polygons: Record<string, GeoJSON.Geometry>;
   polygon_simplify_tolerance_deg: number;
   days_available: Record<string, Record<string, number>>;
+  provisional_from?: Partial<Record<Platform, string>>;
 }
 
 export interface TileManifest {
@@ -137,6 +142,8 @@ export interface Series {
   months: string[];
   value: (number | null)[];
   partial: (boolean | null)[];
+  /** Near-real-time months, shown as provisional (rule 8). */
+  provisional?: boolean[];
   source: (string | null)[];
   median: (number | null)[]; // 12 calendar months
   medianYears: [number, number] | null;

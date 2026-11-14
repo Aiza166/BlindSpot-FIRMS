@@ -71,21 +71,23 @@ export const MonthCard = forwardRef<HTMLDivElement, Props>(function MonthCard({ 
   const h = i >= 0 ? (doc.harmonized.value[i] ?? null) : null;
   const n20: Platform = "NOAA20";
   const n = i >= 0 ? (doc.raw[n20].n[i] ?? null) : null;
+  const prov = i >= 0 && doc.harmonized.provisional?.[i] === true;
   const hm = doc.median.harmonized;
   const nm = doc.median[n20];
   return (
     <div className="card" ref={ref} data-testid="month-card">
       <h2>
         {ymLabel(latest)}
-        <span className="tag" data-testid="snapshot-label">Latest available month, not live</span>
+        <span className="tag" data-testid="snapshot-label">Latest available month, not live{prov ? " · provisional" : ""}</span>
       </h2>
       <Figure testid="card-harmonized" what={`Harmonized, ${doc.units.harmonized}`} v={h} med={hm.values[mi] ?? null} years={hm.baseline_years} excl={doc.median_excl_flagged ? { med: doc.median_excl_flagged.values[mi] ?? null, excluded: doc.median_excl_flagged.excluded_years } : null} />
-      <Figure testid="card-noaa20" what="NOAA-20 VIIRS alone (standard archive)" v={n} med={nm.values[mi] ?? null} years={nm.baseline_years} />
+      <Figure testid="card-noaa20" what={`NOAA-20 VIIRS alone (${i >= 0 && doc.raw[n20].provisional?.[i] ? "near-real-time, provisional" : "standard archive"})`} v={n} med={nm.values[mi] ?? null} years={nm.baseline_years} />
       {nrt?.status === "ok" && <NrtFigure d={nrt.data} doc={doc} />}
       <p className="foot">
         Medians use complete months only. The month is the local solar month; &ldquo;current fire&rdquo; is read at month level.{" "}
         {nrt?.status === "ok" ? `The ${nrt.data.label} figure is FIRMS ${nrt.data.source}, filtered and masked like the archive, and will change when the standard data replace it.` : nrt?.status === "unavailable" && nrt.reason !== "No near-real-time service in this build." ? `Near-real-time data could not be loaded (${nrt.reason}), so this card shows the cached archive snapshot.` : `Near-real-time data is not part of this build, so this card shows the cached archive snapshot.`}
       </p>
+      {prov && <p className="foot" data-testid="card-provisional-note">This month uses FIRMS near-real-time data. It is provisional and will change when the standard data replace it. The year is not yet covered by our tests.</p>}
       <p className="foot" data-testid="card-live-note">
         The live current month appears here when the near-real-time service is switched on at launch.
       </p>
