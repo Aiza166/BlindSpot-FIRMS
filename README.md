@@ -98,7 +98,7 @@ The data pipeline, its tests and a first version of the app were prepared locall
 - Built, tested and ran the app on Windows for the first time.
 - Fixed wording that over-claimed or read badly ("month-by-day" calendar; the single-month critical-period sentence), with new tests.
 - The app now opens on the 2012 story: the raw Punjab record with its sensor jump, and one button to harmonize it.
-- New pipeline step `pipeline/blindspot/extend.py` that adds 2026 to the record without changing 2003–2025, and a "provisional" display for near-real-time months.
+- Added January to October 2026 to the record with a new pipeline step (`pipeline/blindspot/extend.py`) that leaves 2003–2025 unchanged; near-real-time months (August to October) are shown as provisional.
 - `ai-log.md` (where AI was used) and `decisions.md` (what we decided and why), kept throughout the event.
 
 ## Credits

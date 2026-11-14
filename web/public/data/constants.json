@@ -22,5 +22,11 @@
  },
  "partial_coverage": 0.9,
  "nrt_label": "near-real-time, provisional",
- "scope": "Coverage: Pakistan and northern India. The method should transfer to other regions."
+ "scope": "Coverage: Pakistan and northern India. The method should transfer to other regions.",
+ "provisional_from": {
+  "Aqua": "2026-09",
+  "NOAA20": "2026-08",
+  "SNPP": "2026-08",
+  "Terra": "2026-09"
+ }
 }

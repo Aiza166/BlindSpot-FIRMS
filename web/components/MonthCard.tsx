@@ -85,7 +85,7 @@ export const MonthCard = forwardRef<HTMLDivElement, Props>(function MonthCard({ 
       {nrt?.status === "ok" && <NrtFigure d={nrt.data} doc={doc} />}
       <p className="foot">
         Medians use complete months only. The month is the local solar month; &ldquo;current fire&rdquo; is read at month level.{" "}
-        {nrt?.status === "ok" ? `The ${nrt.data.label} figure is FIRMS ${nrt.data.source}, filtered and masked like the archive, and will change when the standard data replace it.` : nrt?.status === "unavailable" && nrt.reason !== "No near-real-time service in this build." ? `Near-real-time data could not be loaded (${nrt.reason}), so this card shows the cached archive snapshot.` : `Near-real-time data is not part of this build, so this card shows the cached archive snapshot.`}
+        {nrt?.status === "ok" ? `The ${nrt.data.label} figure is FIRMS ${nrt.data.source}, filtered and masked like the archive, and will change when the standard data replace it.` : nrt?.status === "unavailable" && nrt.reason !== "No near-real-time service in this build." ? `Near-real-time data could not be loaded (${nrt.reason}), so this card shows the latest month in the saved data.` : `The live near-real-time service is not part of this build, so this card shows the latest month in the saved data.`}
       </p>
       {prov && <p className="foot" data-testid="card-provisional-note">This month uses FIRMS near-real-time data. It is provisional and will change when the standard data replace it. The year is not yet covered by our tests.</p>}
       <p className="foot" data-testid="card-live-note">

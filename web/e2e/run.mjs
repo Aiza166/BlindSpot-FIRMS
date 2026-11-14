@@ -94,7 +94,7 @@ try {
   await page.fill("[data-testid=to]", index.period.last);
 
   // NRT fallback: no endpoint in this build -> snapshot, no request to /api/nrt.
-  check("NRT falls back to the snapshot when no endpoint is set", (await page.textContent("[data-testid=month-card]")).includes("Near-real-time data is not part of this build") && (await page.locator("[data-testid=card-nrt]").count()) === 0 && !nrtRequests.length);
+  check("NRT falls back to the snapshot when no endpoint is set", (await page.textContent("[data-testid=month-card]")).includes("The live near-real-time service is not part of this build") && (await page.locator("[data-testid=card-nrt]").count()) === 0 && !nrtRequests.length);
 
   // 4. Current month card (cached snapshot)
   const last = index.period.last;
