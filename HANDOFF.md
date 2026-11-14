@@ -64,4 +64,4 @@ The human tasks are in `YOUR_TASKS/` (01 to 11). Summary:
 
 ## Git
 
-From 14 Nov 2026 the work continues in the public `Aiza166/BlindSpot-FIRMS` (`origin main`), which starts with an import of the earlier `Aiza166/nasa-hackathon` repository (see "Project history" in `README.md`). Secrets: none in git; `.env` is gitignored.
+From 14 Nov 2026 the work continues in the public `Aiza166/BlindSpot-FIRMS` (`origin main`), which starts with one commit importing the work prepared before the event (see "Project history" in `README.md`). Secrets: none in git; `.env` is gitignored.

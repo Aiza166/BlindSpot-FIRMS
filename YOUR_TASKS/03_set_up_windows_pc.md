@@ -18,7 +18,7 @@ The steps below use only Git, Node and npm, which behave the same on Windows, bu
 2. **Clone the private repo.** Open PowerShell, go somewhere short like `C:\work`:
    ```
    git clone https://github.com/Aiza166/BlindSpot-FIRMS.git
-   cd nasa-hackathon
+   cd BlindSpot-FIRMS
    ```
    Git asks you to sign in to GitHub (browser popup). A different GitHub account must be added as a collaborator first (`docs/CONTINUE.md`).
 3. **Build and view the site:**

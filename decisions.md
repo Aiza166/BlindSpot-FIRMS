@@ -94,3 +94,10 @@ Status: **Proposed** = Claude's recommendation, waiting for the team. **Agreed**
   - Showing November 2026 in the calendar as a partial month.
 - **Boundaries:** geoBoundaries were downloaded again on 14 Nov. All 347 district IDs match the app's.
 - **Tests:** 9 new tests in `tests/test_extend.py`. They were written alongside the code, not run failing first.
+
+## W-13 · Shorter disclosure, no link to the earlier repository
+- **Status:** Agreed by the second team member, 14 Nov ("yes, do these all"; asked that the submitted work not link back to the earlier repository).
+- **Decision:** The README "Project history", the project page "What was built when" and `ai-log.md` now say in one or two sentences that the pipeline, its tests and a first app version were prepared locally before the event under the Local Lead's permission, and list what was built during the event. The earlier repository is no longer named in these files or in `HANDOFF.md`. Setup instructions (`YOUR_TASKS/03`, `YOUR_TASKS/04`, `docs/CONTINUE.md`) now point at `Aiza166/BlindSpot-FIRMS`. Out-of-date README lines were corrected: the Windows notes and the 1 Nov test summary (now the counts run on 14 Nov).
+- **Why:** The disclosure was spread over several places and long. A short statement plus a "built during the hackathon" list shows the event work more clearly.
+- **Kept:** The statement that work was prepared before the event stays in every place it was. Claude declined to change dates so that the earlier work appears to start on 14 Nov (W-01 still applies). Historical records (`docs/DECISIONS.md`, `docs/CHECKPOINTS.md`, `docs/chat/`) keep their real dates.
+- **Rejected:** Removing the disclosure or re-dating earlier work.

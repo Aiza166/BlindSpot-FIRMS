@@ -5,7 +5,7 @@ Written 1 Nov 2026. The original builder was one long Claude Code conversation w
 ## 1. Open the repo in Claude Code
 
 - **On a computer (local):** install Claude Code (https://docs.claude.com, search "Claude Code quickstart"), clone the repo, `cd` into it, run `claude`. Needs the account to have access to the repo (section 3).
-- **In the browser:** https://claude.ai/code , connect GitHub (https://claude.ai/connect-github), install the Claude GitHub App on the repo (section 4), pick `Aiza166/nasa-hackathon`.
+- **In the browser:** https://claude.ai/code , connect GitHub (https://claude.ai/connect-github), install the Claude GitHub App on the repo (section 4), pick `Aiza166/BlindSpot-FIRMS`.
 (Exact menu names change; both routes are unverified from here.)
 
 ## 2. First prompt for a new account or person
@@ -25,7 +25,7 @@ Written 1 Nov 2026. The original builder was one long Claude Code conversation w
 
 ## 4. Install the Claude GitHub App on the repo
 
-Go to https://github.com/apps/claude (or follow claude.ai/connect-github), click Install, choose the account that owns the repo, select the repository `nasa-hackathon` (only this one), approve. HANDOFF.md earlier listed this as an open item; the repo was pushed to `origin main` on 1 Nov (per `docs/CHECKPOINTS.md` H1), so whether the App is installed is not recorded here.
+Go to https://github.com/apps/claude (or follow claude.ai/connect-github), click Install, choose the account that owns the repo, select the repository `BlindSpot-FIRMS` (only this one), approve. HANDOFF.md earlier listed this as an open item; the repo was pushed to `origin main` on 1 Nov (per `docs/CHECKPOINTS.md` H1), so whether the App is installed is not recorded here.
 
 ## 5. Project state (1 Nov 2026)
 
@@ -79,4 +79,4 @@ From `docs/MORNING_SUMMARY.md` and `docs/ARENA_CONCLUSION.md`: Indian Punjab T1 
 | The Local Lead's written permission | It was an email, not a file | Save a screenshot of it in `docs/evidence/` (see the README there). Do this once; it is your proof of what was allowed. |
 | Accounts and links | GitHub App, Cloudflare, the team page, LinkedIn replies | These stay with their owner; the new person needs access, or Aiza does them (YOUR_TASKS). |
 
-**Insurance, do this now, it takes five minutes:** on your own computer run `git clone https://github.com/Aiza166/nasa-hackathon.git`, then zip the folder and keep a copy (for example in cloud storage). That copy contains everything above even if GitHub or your Claude access is lost.
+**Insurance, do this now, it takes five minutes:** on your own computer run `git clone https://github.com/Aiza166/BlindSpot-FIRMS.git`, then zip the folder and keep a copy (for example in cloud storage). That copy contains everything above even if GitHub or your Claude access is lost.

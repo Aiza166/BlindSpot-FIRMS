@@ -11,7 +11,7 @@ A dead or missing link is scored very low (`docs/GRADE.md` item 2). Doing the ac
 ## Steps
 1. Go to https://dash.cloudflare.com/sign-up and sign up with the team email.
 2. Verify the email. Turn on two-factor authentication: profile icon, **My Profile**, **Authentication**.
-3. (Needs task 03 done.) In PowerShell: `cd nasa-hackathon\web` then `npx wrangler@3 login`. A browser tab opens; click **Allow**. Return to PowerShell; it should say you are logged in. Check with `npx wrangler@3 whoami`.
+3. (Needs task 03 done.) In PowerShell: `cd BlindSpot-FIRMS\web` then `npx wrangler@3 login`. A browser tab opens; click **Allow**. Return to PowerShell; it should say you are logged in. Check with `npx wrangler@3 whoami`.
 4. Stop here. Do **not** create the Pages project or deploy until 14 Nov 09:00 PKT (task 08 does that).
 
 ## Record the result

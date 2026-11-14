@@ -117,8 +117,8 @@ Earlier work compared MODIS and VIIRS fire counts once and reported a ratio: Vad
 
 ### What was built when
 
-- **Before the hackathon (31 Oct to 2 Nov 2026):** the data pipeline, the tests T1 to T3 and a first version of the web app were prepared locally. Our team lead was told by the Universal Event Local Lead that local work, data download and a written plan were fine before the event.
-- **During the hackathon (14 to 15 Nov 2026):** the changes recorded in `ai-log.md` and `decisions.md` in the repository, which was first published on 14 Nov.
+- **Before the hackathon:** the data pipeline, its tests and a first version of the web app were prepared locally. Our team lead was told by the Universal Event Local Lead that local work, data download and a written plan were allowed.
+- **During the hackathon (14–15 Nov 2026):** first build and test run on Windows; wording fixes with new tests; the app now opens on the 2012 story with one button to harmonize; a new pipeline step that adds 2026 without changing 2003–2025, with near-real-time months marked provisional. Every change is listed in `ai-log.md` and `decisions.md` in the repository.
 
 ### Limits (honest list)
 
