@@ -1,5 +1,7 @@
 # Handoff: read this first
 
+> **Latest (15 Nov 2026): read `HANDOFF_15NOV.md` first.** It lists everything done on 14–15 Nov, the live link, and what is left before the 23:59 PKT deadline. The rest of this file is the 1 Nov snapshot.
+
 **Start with `README.md` (overview), then `YOUR_TASKS/README.md` (what only the human can do, in date order) and `docs/CONTINUE.md` (how to continue with a new account or person, the first prompt to paste, repo transfer).** The chat is exported in `docs/chat/` (background only; `docs/DECISIONS.md` is the reliable record).
 
 For a new Claude Code session, or a teammate, picking up **Blind Spot** (NASA Space Apps 2026, "Harmonization of MODIS and VIIRS Hot Spots"). Snapshot updated 1 Nov 2026 (originally 31 Oct).
