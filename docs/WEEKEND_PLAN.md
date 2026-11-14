@@ -1,6 +1,6 @@
 # Weekend plan: 14–15 Nov 2026
 
-Written 14 Nov after a judge-style review. Deadline: **Sun 15 Nov 23:59** (Team Owner's local time). Target: everything submitted by **Sun 18:00**, leaving the evening for fixes.
+Written 14 Nov after a judge-style review. Deadline: **Sun 15 Nov 23:59 Karachi time (PKT)**; the team is registered on the Karachi Local Event (checked on the Space Apps site, 15 Nov). Target: everything submitted by **Sun 18:00**, leaving the evening for fixes.
 
 Status of each item is proposed until the team says go. Decisions and reasons: `decisions.md`. AI use: `ai-log.md`.
 

@@ -120,3 +120,10 @@ Status: **Proposed** = Claude's recommendation, waiting for the team. **Agreed**
 - **Not on the app's Results page:** the factor-spread, Terra/Aqua before 2012 and orbit-model checks; they are in `docs/RESULTS_T3.md`.
 - **Rejected:** opening on a statistic; dropping the limits; a second region.
 
+## W-15 · Team, event and deadline
+- **Status:** Recorded 15 Nov from the second team member's answers and the Space Apps site.
+- **Facts:** Team name "Hehehehehe" (team page https://www.spaceappschallenge.org/2026/find-a-team/hehehehehe/, read 15 Nov: Local Event Karachi, Pakistan; challenge Harmonization of MODIS and VIIRS Hot Spots; the About text describes Blind Spot). The team member reports that both members are on this team at the Karachi Local Event and that the Team Owner is a team member. The member list itself was not visible without signing in.
+- **Deadline:** the 2026 Project Submission Guide (read 15 Nov) says submission closes Sunday 15 November at 11:59 p.m. in the time zone of the team's Local Event, so **23:59 PKT on 15 Nov 2026**. The Universal Event rule (Team Owner's time) does not apply. Local judging and awards times may differ; the guide says to check with the Local Lead.
+- **Old repository:** the team will make `Aiza166/nasa-hackathon` private before the final submission.
+- **Changed:** deadline lines in `README.md`, `docs/WEEKEND_PLAN.md` and `YOUR_TASKS/10_submit_form.md`.
+

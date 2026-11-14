@@ -38,4 +38,4 @@ Before pasting, ask Claude to replace the placeholders in "Link to Project Demo"
 ## Common problems
 - **Character limits:** shorten the description; the summary and detailed text can be cut (ask Claude, keep numbers unchanged).
 - **Video not accepted:** check allowed hosts and length in the 2026 guide.
-- **Form closes at 23:59 Sun 15 Nov** in the Local Event's time zone; for the Universal Event, the Team Owner's local time (PKT if Aiza owns the team). You can resubmit until then; the last saved version is judged.
+- **Form closes at 23:59 Sun 15 Nov, Karachi time (PKT)**: the team is on the Karachi Local Event (checked 15 Nov). You can resubmit until then; the last saved version is judged.
