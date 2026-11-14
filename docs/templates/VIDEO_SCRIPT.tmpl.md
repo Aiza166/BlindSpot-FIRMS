@@ -18,7 +18,7 @@ Template: `docs/templates/VIDEO_SCRIPT.tmpl.md`. Regenerate with `make story`. O
 
 - Duration ≤ 30.0 s (`ffprobe`), voice-over ≤ 55 words (checked by `tests/test_story.py`). The 2026 guide: a demo over 30 s is not eligible for Global Judging (`docs/GUIDE_2026_NOTES.md`).
 - Team name (Hehehehehe) and member names are spoken at 0:00 and shown in the lower third, as the 2026 guide asks.
-- If the site is deployed in time, the end card shows the public link; otherwise it shows the GitHub link.
+- The end card shows the public link: https://blindspot-firms.pages.dev
 - No person under 18 may appear or be heard. No NASA logos in any generated card.
 - A second person checks each on-screen number against "Number sources" below.
 - Keep the caveat line word for word: it matches the submission summary. Do not say farmers burn later "because"; we cannot separate later burning from less burning.

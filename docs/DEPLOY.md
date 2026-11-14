@@ -45,7 +45,7 @@ Rehearsed locally: `make deploy-rehearsal` builds, serves `web/out` with `_heade
 
 1. `git pull` and confirm `git status` is clean.
 2. In `web/`: `npm install --no-audit --no-fund`, then `npm run lint`, `npm run typecheck` and `npm test` (Windows-friendly). The full `make test` and `make web-test` need Python and `sh`; they are optional on Windows and were run on Linux (see `docs/MORNING_SUMMARY.md`).
-3. `cd web && NEXT_PUBLIC_NRT_ENDPOINT=/api/nrt npm run build`. The last lines must say `gen-headers: ... files (limit 20000)` and `wrote out/_headers`.
+3. `cd web && NEXT_PUBLIC_NRT_ENDPOINT=/api/nrt npm run build`. **In Git Bash on Windows, prefix `MSYS_NO_PATHCONV=1`**: without it Git Bash rewrites `/api/nrt` to `C:/Program Files/Git/api/nrt`, the CSP blocks that request and the card falls back to the archive (seen on 15 Nov). Check with `grep -rl "Program Files" out/_next` (must find nothing). PowerShell is not affected. The last lines must say `gen-headers: ... files (limit 20000)` and `wrote out/_headers`.
 4. `grep -rl "<first 8 characters of your key>" out functions` must find nothing.
 
 ### B. Cloudflare account and project (first time only, about 10 min)

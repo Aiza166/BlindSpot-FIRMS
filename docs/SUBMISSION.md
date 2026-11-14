@@ -23,7 +23,7 @@ Video, 30 seconds or less, English subtitles: link added when uploaded. It opens
 
 ## Link to Final Project
 
-Live app: link added after the deploy (Cloudflare Pages).
+Live app: https://blindspot-firms.pages.dev
 
 Source code and data: https://github.com/Aiza166/BlindSpot-FIRMS
 
@@ -33,7 +33,7 @@ Source code and data: https://github.com/Aiza166/BlindSpot-FIRMS
 
 - **Pick a place and a period:** any of 347 districts, either Punjab, or a box or circle on the map; any range of months.
 - **Read the burning calendar:** one row per year, one cell per month, raw or harmonized; near-real-time months are labelled provisional.
-- **Ask "is this month unusual here?":** the latest month against that place's median for the same month, cross-checked with a second satellite (NOAA-20).
+- **Ask "is this month unusual here?":** the latest month against that place's median for the same month, cross-checked with a second satellite (NOAA-20). The current month comes in live from NASA's near-real-time feed, labelled provisional.
 - **See the critical period:** the months when burning usually starts, peaks and ends.
 - **Take it with you:** CSV and PNG downloads, in colours safe for colour-blind readers.
 
@@ -65,7 +65,7 @@ Python (DuckDB, pandas, SciPy, Shapely) for the pipeline; TypeScript, Next.js, M
 
 ### What was built when
 
-The pipeline, its tests and a first app version were prepared before the event, with the Universal Event Local Lead's permission for local work as relayed to our team lead. During the event we added 2026, the 2012 story view and wording fixes; `ai-log.md` and `decisions.md` list every change.
+The pipeline, its tests and a first app version were prepared before the event, with the Universal Event Local Lead's permission for local work as relayed to our team lead. During the event we added 2026, the 2012 story view, the live current month, wording fixes and the deploy; `ai-log.md` and `decisions.md` list every change.
 
 ## NASA data used
 

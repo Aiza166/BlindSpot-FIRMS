@@ -133,3 +133,14 @@ Status: **Proposed** = Claude's recommendation, waiting for the team. **Agreed**
 - **Tests:** the subtitle test now expects the team-name cue first and the 2012 jump second; "18" (the under-18 rule) joins the allowed fixed numbers.
 - **Not done:** recording, the 30.0 s check with `ffprobe`, upload. The end card shows the public link if the site is deployed in time, otherwise the GitHub link.
 
+## W-17 · Deploy to Cloudflare Pages (W10) and the live current month (W3)
+- **Status:** Done 15 Nov. Production URL: https://blindspot-firms.pages.dev (project `blindspot-firms`; `blindspot` was taken).
+- **How:** a team member logged Wrangler in and set `FIRMS_MAP_KEY` as an encrypted Pages secret; Claude created the project, built `web/out` with `NEXT_PUBLIC_NRT_ENDPOINT=/api/nrt`, checked that no key characters are in the output, and uploaded it with `wrangler pages deploy` (Direct Upload, D-041).
+- **Two problems found and fixed:**
+  - The first secret was saved under a 32-character name instead of `FIRMS_MAP_KEY` (the key was most likely entered as the name). Claude deleted it on the team member's request and the member set it again; the list now shows only `FIRMS_MAP_KEY`. Advice given: request a new FIRMS key after the hackathon, since the name was visible in the Cloudflare settings and in one tool output.
+  - Git Bash rewrote `/api/nrt` into a Windows path at build time, so the first deploy's card could not reach the function (CSP blocked it). Rebuilt with `MSYS_NO_PATHCONV=1`; `docs/DEPLOY.md` now warns about it.
+- **Checked on the public URL, 15 Nov:** home, results, use-case, methods, about and attribution return 200; security headers present (CSP, nosniff, referrer policy, permissions policy, X-Frame-Options DENY, HSTS); `/api/nrt` returns `status: ok`, `provisional: true`, November 2026, 15 of 30 days, for Sangrur (297 NOAA-20 detections) and Pakistani Punjab (4,817); another origin gets 403 and a box outside the coverage area 400; the first 8 key characters appear in none of the served pages, the main script or the function response; a fresh browser tab shows no console errors; the live card reads "NOAA-20 VIIRS, November 2026 · near-real-time, provisional".
+- **App change:** the card's "appears here when the near-real-time service is switched on at launch" note is now hidden once the live figure has loaded. Browser suite 192 of 192 (on the build without the live service, which the suite expects).
+- **Project page and video script:** now give the live URL; the page says the current month comes in live and is labelled provisional.
+- **Not checked yet:** a phone over mobile data, and a drawn custom area on the public URL.
+
