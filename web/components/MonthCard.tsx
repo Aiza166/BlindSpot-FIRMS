@@ -2,7 +2,8 @@
 import { forwardRef } from "react";
 import { fmtCount, fmtRatio } from "@/lib/format";
 import { parseYm, ymLabel } from "@/lib/months";
-import type { NrtMonth, NrtResult } from "@/lib/nrt";
+import { NRT_ENDPOINT, type NrtMonth, type NrtResult } from "@/lib/nrt";
+import { cardFootNote, showLaunchNote } from "@/lib/cardNote";
 import type { AreaDoc, Platform } from "@/lib/types";
 import type { CustomDoc } from "@/lib/series";
 
@@ -85,10 +86,10 @@ export const MonthCard = forwardRef<HTMLDivElement, Props>(function MonthCard({ 
       {nrt?.status === "ok" && <NrtFigure d={nrt.data} doc={doc} />}
       <p className="foot">
         Medians use complete months only. The month is the local solar month; &ldquo;current fire&rdquo; is read at month level.{" "}
-        {nrt?.status === "ok" ? `The ${nrt.data.label} figure is FIRMS ${nrt.data.source}, filtered and masked like the archive, and will change when the standard data replace it.` : nrt?.status === "unavailable" && nrt.reason !== "No near-real-time service in this build." ? `Near-real-time data could not be loaded (${nrt.reason}), so this card shows the latest month in the saved data.` : `The live near-real-time service is not part of this build, so this card shows the latest month in the saved data.`}
+        {cardFootNote(nrt, NRT_ENDPOINT !== null)}
       </p>
       {prov && <p className="foot" data-testid="card-provisional-note">This month uses FIRMS near-real-time data. It is provisional and will change when the standard data replace it. The year is not yet covered by our tests.</p>}
-      {nrt?.status !== "ok" && (
+      {showLaunchNote(NRT_ENDPOINT !== null) && (
         <p className="foot" data-testid="card-live-note">
           The live current month appears here when the near-real-time service is switched on at launch.
         </p>
