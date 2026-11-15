@@ -1,6 +1,6 @@
 # Blind Spot demo, voice-over cut (brag + Hyperframes + Kokoro)
 
-`../blindspot_demo_voice.mp4` is the brag/Hyperframes cut (`../brag_cut/`) with an AI narration added and every scene and subtitle retimed to that narration. It was made by Claude Code on 15 Nov 2026 following brag's `--voice` path (Kokoro TTS through Hyperframes, run locally; no cloud TTS).
+`../blindspot_demo_voice.mp4` is the brag/Hyperframes cut (its sources are in the `submission-2026-11-15` tag, `docs/video/brag_cut/`) with an AI narration added and every scene and subtitle retimed to that narration. It was made by Claude Code on 15 Nov 2026 following brag's `--voice` path (Kokoro TTS through Hyperframes, run locally; no cloud TTS).
 
 - **Narration:** the voice-over line of `docs/VIDEO_SCRIPT.md`, word for word (`narration-script.txt`). Kokoro voice `af_heart` (American English, female, a stock Kokoro voice, not a clone of anyone), speed 1.15. The final MP4 measures -16.1 LUFS integrated, peak -3.6 dBFS (ffmpeg ebur128). File: `composition/assets/narration.wav` (mono, 24 kHz, 16-bit, 29.7 s).
 - **Subtitles:** the same words as written in the script, each group on screen while its own narration clip plays (`compositions/captions.html`).

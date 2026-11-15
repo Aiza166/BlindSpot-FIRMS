@@ -1,1 +1,0 @@
-Introducing Blind Spot: one fire calendar for MODIS and VIIRS. In Pakistani Punjab the raw record jumps +613% when the sensors change in 2012; harmonized, the step is +12.7%. Built by Aiza Gazyani and Kissa Zehra (Team Hehehehehe) for NASA Space Apps 2026: https://blindspot-firms.pages.dev

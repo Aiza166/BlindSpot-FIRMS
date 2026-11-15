@@ -6,7 +6,7 @@ const ok = { status: "ok" as const, data: { label: "near-real-time, provisional"
 const failed = { status: "unavailable" as const, reason: "FIRMS did not answer in time" };
 const noBuild = { status: "unavailable" as const, reason: "No near-real-time service in this build." };
 
-describe("month card foot note (FIXES_FOR_KISSA item 2)", () => {
+describe("month card foot note (decisions.md W-19)", () => {
   it("while the live request runs on a build with the service, says it is loading", () => {
     expect(cardFootNote(null, true)).toBe("Loading the live current month…");
   });

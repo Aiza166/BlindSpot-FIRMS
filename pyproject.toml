@@ -31,7 +31,7 @@ addopts = "-q"
 line-length = 100
 target-version = "py311"
 src = ["pipeline", "tests"]
-extend-exclude = [".claude", "docs"]
+extend-exclude = ["docs"]
 
 [tool.ruff.lint]
 select = ["E", "F", "W", "I", "B", "UP", "S", "SIM"]

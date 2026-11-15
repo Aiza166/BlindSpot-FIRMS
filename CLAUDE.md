@@ -10,7 +10,6 @@ web/        Next.js static export + MapLibre + DuckDB-WASM over Parquet tiles; o
 data/raw/        downloaded FIRMS / MCD64A1 / boundaries (gitignored)
 data/processed/  pipeline outputs: cell-day Parquet, calibration table, test results JSON
 docs/       PLAN.md, CHECKPOINTS.md, critique, methods notes
-.claude/    agents, commands, skills (adapted from ECC, see .claude/ECC-ATTRIBUTION.md)
 ```
 
 ## Commands
@@ -70,16 +69,12 @@ NRT top-up (needs `FIRMS_MAP_KEY` in the environment): `.venv/bin/python -m blin
 
 ## Workflow
 
-1. **Plan**: `/plan` (or the `planner` agent) for anything touching more than one file. Check the plan against the scientific rules above.
+1. **Plan** anything touching more than one file. Check the plan against the scientific rules above.
 2. **Small change**: one step of the plan at a time.
-3. **Test**: write or update the test first for pipeline logic (`tdd-guide` agent, `python-testing` skill). Run `make test`.
-4. **Verify**: run the `verification-loop` skill and fix what it finds.
-5. **Review**: run the matching reviewer agent: `python-reviewer` (pipeline/), `typescript-reviewer` + `react-reviewer` (web/). Fix CRITICAL/HIGH findings.
-6. **Log decisions**: any non-trivial choice (method, threshold, library, scope cut) gets an entry in `docs/DECISIONS.md` in the same commit: what, rejected alternatives, why, evidence.
-7. **Commit**.
-8. **Hand-off**: run `/save-session` at the end of a work block or before passing work to a teammate; the next person runs `/resume-session`. Session files go in `.claude/session-data/` and must not contain secrets.
-
-Other agents: `architect` for design decisions, `build-error-resolver` for a broken `web/` build (it asks before cleaning caches or adding dependencies).
+3. **Test**: write or update the test first. Run `make test` (and `make web-test` for `web/`).
+4. **Review** the change (pipeline: Python; web: TypeScript and React) and fix CRITICAL/HIGH findings.
+5. **Log decisions**: any non-trivial choice (method, threshold, library, scope cut) gets an entry in `docs/DECISIONS.md` in the same commit: what, rejected alternatives, why, evidence.
+6. **Commit**.
 
 ## Definition of done (per checkpoint)
 
@@ -87,4 +82,4 @@ A checkpoint is done only when its gate row in `docs/CHECKPOINTS.md` is ✅ with
 
 Gates are listed in `docs/CHECKPOINTS.md`: P0–P5 before the hackathon (no project code), H1–H37 during it.
 
-For any code checkpoint, "done" also means: tests pass, `verification-loop` report is READY, a reviewer agent has no open CRITICAL/HIGH findings, and the scientific rules above still hold.
+For any code checkpoint, "done" also means: tests pass, a review has no open CRITICAL/HIGH findings, and the scientific rules above still hold.

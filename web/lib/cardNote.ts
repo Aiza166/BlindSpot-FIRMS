@@ -1,4 +1,4 @@
-// Foot notes of the month card (FIXES_FOR_KISSA item 2, decisions.md W-19). `nrt` is null while
+// Foot notes of the month card (decisions.md W-19). `nrt` is null while
 // the live request is still running; `hasService` is true when the build sets NEXT_PUBLIC_NRT_ENDPOINT.
 import type { NrtResult } from "./nrt";
 
