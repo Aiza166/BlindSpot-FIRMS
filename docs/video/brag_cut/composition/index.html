@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1920, height=1080" />
+    <title>Blind Spot — NASA Space Apps 2026 demo</title>
+    <script src="assets/vendor/gsap.min.js"></script>
+    <style>
+      :root {
+        --paper: #e8ecee;
+        --sheet: #f5f7f8;
+        --ink: #16212b;
+        --navy: #1f3550;
+        --accent: #284a6c;
+        --hi: #b5531c;
+        --warn: #7a3b12;
+        --serif: "EB Garamond", Georgia, serif;
+        --sans: "Inter", "Segoe UI", sans-serif;
+      }
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      html,
+      body {
+        width: 1920px;
+        height: 1080px;
+        overflow: hidden;
+        background: var(--paper);
+      }
+      #root {
+        position: relative;
+        width: 1920px;
+        height: 1080px;
+        font-family: var(--sans);
+        color: var(--ink);
+      }
+      #ground {
+        position: absolute;
+        inset: 0;
+        background: var(--paper);
+      }
+    </style>
+  </head>
+  <body>
+    <div
+      id="root"
+      data-composition-id="main"
+      data-start="0"
+      data-duration="29.25"
+      data-fps="30"
+      data-width="1920"
+      data-height="1080"
+    >
+      <div id="ground"></div>
+
+      <div id="s-open" data-composition-id="s-open" data-composition-src="compositions/s-open.html"
+        data-start="0" data-duration="4.95" data-track-index="1" data-track-kind="graphics"
+        data-width="1920" data-height="1080" style="z-index: 2"></div>
+
+      <div id="s-jump" data-composition-id="s-jump" data-composition-src="compositions/s-jump.html"
+        data-start="4.55" data-duration="7.1" data-track-index="2" data-track-kind="graphics"
+        data-width="1920" data-height="1080" style="z-index: 3"></div>
+
+      <div id="s-sangrur" data-composition-id="s-sangrur" data-composition-src="compositions/s-sangrur.html"
+        data-start="11.15" data-duration="6.5" data-track-index="3" data-track-kind="graphics"
+        data-width="1920" data-height="1080" style="z-index: 4"></div>
+
+      <div id="s-flag" data-composition-id="s-flag" data-composition-src="compositions/s-flag.html"
+        data-start="17.05" data-duration="6.0" data-track-index="4" data-track-kind="graphics"
+        data-width="1920" data-height="1080" style="z-index: 5"></div>
+
+      <div id="s-end" data-composition-id="s-end" data-composition-src="compositions/s-end.html"
+        data-start="22.55" data-duration="6.7" data-track-index="5" data-track-kind="graphics"
+        data-width="1920" data-height="1080" style="z-index: 6"></div>
+
+      <div id="chrome" data-composition-id="chrome" data-composition-src="compositions/chrome.html"
+        data-start="0" data-duration="29.25" data-track-index="6" data-track-kind="graphics"
+        data-width="1920" data-height="1080" style="z-index: 8"></div>
+
+      <div id="captions" data-composition-id="captions" data-composition-src="compositions/captions.html"
+        data-start="0" data-duration="29.25" data-track-index="7" data-track-kind="captions"
+        data-width="1920" data-height="1080" style="z-index: 9"></div>
+
+      <audio id="silence" src="assets/silence.wav" data-start="0" data-duration="29.25"
+        data-track-index="8" data-volume="1"></audio>
+    </div>
+    <script>
+      window.__timelines = window.__timelines || {};
+      window.__timelines["main"] = gsap.timeline({ paused: true });
+    </script>
+  </body>
+</html>
