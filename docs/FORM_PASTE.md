@@ -87,7 +87,7 @@ The pipeline, its tests and a first app version were prepared before the event, 
 
 ## Use of Super Intelligence (SI)
 
-123 words
+147 words
 
 ````text
 We used Claude Code (Anthropic), including subagents, for:
@@ -97,7 +97,7 @@ We used Claude Code (Anthropic), including subagents, for:
 - code, security and accessibility reviews, and red-team critiques of the plan and results,
 - first drafts of documents, including this one and the video script.
 
-People on the team chose the research question, the scope, the pre-registered tests and thresholds, and approved each change. Every number in the app and in this text is read from pipeline output files by a script. We used no AI-generated images, video or voice. As the 2026 guide asks for code and data, SI use is also stated in the README, on the app's About page, and in the package metadata (pyproject.toml, web/package.json).
+People on the team chose the research question, the scope, the pre-registered tests and thresholds, and approved each change. Every number in the app and in this text is read from pipeline output files by a script. The demo video was assembled with AI (Claude Code, brag, Hyperframes) from real screenshots of the live app: no AI-generated images. Its narration is AI-generated speech (Kokoro TTS), not a recorded voice. As the 2026 guide asks for code and data, SI use is also stated in the README, on the app's About page, and in the package metadata (pyproject.toml, web/package.json).
 ````
 
 ## NASA Data
