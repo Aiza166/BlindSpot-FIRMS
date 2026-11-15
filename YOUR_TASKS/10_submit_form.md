@@ -22,6 +22,8 @@ Field names below are from the 2026 Project Submission Guide (read 14 Nov, `docs
 | Space Agency Partner Data and Other References | "Space agency partner data and other references" plus "References" |
 | Use of Super Intelligence (SI) | "Use of Super Intelligence (SI)" section (names Claude Code by Anthropic). Judges do not see this field |
 
+Paste sheet: `docs/FORM_PASTE.md` has one plain-text block per field (run `python scripts/form_fields.py` after `make story`).
+
 Before pasting, ask Claude to replace the placeholders in "Link to Project Demo" and "Link to Final Project" with the real links, in the **template** (`docs/templates/SUBMISSION.tmpl.md`), then `make story`.
 
 ## Steps
