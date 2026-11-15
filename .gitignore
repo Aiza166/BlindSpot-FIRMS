@@ -61,3 +61,6 @@ web/public/maplibre/
 web/.serve.pid
 web/e2e/artifacts/
 .dev.vars
+
+# Private notes (people, replies): never committed
+private/
