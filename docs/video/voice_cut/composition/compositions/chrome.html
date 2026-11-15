@@ -1,0 +1,70 @@
+<template>
+  <style>
+    #root {
+      position: absolute;
+      inset: 0;
+      pointer-events: none;
+      font-family: "Inter", sans-serif;
+    }
+    #ch-bar {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 1920px;
+      height: 64px;
+      background: #1f3550;
+      color: #ffffff;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 36px;
+      box-shadow: 0 2px 12px rgba(20, 35, 60, 0.18);
+    }
+    #ch-title {
+      font-family: "EB Garamond", Georgia, serif;
+      font-size: 34px;
+      font-weight: 700;
+      letter-spacing: 0.2px;
+    }
+    #ch-who {
+      font-size: 22px;
+      font-weight: 500;
+      color: #eef2f6;
+    }
+    #ch-note {
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 8px;
+      text-align: center;
+    }
+    #ch-note span {
+      display: inline-block;
+      font-size: 22px;
+      font-weight: 500;
+      color: #1d2a38;
+      background: rgba(245, 247, 248, 0.92);
+      border: 1px solid #c3ccd2;
+      border-radius: 6px;
+      padding: 2px 12px;
+    }
+  </style>
+  <div id="root" data-composition-id="chrome" data-width="1920" data-height="1080">
+    <div id="ch-bar">
+      <div id="ch-title">Blind Spot</div>
+      <div id="ch-who">Aiza Gazyani and Kissa Zehra · Team Hehehehehe · NASA Space Apps 2026 · Harmonization of MODIS and VIIRS Hot Spots</div>
+    </div>
+    <div id="ch-note"><span>Real screens from the live app · video assembled with AI (Claude Code, brag, Hyperframes) · AI voice (Kokoro) · no AI images</span></div>
+  </div>
+  <script>
+    (function () {
+      const tl = gsap.timeline({ paused: true });
+      // The bar slides in as the opening title shrinks into it (carry across), then stays.
+      tl.fromTo("#ch-bar", { y: -70 }, { y: 0, duration: 0.45, ease: "power3.out" }, 3.65);
+      tl.fromTo("#ch-title", { opacity: 0 }, { opacity: 1, duration: 0.2, ease: "power2.out" }, 3.93);
+      tl.fromTo("#ch-who", { opacity: 0 }, { opacity: 1, duration: 0.35, ease: "power2.out" }, 3.95);
+      tl.set("#ch-note", { opacity: 1 }, 29.6);
+      window.__timelines["chrome"] = tl;
+    })();
+  </script>
+</template>
