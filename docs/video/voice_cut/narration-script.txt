@@ -1,0 +1,16 @@
+Narration for blindspot_demo_voice.mp4
+Source: docs/VIDEO_SCRIPT.md, "Voice-over (read straight through)", word for word.
+Generated with Kokoro-82M (kokoro-v1.0.onnx) through `npx hyperframes tts`, voice af_heart, speed 1.15, lang en-us.
+Each line below was generated as its own clip (so the subtitle for that line can be timed exactly), then placed on the timeline and loudness-normalised as one track.
+Spoken forms used, as instructed: "+613%" -> "plus 613 percent", "+12.7%" -> "plus 12.7 percent", "1.74x" -> "1.74 times". The subtitles show the script's written forms.
+
+#  narration start-end (s)  text sent to TTS
+1  0.150 - 1.829   Aiza and Kissa, team Hehehehehe.
+2  2.079 - 8.632   Pakistani Punjab's October–November fire record jumps plus 613 percent in 2012,
+3  8.712 - 9.792   when sensors changed;
+4  9.872 - 12.552  Blind Spot brings it to plus 12.7 percent.
+5  12.802 - 18.081 Sangrur, November 2021: 1.74 times its November median,
+6  18.161 - 19.752 checked against a second satellite.
+7  20.002 - 24.115 From 2022, some burning moved past the afternoon satellites,
+8  24.195 - 25.449 so we flag those years.
+9  25.799 - 27.894 Next: any farming region, same tests.
