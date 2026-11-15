@@ -11,9 +11,13 @@ export const CACHE_VERSION = 2;
 export const SNAP_DEG = 0.25;
 /** Hard cap on FIRMS calls per request (a 31-day month + 1 lead day = 7 five-day windows). */
 export const MAX_FIRMS_CALLS = 7;
-/** Per-call FIRMS timeout and overall time budget (review MEDIUM-1). */
-export const FIRMS_TIMEOUT_MS = 10_000;
+/** Per-call FIRMS timeout and overall time budget (review MEDIUM-1). FIRMS calls usually take
+ *  about 2 s but sometimes 7 to 9 s or more (measured 15 Nov 2026), so one slow call must not
+ *  fail the request: 20 s per call, one retry on a timeout, all inside 25 s (decisions.md W-18). */
+export const FIRMS_TIMEOUT_MS = 20_000;
 export const FIRMS_BUDGET_MS = 25_000;
+/** FIRMS calls open at once for one request (Workers allow 6 open connections per request). */
+export const FIRMS_PARALLEL = 4;
 const MAX_DAY_RANGE = 5; // FIRMS area API limit (docs/DATA_SCHEMA.md §4)
 const EPS = 1e-9; // same guard as pipeline/blindspot/mask.py cell_index
 const KEEP_CONF = new Set(["n", "h", "nominal", "high"]); // VIIRS confidence n/h (CLAUDE.md rule 3)
@@ -31,8 +35,9 @@ export interface NrtDeps {
   now?: () => Date;
   /** Optional shared cache (e.g. Cloudflare caches.default); an in-memory map is always used too. */
   cache?: { get(k: string): Promise<DetCache | undefined>; put(k: string, v: DetCache): Promise<void> };
-  /** Per-call FIRMS timeout, injectable for tests. */
+  /** Per-call FIRMS timeout and overall budget, injectable for tests. */
   timeoutMs?: number;
+  budgetMs?: number;
 }
 
 /** Cached FIRMS result for one snapped bbox and month (shared across exact bboxes inside it). */
@@ -208,20 +213,31 @@ function isTimeout(e: unknown): boolean {
 async function fetchDetections(bbox: Bbox, month: string, now: Date, deps: NrtDeps): Promise<Detection[]> {
   const ws = windows(month, now);
   if (ws.length > MAX_FIRMS_CALLS) throw new NrtError(400, "request would need too many FIRMS calls");
-  const deadline = Date.now() + FIRMS_BUDGET_MS;
-  const dets: Detection[] = [];
-  for (const w of ws) {
-    if (Date.now() > deadline) throw new NrtError(504, "FIRMS took too long to answer", "timeout");
+  const deadline = Date.now() + (deps.budgetMs ?? FIRMS_BUDGET_MS);
+  const perCall = deps.timeoutMs ?? FIRMS_TIMEOUT_MS;
+  const timedOut = () => new NrtError(504, "FIRMS did not answer in time", "timeout");
+
+  const one = async (w: { start: string; days: number }): Promise<Detection[]> => {
     const url = `${FIRMS_AREA}/${deps.key}/${SOURCE}/${bbox.join(",")}/${w.days}/${w.start}`;
-    let r: Response;
-    try { r = await deps.fetchFirms(url, AbortSignal.timeout(deps.timeoutMs ?? FIRMS_TIMEOUT_MS)); } catch (e) {
-      if (isTimeout(e)) throw new NrtError(504, "FIRMS did not answer in time", "timeout");
-      throw new NrtError(502, redact(`FIRMS request failed: ${e instanceof Error ? e.message : String(e)}`, deps.key), "upstream");
+    for (let attempt = 0; ; attempt++) {
+      const left = deadline - Date.now();
+      if (left <= 0) throw timedOut();
+      let r: Response;
+      try { r = await deps.fetchFirms(url, AbortSignal.timeout(Math.min(perCall, left))); } catch (e) {
+        if (isTimeout(e)) { if (attempt === 0) continue; throw timedOut(); } // retry a timeout once
+        throw new NrtError(502, redact(`FIRMS request failed: ${e instanceof Error ? e.message : String(e)}`, deps.key), "upstream");
+      }
+      if (!r.ok) throw new NrtError(502, `FIRMS answered HTTP ${r.status}`, "upstream");
+      return parseFirmsCsv(await r.text());
     }
-    if (!r.ok) throw new NrtError(502, `FIRMS answered HTTP ${r.status}`, "upstream");
-    dets.push(...parseFirmsCsv(await r.text()));
-  }
-  return dets;
+  };
+
+  // Windows run FIRMS_PARALLEL at a time; results keep window order.
+  const out: Detection[][] = new Array(ws.length);
+  let next = 0;
+  const worker = async () => { while (next < ws.length) { const i = next++; out[i] = await one(ws[i]!); } };
+  await Promise.all(Array.from({ length: Math.min(FIRMS_PARALLEL, ws.length) }, worker));
+  return out.flat();
 }
 
 /** Handles one GET /api/nrt request; returns the JSON body or throws NrtError. */

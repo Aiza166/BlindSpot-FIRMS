@@ -1,5 +1,5 @@
 import { afterEach, describe, expect, it, vi } from "vitest";
-import { AssetMissing, clearMemo, computeNrt, NrtError, parseFirmsCsv, snapBbox, TokenBucket, windows, type DetCache } from "./_lib/nrt-core";
+import { AssetMissing, clearMemo, computeNrt, FIRMS_BUDGET_MS, FIRMS_PARALLEL, FIRMS_TIMEOUT_MS, NrtError, parseFirmsCsv, snapBbox, TokenBucket, windows, type DetCache } from "./_lib/nrt-core";
 import { limiter, onRequestGet } from "./api/nrt";
 import { bboxParam, nrtMonthAllowed } from "../lib/nrt";
 import { knownRegions } from "../lib/reliability";
@@ -160,6 +160,41 @@ describe("review fixes (docs/review/TS_REACT_REVIEW.md)", () => {
   it("MEDIUM-1: a hanging FIRMS call ends in 504", async () => {
     const fetchFirms = vi.fn((_u: string, signal?: AbortSignal) => new Promise<Response>((_r, rej) => signal?.addEventListener("abort", () => rej(signal.reason))));
     await expect(computeNrt(new URLSearchParams({ bbox: "75,30,76,32" }), deps0({ fetchFirms, timeoutMs: 20 }))).rejects.toMatchObject({ status: 504, code: "timeout" });
+  });
+  it("item 1: the 5-day windows are requested at the same time, not one after another", async () => {
+    const pending: ((r: Response) => void)[] = [];
+    const fetchFirms = vi.fn(() => new Promise<Response>((res) => pending.push(res)));
+    const run = computeNrt(new URLSearchParams({ bbox: "75,30,76,32" }), deps0({ fetchFirms }));
+    await vi.waitFor(() => expect(fetchFirms).toHaveBeenCalledTimes(3)); // none has answered yet
+    pending.forEach((res) => res(new Response(HEAD + "\n", { status: 200 })));
+    await expect(run).resolves.toMatchObject({ status: "ok" });
+  });
+  it("item 1: no more than FIRMS_PARALLEL calls are open at once", async () => {
+    let open = 0, most = 0;
+    const fetchFirms = vi.fn(async () => { open++; most = Math.max(most, open); await new Promise((r) => setTimeout(r, 5)); open--; return new Response(HEAD + "\n", { status: 200 }); });
+    await computeNrt(new URLSearchParams({ bbox: "75,30,76,32", month: "2026-10" }), deps0({ fetchFirms })); // 7 windows
+    expect(fetchFirms).toHaveBeenCalledTimes(7);
+    expect(most).toBe(FIRMS_PARALLEL);
+  });
+  it("item 1: a window that times out once is retried and the answer is ok", async () => {
+    const seen = new Set<string>();
+    const fetchFirms = vi.fn((u: string, signal?: AbortSignal) => {
+      const start = u.split("/").pop()!;
+      if (start === "2026-11-05" && !seen.has(start)) { seen.add(start); return new Promise<Response>((_r, rej) => signal?.addEventListener("abort", () => rej(signal.reason))); }
+      return Promise.resolve(new Response(HEAD + "\n", { status: 200 }));
+    });
+    await expect(computeNrt(new URLSearchParams({ bbox: "75,30,76,32" }), deps0({ fetchFirms, timeoutMs: 20 }))).resolves.toMatchObject({ status: "ok" });
+    expect(fetchFirms).toHaveBeenCalledTimes(4); // 3 windows + 1 retry
+  });
+  it("item 1: the retry never runs past the overall budget", async () => {
+    const fetchFirms = vi.fn((_u: string, signal?: AbortSignal) => new Promise<Response>((_r, rej) => signal?.addEventListener("abort", () => rej(signal.reason))));
+    const t0 = Date.now();
+    await expect(computeNrt(new URLSearchParams({ bbox: "75,30,76,32" }), deps0({ fetchFirms, timeoutMs: 200, budgetMs: 250 }))).rejects.toMatchObject({ status: 504, code: "timeout" });
+    expect(Date.now() - t0).toBeLessThan(400);
+  });
+  it("item 1: per-call limit 20 s inside a 25 s budget", () => {
+    expect(FIRMS_TIMEOUT_MS).toBe(20_000);
+    expect(FIRMS_BUDGET_MS).toBe(25_000);
   });
   it("MEDIUM-2: clamps a bbox that pokes past the coverage box; edge district works", async () => {
     const body = await computeNrt(new URLSearchParams({ bbox: "79.5,30,80.0001,31" }), deps0());
