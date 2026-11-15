@@ -25,6 +25,7 @@ For Aiza. Written by Claude Code at the end of the work on Kissa's PC. Every cha
 | 9 | **Video script ready (W9 prep)** | Opens "Aiza and Kissa, team Hehehehehe", ends "Next: any farming region, same tests"; 54 words; English subtitles regenerated (`docs/video/subtitles.srt`) | W-16 |
 | 10 | Two display fixes | Caution banner names the years before each reason; the empty-cell legend also covers months not yet in the archive | W-12 |
 | 11 | **W10 + W3: deployed, live month working** | https://blindspot-firms.pages.dev; live card "NOAA-20 VIIRS, November 2026 · near-real-time, provisional"; all pages 200; security headers present; key appears nowhere on the site | W-17 |
+| 12 | Phone check on mobile data | Kissa ran the full checklist on a phone (private tab, Wi-Fi off): every check passed, including Raw series/Harmonized, the live card, a typed box and circle, downloads, all six pages, dark mode, and opening from WhatsApp | — |
 
 ## Things you should know
 
@@ -37,12 +38,18 @@ For Aiza. Written by Claude Code at the end of the work on Kissa's PC. Every cha
 
 | Task | Who | Notes |
 |---|---|---|
-| Phone check of the live site on mobile data | Either | First screen loads; "Harmonize the record" changes the calendar |
-| **Record the 30-second video** | Kissa records, Aiza checks the numbers | Script: `docs/VIDEO_SCRIPT.md`; subtitles: `docs/video/subtitles.srt`; must be 30.0 s or less, English subtitles, team name shown; upload publicly and test the link logged out |
+| **Video: choose, upload, test** | Aiza | Two options: her own recording, or the AI-assembled cut `docs/video/blindspot_demo_ai.mp4` (checked: 29.97 s, 1920×1080, silent, subtitles burned in). **If the AI cut is submitted, change the SI answer first**: it now says "We used no AI-generated images, video or voice" (edit `docs/templates/SUBMISSION.tmpl.md`, re-render, re-run `scripts/form_fields.py`). Upload publicly; test the link logged out |
 | **Fill the form and press "Submit for Judging"** | Aiza | Field by field from `docs/SUBMISSION.md` (map in `YOUR_TASKS/10_submit_form.md`); tick both boxes; a banner confirms; you can resubmit until 23:59 |
 | Make `Aiza166/nasa-hackathon` private | Aiza | Before the final submission (W-15) |
 | Optional: FortiGuard classification for the new URL | Either | https://www.fortiguard.com/faq/wfratingsubmit, Company Name "N/A" |
 | After the hackathon: new FIRMS key | Aiza | See above |
+
+## Aiza's work on 15 Nov (after this note was first written)
+
+| Commit | What |
+|---|---|
+| 4ed0316, 626adf2, 67911f1 | `scripts/form_fields.py` and `docs/FORM_PASTE.md`: one plain-text block per form field, with word counts (summary 189, description 540) |
+| 37af739, fcfe81d | AI-assembled 30 s demo cut from real captures of the live app (`docs/video/ai_cut/`, `docs/video/blindspot_demo_ai.mp4`) |
 
 ## Commits from this session (all pushed)
 
